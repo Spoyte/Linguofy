@@ -23,3 +23,27 @@ Nuestra mascota salta,
 ¡Familia es celebración!  
 
 (Chorus)
+
+(Verse 3)  
+El abuelo cuenta historias,  
+La abuela pan hará,  
+Los primos juegan juntos,  
+¡La familia crecerá!  
+
+(Bridge)  
+Padre, madre, hijos,  
+Tíos, primos y más,  
+Vocabulario unido,  
+En amor quedará.  
+
+(Chorus)  
+La familia, la familia,  
+Palabras del corazón.  
+Hijo, hija, hermana, hermano,  
+Cantamos en unión.  
+
+(Outro)  
+Con mi familia a mi lado,  
+Canción de gratitud,  
+Estas palabras queridas,  
+Nos llenan de virtud.

@@ -23,3 +23,27 @@ Curiosidad es amor.
 ¡Preguntar es libertad!  
 
 (Chorus)
+
+(Verse 3)  
+¿Cuándo vamos al cine?  
+¿Por qué ríes así?  
+¿Cómo llegar al parque?  
+¡Preguntar te hace feliz!  
+
+(Bridge)  
+Signos de pregunta dobles,  
+¿? abren y cierran bien.  
+Pronuncia con entonación,  
+Curiosidad también.  
+
+(Chorus)  
+Inicia con signo al revés,  
+¿? marcado otra vez.  
+Pregunta, explora sin temor,  
+Curiosidad es amor.  
+
+(Outro)  
+¿Qué, quién, dónde, cuándo y más?  
+¿Por qué y cómo? ya verás.  
+La llave del conocimiento,  
+¡Pregunta sin cesar!

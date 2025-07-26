@@ -23,3 +23,27 @@ Tú quieres cantar,
 Ella quiere jugar.  
 
 (Chorus)
+
+(Verse 3)  
+Nosotros queremos viajar,  
+Vosotros queréis jugar,  
+Ellos quieren nuevas metas,  
+Ellas quieren cantar.  
+
+(Bridge)  
+Stem se vuelve "quier-",  
+¡Escucha la variación!  
+Verbo querer encendido,  
+Deseo en la canción.  
+
+(Chorus)  
+Quiero, quieres, quiere,  
+Deseo que se prefiere.  
+Stem que cambia, qui-qui-qui,  
+Cántalo, aprende aquí.  
+
+(Outro)  
+Quiero, quieres, quiere hoy,  
+Queremos unión.  
+Con verbo querer creciendo,  
+Se enciende la emoción.
