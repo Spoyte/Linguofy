@@ -23,3 +23,25 @@ Con sonrisa digo “gracias”,
 El respeto crecerá.  
 
 (Chorus)
+
+(Verse 3)  
+Saludo con la mano así,  
+Con amigos junto a mí.  
+"Por favor" y "gracias" son,  
+Clave de la comunicación.  
+
+(Bridge)  
+Pequeñas frases dan calor,  
+Abren puertas sin temor.  
+Usa siempre educación,  
+Canta con el corazón.  
+
+(Chorus)  
+Hola, adiós, gracias, por favor,  
+Palabras mágicas de amor.  
+Sí y no también dirás,  
+Con cortesía brillarás.  
+
+(Outro)  
+Hola, hola, digo otra vez,  
+Hasta pronto, ya lo ves.
