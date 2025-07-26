@@ -23,3 +23,27 @@ Veinte sueños esta noche,
 Bailan con sabor.  
 
 (Chorus)
+
+(Verse 3)  
+Dieciséis pasos de baile,  
+Diecisiete rayos de sol,  
+Dieciocho risas altas,  
+Diecinueve y veinte: ¡gol!  
+
+(Bridge)  
+Suma uno cada vez,  
+Cuenta sin temor,  
+Del once sube al veinte,  
+¡Números en calor!  
+
+(Chorus)  
+Diecinueve, veinte ya,  
+Cuenta sin parar.  
+De once a veinte en calor,  
+Números en tu motor.  
+
+(Outro)  
+Once, doce, trece y más,  
+Veinte al terminar,  
+Los números son amigos,  
+¡Nunca te van a fallar!

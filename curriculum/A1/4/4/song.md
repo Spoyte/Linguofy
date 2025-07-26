@@ -23,3 +23,27 @@ Hay muchas estrellas,
 Brillan donde voy.  
 
 (Chorus)
+
+(Verse 3)  
+Hay un sueño en la noche,  
+Hay luz en el amanecer,  
+Hay caminos que esperan,  
+¡Hay tanto por aprender!  
+
+(Bridge)  
+Singular o plural,  
+"Hay" no va a cambiar.  
+Úsalo con números,  
+¡Fácil de recordar!  
+
+(Chorus)  
+Hay, hay, existe aquí,  
+Singular, plural para ti.  
+Con un, una, unos, unas,  
+La existencia suena así.  
+
+(Outro)  
+Cuando busques algo nuevo,  
+Piensa en "hay" sin dudar,  
+Hay canciones y sonrisas,  
+¡Que te van a acompañar!

@@ -23,3 +23,27 @@ Tiempo que cantamos,
 Nunca se detendrá, ven.  
 
 (Chorus)
+
+(Verse 3)  
+Son las seis menos diez,  
+Son las siete en punto,  
+Son las ocho y veinte,  
+¡Marca cada asunto!  
+
+(Bridge)  
+Si pasas treinta minutos,  
+Usa "menos" al hablar,  
+Practica la estructura,  
+¡El tiempo a dominar!  
+
+(Chorus)  
+Son las cuatro menos cinco,  
+Hora de bailar,  
+¿Qué hora es, amigo?,  
+¡Vamos a cantar!  
+
+(Outro)  
+Es la una, son las dos,  
+Reloj cantará veloz,  
+Con el ritmo de la hora,  
+¡Aprendes sin demora!

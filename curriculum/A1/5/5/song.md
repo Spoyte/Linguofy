@@ -23,3 +23,27 @@ Ser y estar cooperan,
 Entiende y canta hoy.  
 
 (Chorus)
+
+(Verse 3)  
+Somos altos, estamos listos,  
+Caracteres y emoción,  
+Ser dibuja la esencia,  
+Estar el corazón.  
+
+(Bridge)  
+Doctor y Place recuerdan,  
+D-O-C-T-O-R, P-L-A-C-E,  
+Ser y Estar cooperan,  
+¡Aprende su porqué!  
+
+(Chorus)  
+Place habla de estar,  
+Posición y emoción,  
+Acción, lugar, condición,  
+Siente la distinción.  
+
+(Outro)  
+Yo soy feliz estudiante,  
+Estoy en clase hoy,  
+Ser y estar en mi mente,  
+¡La lección quedó!

@@ -23,3 +23,27 @@ El domingo voy al parque,
 La semana pasé.  
 
 (Chorus)
+
+(Verse 3)  
+Viernes suena la guitarra,  
+Sábado trae el tambor,  
+Domingo calma la fiesta,  
+Lunes vuelve el calor.  
+
+(Bridge)  
+Siete días giran,  
+Rueda sin parar,  
+Del lunes hasta domingo,  
+¡Vamos a bailar!  
+
+(Chorus)  
+Viernes fiesta llega ya,  
+Sábado descanso dará,  
+Domingo sol brillará,  
+Los días vas a cantar.  
+
+(Outro)  
+Lunes, martes, miércoles,  
+Jueves y viernes también,  
+Sábado y domingo juntos,  
+¡La semana se ve bien!

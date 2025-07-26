@@ -23,3 +23,27 @@ El café está caliente,
 La mañana conduce.  
 
 (Chorus)
+
+(Verse 3)  
+Él está en la montaña,  
+Ella está junto al mar,  
+Estamos en esta clase,  
+¡Listos para cantar!  
+
+(Bridge)  
+Temporal y ubicación,  
+Estar describe sensación.  
+Recuerda acentos al hablar,  
+¡Estás listo para brillar!  
+
+(Chorus)  
+Estar para lugar y emoción,  
+Verbo de la situación.  
+Estoy, estás, está,  
+Canta y sentirás la verdad.  
+
+(Outro)  
+Estoy feliz de aprender,  
+Estás contento también,  
+Estamos juntos cantando,  
+¡La lección se ve bien!

@@ -23,3 +23,27 @@ Cuatro días de fiesta,
 ¡Diez sonrisas al nacer!  
 
 (Chorus)
+
+(Verse 3)  
+Once paso despacito,  
+Doce giro sin error,  
+Cuenta hasta veinte pronto,  
+Súbelo con amor.  
+
+(Bridge)  
+Sube y baja la escala,  
+Del diez vuelve a uno otra vez,  
+Los números hacen magia,  
+¡Memoriza al revés!  
+
+(Chorus)  
+Cuenta, cuenta sin estrés,  
+Del uno hasta el diez.  
+Baila cada número,  
+Memoriza a la vez.  
+
+(Outro)  
+Uno, dos, tres canté,  
+Hasta diez y más después,  
+Contar es divertido,  
+¡Aprenderé otra vez!
