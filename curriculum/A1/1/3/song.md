@@ -23,3 +23,27 @@ La mujer toma agua,
 El hombre ríe y va.  
 
 (Chorus)
+
+(Verse 3)  
+Los amigos en la calle,  
+Las amigas junto al mar,  
+Los libros sobre la mesa,  
+Las ideas al volar.  
+
+(Bridge)  
+Masculino, femenino,  
+Escucha la canción.  
+El artículo te guía,  
+Da contexto y precisión.  
+
+(Chorus)  
+El, la, los, las, aprende hoy,  
+Nombres con género, canto soy.  
+Masculino, femenino, así,  
+Sustantivos para ti.  
+
+(Outro)  
+El hombre y la mujer,  
+El niño y la niña van,  
+Canta siempre sustantivos,  
+¡Y no los olvidarás!

@@ -23,3 +23,27 @@ Son estudiantes alegres,
 Clase feliz tendrás.  
 
 (Chorus)
+
+(Verse 3)  
+Vosotros sois atletas,  
+Vosotras sois canción,  
+Ellos son exploradores,  
+Ellas son corazón.  
+
+(Bridge)  
+Plural y diversidad,  
+Ser nos hace brillar.  
+Conjugamos en unidad,  
+¡Y salimos a bailar!  
+
+(Chorus)  
+Ellos son, ellas son,  
+Ustedes son también.  
+Verbo ser en plural,  
+Baila y aprende bien.  
+
+(Outro)  
+Somos, sois, son,  
+La lección terminó.  
+Con plural ser cantamos,  
+Nuevo mundo empezó.

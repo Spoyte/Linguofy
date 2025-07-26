@@ -23,3 +23,27 @@ Tú vives con ilusión.
 Ella vive en canción.  
 
 (Chorus)
+
+(Verse 3)  
+Yo vivo con mi familia,  
+Tú vives junto al tren,  
+Él vive bajo las estrellas,  
+Ella vive muy bien.  
+
+(Bridge)  
+-o, -es, -e suenan,  
+Como latidos del ser.  
+Verbo vivir se aprende,  
+¡Cantando puede crecer!  
+
+(Chorus)  
+Vivir, vivir, sentir,  
+-o, -es, -e a latir.  
+Lugar y vida cantar,  
+¡Vive y sueña sin parar!  
+
+(Outro)  
+Vivo, vives, vive,  
+Vivimos en canción.  
+Conjugando "vivir",  
+Celebra el corazón.

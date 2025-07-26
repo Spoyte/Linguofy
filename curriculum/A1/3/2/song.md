@@ -22,4 +22,32 @@ Tú tienes gran pasión,
 Él tiene un sueño grande,  
 Ella tiene corazón.  
 
-(Chorus)
+(Chorus)  
+Tengo, tienes, tiene ya,  
+Verbo tener cantará.  
+Irregular pero gentil,  
+Aprende el cambio sutil.  
+
+(Verse 3)  
+Nosotros tenemos sueños,  
+Vosotros tenéis paz,  
+Ellos tienen aventuras,  
+Ellas tienen más.  
+
+(Bridge)  
+Cambio de raíz suena,  
+Ten- se vuelve tien-.  
+Recuerda forma y ritmo,  
+¡Tener se aprende bien!  
+
+(Chorus)  
+Tengo, tienes, tiene ya,  
+Verbo tener cantará.  
+Irregular pero gentil,  
+Aprende el cambio sutil.  
+
+(Outro)  
+Tengo, tienes, tiene,  
+¡Tenemos inspiración!  
+Con verbo tener cantado,  
+Se levanta la emoción.

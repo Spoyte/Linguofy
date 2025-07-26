@@ -23,3 +23,27 @@ La conjugación sencilla,
 ¡Listo para cenar!  
 
 (Chorus)
+
+(Verse 3)  
+Yo como queso y frutas,  
+Tú comes pan y miel,  
+Él come sopa caliente,  
+Ella come pastel.  
+
+(Bridge)  
+Conjugación sabrosa,  
+-o, -es, -e en acción.  
+Practica cada forma,  
+¡Baila esta canción!  
+
+(Chorus)  
+Comer, comer, energía,  
+-o, -es, -e melodía.  
+Sabores en cada voz,  
+¡Canta y come con los dos!  
+
+(Outro)  
+Después de la comida,  
+Sonrisas quedaré.  
+Cantar verbo "comer"  
+Siempre recordaré.

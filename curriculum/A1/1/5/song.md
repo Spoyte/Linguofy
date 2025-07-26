@@ -23,3 +23,27 @@ La niña buena sonriente,
 La historia simple y sutil.  
 
 (Chorus)
+
+(Verse 3)  
+El gato malo de noche,  
+La casa grande de luz,  
+El camino pequeño vibra,  
+Con colores en virtud.  
+
+(Bridge)  
+Acordamos género y número,  
+Regla fácil de aplicar.  
+Adjetivos bailan juntos,  
+¡Ven y vamos a cantar!  
+
+(Chorus)  
+Bueno/buena, malo/mala,  
+Grande, pequeño también.  
+Adjetivos que acompañan,  
+Al sustantivo muy bien.  
+
+(Outro)  
+El día frío se marcha,  
+El sol caliente vendrá.  
+Con adjetivos en ritmo,  
+¡La descripción vivirá!

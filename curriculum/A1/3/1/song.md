@@ -23,3 +23,27 @@ Sus planes vuelan alto,
 Nuestro ritmo se alzó.  
 
 (Chorus)
+
+(Verse 3)  
+Mis viajes por el mundo,  
+Tus fotos al amanecer.  
+Sus historias eternas,  
+Nuestros cantos al crecer.  
+
+(Bridge)  
+Propiedad que compartimos,  
+Mi, tu, su y más.  
+Con singular o plural,  
+El mensaje volará.  
+
+(Chorus)  
+Mi, tu, su, mis, tus, sus,  
+Propiedad que luces tú.  
+Singular y plural verás,  
+Con tu voz recordarás.  
+
+(Outro)  
+Mis palabras terminan ya,  
+Tus oídos guardarán.  
+Sus recuerdos de esta clase,  
+Siempre brillarán.

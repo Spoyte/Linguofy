@@ -23,3 +23,27 @@ La canción te ayuda,
 Bebe y di “salud” al fin.  
 
 (Chorus)
+
+(Verse 3)  
+Yo bebo leche fría,  
+Tú bebes limonada,  
+Él bebe agua de coco,  
+Ella bebe granada.  
+
+(Bridge)  
+Hidrata, pronuncia, siente,  
+-o, -es, -e es tu base.  
+Verbo beber presente,  
+Mantiene buen compás.  
+
+(Chorus)  
+Beber, beber, ritmo suave,  
+-o, -es, -e, la clave.  
+Hidratar y pronunciar,  
+Verbo fácil de cantar.  
+
+(Outro)  
+Bebo, bebes, bebe,  
+Refresco musical.  
+¡Salud con esta canción,  
+Aprendizaje natural!
