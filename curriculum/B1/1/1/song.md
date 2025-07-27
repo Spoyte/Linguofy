@@ -32,3 +32,9 @@ nuestro canto lo llamará:
 "Vendrás, vendrás…"
 
 [Repetir Estribillo]
+
+[Verso 3]  
+Cuando el cielo **abrirá** su color,  
+nuestros sueños **surgirán** sin temor.  
+Desde el norte **llegarás** hasta mí,  
+y en la aurora **brillará** el porvenir.
