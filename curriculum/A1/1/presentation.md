@@ -8,4 +8,5 @@ Welcome to Spanish! This first section will give you the essential building bloc
 *   **Lesson 2: Introductions:** Ask someone their name and tell them yours.
 *   **Lesson 3: Basic Nouns:** Discover your first nouns and the concept of masculine and feminine words.
 *   **Lesson 4: The Verb "Ser":** Learn the most important verb in Spanish, "to be," for permanent states.
-*   **Lesson 5: Basic Adjectives:** Learn how to describe things and make your adjectives agree with your nouns. 
+*   **Lesson 5: Basic Adjectives:** Learn how to describe things and make your adjectives agree with your nouns.
+*   **Lesson 6: Cultural Context:** Learn about greeting customs across Spanish-speaking countries. 
