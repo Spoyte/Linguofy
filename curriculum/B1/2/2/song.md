@@ -22,6 +22,12 @@ dónde el tiempo **haga** nido hoy.
 Tal vez la distancia **ponga**  
 mil razones para decir adiós.
 
+[Verso 3]  
+Quizá la mañana **vea**  
+el latido regresar,  
+es probable que la suerte **quiera**  
+una historia nueva empezar.
+
 [Puente]  
 Ojalá que el viento **traiga**  
 secretos para compartir.

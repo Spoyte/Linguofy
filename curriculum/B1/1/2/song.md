@@ -24,6 +24,12 @@ planes que todavía no ves.
 Tu mirada **valdrá** mi fe,  
 cuando el reloj grite "después".
 
+[Verso 3]  
+Cuando el deseo **querrá** florecer,  
+mi voz **dirá** lo que hay que saber.  
+El cielo **sabrá** de nuestro papel,  
+y todo **hará** que sea fiel.
+
 [Puente]  
 Si preguntas qué camino **sabrá** crecer,  
 te respondo: "El que **podremos** ver".

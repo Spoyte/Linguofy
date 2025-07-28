@@ -24,6 +24,12 @@ donde la tarde calló.
 **Pondríamos** risas concretas  
 sobre un futuro mejor.
 
+[Verso 3]  
+Si **hubiera** tiempo de sobra,  
+**podríamos** pintar el mar.  
+Yo **diría** mil historias,  
+si tú **quisieras** escuchar.
+
 [Puente]  
 Consejos del corazón:  
 "Si fuera tú, **cambiaría** de canción".

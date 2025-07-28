@@ -22,6 +22,12 @@ caminos para soñar,
 prefiero que el alba **llegue**  
 mientras todos **rían** sin parar.
 
+[Verso 3]  
+Ojalá que el viento **traiga**  
+mil secretos que contar,  
+es mejor que el alma **sienta**  
+y que nadie deje de amar.
+
 [Puente]  
 Quizá que la lluvia **caiga**  
 para que la tierra **cante** también.

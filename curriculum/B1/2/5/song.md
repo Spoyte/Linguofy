@@ -22,6 +22,12 @@ Ríe fuerte, **sé** tu mejor canción.
 **Dime** tus secretos, **dales** un lugar,  
 **Haz** que cada día vuelva a comenzar.
 
+[Verso 3]  
+**Busca** cada estrella, **tómala** al caer,  
+**Guarda** la risa, **luce** tu poder.  
+**Cuida** tus pasos, **piensa** en lo mejor,  
+y **disfruta** siempre el color.
+
 [Puente]  
 Cuando caigan los miedos,  
 **Ven** y **sigue** mi voz.  

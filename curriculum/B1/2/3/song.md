@@ -22,6 +22,12 @@ tal vez todo **cambie** de piel.
 **Dudo que** el silencio **pueda**  
 matar lo que el alma **guarda**.
 
+[Verso 3 – Deseos y Dudas]  
+**Sugiero que** la vida **cambie**,  
+**Recomiendo que** la fe **crezca**.  
+**Temo que** el miedo **dañe**,  
+si la esperanza se aleja.
+
 [Puente – Impersonal]  
 **Es importante que** tú **creas**,  
 **Es necesario que** yo **luche**.  

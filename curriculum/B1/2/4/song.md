@@ -25,6 +25,12 @@ Dama, **vaya** al centro a cantar.
 **Dé** una vuelta, **haga** el favor,  
 que el mundo espera su voz.
 
+[Verso 3]  
+Doctora, **examine** cada sueño,  
+Profesor, **enseñe** el rumor.  
+Señores, **vayan** al empeño,  
+y **hagan** del día un clamor.
+
 [Repetir Estribillo]
 
 [Puente]  

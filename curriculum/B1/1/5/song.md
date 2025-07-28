@@ -22,6 +22,12 @@ Porque yo **he guardado** tu amor.
 **han llegado** nuevas mañanas  
 que **han pintado** el corazón.
 
+[Verso 3]  
+**Han escrito** nuestros nombres  
+en la arena junto al mar.  
+**He guardado** los momentos  
+que jamás se van a borrar.
+
 [Puente]  
 Si todavía **no has probado** la miel de un beso veloz,  
 ven que juntos la haremos canción.

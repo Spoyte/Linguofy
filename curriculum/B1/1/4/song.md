@@ -23,6 +23,12 @@ ahorré tiempo **para** bailar.
 Gracias **por** tu risa compartida,  
 es regalo **para** cuidar.
 
+[Verso 3]  
+Canto versos **por** la memoria,  
+guardo notas **para** volar.  
+Vivo libre **por** la euforia  
+que me lleva **para** soñar.
+
 [Puente]  
 Duró la fiesta horas **por** la magia del lugar,  
 este recuerdo es **para** nunca olvidar.
