@@ -1,0 +1,45 @@
+{
+    "id": "4-2",
+    "title": "Mi Rutina (My Routine)",
+    "style": "Energetic Ska / Punk Pop, 140bpm. Brass section. Fast tempo. Chaos and energy. Morning sounds.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nLe réveil sonne, dring dring dring\nJe me réveille, Me despierto\nJe me lève vite, Me levanto\nPas de temps à perdre, c'est le tempo\n\n[Chorus]\nMe ducho, me visto\nJe me douche, je m'habille\nMe lavo los dientes\nEt je brille, je brille\nMi rutina, chaque matin\nC'est mon destin\n\n[Verse 2]\nJe prends le petit-déjeuner\nDesayuno café, allez\nJe vais au travail, Voy al trabajo\nJe cours, je cours, je suis pas un barjot\n\n[Chorus]\nMe ducho, me visto\nJe me douche, je m'habille\nMe lavo los dientes\nEt je brille, je brille\nMi rutina, chaque matin\nC'est mon destin\n\n[Bridge]\nEt le soir, Y por la noche\nMe acuesto, je me couche\nEnfin !\n\n[Outro]\nBuenas noches.\nMe duermo.\nZZZ...",
+        "mixed_en": "[Verse 1]\nThe alarm rings, ring ring ring\nI wake up, Me despierto\nI get up fast, Me levanto\nNo time to waste, let's go\n\n[Chorus]\nMe ducho, me visto\nI shower, I dress\nMe lavo los dientes\nLooking fresh, no less\nMi rutina, every day\nThis is the way\n\n[Verse 2]\nI eat my breakfast right away\nDesayuno café, start the day\nI go to work, Voy al trabajo\nRun run run, no time to slow\n\n[Chorus]\nMe ducho, me visto\nI shower, I dress\nMe lavo los dientes\nLooking fresh, no less\nMi rutina, every day\nThis is the way\n\n[Bridge]\nAnd at night, Y por la noche\nMe acuesto, I go to bed\nFinally!\n\n[Outro]\nBuenas noches.\nMe duermo.\nZZZ...",
+        "pure_es": "[Verse 1]\nSuena el reloj, ring ring ring\nMe despierto, ya estoy aquí\nMe levanto rápido, sí señor\nHoy va a ser un día mejor\n\n[Chorus]\nMe ducho, me visto\nRápido y listo\nMe lavo los dientes\nSonrisas valientes\nMi rutina, cada mañana\nSalgo por la ventana\n\n[Verse 2]\nDesayuno café y pan\nTodos a correr van\nVoy al trabajo, voy a estudiar\nNo puedo parar\n\n[Chorus]\nMe ducho, me visto\nRápido y listo\nMe lavo los dientes\nSonrisas valientes\nMi rutina, cada mañana\nSalgo por la ventana\n\n[Bridge]\nY por la noche, al final\nMe acuesto, nada mal\n¡Descansar!\n\n[Outro]\nBuenas noches.\nMe duermo.\nZZZ..."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Yo me _____ (wake up) a las siete.",
+            "options": [
+                "levanto",
+                "despierto",
+                "ducho"
+            ],
+            "correct": "despierto"
+        },
+        {
+            "id": "e2",
+            "type": "translate",
+            "question": "Translate: 'I shower'",
+            "correct": "Me ducho"
+        },
+        {
+            "id": "e3",
+            "type": "multiple_choice",
+            "question": "What is 'Desayuno'?",
+            "options": [
+                "Dinner",
+                "Breakfast",
+                "Lunch"
+            ],
+            "correct": "Breakfast"
+        }
+    ]
+}

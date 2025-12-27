@@ -1,0 +1,45 @@
+{
+    "id": "8-2",
+    "title": "Mueve el Cuerpo (Body)",
+    "style": "High Energy EDM, 128bpm. Workout style. Driving beat. Instructor shouting commands. Pump up music.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nAllez tout le monde, on bouge\nVamos a mover, on y va\nTouche ta tête, Toca tu cabeza\nTouche ton bras, Toca tu brazo\n\n[Chorus]\nCuerpo, Cuerpo, Mon corps\nMano, Mano, Ma main\nPie, Pie, Mon pied\nOn danse jusqu'à demain\n\n[Verse 2]\nLève la jambe, Levanta la pierna\nBouge les épaules, Mueve los hombros\nLes yeux, Los ojos\nLe nez, La nariz\n\n[Chorus]\nCuerpo, Cuerpo, Mon corps\nMano, Mano, Ma main\nPie, Pie, Mon pied\nOn danse jusqu'à demain\n\n[Bridge]\nPlus vite !\n¡Más rápido!\nLe cœur bat fort\nEl corazón\n\n[Outro]\nRespira.\nFini.\nBien hecho.",
+        "mixed_en": "[Verse 1]\nCome on everybody, let's move\nVamos a mover, find the groove\nTouch your head, Toca tu cabeza\nTouch your arm, Toca tu brazo, yeah\n\n[Chorus]\nCuerpo, Cuerpo, My body\nMano, Mano, My hand\nPie, Pie, My foot\nDancing across the land\n\n[Verse 2]\nLift your leg, Levanta la pierna\nMove shoulders, Mueve los hombros\nThe eyes, Los ojos\nThe nose, La nariz\n\n[Chorus]\nCuerpo, Cuerpo, My body\nMano, Mano, My hand\nPie, Pie, My foot\nDancing across the land\n\n[Bridge]\nFaster!\n¡Más rápido!\nHeart beating\nEl corazón\n\n[Outro]\nBreathe.\nDone.\nGood job.",
+        "pure_es": "[Verse 1]\n¡Atención! Vamos a entrenar\nNadie puede parar\nToca tu cabeza ahora\nEs la hora, es la hora\n\n[Chorus]\nCuerpo, Cuerpo, Mueve el cuerpo\nMano arriba, Mano abajo\nPie derecho, Pie izquierdo\nEsto no es trabajo\n\n[Verse 2]\nLevanta la pierna, vamos ya\nMueve los hombros, cha cha cha\nLos ojos abiertos, mira bien\nLa nariz, la boca también\n\n[Chorus]\nCuerpo, Cuerpo, Mueve el cuerpo\nMano arriba, Mano abajo\nPie derecho, Pie izquierdo\nEsto no es trabajo\n\n[Bridge]\nSiente el ritmo\nSiente el corazón\n¡Acción!\n\n[Outro]\nRespira.\nBien hecho.\nDescansa."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "multiple_choice",
+            "question": "What is 'Cabeza'?",
+            "options": [
+                "Hand",
+                "Head",
+                "Foot"
+            ],
+            "correct": "Head"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "Levanta la _____ (hand).",
+            "options": [
+                "mano",
+                "pie",
+                "nariz"
+            ],
+            "correct": "mano"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'Move the body'",
+            "correct": "Mueve el cuerpo"
+        }
+    ]
+}

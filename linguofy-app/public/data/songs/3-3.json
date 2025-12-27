@@ -1,0 +1,45 @@
+{
+    "id": "3-3",
+    "title": "En Mi Casa (My House)",
+    "style": "Relaxed Cumbia, 95bpm. Accordion, guiro scraper rhythm. Playful and homey. Male or female vocals.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nBienvenue chez moi, entrez vite\nTelle est ma maison, je vous invite\nVoici ma maison, Esta es mi casa\nC'est ici que tout se passe\n\n[Chorus]\nDans ma maison, En mi casa\nJ'ai un chien, Tengo un perro\nDans ta maison, En tu casa\nTu as un chat, Tienes un gato\n\n[Verse 2]\nVoici ma chambre, mon petit lit\nMi dormitorio, c'est joli\nVoici la cuisine, pour manger\nLa cocina, pour partager\n\n[Chorus]\nDans ma maison, En mi casa\nJ'ai un chien, Tengo un perro\nDans ta maison, En tu casa\nTu as un chat, Tienes un gato\n\n[Bridge]\nMon jardin est vert, Mi jardín\nC'est la fin du chemin\nNous sommes bien ici\n\n[Outro]\nMi casa es tu casa.\nBienvenido.\n¡Adiós!",
+        "mixed_en": "[Verse 1]\nWelcome to my place, come inside\nThis is my home, open wide\nThis is my house, Esta es mi casa\nMake yourself at home, mi casa\n\n[Chorus]\nIn my house, En mi casa\nI have a dog, Tengo un perro\nIn your house, En tu casa\nYou have a cat, Tienes un gato\n\n[Verse 2]\nHere is my bedroom, where I sleep\nMi dormitorio, dreams I keep\nHere is the kitchen, cooking food\nLa cocina, smelling good\n\n[Chorus]\nIn my house, En mi casa\nI have a dog, Tengo un perro\nIn your house, En tu casa\nYou have a cat, Tienes un gato\n\n[Bridge]\nMy garden is green, Mi jardín\nWhere the flowers contain\nWe are happy here\n\n[Outro]\nMi casa es tu casa.\nWelcome friend.\n¡Adiós!",
+        "pure_es": "[Verse 1]\nBienvenidos todos, pasen ya\nEsta es mi casa, de verdad\nAquí vivo yo, con ilusión\nEsta es mi casa, mi corazón\n\n[Chorus]\nEn mi casa, aquí estoy\nTengo un perro, donde voy\nEn tu casa, allá estás\nTienes un gato, y mucho más\n\n[Verse 2]\nMi dormitorio, para dormir\nLa cocina, para reír\nLa sala grande, para estar\nTodo listo para disfrutar\n\n[Chorus]\nEn mi casa, aquí estoy\nTengo un perro, donde voy\nEn tu casa, allá estás\nTienes un gato, y mucho más\n\n[Bridge]\nMi jardín es verde y sol\nEs mi lugar, mi caracol\nEstamos bien\n\n[Outro]\nMi casa es tu casa.\nBienvenidos.\n¡Adiós!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "translate",
+            "question": "Translate: 'My house'",
+            "correct": "Mi casa"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "Tengo un _____ (dog).",
+            "options": [
+                "gato",
+                "perro",
+                "casa"
+            ],
+            "correct": "perro"
+        },
+        {
+            "id": "e3",
+            "type": "multiple_choice",
+            "question": "Where do you cook?",
+            "options": [
+                "El dormitorio",
+                "La cocina",
+                "El jardín"
+            ],
+            "correct": "La cocina"
+        }
+    ]
+}

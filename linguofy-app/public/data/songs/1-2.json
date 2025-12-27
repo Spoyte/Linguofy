@@ -1,0 +1,45 @@
+{
+    "id": "1-2",
+    "title": "Quién Soy Yo (Who Am I)",
+    "style": "Acoustic Folk, 95bpm. Warm, intimate atmosphere. Fingerstyle guitar intro. Soft, storytelling male or female vocals. Gentle percussion building in the chorus. Organic textures.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nDans le miroir, qui est là?\nJe me regarde, je ne sais pas\nJe suis un homme, je suis un roi?\nDis-moi la vérité, s'il te plaît\n\n[Chorus]\nYo soy... qui je suis vraiment\nTú eres... mon ami, mon amour\nYo soy un estudiante, c'est important\nTú eres interesante, pour toujours\n\n[Verse 2]\nJe suis médecin ou professeur?\nJe cherche ma route, je cherche mon cœur\nToi tu es belle, toi tu es forte\nOuvre-moi vite ta porte\n\n[Chorus]\nYo soy... qui je suis vraiment\nTú eres... mon ami, mon amour\nYo soy un estudiante, c'est important\nTú eres interesante, pour toujours\n\n[Bridge]\nÊtre ou ne pas être, c'est la question\nSer o no ser, c'est la leçon\nNous sommes ici, Nosotros somos\n\n[Outro]\nYo soy feliz.\nTú eres mi luz.\n¡Adiós!",
+        "mixed_en": "[Verse 1]\nIn the mirror, who do I see?\nLooking back, right at me\nAm I a man, am I a king?\nTell me the truth, tell me everything\n\n[Chorus]\nYo soy... who I truly am\nTú eres... my friend, my jam\nYo soy un estudiante, here I stand\nTú eres interesante, take my hand\n\n[Verse 2]\nAm I a doctor or teacher too?\nSearching for my heart, searching for you\nYou are beautiful, you are strong\nOpen the door, where I belong\n\n[Chorus]\nYo soy... who I truly am\nTú eres... my friend, my jam\nYo soy un estudiante, here I stand\nTú eres interesante, take my hand\n\n[Bridge]\nTo be or not to be, that is the way\nSer o no ser, is what we say\nWe are here, Nosotros somos\n\n[Outro]\nYo soy feliz.\nTú eres mi luz.\n¡Adiós!",
+        "pure_es": "[Verse 1]\nEn el espejo, ¿quién está?\nMe miro y busco la verdad\n¿Soy un hombre, soy un rey?\nDímelo tú, es la ley\n\n[Chorus]\nYo soy... quien soy en realidad\nTú eres... mi amigo de verdad\nYo soy un estudiante, y nada más\nTú eres interesante, y mucho más\n\n[Verse 2]\n¿Soy doctor o profesor?\nBusco mi rumbo, con amor\nTú eres bella, tú eres fuerte\nTengo mucha suerte\n\n[Chorus]\nYo soy... quien soy en realidad\nTú eres... mi amigo de verdad\nYo soy un estudiante, y nada más\nTú eres interesante, y mucho más\n\n[Bridge]\nSer o no ser, esa es la cuestión\nSer o no ser, la lección\nNosotros somos, aquí estamos\n\n[Outro]\nYo soy feliz.\nTú eres mi luz.\n¡Adiós!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "multiple_choice",
+            "question": "Translate: 'Yo soy'",
+            "options": [
+                "You are",
+                "I am",
+                "He is"
+            ],
+            "correct": "I am"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "Tú _____ interesante.",
+            "options": [
+                "soy",
+                "eres",
+                "es"
+            ],
+            "correct": "eres"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'We are here' (Bridge)",
+            "correct": "Nosotros somos aquí"
+        }
+    ]
+}

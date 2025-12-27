@@ -1,0 +1,45 @@
+{
+    "id": "3-2",
+    "title": "Ella es Alta (Descriptions)",
+    "style": "Upbeat Salsa, 100bpm. Horn section, latin percussion (congas). Energetic vocals. Danceable and rhythmic.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nRegarde la fille là-bas qui danse\nElle est grande, quelle élégance\nElla es alta, elle est grande\nElla es guapa, elle est belle\n\n[Chorus]\nIl est petit, Él es bajo\nElle est grande, Ella es alta\nNous sommes forts, Somos fuertes\nC'est la fête, c'est la chance\n\n[Verse 2]\nMon ami est blond, il est marrant\nMi amigo es rubio, c'est épatant\nMa copine est brune, elle est sympa\nMi amiga es morena, elle est là\n\n[Chorus]\nIl est petit, Él es bajo\nElle est grande, Ella es alta\nNous sommes forts, Somos fuertes\nC'est la fête, c'est la chance\n\n[Bridge]\nComment tu es? ¿Cómo eres?\nJe suis intelligent ! Soy inteligente.\n\n[Outro]\nGuapo, Guapa.\nAlto, Bajo.\n¡Así somos!",
+        "mixed_en": "[Verse 1]\nLook at the girl dancing there\nShe is tall, with long hair\nElla es alta, she is tall\nElla es guapa, belle of the ball\n\n[Chorus]\nHe is short, Él es bajo\nShe is tall, Ella es alta\nWe are strong, Somos fuertes\nDancing all night long\n\n[Verse 2]\nMy friend is blonde, he's cool you know\nMi amigo es rubio, watch him go\nMy friend is dark-haired, looking fine\nMi amiga es morena, friend of mine\n\n[Chorus]\nHe is short, Él es bajo\nShe is tall, Ella es alta\nWe are strong, Somos fuertes\nDancing all night long\n\n[Bridge]\nWhat are you like? ¿Cómo eres?\nI am smart! Soy inteligente.\n\n[Outro]\nGuapo, Guapa.\nAlto, Bajo.\n¡That's us!",
+        "pure_es": "[Verse 1]\nMira la chica que baila allí\nEs muy alta, la vi\nElla es alta, mírala\nElla es guapa, que linda\n\n[Chorus]\nÉl es bajo, no es alto\nElla es alta, da un salto\nSomos fuertes, de verdad\nFelicidad y amistad\n\n[Verse 2]\nMi amigo es rubio, genio es\nMi amigo es rubio, ya lo ves\nMi amiga es morena, aquí está\nMi amiga es morena, bailará\n\n[Chorus]\nÉl es bajo, no es alto\nElla es alta, da un salto\nSomos fuertes, de verdad\nFelicidad y amistad\n\n[Bridge]\n¿Cómo eres tú? \nSoy inteligente.\n¿Cómo eres tú?\n\n[Outro]\nGuapo, Guapa.\nAlto, Bajo.\n¡Así somos!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "multiple_choice",
+            "question": "What does 'Alta' mean (feminine)?",
+            "options": [
+                "Short",
+                "Tall",
+                "Blonde"
+            ],
+            "correct": "Tall"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "Él _____ (Ser) bajo.",
+            "options": [
+                "eres",
+                "es",
+                "soy"
+            ],
+            "correct": "es"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'We are strong'",
+            "correct": "Somos fuertes"
+        }
+    ]
+}

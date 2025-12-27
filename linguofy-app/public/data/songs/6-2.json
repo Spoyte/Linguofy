@@ -1,0 +1,45 @@
+{
+    "id": "6-2",
+    "title": "¿Dónde Está? (Directions)",
+    "style": "Urban Hip Hop / Lo-fi, 88bpm. Heavy kick drum. Chill vibe. Spoken word sections (GPS style). Modern city feel.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nJe suis perdu dans la ville\nEstoy perdido, c'est pas facile\nPardon, monsieur, s'il vous plaît\n¿Dónde está el museo? Je veux y aller\n\n[Chorus]\nA la izquierda, à gauche\nA la derecha, à droite\nTodo recto, tout droit\nEl banco está allí, tu vois\n\n[Verse 2]\nJe cherche la gare, le train\nBusco la estación, c'est loin ?\nTournez ici, c'est le chemin\nGira aquí, c'est le destin\n\n[Chorus]\nA la izquierda, à gauche\nA la derecha, à droite\nTodo recto, tout droit\nEl banco está allí, tu vois\n\n[Bridge]\nLe GPS dit : Recalculer\nEl mapa dice : Vamos a ver\nNous sommes arrivés\n\n[Outro]\nEstá aquí.\nMira.\nLlegamos.",
+        "mixed_en": "[Verse 1]\nI'm lost inside the city lights\nEstoy perdido, in the heights\nExcuse me sir, can you say\n¿Dónde está el museo? Which way?\n\n[Chorus]\nA la izquierda, to the left\nA la derecha, to the right\nTodo recto, straight ahead\nEl banco está allí, shining bright\n\n[Verse 2]\nI'm looking for the station now\nBusco la estación, tell me how\nTurn right here, down the street\nGira aquí, move your feet\n\n[Chorus]\nA la izquierda, to the left\nA la derecha, to the right\nTodo recto, straight ahead\nEl banco está allí, shining bright\n\n[Bridge]\nThe GPS says: Recalculating\nEl mapa dice: No more waiting\nWe have arrived\n\n[Outro]\nEstá aquí.\nLook.\nWe made it.",
+        "pure_es": "[Verse 1]\nEstoy perdido en la ciudad\nBusco una oportunidad\nPerdón, señora, por favor\n¿Dónde está el doctor?\n\n[Chorus]\nA la izquierda, luego vas\nA la derecha, y verás\nTodo recto, sigue así\nEl lugar está allí\n\n[Verse 2]\nBusco el hotel, busco el mar\n¿Dónde puedo descansar?\nGira aquí, en la esquina\nCerca de la oficina\n\n[Chorus]\nA la izquierda, luego vas\nA la derecha, y verás\nTodo recto, sigue así\nEl lugar está allí\n\n[Bridge]\nMira el mapa\nSigue el mapa\nYa llegamos\n\n[Outro]\nEstá aquí.\nAquí mismo.\nLlegamos."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "multiple_choice",
+            "question": "What is 'Izquierda'?",
+            "options": [
+                "Right",
+                "Left",
+                "Straight"
+            ],
+            "correct": "Left"
+        },
+        {
+            "id": "e2",
+            "type": "translate",
+            "question": "Translate: 'Where is the museum?'",
+            "correct": "¿Dónde está el museo?"
+        },
+        {
+            "id": "e3",
+            "type": "fill_blank",
+            "question": "Sigue todo _____ (straight).",
+            "options": [
+                "recto",
+                "curva",
+                "atrás"
+            ],
+            "correct": "recto"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": "5-2",
+    "title": "Juego al Fútbol (Sports)",
+    "style": "Arena Rock Anthem, 130bpm. Heavy drums, electric guitars. Crowd chanting. Energetic and powerful.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nLe stade est plein, l'énergie monte\nJe prends le ballon, plus rien ne compte\nJe joue au foot, Juego al fútbol\nJe marque un but ! ¡Un gol!\n\n[Chorus]\n¡Juego ! ¡Juego ! I play !\n¡Toco ! ¡Toco ! I play (music) !\nJuego al tenis, Toco la guitarra\nC'est ma passion, c'est ma bagarre\n\n[Verse 2]\nJe fais du sport, Hago deporte\nPour être fort, ouvrir la porte\nJe joue aux jeux vidéo\nJuego a videojuegos, c'est beau\n\n[Chorus]\n¡Juego ! ¡Juego ! I play !\n¡Toco ! ¡Toco ! I play (music) !\nJuego al tenis, Toco la guitarra\nC'est ma passion, c'est ma bagarre\n\n[Bridge]\nOn est champions\nSomos campeones\n¡Campeones!\n\n[Outro]\n¡Gol!\n¡Gol!\n¡Ganamos!",
+        "mixed_en": "[Verse 1]\nThe stadium is full, feel the heat\nI take the ball, move my feet\nI play soccer, Juego al fútbol\nI score a goal! ¡Un gol!\n\n[Chorus]\n¡Juego ! ¡Juego ! I play !\n¡Toco ! ¡Toco ! I play (music) !\nJuego al tenis, Toco la guitarra\nIt's my passion, raising the bar\n\n[Verse 2]\nI do sports, Hago deporte\nStaying strong, holds the fort\nI play video games all night\nJuego a videojuegos, feels right\n\n[Chorus]\n¡Juego ! ¡Juego ! I play !\n¡Toco ! ¡Toco ! I play (music) !\nJuego al tenis, Toco la guitarra\nIt's my passion, raising the bar\n\n[Bridge]\nWe are champions\nSomos campeones\n¡Champions!\n\n[Outro]\n¡Gol!\n¡Gol!\n¡We win!",
+        "pure_es": "[Verse 1]\nEl estadio grita, qué emoción\nTengo el balón, soy el campeón\nJuego al fútbol con pasión\nMeto un gol, qué sensación\n\n[Chorus]\n¡Juego! ¡Juego! ¡Sí!\n¡Toco! ¡Toco! ¡Aquí!\nJuego al tenis, Toco la guitarra\nMi pasión nunca para\n\n[Verse 2]\nHago deporte cada día\nMe siento fuerte, qué alegría\nJuego a videojuegos también\nMe divierto muy bien\n\n[Chorus]\n¡Juego! ¡Juego! ¡Sí!\n¡Toco! ¡Toco! ¡Aquí!\nJuego al tenis, Toco la guitarra\nMi pasión nunca para\n\n[Bridge]\nSomos campeones\nSomos campeones\n¡Olé!\n\n[Outro]\n¡Gol!\n¡Gol!\n¡Ganamos!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Yo _____ (play) al fútbol.",
+            "options": [
+                "toco",
+                "juego",
+                "hago"
+            ],
+            "correct": "juego"
+        },
+        {
+            "id": "e2",
+            "type": "multiple_choice",
+            "question": "What verb is used for instruments (Guitarra)?",
+            "options": [
+                "Jugar",
+                "Tocar",
+                "Hacer"
+            ],
+            "correct": "Tocar"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'We are champions'",
+            "correct": "Somos campeones"
+        }
+    ]
+}

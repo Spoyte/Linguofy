@@ -1,0 +1,45 @@
+{
+    "id": "5-1",
+    "title": "A Mí Me Gusta (I Like It)",
+    "style": "Smooth RnB, 90bpm. Finger snaps. Soulful vocals. Romantic but cool. Harmonious backing vocals.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nDis-moi ce que tu aimes, ma belle\nHablame, dis-moi la nouvelle\nTu aimes la musique ?\n¿Te gusta la música ? C'est magique\n\n[Chorus]\nA mí me gusta bailar\nJ'aime danser avec toi\nA tí te gusta cantar\nTu aimes chanter pour moi\nNos gusta vivir\nNous aimons vivre, c'est ça\n\n[Verse 2]\nJ'aime le chocolat, Me gusta el chocolate\nJ'aime les plages, Me gustan las playas\nTu n'aimes pas la pluie\nNo te gusta la lluvia, c'est la vie\n\n[Chorus]\nA mí me gusta bailar\nJ'aime danser avec toi\nA tí te gusta cantar\nTu aimes chanter pour moi\nNos gusta vivir\nNous aimons vivre, c'est ça\n\n[Bridge]\nJ'aime tout de toi\nMe gusta todo de ti\nTout.\n\n[Outro]\nMe gustas tú.\nMe gustas tú.\nYeah.",
+        "mixed_en": "[Verse 1]\nTell me what you like, my dear\nHablame, tell me loud and clear\nDo you like the music playing?\n¿Te gusta la música? What are you saying?\n\n[Chorus]\nA mí me gusta bailar\nI like to dance with you\nA tí te gusta cantar\nYou like to sing it true\nNos gusta vivir\nWe like to live, we do\n\n[Verse 2]\nI like chocolate, Me gusta el chocolate\nI like beaches, Me gustan las playas\nYou don't like the rain\nNo te gusta la lluvia, what a pain\n\n[Chorus]\nA mí me gusta bailar\nI like to dance with you\nA tí te gusta cantar\nYou like to sing it true\nNos gusta vivir\nWe like to live, we do\n\n[Bridge]\nI like everything about you\nMe gusta todo de ti\nEverything.\n\n[Outro]\nMe gustas tú.\nMe gustas tú.\nYeah.",
+        "pure_es": "[Verse 1]\nDime qué te gusta hoy\nHáblame, donde voy\n¿Te gusta la música así?\n¿Te gusta estar aquí?\n\n[Chorus]\nA mí me gusta bailar\nMe gusta el ritmo del mar\nA ti te gusta cantar\nTu voz me hace soñar\nNos gusta vivir\nNos gusta reír\n\n[Verse 2]\nMe gusta el chocolate, dulce sabor\nMe gustan las playas, y el sol\nNo te gusta la lluvia, lo sé\nNo te gusta el frío, ¿por qué?\n\n[Chorus]\nA mí me gusta bailar\nMe gusta el ritmo del mar\nA ti te gusta cantar\nTu voz me hace soñar\nNos gusta vivir\nNos gusta reír\n\n[Bridge]\nMe gusta todo de ti\nTodo de ti\nSí, sí\n\n[Outro]\nMe gustas tú.\nMe gustas tú.\nYeah."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "A mí me _____ (like) bailar.",
+            "options": [
+                "gustas",
+                "gusta",
+                "gustan"
+            ],
+            "correct": "gusta"
+        },
+        {
+            "id": "e2",
+            "type": "multiple_choice",
+            "question": "Translate: 'No te gusta'",
+            "options": [
+                "I don't like",
+                "You don't like",
+                "We don't like"
+            ],
+            "correct": "You don't like"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'I like beaches' (Plural)",
+            "correct": "Me gustan las playas"
+        }
+    ]
+}

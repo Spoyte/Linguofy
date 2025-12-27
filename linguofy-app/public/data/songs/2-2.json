@@ -1,0 +1,45 @@
+{
+    "id": "2-2",
+    "title": "¿Qué Hay? (What Is There?)",
+    "style": "Smooth Jazz Mystery, 85bpm. Double bass, finger snaps, saxophone noir style. Whispered vocals intro. Mysterious but playful atmosphere.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nDans le salon, je cherche un chat\nEst-ce qu'il est ici? Je ne sais pas\nJe regarde sous la table, doucement\nQu'est-ce qu'il y a? Dis-moi maintenant\n\n[Chorus]\n¿Qué hay? Qu'est-ce qu'il y a?\nHay un gato. Il y a un chat.\n¿Qué hay en la casa?\nHay una mesa. Il y a une table.\n\n[Verse 2]\nDans la cuisine, il y a du pain\nHay pan, et ça sent bien\nIl n'y a pas de lait, c'est dommage\nNo hay leche, pas de fromage\n\n[Chorus]\n¿Qué hay? Qu'est-ce qu'il y a?\nHay un gato. Il y a un chat.\n¿Qué hay en la casa?\nHay una mesa. Il y a une table.\n\n[Bridge]\nIl y a beaucoup de choses ici\nHay muchas cosas para ti\n\n[Outro]\n¿Hay un secreto?\nSí, hay un secreto.\nShh...",
+        "mixed_en": "[Verse 1]\nIn the living room, looking for a cat\nIs he hiding here? Where is he at?\nI look under the table, quietly\nWhat is there? Tell me what you see\n\n[Chorus]\n¿Qué hay? What is there?\nHay un gato. There is a cat.\n¿Qué hay en la casa?\nHay una mesa. There is a table.\n\n[Verse 2]\nIn the kitchen, there is some bread\nHay pan, is what I said\nThere isn't any milk, what a shame\nNo hay leche, it's not a game\n\n[Chorus]\n¿Qué hay? What is there?\nHay un gato. There is a cat.\n¿Qué hay en la casa?\nHay una mesa. There is a table.\n\n[Bridge]\nThere are many things to see\nHay muchas cosas for you and me\n\n[Outro]\n¿Hay un secreto?\nSí, hay un secreto.\nShh...",
+        "pure_es": "[Verse 1]\nEn la sala, busco un gato\n¿Dónde está? Paso el rato\nMiro bajo la mesa, despacito\n¿Qué hay ahí? Dímelo prontito\n\n[Chorus]\n¿Qué hay? ¿Qué hay aquí?\nHay un gato. Para ti.\n¿Qué hay en la casa?\nHay una mesa. Y una taza.\n\n[Verse 2]\nEn la cocina, hay buen pan\nHay pan, todos comerán\nNo hay leche, qué pena da\nNo hay leche, se acabó ya\n\n[Chorus]\n¿Qué hay? ¿Qué hay aquí?\nHay un gato. Para ti.\n¿Qué hay en la casa?\nHay una mesa. Y una taza.\n\n[Bridge]\nHay muchas cosas que ver\nHay mucho por hacer\n\n[Outro]\n¿Hay un secreto?\nSí, hay un secreto.\nShh..."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "translate",
+            "question": "Translate: 'There is a cat'",
+            "correct": "Hay un gato"
+        },
+        {
+            "id": "e2",
+            "type": "multiple_choice",
+            "question": "What is 'Mesa'?",
+            "options": [
+                "Chair",
+                "Table",
+                "House"
+            ],
+            "correct": "Table"
+        },
+        {
+            "id": "e3",
+            "type": "fill_blank",
+            "question": "No _____ leche.",
+            "options": [
+                "soy",
+                "hay",
+                "es"
+            ],
+            "correct": "hay"
+        }
+    ]
+}

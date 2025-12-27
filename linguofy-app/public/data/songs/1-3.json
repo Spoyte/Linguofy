@@ -1,0 +1,45 @@
+{
+    "id": "1-3",
+    "title": "¿Cómo Estás? (How Are You?)",
+    "style": "Relaxed Reggae, 80bpm. Chill island vibe. Deep bassline, offbeat guitar skank. Smooth, soulful vocals. Laid back atmosphere.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nJe marche doucement sur le sable chaud\nLa vie est simple, il fait beau\nJe te vois venir avec ton sourire\nEt j'ai envie de te dire\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nJe suis bien, ¡Estoy bien!\nTu es triste? ¿Estás mal?\nNon, tout va bien, ¡Todo bien!\n\n[Verse 2]\nParfois je suis fatigué, c'est vrai\nMais aujourd'hui je suis prêt\nÀ chanter et à danser\nLaisse tes soucis de côté\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nJe suis bien, ¡Estoy bien!\nTu es triste? ¿Estás mal?\nNon, tout va bien, ¡Todo bien!\n\n[Bridge]\nNous sommes heureux, Estamos felices\nIls sont contents, Están contentos\nLa vie est une fête\n\n[Outro]\n¡Estoy muy bien!\n¿Y tú?\n¡Hasta luego!",
+        "mixed_en": "[Verse 1]\nWalking slowly on the sand today\nLife is simple in every way\nI see you coming with a smile so wide\nChecking the vibe, turning the tide\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nI am good, ¡Estoy bien!\nAre you sad? ¿Estás mal?\nNo, all is good, ¡Todo bien!\n\n[Verse 2]\nSometimes I'm tired, yes it's true\nBut today I'm ready, me and you\nTo sing and dance the night away\nForget your worries, it's okay\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nI am good, ¡Estoy bien!\nAre you sad? ¿Estás mal?\nNo, all is good, ¡Todo bien!\n\n[Bridge]\nWe are happy, Estamos felices\nThey are happy, Están contentos\nLife is a party\n\n[Outro]\n¡Estoy muy bien!\n¿Y tú?\n¡Hasta luego!",
+        "pure_es": "[Verse 1]\nCamino lento en la arena hoy\nLa vida es simple, donde voy\nTe veo venir, sonríes así\nY quiero decirte a ti\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nYo estoy bien, ¡Estoy bien!\n¿Estás triste? ¿Estás mal?\nNo, todo bien, ¡Todo bien!\n\n[Verse 2]\nA veces cansado, es la verdad\nPero hoy hay felicidad\nPara cantar y bailar\nDeja las penas pasar\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nYo estoy bien, ¡Estoy bien!\n¿Estás triste? ¿Estás mal?\nNo, todo bien, ¡Todo bien!\n\n[Verse 2]\nA veces cansado, es la verdad\nPero hoy hay felicidad\nPara cantar y bailar\nDeja las penas pasar\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nYo estoy bien, ¡Estoy bien!\n¿Estás triste? ¿Estás mal?\nNo, todo bien, ¡Todo bien!\n\n[Bridge]\nEstamos felices, así es\nEstán contentos, ya lo ves\nLa vida es buena\n\n[Outro]\n¡Estoy muy bien!\n¿Y tú?\n¡Hasta luego!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "multiple_choice",
+            "question": "How do you say 'How are you?'",
+            "options": [
+                "¿Quién eres?",
+                "¿Cómo estás?",
+                "¿Dónde estás?"
+            ],
+            "correct": "¿Cómo estás?"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "No, todo va bien, ¡_____ bien!",
+            "options": [
+                "Nada",
+                "Todo",
+                "Algo"
+            ],
+            "correct": "Todo"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'I am good' (Estar)",
+            "correct": "Estoy bien"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": "7-1",
+    "title": "Ayer (Yesterday)",
+    "style": "Nostalgic Rock Ballad, 80bpm. Acoustic guitar intro building to electric. Raspy male vocals. Melancholic but powerful.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nHier j'ai parlé à Marie\nAyer hablé con María, ma vie\nJ'ai dansé toute la nuit\nBailé toda la noche, sans bruit\n\n[Chorus]\nAyer... tout a changé\nAyer... todo cambió\nJ'ai chanté, Canté une chanson\nJ'ai aimé, Amé avec passion\n\n[Verse 2]\nJ'ai regardé la lune hier soir\nMiré la luna, dans le noir\nJ'ai travaillé dur, c'est vrai\nTrabajé duro, je le sais\n\n[Chorus]\nAyer... tout a changé\nAyer... todo cambió\nJ'ai chanté, Canté une chanson\nJ'ai aimé, Amé avec passion\n\n[Bridge]\nLe passé est passé\nEl pasado pasó\nMais je me souviens\n\n[Outro]\nHablé.\nBailé.\nCanté.",
+        "mixed_en": "[Verse 1]\nYesterday I talked to Mary\nAyer hablé con María, getting scary\nI danced all night long\nBailé toda la noche, like a song\n\n[Chorus]\nAyer... everything changed\nAyer... todo cambió\nI sang, Canté a melody\nI loved, Amé set me free\n\n[Verse 2]\nI looked at the moon last night\nMiré la luna, shining bright\nI worked hard, yes I did\nTrabajé duro, no forbid\n\n[Chorus]\nAyer... everything changed\nAyer... todo cambió\nI sang, Canté a melody\nI loved, Amé set me free\n\n[Bridge]\nThe past is gone\nEl pasado pasó\nBut I remember\n\n[Outro]\nHablé.\nBailé.\nCanté.",
+        "pure_es": "[Verse 1]\nAyer hablé con el viento\nEscuché su lamento\nBailé con la sombra así\nFue lo que sentí\n\n[Chorus]\nAyer... todo cambió\nAyer... el sol se escondió\nCanté una canción de amor\nAmé con todo mi dolor\n\n[Verse 2]\nMiré las estrellas brillar\nEmpecé a recordar\nTrabajé en mi corazón\nBusqué la razón\n\n[Chorus]\nAyer... todo cambió\nAyer... el sol se escondió\nCanté una canción de amor\nAmé con todo mi dolor\n\n[Bridge]\nEl pasado ya se fue\nPero yo me quedé\nRecordando\n\n[Outro]\nHablé.\nBailé.\nCanté."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Yo _____ (speak/talked) con ella.",
+            "options": [
+                "hablo",
+                "hablé",
+                "habló"
+            ],
+            "correct": "hablé"
+        },
+        {
+            "id": "e2",
+            "type": "multiple_choice",
+            "question": "Select the past tense of Bailar (Yo):",
+            "options": [
+                "Bailo",
+                "Bailé",
+                "Baila"
+            ],
+            "correct": "Bailé"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'Yesterday'",
+            "correct": "Ayer"
+        }
+    ]
+}

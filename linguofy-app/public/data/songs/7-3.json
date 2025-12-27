@@ -1,0 +1,45 @@
+{
+    "id": "7-3",
+    "title": "El Mejor Día (Irregulars)",
+    "style": "Energetic Pop Anthem, 128bpm. Driving beat. Uplifting chorus. Triumphant mood. Guitar solo.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nHier j'ai fait la fête\nAyer hice una fiesta, c'est chouette\nJe suis allé à la mer\nFui al mar, quel air\n\n[Chorus]\nFui, Tuve, Hice\nJe suis allé, J'ai eu, J'ai fait\nFue un día genial\nC'était un jour spécial\n\n[Verse 2]\nJ'ai eu de la chance\nTuve suerte, quelle danse\nJ'ai été heureux\nEstuve feliz, c'est mieux\n\n[Chorus]\nFui, Tuve, Hice\nJe suis allé, J'ai eu, J'ai fait\nFue un día genial\nC'était un jour spécial\n\n[Bridge]\nTout était parfait\nTodo fue perfecto\nJe ne regrette rien\n\n[Outro]\nFui.\nTuve.\n¡Hice!",
+        "mixed_en": "[Verse 1]\nYesterday I made a plan\nAyer hice un plan, my man\nI went to the sea\nFui al mar, wild and free\n\n[Chorus]\nFui, Tuve, Hice\nI went, I had, I made\nFue un día genial\nIt was a special day\n\n[Verse 2]\nI had so much luck\nTuve suerte, never stuck\nI was happy there\nEstuve feliz, in the air\n\n[Chorus]\nFui, Tuve, Hice\nI went, I had, I made\nFue un día genial\nIt was a special day\n\n[Bridge]\nEverything was perfect\nTodo fue perfecto\nNo regrets\n\n[Outro]\nFui.\nTuve.\nHice!",
+        "pure_es": "[Verse 1]\nAyer hice algo nuevo\nFue como un juego\nFui a la montaña alta\nDonde nada falta\n\n[Chorus]\nFui, Tuve, Hice\nTodo lo que quise\nFue un día genial\nAlgo sobrenatural\n\n[Verse 2]\nTuve tiempo para pensar\nTuve ganas de cantar\nEstuve tranquilo allí\nFue lo que viví\n\n[Chorus]\nFui, Tuve, Hice\nTodo lo que quise\nFue un día genial\nAlgo sobrenatural\n\n[Bridge]\nQué gran día\nQué alegría\nVolveré\n\n[Outro]\nFui.\nTuve.\n¡Hice!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Ayer _____ (I went) al cine.",
+            "options": [
+                "voy",
+                "fui",
+                "fue"
+            ],
+            "correct": "fui"
+        },
+        {
+            "id": "e2",
+            "type": "multiple_choice",
+            "question": "What does 'Tuve' mean?",
+            "options": [
+                "I had",
+                "I have",
+                "I went"
+            ],
+            "correct": "I had"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'I made'",
+            "correct": "Hice"
+        }
+    ]
+}

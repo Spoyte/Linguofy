@@ -1,0 +1,45 @@
+{
+    "id": "4-1",
+    "title": "¿Qué Hora Es? (Time)",
+    "style": "Tick-tock Rhythmic Pop, 120bpm. Clock sound effects. Urgent but fun. Fast-paced verses.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nLe train partira bientôt\nEl tren parte pronto, il faut y aller\nQuelle heure est-il, dis-le-moi?\n¿Qué hora es? Je ne sais pas\n\n[Chorus]\nEs la una... tic tac\nSon las dos... tic tac\nSon las tres y media\nEl tiempo vuela\n\n[Verse 2]\nIl est quatre heures dix\nSon las cuatro y diez, tu m'as promis\nIl est cinq heures moins le quart\nSon las cinco menos cuarto, c'est tard\n\n[Chorus]\nEs la una... tic tac\nSon las dos... tic tac\nSon las tres y media\nEl tiempo vuela\n\n[Bridge]\nLe temps passe vite\nEl tiempo pasa\nTic tac, tic tac\n\n[Outro]\n¿Qué hora es?\nEs tarde.\n¡Corre!",
+        "mixed_en": "[Verse 1]\nThe train is leaving soon, you know\nEl tren parte pronto, we gotta go\nWhat time is it, tell me please?\n¿Qué hora es? I'm on my knees\n\n[Chorus]\nEs la una... tick tock\nSon las dos... tick tock\nSon las tres y media\nTime is flying\n\n[Verse 2]\nIt's four ten, look at the clock\nSon las cuatro y diez, tick tock\nIt's quarter to five, don't be late\nSon las cinco menos cuarto, it's fate\n\n[Chorus]\nEs la una... tick tock\nSon las dos... tick tock\nSon las tres y media\nTime is flying\n\n[Bridge]\nTime goes fast\nEl tiempo pasa\nTick tock, tick tock\n\n[Outro]\n¿Qué hora es?\nIt's late.\n¡Run!",
+        "pure_es": "[Verse 1]\nEl tren se va, se va ya\nEl tren parte pronto, llegará\n¿Qué hora es? Dímelo\n¿Qué hora es? No lo sé\n\n[Chorus]\nEs la una... tic tac\nSon las dos... tic tac\nSon las tres y media\nEl tiempo vuela\n\n[Verse 2]\nSon las cuatro y diez, ya lo ves\nSon las cinco menos cuarto, otra vez\nEl reloj no para de andar\nTenemos que llegar\n\n[Chorus]\nEs la una... tic tac\nSon las dos... tic tac\nSon las tres y media\nEl tiempo vuela\n\n[Bridge]\nEl tiempo pasa\nEl tiempo pasa\nTic tac, tic tac\n\n[Outro]\n¿Qué hora es?\nEs tarde.\n¡Corre!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "multiple_choice",
+            "question": "Translate: 'Es la una'",
+            "options": [
+                "It is two o'clock",
+                "It is one o'clock",
+                "It is noon"
+            ],
+            "correct": "It is one o'clock"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "Son las tres y _____ (half).",
+            "options": [
+                "cuarto",
+                "media",
+                "menos"
+            ],
+            "correct": "media"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'What time is it?'",
+            "correct": "¿Qué hora es?"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": "7-2",
+    "title": "¿Qué Comiste? (Food Critic)",
+    "style": "Smooth Jazz Blues, 90bpm. Walking bass. Piano solo. Smoky atmosphere. Male vocals, deep and narrative.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nJe suis allé au restaurant\nEt qu'est-ce que j'ai mangé ?\nJ'ai mangé du poulet\nComí pollo, c'était parfait\n\n[Chorus]\nComí, Bebí, Viví\nJ'ai mangé, j'ai bu, j'ai vécu\nEscribí une lettre hier\nJ'ai écrit, tout est clair\n\n[Verse 2]\nJ'ai bu du vin rouge\nBebí vino tinto, ça bouge\nJ'ai vécu une belle soirée\nViví una noche, à jamais\n\n[Chorus]\nComí, Bebí, Viví\nJ'ai mangé, j'ai bu, j'ai vécu\nEscribí une lettre hier\nJ'ai écrit, tout est clair\n\n[Bridge]\nC'était délicieux\nFue delicioso\nUn festin\n\n[Outro]\nComí bien.\nBebí mucho.\nAdiós.",
+        "mixed_en": "[Verse 1]\nI went to a place downtown\nTo see what food I found\nI ate some chicken there\nComí pollo, with care\n\n[Chorus]\nComí, Bebí, Viví\nI ate, I drank, I lived\nEscribí a letter then\nI wrote it out again\n\n[Verse 2]\nI drank some red wine too\nBebí vino tinto, for you\nI lived a lovely night\nViví una noche, so bright\n\n[Chorus]\nComí, Bebí, Viví\nI ate, I drank, I lived\nEscribí a letter then\nI wrote it out again\n\n[Bridge]\nIt was delicious\nFue delicioso\nA feast\n\n[Outro]\nComí bien.\nI drank well.\nGoodbye.",
+        "pure_es": "[Verse 1]\nFui al restaurante ayer\nTenía ganas de comer\nComí pollo asado\nEstaba muy salado\n\n[Chorus]\nComí, Bebí, Viví\nTodo lo que sentí\nEscribí mi opinión\nCon mucha pasión\n\n[Verse 2]\nBebí agua con limón\nPara la digestión\nViví un momento especial\nNo estuvo nada mal\n\n[Chorus]\nComí, Bebí, Viví\nTodo lo que sentí\nEscribí mi opinión\nCon mucha pasión\n\n[Bridge]\nLa cuenta, por favor\nFue un placer, señor\nMe voy\n\n[Outro]\nComí bien.\nBebí bien.\nAdiós."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Yo _____ (ate) una manzana.",
+            "options": [
+                "como",
+                "comí",
+                "comer"
+            ],
+            "correct": "comí"
+        },
+        {
+            "id": "e2",
+            "type": "translate",
+            "question": "Translate: 'I lived'",
+            "correct": "Viví"
+        },
+        {
+            "id": "e3",
+            "type": "multiple_choice",
+            "question": "What is 'Bebí'?",
+            "options": [
+                "I drank",
+                "I drink",
+                "He drinks"
+            ],
+            "correct": "I drank"
+        }
+    ]
+}

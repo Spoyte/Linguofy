@@ -1,0 +1,45 @@
+{
+    "id": "6-1",
+    "title": "Voy a Viajar (I'm going to travel)",
+    "style": "Upbeat Reggaeton, 95bpm. Summer vibes. Danceable beat. Party atmosphere. Catchy hook.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nL'été arrive, je suis prêt\nEl verano viene, je le sais\nJe vais prendre ma valise\nVoy a tomar mi maleta, surprise\n\n[Chorus]\nVoy a viajar, je vais voyager\nVamos a la playa, pour nager\nVoy a comer, je vais manger\nTodo el día, toute la journée\n\n[Verse 2]\nNous allons danser ce soir\nVamos a bailar, il faut voir\nTu vas chanter avec moi ?\n¿Vas a cantar conmigo? Dis-moi\n\n[Chorus]\nVoy a viajar, je vais voyager\nVamos a la playa, pour nager\nVoy a comer, je vais manger\nTodo el día, toute la journée\n\n[Bridge]\nLe futur est beau\nEl futuro es bello\nVamos, vamos\n\n[Outro]\nVoy a vivir.\nVamos a reír.\n¡Vámonos!",
+        "mixed_en": "[Verse 1]\nSummer is coming, I am ready\nEl verano viene, keep it steady\nI'm gonna take my suitcase now\nVoy a tomar mi maleta, wow\n\n[Chorus]\nVoy a viajar, I'm gonna travel\nVamos a la playa, watch it unravel\nVoy a comer, I'm gonna eat\nTodo el día, to the beat\n\n[Verse 2]\nWe are gonna dance tonight\nVamos a bailar, feeling right\nAre you gonna sing with me?\n¿Vas a cantar conmigo? Let's see\n\n[Chorus]\nVoy a viajar, I'm gonna travel\nVamos a la playa, watch it unravel\nVoy a comer, I'm gonna eat\nTodo el día, to the beat\n\n[Bridge]\nThe future is bright\nEl futuro es bello\nLet's go, let's go\n\n[Outro]\nVoy a vivir.\nVamos a reír.\n¡Vámonos!",
+        "pure_es": "[Verse 1]\nEl verano llega ya\nTodo listo, aquí está\nVoy a tomar mi maleta hoy\nNo sé a dónde voy\n\n[Chorus]\nVoy a viajar, voy a soñar\nVamos a la playa, a disfrutar\nVoy a comer, voy a beber\nTodo el día, hasta el amanecer\n\n[Verse 2]\nVamos a bailar esta noche\nSin coche, sin reproche\n¿Vas a cantar conmigo así?\nDime que sí, dime que sí\n\n[Chorus]\nVoy a viajar, voy a soñar\nVamos a la playa, a disfrutar\nVoy a comer, voy a beber\nTodo el día, hasta el amanecer\n\n[Bridge]\nEl futuro es nuestro\nEl futuro es bello\nVamos ya\n\n[Outro]\nVoy a vivir.\nVamos a reír.\n¡Vámonos!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Yo _____ (going to) a viajar.",
+            "options": [
+                "voy",
+                "vas",
+                "va"
+            ],
+            "correct": "voy"
+        },
+        {
+            "id": "e2",
+            "type": "translate",
+            "question": "Translate: 'We are going to dance'",
+            "correct": "Vamos a bailar"
+        },
+        {
+            "id": "e3",
+            "type": "multiple_choice",
+            "question": "What is 'La Playa'?",
+            "options": [
+                "The Mountain",
+                "The Beach",
+                "The City"
+            ],
+            "correct": "The Beach"
+        }
+    ]
+}

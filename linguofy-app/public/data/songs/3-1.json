@@ -1,0 +1,45 @@
+{
+    "id": "3-1",
+    "title": "Mi Familia (My Family)",
+    "style": "Sentimental Acoustic Ballad, 70bpm. Warm guitar, soft piano. Emotional male vocals. Nostalgic atmosphere.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nJe regarde la photo sur le mur\nJe vois des visages, un futur\nVoici ma mère, voici mon père\nAqui está mi madre, mi padre aussi\n\n[Chorus]\nYo tengo una familia\nUne famille pour la vie\nTú tienes una familia\nC'est le plus beau des abris\n\n[Verse 2]\nJ'ai un frère, il est grand\nTengo un hermano, c'est important\nJ'ai une sœur, elle est petite\nTengo una hermana, elle va vite\n\n[Chorus]\nYo tengo una familia\nUne famille pour la vie\nTú tienes una familia\nC'est le plus beau des abris\n\n[Bridge]\nNous avons de l'amour\nTenemos amor, toujours\nPour toujours, para siempre\n\n[Outro]\nMi familia.\nTu familia.\nAmor.",
+        "mixed_en": "[Verse 1]\nLooking at the photo on the wall\nFaces I love, I recall them all\nHere is my mother, here is my dad\nAqui está mi madre, mi padre, I'm glad\n\n[Chorus]\nYo tengo una familia\nA family for life\nTú tienes una familia\nThrough joy and through strife\n\n[Verse 2]\nI have a brother, he is tall\nTengo un hermano, best of all\nI have a sister, she is small\nTengo una hermana, catching the ball\n\n[Chorus]\nYo tengo una familia\nA family for life\nTú tienes una familia\nThrough joy and through strife\n\n[Bridge]\nWe have love to share\nTenemos amor, everywhere\nForever, para siempre\n\n[Outro]\nMi familia.\nTu familia.\nAmor.",
+        "pure_es": "[Verse 1]\nMiro la foto en la pared\nCaras que amo, ya lo sé\nAquí está mi madre, mi papá\nAquí está mi padre, y nadie más\n\n[Chorus]\nYo tengo una familia\nFamilia de verdad\nTú tienes una familia\nFelicidad y paz\n\n[Verse 2]\nTengo un hermano, es mayor\nTengo un hermano, es el mejor\nTengo una hermana, es menor\nTengo una hermana, es un amor\n\n[Chorus]\nYo tengo una familia\nFamilia de verdad\nTú tienes una familia\nFelicidad y paz\n\n[Bridge]\nTenemos mucho amor\nTenemos amor, sí señor\nPara siempre\n\n[Outro]\nMi familia.\nTu familia.\nAmor."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "multiple_choice",
+            "question": "What is 'Madre'?",
+            "options": [
+                "Father",
+                "Mother",
+                "Sister"
+            ],
+            "correct": "Mother"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "Yo _____ (Tener) un hermano.",
+            "options": [
+                "tienes",
+                "tengo",
+                "tiene"
+            ],
+            "correct": "tengo"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'I have a family'",
+            "correct": "Yo tengo una familia"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "id": "8-3",
+    "title": "Estoy Nervioso (Feelings)",
+    "style": "Emo / Pop Punk, 150bpm. Distorted guitars. Angst-filled vocals. Fast drumming. Emotional release.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nDemain c'est l'examen\nMañana es el examen\nJe ne me sens pas bien\nNo me siento bien\nJe suis stressé, Estoy estresado\nJe suis fatigué, Estoy cansado\n\n[Chorus]\nEstoy nervioso, oui c'est ça\nEstoy triste, parfois\nMais je veux être heureux\nQuiero ser feliz, je le veu\n\n[Verse 2]\nPourquoi tout est si dur ?\n¿Por qué es difícil?\nJe suis malade, Estoy enfermo\nJe suis en colère, Estoy enojado\n\n[Chorus]\nEstoy nervioso, oui c'est ça\nEstoy triste, parfois\nMais je veux être heureux\nQuiero ser feliz, je le veu\n\n[Bridge]\nMais quand je te vois\nCuando te veo\nEstoy tranquilo\nCalme.\n\n[Outro]\nYa no estoy triste.\nEstoy bien.\nGracias.",
+        "mixed_en": "[Verse 1]\nTomorrow is the test\nMañana es el examen, no rest\nI don't feel good inside\nNo me siento bien, want to hide\nI'm stressed out, Estoy estresado\nI'm tired, Estoy cansado\n\n[Chorus]\nEstoy nervioso, yes it's true\nEstoy triste, feeling blue\nBut I want to be happy\nQuiero ser feliz, make it snappy\n\n[Verse 2]\nWhy is life so hard?\n¿Por qué es difícil? Scarred\nI am sick, Estoy enfermo\nI am angry, Estoy enojado\n\n[Chorus]\nEstoy nervioso, yes it's true\nEstoy triste, feeling blue\nBut I want to be happy\nQuiero ser feliz, make it snappy\n\n[Bridge]\nBut when I see you\nCuando te veo\nEstoy tranquilo\nCalm.\n\n[Outro]\nI'm not sad anymore.\nEstoy bien.\nThanks.",
+        "pure_es": "[Verse 1]\nMañana tengo que ir\nNo sé qué decir\nSiento un peso aquí\nNo es bueno para mí\nEstoy preocupado, lo sé\nNo sé qué haré\n\n[Chorus]\nEstoy nervioso, la verdad\nEstoy triste, soledad\nPero busco la felicidad\nQuiero tranquilidad\n\n[Verse 2]\nA veces estoy mal\nEs algo normal\nEstoy enfermo de amor\nSiento el dolor\n\n[Chorus]\nEstoy nervioso, la verdad\nEstoy triste, soledad\nPero busco la felicidad\nQuiero tranquilidad\n\n[Bridge]\nRespiro hondo\nHasta el fondo\nYa pasó\n\n[Outro]\nEstoy mejor.\nEstoy feliz.\nAdiós."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Estoy _____ (nervous).",
+            "options": [
+                "feliz",
+                "nervioso",
+                "bien"
+            ],
+            "correct": "nervioso"
+        },
+        {
+            "id": "e2",
+            "type": "multiple_choice",
+            "question": "What is 'Enojado'?",
+            "options": [
+                "Happy",
+                "Angry",
+                "Sad"
+            ],
+            "correct": "Angry"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'I am happy'",
+            "correct": "Estoy feliz"
+        }
+    ]
+}

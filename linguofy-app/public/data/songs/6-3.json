@@ -1,0 +1,45 @@
+{
+    "id": "6-3",
+    "title": "En el Tren (Transport)",
+    "style": "Kraftwerk-style Electronic / Synthpop, 120bpm. Robotic vocals. Driving rhythm like a train. Futuristic sounds.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nJe prends le bus, je prends le train\nEl autobús, el tren, c'est bien\nJe vais à l'aéroport\nVoy al aeropuerto, je suis fort\n\n[Chorus]\nAvión... voler haut\nCoche... rouler beau\nBarco... sur l'eau\nAveneu... nuevo\n\n[Verse 2]\nJ'achète un billet, Un billete\nPour aller loin, la planète\nLe taxi attend dans la rue\nEl taxi espera, tu l'as vu\n\n[Chorus]\nAvión... voler haut\nCoche... rouler beau\nBarco... sur l'eau\nAveneu... nuevo\n\n[Bridge]\nLe métro arrive\nEl metro llega\nVitesse lumière\n\n[Outro]\nBuen viaje.\nAu revoir.\nAdiós.",
+        "mixed_en": "[Verse 1]\nI take the bus, I take the train\nEl autobús, el tren, through the rain\nI go to the airport today\nVoy al aeropuerto, flew away\n\n[Chorus]\nAvión... flying high\nCoche... driving by\nBarco... on the sea\nMetro... ride with me\n\n[Verse 2]\nI buy a ticket for the ride\nUn billete, by my side\nThe taxi waits on the street\nEl taxi espera, feel the beat\n\n[Chorus]\nAvión... flying high\nCoche... driving by\nBarco... on the sea\nMetro... ride with me\n\n[Bridge]\nThe subway is here\nEl metro llega\nSpeed of light\n\n[Outro]\nBuen viaje.\nSafe travels.\nAdiós.",
+        "pure_es": "[Verse 1]\nTomo el autobús, tomo el tren\nViajo rápido, viajo bien\nVoy al aeropuerto, a volar\nLejos de aquí, a otro lugar\n\n[Chorus]\nAvión... en el cielo\nCoche... por el suelo\nBarco... en el mar\nBicicleta... a pedalear\n\n[Verse 2]\nCompro un billete, por favor\nPara viajar con mi amor\nEl taxi espera en la estación\nSiente la vibración\n\n[Chorus]\nAvión... en el cielo\nCoche... por el suelo\nBarco... en el mar\nBicicleta... a pedalear\n\n[Bridge]\nEl metro llega\nEl metro llega\nVelocidad\n\n[Outro]\nBuen viaje.\nHasta luego.\nAdiós."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Voy al _____ (airport).",
+            "options": [
+                "estación",
+                "aeropuerto",
+                "coche"
+            ],
+            "correct": "aeropuerto"
+        },
+        {
+            "id": "e2",
+            "type": "multiple_choice",
+            "question": "What is 'Coche'?",
+            "options": [
+                "Boat",
+                "Plane",
+                "Car"
+            ],
+            "correct": "Car"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'Good trip'",
+            "correct": "Buen viaje"
+        }
+    ]
+}

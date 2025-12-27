@@ -1,0 +1,45 @@
+{
+    "id": "2-3",
+    "title": "Yo Quiero (I Want)",
+    "style": "Modern Latin Pop / Reggaeton, 100bpm. Danceable beat. Synthesizers. Catchy, repetitive chorus. High energy.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nJ'entre dans le café, j'ai soif\nJe regarde le menu, le serveur arrive\nQu'est-ce que tu veux? Qu'est-ce que tu prends?\nJe sais ce que je veux maintenant\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Dis-moi tout\nYo quiero bailar avec vous\n\n[Verse 2]\nJe veux voyager, je veux partir\nYo quiero viajar, découvrir\nJe veux une glace, c'est délicieux\nYo quiero helado, je suis heureux\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Dis-moi tout\nYo quiero bailar avec vous\n\n[Bridge]\nJe ne veux pas dormir\nNo quiero dormir\nJe veux juste vivre ! ¡Vivir!\n\n[Outro]\nYo quiero...\nYo quiero...\n¡Gracias!",
+        "mixed_en": "[Verse 1]\nI walk in the cafe, thirsty as can be\nLook at the menu, waiter looks at me\nWhat do you want? What will it be?\nI know what I want, listen to me\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Tell me true\nYo quiero bailar with you\n\n[Verse 2]\nI want to travel, far away\nYo quiero viajar, start today\nI want ice cream, sweet and cold\nYo quiero helado, be bold\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Tell me true\nYo quiero bailar with you\n\n[Bridge]\nI don't want to sleep\nNo quiero dormir\nI just want to live! ¡Vivir!\n\n[Outro]\nYo quiero...\nYo quiero...\n¡Gracias!",
+        "pure_es": "[Verse 1]\nEntro al café, tengo sed\nMiro el menú, ya lo sé\n¿Qué quieres hoy? ¿Qué vas a tomar?\nSé lo que quiero, voy a empezar\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Dímelo\nYo quiero bailar, sí señor\n\n[Verse 2]\nQuiero viajar, quiero salir\nYo quiero vivir, descubrir\nQuiero helado, qué sabor\nYo quiero todo, por favor\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Dímelo\nYo quiero bailar, sí señor\n\n[Bridge]\nNo quiero dormir\nNo quiero dormir\n¡Solo quiero vivir!\n\n[Outro]\nYo quiero...\nYo quiero...\n¡Gracias!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "translate",
+            "question": "Translate: 'I want water'",
+            "correct": "Yo quiero agua"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "Yo _____ viajar.",
+            "options": [
+                "quieres",
+                "quiero",
+                "quiere"
+            ],
+            "correct": "quiero"
+        },
+        {
+            "id": "e3",
+            "type": "multiple_choice",
+            "question": "What is 'Helado'?",
+            "options": [
+                "Bread",
+                "Ice cream",
+                "Water"
+            ],
+            "correct": "Ice cream"
+        }
+    ]
+}

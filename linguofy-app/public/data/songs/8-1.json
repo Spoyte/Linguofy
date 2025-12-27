@@ -1,0 +1,45 @@
+{
+    "id": "8-1",
+    "title": "¡Ay! Me Duele (It Hurts)",
+    "style": "Dramatic Tango, 120bpm. Accordion, violin stabs. Theatrical vocals. Exaggerated pain and drama.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nJ'ai joué au foot hier\nEt maintenant, c'est la galère\nJ'ai mal à la tête\nMe duele la cabeza, quelle fête\n\n[Chorus]\n¡Ay! ¡Ay! ¡Ay!\nMe duele todo\nJ'ai mal partout\nDe tous les côtés\nMe duelen los pies\nJ'ai mal aux pieds\n\n[Verse 2]\nJ'ai mal au dos, aïe aïe aïe\nMe duele la espalda, bye bye bye\nJ'ai besoin d'un docteur\nNecesito un doctor, quelle horreur\n\n[Chorus]\n¡Ay! ¡Ay! ¡Ay!\nMe duele todo\nJ'ai mal partout\nDe tous les côtés\nMe duelen los pies\nJ'ai mal aux pieds\n\n[Bridge]\nC'est terrible\nEs terrible\nLa douleur\nEl dolor\n\n[Outro]\n¡Ay!\nMi cabeza.\n¡Ay!",
+        "mixed_en": "[Verse 1]\nI played sports yesterday\nNow I'm feeling not okay\nMy head hurts so bad\nMe duele la cabeza, so sad\n\n[Chorus]\n¡Ay! ¡Ay! ¡Ay!\nMe duele todo\nEverything hurts\nFrom head to toe\nMe duelen los pies\nMy feet hurt too\n\n[Verse 2]\nMy back hurts, oh my my\nMe duele la espalda, I might cry\nI need a doctor now\nNecesito un doctor, show me how\n\n[Chorus]\n¡Ay! ¡Ay! ¡Ay!\nMe duele todo\nEverything hurts\nFrom head to toe\nMe duelen los pies\nMy feet hurt too\n\n[Bridge]\nIt's terrible\nEs terrible\nThe pain\nEl dolor\n\n[Outro]\n¡Ay!\nMy head.\n¡Ay!",
+        "pure_es": "[Verse 1]\nAyer corrí un maratón\nY hoy perdí la razón\nMe duele la cabeza, sí\nNo sé qué hago aquí\n\n[Chorus]\n¡Ay! ¡Ay! ¡Ay!\nMe duele todo el cuerpo\nMe siento casi muerto\nMe duelen los pies\nNo lo ves\n\n[Verse 2]\nMe duele la espalda también\nNo me siento nada bien\nNecesito medicina ya\n¿Quién me la dará?\n\n[Chorus]\n¡Ay! ¡Ay! ¡Ay!\nMe duele todo el cuerpo\nMe siento casi muerto\nMe duelen los pies\nNo lo ves\n\n[Bridge]\nQué dolor\nQué dolor\nPor favor\n\n[Outro]\n¡Ay!\nMi cabeza.\n¡Ay!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "fill_blank",
+            "question": "Me _____ (hurts) la cabeza.",
+            "options": [
+                "duelen",
+                "duele",
+                "doler"
+            ],
+            "correct": "duele"
+        },
+        {
+            "id": "e2",
+            "type": "multiple_choice",
+            "question": "When do you use 'Duelen'?",
+            "options": [
+                "Singular object",
+                "Plural object",
+                "Always"
+            ],
+            "correct": "Plural object"
+        },
+        {
+            "id": "e3",
+            "type": "translate",
+            "question": "Translate: 'My feet hurt'",
+            "correct": "Me duelen los pies"
+        }
+    ]
+}

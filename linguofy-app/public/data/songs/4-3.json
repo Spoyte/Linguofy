@@ -1,0 +1,45 @@
+{
+    "id": "4-3",
+    "title": "El Fin de Semana (The Weekend)",
+    "style": "Disco Funk, 115bpm. Groovy bassline. Party atmosphere. Synthesizers. Celebration feel.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nLundi est long, Lunes es largo\nMardi aussi, Martes c'est dur\nMercredi je suis fatigué\nMiércoles, je veux arrêter\nJueves, Viernes, on y est presque !\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nJe danse le tango\nVoy a la fiesta, je vais à la fête\nTodo es perfecto, tout est chouette\n\n[Verse 2]\nJe travaille toute la semaine\nTrabajo toda la semana\nMais Sábado arrive\nC'est le nirvana\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nJe danse le tango\nVoy a la fiesta, je vais à la fête\nTodo es perfecto, tout est chouette\n\n[Bridge]\nLunes, Martes, Miércoles, Jueves, Viernes\n¡Stop!\nSábado... Domingo...\n¡Sí!\n\n[Outro]\nNos vemos el Lunes.\n¡Ciao!",
+        "mixed_en": "[Verse 1]\nMonday is long, Lunes is hard\nTuesday as well, Martes on guard\nWednesday I'm tired, Miércoles too\nJueves, Viernes, waiting for you\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nDoing the tango\nVoy a la fiesta, I go to the party\nEverything is perfect, feeling hearty\n\n[Verse 2]\nI work all week long\nTrabajo toda la semana, stay strong\nBut Sábado is coming\nHear the drums drumming\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nDoing the tango\nVoy a la fiesta, I go to the party\nEverything is perfect, feeling hearty\n\n[Bridge]\nLunes, Martes, Miércoles, Jueves, Viernes\n¡Stop!\nSábado... Domingo...\n¡Yeah!\n\n[Outro]\nSee you Lunes.\n¡Ciao!",
+        "pure_es": "[Verse 1]\nLunes es largo, quiero dormir\nMartes también, quiero salir\nMiércoles llega, mitad ya\nJueves, Viernes, ya casi está\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nBailando el mambo\nVoy a la fiesta, a disfrutar\nTodo es perfecto, a celebrar\n\n[Verse 2]\nTrabajo duro toda la semana\nPero el Sábado, por la mañana\nMe levanto feliz, me siento genial\nEl fin de semana es especial\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nBailando el mambo\nVoy a la fiesta, a disfrutar\nTodo es perfecto, a celebrar\n\n[Bridge]\nLunes, Martes, Miércoles, Jueves, Viernes\n¡No!\nSábado... Domingo...\n¡Sí!\n\n[Outro]\nNos vemos el Lunes.\n¡Ciao!"
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "multiple_choice",
+            "question": "What fits the gap: Lunes, Martes, _____?",
+            "options": [
+                "Jueves",
+                "Miércoles",
+                "Domingo"
+            ],
+            "correct": "Miércoles"
+        },
+        {
+            "id": "e2",
+            "type": "translate",
+            "question": "Translate: 'I go to the party'",
+            "correct": "Voy a la fiesta"
+        },
+        {
+            "id": "e3",
+            "type": "fill_blank",
+            "question": "El _____ de semana (Weekend).",
+            "options": [
+                "fin",
+                "final",
+                "fondo"
+            ],
+            "correct": "fin"
+        }
+    ]
+}

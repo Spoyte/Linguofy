@@ -1,0 +1,45 @@
+{
+    "id": "5-3",
+    "title": "La Moda (Fashion)",
+    "style": "Deep House Runway, 124bpm. Thumping bass. Cool, detached vocals. Vogue style. Fashion show atmosphere.",
+    "audio": {
+        "mixed_fr": "",
+        "mixed_en": "",
+        "pure_es": ""
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nLumières, caméra, action\nRegarde ma collection\nJe porte une chemise rouge\nLlevo una camisa roja, ça bouge\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Verse 2]\nQu'est-ce que tu portes ce soir ?\n¿Qué llevas? Je veux savoir\nUne jupe blanche, Una falda blanca\nC'est parfait, c'est comme ça\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Bridge]\nRouge, Rojo.\nBleu, Azul.\nNoir, Negro.\nBlanc, Blanco.\n\n[Outro]\nTrès chic.\nMuy elegante.\nStrike a pose.",
+        "mixed_en": "[Verse 1]\nLights, camera, satisfy\nWatch me walk, watch me fly\nI wear a red shirt tonight\nLlevo una camisa roja, feels right\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Verse 2]\nWhat are you wearing for the show?\n¿Qué llevas? I need to know\nA white skirt, Una falda blanca\nPerfect looking, c'est la vie, yeah\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Bridge]\nRed, Rojo.\nBlue, Azul.\nBlack, Negro.\nWhite, Blanco.\n\n[Outro]\nSo chic.\nMuy elegante.\nStrike a pose.",
+        "pure_es": "[Verse 1]\nLuces, cámaras, atención\nMira mi nueva colección\nLlevo una camisa roja\nLa gente se vuelve loca\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Verse 2]\n¿Qué llevas puesto hoy?\nDímelo, a donde voy\nUna falda blanca, genial\nTe queda fenomenal\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Bridge]\nRojo, Azul.\nNegro, Blanco.\nVerde, Amarillo.\nTodo el color.\n\n[Outro]\nMuy elegante.\nQué guapo.\nFoto."
+    },
+    "exercises": [
+        {
+            "id": "e1",
+            "type": "translate",
+            "question": "Translate: 'Red shirt'",
+            "correct": "Camisa roja"
+        },
+        {
+            "id": "e2",
+            "type": "fill_blank",
+            "question": "Zapatos _____ (blue).",
+            "options": [
+                "rojos",
+                "azules",
+                "negros"
+            ],
+            "correct": "azules"
+        },
+        {
+            "id": "e3",
+            "type": "multiple_choice",
+            "question": "What is 'Pantalones'?",
+            "options": [
+                "Hat",
+                "Pants",
+                "Shoes"
+            ],
+            "correct": "Pants"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "id": "1-1",
+    "title": "Un Nouveau Jour (Hola!)",
+    "style": "Upbeat Latin Pop, 110bpm. Bright, sunny atmosphere. Acoustic guitar strumming intro, adding light tropical percussion. Male vocals, friendly and clear. Uplifting chorus with group backing vocals.",
+    "audio": {
+        "mixed_fr": "/audio/1-1-mixed_fr.mp3",
+        "mixed_en": "/audio/1-1-mixed_en.mp3",
+        "pure_es": "/audio/1-1-pure_es.mp3"
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nLe soleil brille à ma fenêtre\nUne nouvelle journée va naître\nJe me lève et je me sens bien\nJe croise mon voisin dans le jardin\n\n[Chorus]\nJe lui dis: ¡Hola! ¡Buenos días!\nQue la vie est belle, quelle joie\n¡Hola! ¡Buenos días!\nChante avec moi, c'est comme ça\n\n[Verse 2]\nL'après-midi, le soleil est haut\nTout le monde est là, c'est le moment\nDe saluer les amis, c'est beau\nOn se sourit tout simplement\n\n[Chorus]\nOn se dit: ¡Buenas tardes! ¡Hola!\nLa fête commence, on est là\n¡Buenas tardes! ¡Hola!\nDanse avec moi, c'est comme ça\n\n[Bridge]\nLe soir arrive, la lune est là\nIl est temps de rentrer chez soi\nOn se quitte mais on reviendra\n\n[Outro]\n¡Buenas noches! ¡Adiós!\nFais de beaux rêves, à bientôt\n¡Buenas noches! ¡Adiós!\n¡Hasta mañana! ¡Adiós!",
+        "mixed_en": "[Verse 1]\nThe sun is shining through my window pane\nA brand new day begins again\nI wake up feeling good and bright\nI see my neighbor in the light\n\n[Chorus]\nI say to him: ¡Hola! ¡Buenos días!\nLife is beautiful, what a joy\n¡Hola! ¡Buenos días!\nSing with me, oh boy\n\n[Verse 2]\nIn the afternoon, the sun is high\nEveryone is here, beneath the sky\nTo greet our friends, it's plain to see\nWe smile together, you and me\n\n[Chorus]\nWe say: ¡Buenas tardes! ¡Hola!\nThe party starts, we are here\n¡Buenas tardes! ¡Hola!\nDance with me, have no fear\n\n[Bridge]\nThe evening comes, the moon is bright\nIt's time to go home for the night\nWe say goodbye but we'll return\n\n[Outro]\n¡Buenas noches! ¡Adiós!\nSweet dreams to you, see you soon\n¡Buenas noches! ¡Adiós!\n¡Hasta mañana! ¡Adiós!",
+        "pure_es": "[Verse 1]\nEl sol brilla en mi ventana\nEmpieza ya, una mañana\nMe levanto y me siento bien\nVeo a mi vecino también\n\n[Chorus]\nLe digo: ¡Hola! ¡Buenos días!\nQué bella es la vida, qué alegría\n¡Hola! ¡Buenos días!\nCanta conmigo, hoy es el día\n\n[Verse 2]\nPor la tarde, el sol está alto\nTodos aquí, en este asfalto\nSaludo a amigos, qué emoción\nSonreímos con el corazón\n\n[Chorus]\nDecimos: ¡Buenas tardes! ¡Hola!\nLa fiesta empieza, no estás sola\n¡Buenas tardes! ¡Hola!\nBaila conmigo, en esta ola\n\n[Bridge]\nLa noche llega, la luna está\nEs hora de irse, a descansar\nNos despedimos, hasta luego\n\n[Outro]\n¡Buenas noches! ¡Adiós!\nDulces sueños, hoy me voy\n¡Buenas noches! ¡Adiós!\n¡Hasta mañana! ¡Adiós!"
+    },
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "What does 'Buenos Días' mean?",
+            "options": [
+                "Good night",
+                "Good morning",
+                "Goodbye",
+                "Hello"
+            ],
+            "correct": "Good morning"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Le soleil _____ (briller) à ma fenêtre.",
+            "options": [
+                "dort",
+                "brille",
+                "mange"
+            ],
+            "correct": "brille"
+        },
+        {
+            "id": "ex3",
+            "type": "translate",
+            "question": "Translate: 'Good night'",
+            "correct": "Buenas noches"
+        }
+    ]
+}
