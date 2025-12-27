@@ -7,8 +7,8 @@ const modules = [
         desc: "Greetings, Who am I?",
         songs: [
             { id: "1-1", title: "Hola (Hello)", type: "mixed", completed: true },
-            { id: "1-2", title: "Quién Soy Yo (I Am)", type: "mixed", completed: false },
-            { id: "1-3", title: "¿Cómo Estás? (How are you)", type: "chill", completed: false },
+            { id: "1-2", title: "Quién Soy Yo (I Am)", type: "mixed", completed: true },
+            { id: "1-3", title: "¿Cómo Estás? (How are you)", type: "chill", completed: true },
         ]
     },
     {
