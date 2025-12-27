@@ -22,6 +22,12 @@ export default function LandingPage() {
                     </Link>
                 </div>
             </div>
+
+            <div className="absolute bottom-4 right-4">
+                <Link to="/admin" className="text-slate-600 hover:text-slate-400 text-xs transition">
+                    Admin
+                </Link>
+            </div>
         </div>
     );
 }
