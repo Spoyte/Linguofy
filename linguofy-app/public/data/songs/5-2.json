@@ -43,7 +43,14 @@
                 "Nado",
                 "Corro"
             ],
-            "correct": "Juego al fútbol"
+            "correct": "Juego al fútbol",
+            "question_fr": "Comment dit-on 'I play football' in Spanish?",
+            "options_fr": [
+                "Juego al tenis",
+                "Juego al fútbol",
+                "Nado",
+                "Corro"
+            ]
         },
         {
             "id": "ex2",
@@ -54,13 +61,20 @@
                 "juega",
                 "nada"
             ],
-            "correct": "nada"
+            "correct": "nada",
+            "question_fr": "Ella _____ en la piscina. (She swims in the pool)",
+            "options_fr": [
+                "corre",
+                "juega",
+                "nada"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I run'",
-            "correct": "Corro"
+            "correct": "Corro",
+            "question_fr": "Traduisez : 'I run'"
         }
     ]
 }

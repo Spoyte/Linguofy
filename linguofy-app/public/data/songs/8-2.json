@@ -49,7 +49,14 @@
                 "The head",
                 "The hand"
             ],
-            "correct": "The head"
+            "correct": "The head",
+            "question_fr": "Que signifie 'la cabeza' mean?",
+            "options_fr": [
+                "Le bras",
+                "La jambe",
+                "La tête",
+                "La main"
+            ]
         },
         {
             "id": "ex2",
@@ -60,13 +67,20 @@
                 "brazos",
                 "dedos"
             ],
-            "correct": "brazos"
+            "correct": "brazos",
+            "question_fr": "Mueve los _____. (Move your arms)",
+            "options_fr": [
+                "pies",
+                "brazos",
+                "dedos"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'the legs'",
-            "correct": "Las piernas"
+            "correct": "Las piernas",
+            "question_fr": "Traduisez : 'La jambes'"
         }
     ]
 }

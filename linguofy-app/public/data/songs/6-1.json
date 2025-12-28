@@ -49,7 +49,14 @@
                 "I travel",
                 "I want to travel"
             ],
-            "correct": "I'm going to travel"
+            "correct": "I'm going to travel",
+            "question_fr": "Que signifie 'Voy a viajar' mean?",
+            "options_fr": [
+                "J'ai voyagé",
+                "Je vais voyager",
+                "Je voyage",
+                "Je veux to travel"
+            ]
         },
         {
             "id": "ex2",
@@ -60,13 +67,20 @@
                 "Cómo",
                 "Adónde"
             ],
-            "correct": "Adónde"
+            "correct": "Adónde",
+            "question_fr": "¿_____ vas? (Where are you going?)",
+            "options_fr": [
+                "Qué",
+                "Cómo",
+                "Adónde"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I'm going to eat'",
-            "correct": "Voy a comer"
+            "correct": "Voy a comer",
+            "question_fr": "Traduisez : 'I'm going to eat'"
         }
     ]
 }

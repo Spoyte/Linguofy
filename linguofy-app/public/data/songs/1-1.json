@@ -27,11 +27,18 @@
             "id": "ex1",
             "type": "multiple_choice",
             "question": "What does '¡Buenos días!' mean?",
+            "question_fr": "Que signifie '¡Buenos días!' ?",
             "options": [
                 "Good night",
                 "Good morning",
                 "Goodbye",
                 "See you later"
+            ],
+            "options_fr": [
+                "Bonne nuit",
+                "Bonjour",
+                "Au revoir",
+                "À plus tard"
             ],
             "correct": "Good morning"
         },
@@ -39,11 +46,18 @@
             "id": "ex2",
             "type": "multiple_choice",
             "question": "When would you say '¡Buenas noches!'?",
+            "question_fr": "Quand dit-on '¡Buenas noches!' ?",
             "options": [
                 "In the morning",
                 "At lunch time",
                 "In the evening/night",
                 "In the afternoon"
+            ],
+            "options_fr": [
+                "Le matin",
+                "À midi",
+                "Le soir/la nuit",
+                "L'après-midi"
             ],
             "correct": "In the evening/night"
         },
@@ -51,6 +65,7 @@
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'See you tomorrow'",
+            "question_fr": "Traduisez : 'À demain'",
             "correct": "Hasta mañana"
         }
     ]

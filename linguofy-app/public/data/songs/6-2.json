@@ -48,7 +48,14 @@
                 "On the right",
                 "Behind"
             ],
-            "correct": "On the right"
+            "correct": "On the right",
+            "question_fr": "Que signifie 'a la derecha' mean?",
+            "options_fr": [
+                "Tout droit",
+                "À gauche",
+                "À droite",
+                "Derrière"
+            ]
         },
         {
             "id": "ex2",
@@ -60,13 +67,21 @@
                 "Al lado de",
                 "Debajo de"
             ],
-            "correct": "Enfrente de"
+            "correct": "Enfrente de",
+            "question_fr": "Comment dit-on 'Devant' in Spanish?",
+            "options_fr": [
+                "Detrás de",
+                "Enfrente de",
+                "Al lado de",
+                "Debajo de"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'Go straight'",
-            "correct": "Sigue recto"
+            "correct": "Sigue recto",
+            "question_fr": "Traduisez : 'Go straight'"
         }
     ]
 }

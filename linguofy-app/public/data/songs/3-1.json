@@ -49,7 +49,14 @@
                 "Mother",
                 "Father"
             ],
-            "correct": "Sister"
+            "correct": "Sister",
+            "question_fr": "Que signifie 'hermana' mean?",
+            "options_fr": [
+                "Brother",
+                "Sister",
+                "Mother",
+                "Grosher"
+            ]
         },
         {
             "id": "ex2",
@@ -61,13 +68,21 @@
                 "Abuela",
                 "Prima"
             ],
-            "correct": "Abuela"
+            "correct": "Abuela",
+            "question_fr": "Comment dit-on 'grandmother' in Spanish?",
+            "options_fr": [
+                "Madre",
+                "Tía",
+                "Abuela",
+                "Prima"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I have a brother'",
-            "correct": "Tengo un hermano"
+            "correct": "Tengo un hermano",
+            "question_fr": "Traduisez : 'J'ai a brother'"
         }
     ]
 }

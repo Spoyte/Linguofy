@@ -45,7 +45,14 @@
                 "The ticket",
                 "The station"
             ],
-            "correct": "The ticket"
+            "correct": "The ticket",
+            "question_fr": "Que signifie 'el billete' mean?",
+            "options_fr": [
+                "Le quai",
+                "Le train",
+                "Le billet",
+                "La gare"
+            ]
         },
         {
             "id": "ex2",
@@ -56,13 +63,20 @@
                 "sale",
                 "viene"
             ],
-            "correct": "sale"
+            "correct": "sale",
+            "question_fr": "¿A qué hora _____ el tren? (What time does Le train leave?)",
+            "options_fr": [
+                "llega",
+                "sale",
+                "viene"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'Next stop'",
-            "correct": "Próxima parada"
+            "correct": "Próxima parada",
+            "question_fr": "Traduisez : 'Next stop'"
         }
     ]
 }

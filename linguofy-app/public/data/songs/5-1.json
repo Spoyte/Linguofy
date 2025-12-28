@@ -46,7 +46,14 @@
                 "I like",
                 "I want"
             ],
-            "correct": "I like"
+            "correct": "I like",
+            "question_fr": "Que signifie 'Me gusta' mean?",
+            "options_fr": [
+                "J'ai",
+                "Je suis",
+                "J'aime",
+                "Je veux"
+            ]
         },
         {
             "id": "ex2",
@@ -57,13 +64,20 @@
                 "te",
                 "le"
             ],
-            "correct": "le"
+            "correct": "le",
+            "question_fr": "A ella _____ gusta la música. (She likes music)",
+            "options_fr": [
+                "me",
+                "te",
+                "le"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I don't like'",
-            "correct": "No me gusta"
+            "correct": "No me gusta",
+            "question_fr": "Traduisez : 'I don't like'"
         }
     ]
 }

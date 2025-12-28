@@ -56,7 +56,14 @@
                 "The cat is here",
                 "I want a cat"
             ],
-            "correct": "There is a cat"
+            "correct": "There is a cat",
+            "question_fr": "Que signifie 'Hay un gato' mean?",
+            "options_fr": [
+                "J'ai a cat",
+                "There is a cat",
+                "The cat is here",
+                "Je veux a cat"
+            ]
         },
         {
             "id": "ex2",
@@ -68,13 +75,21 @@
                 "Tengo leche",
                 "Quiero leche"
             ],
-            "correct": "No hay leche"
+            "correct": "No hay leche",
+            "question_fr": "Comment dit-on 'There is no milk' in Spanish?",
+            "options_fr": [
+                "Hay leche",
+                "No hay leche",
+                "Tengo leche",
+                "Quiero leche"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'What is there?'",
-            "correct": "¿Qué hay?"
+            "correct": "¿Qué hay?",
+            "question_fr": "Traduisez : 'Quel est there?'"
         }
     ]
 }

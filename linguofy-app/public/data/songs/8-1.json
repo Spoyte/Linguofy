@@ -48,7 +48,14 @@
                 "Mi cabeza duele",
                 "Dolor de cabeza"
             ],
-            "correct": "Me duele la cabeza"
+            "correct": "Me duele la cabeza",
+            "question_fr": "Comment dit-on 'My head hurts' in Spanish?",
+            "options_fr": [
+                "Tengo cabeza",
+                "Me duele la cabeza",
+                "Mi cabeza duele",
+                "Dolor de cabeza"
+            ]
         },
         {
             "id": "ex2",
@@ -59,13 +66,20 @@
                 "Tengo",
                 "Estoy"
             ],
-            "correct": "Tengo"
+            "correct": "Tengo",
+            "question_fr": "_____ fiebre. (J'ai a fever)",
+            "options_fr": [
+                "Me duele",
+                "Tengo",
+                "Estoy"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I am sick'",
-            "correct": "Estoy enfermo"
+            "correct": "Estoy enfermo",
+            "question_fr": "Traduisez : 'Je suis sick'"
         }
     ]
 }

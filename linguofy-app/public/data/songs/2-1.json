@@ -55,7 +55,14 @@
                 "Six",
                 "Seven"
             ],
-            "correct": "Five"
+            "correct": "Five",
+            "question_fr": "Quel est 'cinco' in English?",
+            "options_fr": [
+                "Four",
+                "Five",
+                "Six",
+                "Seven"
+            ]
         },
         {
             "id": "ex2",
@@ -66,13 +73,20 @@
                 "seis",
                 "ocho"
             ],
-            "correct": "tres"
+            "correct": "tres",
+            "question_fr": "Uno, dos, _____, cuatro, cinco",
+            "options_fr": [
+                "tres",
+                "seis",
+                "ocho"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "How do you say 'ten' in Spanish?",
-            "correct": "Diez"
+            "correct": "Diez",
+            "question_fr": "Comment dit-on 'ten' in Spanish?"
         }
     ]
 }

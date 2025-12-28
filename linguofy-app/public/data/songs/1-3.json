@@ -37,11 +37,18 @@
             "id": "ex1",
             "type": "multiple_choice",
             "question": "What does '¿Cómo estás?' mean?",
+            "question_fr": "Que signifie '¿Cómo estás?' ?",
             "options": [
                 "What is your name?",
                 "How old are you?",
                 "How are you?",
                 "Where are you from?"
+            ],
+            "options_fr": [
+                "Comment tu t'appelles ?",
+                "Quel âge as-tu ?",
+                "Comment vas-tu ?",
+                "D'où viens-tu ?"
             ],
             "correct": "How are you?"
         },
@@ -49,7 +56,14 @@
             "id": "ex2",
             "type": "multiple_choice",
             "question": "How do you say 'I am tired' in Spanish?",
+            "question_fr": "Comment dit-on 'Je suis fatigué' en espagnol ?",
             "options": [
+                "Estoy contento",
+                "Estoy cansado",
+                "Estoy triste",
+                "Estoy bien"
+            ],
+            "options_fr": [
                 "Estoy contento",
                 "Estoy cansado",
                 "Estoy triste",
@@ -61,6 +75,7 @@
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I am fine, thank you'",
+            "question_fr": "Traduisez : 'Je vais bien, merci'",
             "correct": "Estoy bien, gracias"
         }
     ]

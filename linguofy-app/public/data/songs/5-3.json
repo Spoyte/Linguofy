@@ -46,7 +46,14 @@
                 "I like shirts",
                 "I have a shirt"
             ],
-            "correct": "I'm wearing a shirt"
+            "correct": "I'm wearing a shirt",
+            "question_fr": "Que signifie 'Llevo una camisa' mean?",
+            "options_fr": [
+                "Je veux a shirt",
+                "I'm wearing a shirt",
+                "J'aime shirts",
+                "J'ai a shirt"
+            ]
         },
         {
             "id": "ex2",
@@ -57,13 +64,20 @@
                 "sombrero",
                 "abrigo"
             ],
-            "correct": "abrigo"
+            "correct": "abrigo",
+            "question_fr": "Tengo frío, llevo un _____. (I'm cold, I wear a coat)",
+            "options_fr": [
+                "vestido",
+                "sombrero",
+                "abrigo"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'shoes'",
-            "correct": "Zapatos"
+            "correct": "Zapatos",
+            "question_fr": "Traduisez : 'shoes'"
         }
     ]
 }

@@ -50,7 +50,14 @@
                 "I want",
                 "I can"
             ],
-            "correct": "I want"
+            "correct": "I want",
+            "question_fr": "Que signifie 'Yo quiero' mean?",
+            "options_fr": [
+                "J'ai",
+                "Je suis",
+                "Je veux",
+                "I can"
+            ]
         },
         {
             "id": "ex2",
@@ -61,13 +68,20 @@
                 "hambre",
                 "frío"
             ],
-            "correct": "hambre"
+            "correct": "hambre",
+            "question_fr": "Tengo _____, quiero comer. (I'm hungry, Je veux to eat)",
+            "options_fr": [
+                "sed",
+                "hambre",
+                "frío"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I want water'",
-            "correct": "Quiero agua"
+            "correct": "Quiero agua",
+            "question_fr": "Traduisez : 'Je veux water'"
         }
     ]
 }

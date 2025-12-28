@@ -45,7 +45,14 @@
                 "¿Dónde está?",
                 "¿Cuántos años tienes?"
             ],
-            "correct": "¿Qué hora es?"
+            "correct": "¿Qué hora es?",
+            "question_fr": "Comment dit-on 'What time is it?' in Spanish?",
+            "options_fr": [
+                "¿Cómo estás?",
+                "¿Qué hora es?",
+                "¿Dónde está?",
+                "¿Cuántos años tienes?"
+            ]
         },
         {
             "id": "ex2",
@@ -56,13 +63,20 @@
                 "tres",
                 "cuatro"
             ],
-            "correct": "tres"
+            "correct": "tres",
+            "question_fr": "Son las _____ de la tarde. (It's 3 L'après-midi)",
+            "options_fr": [
+                "dos",
+                "tres",
+                "cuatro"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'It's eight o'clock'",
-            "correct": "Son las ocho"
+            "correct": "Son las ocho",
+            "question_fr": "Traduisez : 'It's eight o'clock'"
         }
     ]
 }

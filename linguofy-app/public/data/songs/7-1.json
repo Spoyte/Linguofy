@@ -48,7 +48,14 @@
                 "Habló",
                 "Hablamos"
             ],
-            "correct": "Hablé"
+            "correct": "Hablé",
+            "question_fr": "Quel est the past tense of 'hablar' (yo)?",
+            "options_fr": [
+                "Hablo",
+                "Hablé",
+                "Habló",
+                "Hablamos"
+            ]
         },
         {
             "id": "ex2",
@@ -59,13 +66,20 @@
                 "bailé",
                 "bailó"
             ],
-            "correct": "bailé"
+            "correct": "bailé",
+            "question_fr": "Ayer yo _____ con mis amigos. (Yesterday I danced with my friends)",
+            "options_fr": [
+                "bailo",
+                "bailé",
+                "bailó"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I sang'",
-            "correct": "Canté"
+            "correct": "Canté",
+            "question_fr": "Traduisez : 'I sang'"
         }
     ]
 }

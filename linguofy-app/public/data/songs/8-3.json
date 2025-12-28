@@ -47,7 +47,14 @@
                 "Estoy feliz",
                 "Estoy cansado"
             ],
-            "correct": "Estoy feliz"
+            "correct": "Estoy feliz",
+            "question_fr": "Comment dit-on 'Je suis Content/Heureux' in Spanish?",
+            "options_fr": [
+                "Estoy triste",
+                "Estoy nervioso",
+                "Estoy feliz",
+                "Estoy cansado"
+            ]
         },
         {
             "id": "ex2",
@@ -58,13 +65,20 @@
                 "nervioso",
                 "cansado"
             ],
-            "correct": "cansado"
+            "correct": "cansado",
+            "question_fr": "Estoy muy _____. (Je suis very Fatigué)",
+            "options_fr": [
+                "alegre",
+                "nervioso",
+                "canTristeo"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I am sad'",
-            "correct": "Estoy triste"
+            "correct": "Estoy triste",
+            "question_fr": "Traduisez : 'Je suis Triste'"
         }
     ]
 }

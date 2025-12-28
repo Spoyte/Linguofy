@@ -35,7 +35,14 @@
             "id": "ex1",
             "type": "multiple_choice",
             "question": "How do you say 'My name is...' in Spanish?",
+            "question_fr": "Comment dit-on 'Je m'appelle...' en espagnol ?",
             "options": [
+                "Tengo años",
+                "Me llamo...",
+                "Soy de...",
+                "Estoy bien"
+            ],
+            "options_fr": [
                 "Tengo años",
                 "Me llamo...",
                 "Soy de...",
@@ -47,7 +54,13 @@
             "id": "ex2",
             "type": "fill_blank",
             "question": "_____ María. (Her name is María)",
+            "question_fr": "_____ María. (Elle s'appelle María)",
             "options": [
+                "Me llamo",
+                "Se llama",
+                "Te llamas"
+            ],
+            "options_fr": [
                 "Me llamo",
                 "Se llama",
                 "Te llamas"
@@ -58,6 +71,7 @@
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'Nice to meet you'",
+            "question_fr": "Traduisez : 'Enchanté'",
             "correct": "Mucho gusto"
         }
     ]

@@ -48,7 +48,14 @@
                 "Comió",
                 "Comimos"
             ],
-            "correct": "Comí"
+            "correct": "Comí",
+            "question_fr": "Quel est the past tense of 'comer' (yo)?",
+            "options_fr": [
+                "Como",
+                "Comí",
+                "Comió",
+                "Comimos"
+            ]
         },
         {
             "id": "ex2",
@@ -59,13 +66,20 @@
                 "escribió",
                 "escribí"
             ],
-            "correct": "escribió"
+            "correct": "escribió",
+            "question_fr": "Ayer ella _____ una carta. (Yesterday she wrote a letter)",
+            "options_fr": [
+                "escribe",
+                "escribió",
+                "escribí"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I drank'",
-            "correct": "Bebí"
+            "correct": "Bebí",
+            "question_fr": "Traduisez : 'I drank'"
         }
     ]
 }

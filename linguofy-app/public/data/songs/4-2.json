@@ -44,7 +44,14 @@
                 "I take a shower",
                 "I get dressed"
             ],
-            "correct": "I wake up/get up"
+            "correct": "I wake up/get up",
+            "question_fr": "Que signifie 'Me levanto' mean?",
+            "options_fr": [
+                "I go to bed",
+                "I wake up/get up",
+                "I take a shower",
+                "I get dressed"
+            ]
         },
         {
             "id": "ex2",
@@ -55,13 +62,20 @@
                 "Me cepillo",
                 "Me visto"
             ],
-            "correct": "Me cepillo"
+            "correct": "Me cepillo",
+            "question_fr": "_____ los dientes. (I brush my teeth)",
+            "options_fr": [
+                "Me lavo",
+                "Me cepillo",
+                "Me visto"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I take a shower'",
-            "correct": "Me ducho"
+            "correct": "Me ducho",
+            "question_fr": "Traduisez : 'I take a shower'"
         }
     ]
 }

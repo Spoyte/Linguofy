@@ -42,7 +42,14 @@
                 "Iba",
                 "Fue"
             ],
-            "correct": "Fui"
+            "correct": "Fui",
+            "question_fr": "Quel est the irregular past tense of 'ir' (yo)?",
+            "options_fr": [
+                "Voy",
+                "Fui",
+                "Iba",
+                "Fue"
+            ]
         },
         {
             "id": "ex2",
@@ -53,13 +60,20 @@
                 "tuve",
                 "tuvo"
             ],
-            "correct": "tuve"
+            "correct": "tuve",
+            "question_fr": "Ayer yo _____ mucha suerte. (Yesterday I had a lot of luck)",
+            "options_fr": [
+                "tengo",
+                "tuve",
+                "tuvo"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I made/did' (past tense)",
-            "correct": "Hice"
+            "correct": "Hice",
+            "question_fr": "Traduisez : 'I made/did' (past tense)"
         }
     ]
 }

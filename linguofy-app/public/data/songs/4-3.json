@@ -44,7 +44,14 @@
                 "Wednesday",
                 "Thursday"
             ],
-            "correct": "Wednesday"
+            "correct": "Wednesday",
+            "question_fr": "What day is 'miércoles'?",
+            "options_fr": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ]
         },
         {
             "id": "ex2",
@@ -55,13 +62,20 @@
                 "sábado",
                 "domingo"
             ],
-            "correct": "sábado"
+            "correct": "sábado",
+            "question_fr": "El _____ es el primer día del fin de semana. (Saturday is the first day of the weekend)",
+            "options_fr": [
+                "viernes",
+                "sábado",
+                "domingo"
+            ]
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'the weekend'",
-            "correct": "El fin de semana"
+            "correct": "El fin de semana",
+            "question_fr": "Traduisez : 'the weekend'"
         }
     ]
 }
