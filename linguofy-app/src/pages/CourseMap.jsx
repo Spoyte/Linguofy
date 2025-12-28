@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
+import { useLanguage } from '../i18n';
 import { modules } from '../data/courseData';
+import LanguageToggle from '../components/LanguageToggle';
 
 export default function CourseMap() {
     const { isComplete, completedLessons } = useProgress();
+    const { t } = useLanguage();
 
     // A module is unlocked if:
     // 1. It's the first module (always unlocked)
@@ -20,8 +23,11 @@ export default function CourseMap() {
                 <Link to="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
                     Linguofy
                 </Link>
-                <div className="text-sm font-medium text-slate-400">
-                    {completedLessons.length} / {modules.flatMap(m => m.songs).length} Lessons Complete
+                <div className="flex items-center gap-4">
+                    <div className="text-sm font-medium text-slate-400">
+                        {completedLessons.length} / {modules.flatMap(m => m.songs).length} {t('courseMap.lessonsComplete')}
+                    </div>
+                    <LanguageToggle />
                 </div>
             </header>
 
@@ -39,7 +45,7 @@ export default function CourseMap() {
                                 <p className="text-slate-400">{mod.desc}</p>
                                 {!unlocked && (
                                     <p className="text-yellow-500/80 text-sm mt-2">
-                                        Complete all lessons in the previous unit to unlock
+                                        {t('courseMap.unlockMessage')}
                                     </p>
                                 )}
                             </div>
@@ -49,10 +55,10 @@ export default function CourseMap() {
                                     <div
                                         key={song.id}
                                         className={`block p-4 rounded-xl border transition-all backdrop-blur-sm group ${!unlocked
-                                                ? 'border-slate-800/50 bg-slate-800/30 cursor-not-allowed'
-                                                : isComplete(song.id)
-                                                    ? 'border-green-500/50 bg-green-900/20'
-                                                    : 'border-slate-800 hover:border-purple-500 bg-slate-800/50'
+                                            ? 'border-slate-800/50 bg-slate-800/30 cursor-not-allowed'
+                                            : isComplete(song.id)
+                                                ? 'border-green-500/50 bg-green-900/20'
+                                                : 'border-slate-800 hover:border-purple-500 bg-slate-800/50'
                                             }`}
                                     >
                                         <div className="flex items-center justify-between mb-3">
@@ -73,10 +79,10 @@ export default function CourseMap() {
                                                 </span>
                                             </div>
                                             <div className={`w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-transform ${!unlocked
-                                                    ? 'bg-slate-700 shadow-slate-700/20'
-                                                    : isComplete(song.id)
-                                                        ? 'bg-green-600 shadow-green-600/20 group-hover:scale-110'
-                                                        : 'bg-purple-600 shadow-purple-600/20 group-hover:scale-110'
+                                                ? 'bg-slate-700 shadow-slate-700/20'
+                                                : isComplete(song.id)
+                                                    ? 'bg-green-600 shadow-green-600/20 group-hover:scale-110'
+                                                    : 'bg-purple-600 shadow-purple-600/20 group-hover:scale-110'
                                                 }`}>
                                                 {!unlocked ? (
                                                     <span className="text-slate-400 text-lg">🔒</span>
@@ -97,7 +103,7 @@ export default function CourseMap() {
                                                         to={`/lesson/${song.id}`}
                                                         className="flex-1 py-2 bg-green-500 hover:bg-green-400 text-slate-900 font-bold rounded-lg text-center transition shadow-lg shadow-green-500/10"
                                                     >
-                                                        {isComplete(song.id) ? 'Review Lesson' : 'Start Lesson'}
+                                                        {isComplete(song.id) ? t('courseMap.review') : t('courseMap.start')}
                                                     </Link>
                                                     <Link
                                                         to={`/play/${song.id}`}
@@ -109,7 +115,7 @@ export default function CourseMap() {
                                                 </>
                                             ) : (
                                                 <div className="flex-1 py-2 bg-slate-700/50 text-slate-500 font-bold rounded-lg text-center cursor-not-allowed">
-                                                    Locked
+                                                    {t('courseMap.locked')}
                                                 </div>
                                             )}
                                         </div>
