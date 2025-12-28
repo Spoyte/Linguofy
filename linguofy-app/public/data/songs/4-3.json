@@ -51,7 +51,9 @@
                 "Tuesday",
                 "Wednesday",
                 "Thursday"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex2",
@@ -68,14 +70,18 @@
                 "viernes",
                 "sábado",
                 "domingo"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'the weekend'",
             "correct": "El fin de semana",
-            "question_fr": "Traduisez : 'the weekend'"
+            "question_fr": "Traduisez : 'the weekend'",
+            "hint": "💡 The answer has 4 word(s) and starts with \"E...\"",
+            "hint_fr": "💡 La réponse a 4 mot(s) et commence par \"E...\""
         }
     ]
 }

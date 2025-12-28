@@ -53,7 +53,9 @@
                 "I'm wearing a shirt",
                 "J'aime shirts",
                 "J'ai a shirt"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex2",
@@ -70,14 +72,18 @@
                 "vestido",
                 "sombrero",
                 "abrigo"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'shoes'",
             "correct": "Zapatos",
-            "question_fr": "Traduisez : 'shoes'"
+            "question_fr": "Traduisez : 'shoes'",
+            "hint": "💡 The answer has 1 word(s) and starts with \"Z...\"",
+            "hint_fr": "💡 La réponse a 1 mot(s) et commence par \"Z...\""
         }
     ]
 }

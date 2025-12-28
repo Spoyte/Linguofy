@@ -50,7 +50,9 @@
                 "Comment vas-tu ?",
                 "D'où viens-tu ?"
             ],
-            "correct": "How are you?"
+            "correct": "How are you?",
+            "hint": "💡 This is asking about your state, your feelings",
+            "hint_fr": "💡 C'est une question sur votre état, vos sentiments"
         },
         {
             "id": "ex2",
@@ -69,14 +71,18 @@
                 "Estoy triste",
                 "Estoy bien"
             ],
-            "correct": "Estoy cansado"
+            "correct": "Estoy cansado",
+            "hint": "💡 In Spanish, 'cansado' means tired",
+            "hint_fr": "💡 En espagnol, 'cansado' signifie fatigué"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I am fine, thank you'",
             "question_fr": "Traduisez : 'Je vais bien, merci'",
-            "correct": "Estoy bien, gracias"
+            "correct": "Estoy bien, gracias",
+            "hint": "💡 The answer has 3 word(s) and starts with \"E...\"",
+            "hint_fr": "💡 La réponse a 3 mot(s) et commence par \"E...\""
         }
     ]
 }

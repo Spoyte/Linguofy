@@ -63,7 +63,9 @@
                 "There is a cat",
                 "The cat is here",
                 "Je veux a cat"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex2",
@@ -82,14 +84,18 @@
                 "No hay leche",
                 "Tengo leche",
                 "Quiero leche"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'What is there?'",
             "correct": "¿Qué hay?",
-            "question_fr": "Traduisez : 'Quel est there?'"
+            "question_fr": "Traduisez : 'Quel est there?'",
+            "hint": "💡 The answer has 2 word(s) and starts with \"¿...\"",
+            "hint_fr": "💡 La réponse a 2 mot(s) et commence par \"¿...\""
         }
     ]
 }

@@ -50,7 +50,9 @@
                 "Juego al fútbol",
                 "Nado",
                 "Corro"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex2",
@@ -67,14 +69,18 @@
                 "corre",
                 "juega",
                 "nada"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I run'",
             "correct": "Corro",
-            "question_fr": "Traduisez : 'I run'"
+            "question_fr": "Traduisez : 'I run'",
+            "hint": "💡 The answer has 1 word(s) and starts with \"C...\"",
+            "hint_fr": "💡 La réponse a 1 mot(s) et commence par \"C...\""
         }
     ]
 }

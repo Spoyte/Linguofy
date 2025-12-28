@@ -54,7 +54,9 @@
                 "Estoy nervioso",
                 "Estoy feliz",
                 "Estoy cansado"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex2",
@@ -71,14 +73,18 @@
                 "alegre",
                 "nervioso",
                 "canTristeo"
-            ]
+            ],
+            "hint": "💡 In Spanish, 'cansado' means tired",
+            "hint_fr": "💡 En espagnol, 'cansado' signifie fatigué"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I am sad'",
             "correct": "Estoy triste",
-            "question_fr": "Traduisez : 'Je suis Triste'"
+            "question_fr": "Traduisez : 'Je suis Triste'",
+            "hint": "💡 The answer has 2 word(s) and starts with \"E...\"",
+            "hint_fr": "💡 La réponse a 2 mot(s) et commence par \"E...\""
         }
     ]
 }

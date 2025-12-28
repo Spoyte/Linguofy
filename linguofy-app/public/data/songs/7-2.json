@@ -55,7 +55,9 @@
                 "Comí",
                 "Comió",
                 "Comimos"
-            ]
+            ],
+            "hint": "💡 Past tense endings: -é, -aste, -ó for -AR; -í, -iste, -ió for -ER/-IR",
+            "hint_fr": "💡 Les terminaisons du passé: -é, -aste, -ó pour -AR; -í, -iste, -ió pour -ER/-IR"
         },
         {
             "id": "ex2",
@@ -72,14 +74,18 @@
                 "escribe",
                 "escribió",
                 "escribí"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I drank'",
             "correct": "Bebí",
-            "question_fr": "Traduisez : 'I drank'"
+            "question_fr": "Traduisez : 'I drank'",
+            "hint": "💡 The answer has 1 word(s) and starts with \"B...\"",
+            "hint_fr": "💡 La réponse a 1 mot(s) et commence par \"B...\""
         }
     ]
 }

@@ -56,7 +56,9 @@
                 "Sister",
                 "Mother",
                 "Grosher"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex2",
@@ -75,14 +77,18 @@
                 "Tía",
                 "Abuela",
                 "Prima"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I have a brother'",
             "correct": "Tengo un hermano",
-            "question_fr": "Traduisez : 'J'ai a brother'"
+            "question_fr": "Traduisez : 'J'ai a brother'",
+            "hint": "💡 The answer has 3 word(s) and starts with \"T...\"",
+            "hint_fr": "💡 La réponse a 3 mot(s) et commence par \"T...\""
         }
     ]
 }

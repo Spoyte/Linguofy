@@ -48,7 +48,9 @@
                 "Soy de...",
                 "Estoy bien"
             ],
-            "correct": "Me llamo..."
+            "correct": "Me llamo...",
+            "hint": "💡 'Llamo' comes from the verb 'llamarse' (to call oneself)",
+            "hint_fr": "💡 'Llamo' vient du verbe 'llamarse' (s'appeler)"
         },
         {
             "id": "ex2",
@@ -65,14 +67,18 @@
                 "Se llama",
                 "Te llamas"
             ],
-            "correct": "Se llama"
+            "correct": "Se llama",
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'Nice to meet you'",
             "question_fr": "Traduisez : 'Enchanté'",
-            "correct": "Mucho gusto"
+            "correct": "Mucho gusto",
+            "hint": "💡 The answer has 2 word(s) and starts with \"M...\"",
+            "hint_fr": "💡 La réponse a 2 mot(s) et commence par \"M...\""
         }
     ]
 }

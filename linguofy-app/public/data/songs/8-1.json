@@ -55,7 +55,9 @@
                 "Me duele la cabeza",
                 "Mi cabeza duele",
                 "Dolor de cabeza"
-            ]
+            ],
+            "hint": "💡 'Doler' works like 'gustar' - 'me duele la cabeza'",
+            "hint_fr": "💡 'Doler' fonctionne comme 'gustar' - 'me duele la cabeza'"
         },
         {
             "id": "ex2",
@@ -72,14 +74,18 @@
                 "Me duele",
                 "Tengo",
                 "Estoy"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I am sick'",
             "correct": "Estoy enfermo",
-            "question_fr": "Traduisez : 'Je suis sick'"
+            "question_fr": "Traduisez : 'Je suis sick'",
+            "hint": "💡 The answer has 2 word(s) and starts with \"E...\"",
+            "hint_fr": "💡 La réponse a 2 mot(s) et commence par \"E...\""
         }
     ]
 }

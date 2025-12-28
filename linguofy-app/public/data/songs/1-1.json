@@ -40,7 +40,9 @@
                 "Au revoir",
                 "À plus tard"
             ],
-            "correct": "Good morning"
+            "correct": "Good morning",
+            "hint": "💡 Think about the time of day when the sun rises",
+            "hint_fr": "💡 Pensez au moment de la journée où le soleil se lève"
         },
         {
             "id": "ex2",
@@ -59,14 +61,18 @@
                 "Le soir/la nuit",
                 "L'après-midi"
             ],
-            "correct": "In the evening/night"
+            "correct": "In the evening/night",
+            "hint": "💡 This is what you say when it's dark outside",
+            "hint_fr": "💡 C'est ce qu'on dit quand il fait nuit"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'See you tomorrow'",
             "question_fr": "Traduisez : 'À demain'",
-            "correct": "Hasta mañana"
+            "correct": "Hasta mañana",
+            "hint": "💡 The answer has 2 word(s) and starts with \"H...\"",
+            "hint_fr": "💡 La réponse a 2 mot(s) et commence par \"H...\""
         }
     ]
 }

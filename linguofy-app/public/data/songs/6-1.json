@@ -56,7 +56,9 @@
                 "Je vais voyager",
                 "Je voyage",
                 "Je veux to travel"
-            ]
+            ],
+            "hint": "💡 'Ir a + infinitive' = near future, like 'going to + verb'",
+            "hint_fr": "💡 'Ir a + infinitif' = futur proche, comme 'aller + infinitif'"
         },
         {
             "id": "ex2",
@@ -73,14 +75,18 @@
                 "Qué",
                 "Cómo",
                 "Adónde"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I'm going to eat'",
             "correct": "Voy a comer",
-            "question_fr": "Traduisez : 'I'm going to eat'"
+            "question_fr": "Traduisez : 'I'm going to eat'",
+            "hint": "💡 The answer has 3 word(s) and starts with \"V...\"",
+            "hint_fr": "💡 La réponse a 3 mot(s) et commence par \"V...\""
         }
     ]
 }

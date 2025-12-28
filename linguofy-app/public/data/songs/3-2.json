@@ -55,7 +55,9 @@
                 "Grand",
                 "Gros",
                 "Mince"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex2",
@@ -72,14 +74,18 @@
                 "largo",
                 "corto",
                 "rubio"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'She is beautiful'",
             "correct": "Ella es guapa",
-            "question_fr": "Traduisez : 'She is beautiful'"
+            "question_fr": "Traduisez : 'She is beautiful'",
+            "hint": "💡 The answer has 3 word(s) and starts with \"E...\"",
+            "hint_fr": "💡 La réponse a 3 mot(s) et commence par \"E...\""
         }
     ]
 }

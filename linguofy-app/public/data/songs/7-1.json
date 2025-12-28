@@ -55,7 +55,9 @@
                 "Hablé",
                 "Habló",
                 "Hablamos"
-            ]
+            ],
+            "hint": "💡 Past tense endings: -é, -aste, -ó for -AR; -í, -iste, -ió for -ER/-IR",
+            "hint_fr": "💡 Les terminaisons du passé: -é, -aste, -ó pour -AR; -í, -iste, -ió pour -ER/-IR"
         },
         {
             "id": "ex2",
@@ -72,14 +74,18 @@
                 "bailo",
                 "bailé",
                 "bailó"
-            ]
+            ],
+            "hint": "💡 Review the song lyrics to find the answer",
+            "hint_fr": "💡 Relisez les paroles de la chanson pour trouver la réponse"
         },
         {
             "id": "ex3",
             "type": "translation",
             "question": "Translate: 'I sang'",
             "correct": "Canté",
-            "question_fr": "Traduisez : 'I sang'"
+            "question_fr": "Traduisez : 'I sang'",
+            "hint": "💡 The answer has 1 word(s) and starts with \"C...\"",
+            "hint_fr": "💡 La réponse a 1 mot(s) et commence par \"C...\""
         }
     ]
 }
