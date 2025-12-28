@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
-import { modules } from '../data/courseData';
+import { modules, bonusModules } from '../data/courseData';
 import LanguageToggle from '../components/LanguageToggle';
 
 export default function CourseMap() {
     const { isComplete, completedLessons } = useProgress();
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     // A module is unlocked if:
     // 1. It's the first module (always unlocked)
@@ -40,6 +40,7 @@ export default function CourseMap() {
             </header>
 
             <div className="max-w-2xl mx-auto space-y-12">
+                {/* Main Course Modules */}
                 {modules.map((mod, modIndex) => {
                     const unlocked = isModuleUnlocked(modIndex);
                     return (
@@ -83,7 +84,7 @@ export default function CourseMap() {
                                                     )}
                                                 </div>
                                                 <span className="text-xs uppercase tracking-wider text-slate-500 bg-slate-900/50 px-2 py-1 rounded">
-                                                    {song.type}
+                                                    🎵 {song.type}
                                                 </span>
                                             </div>
                                             <div className={`w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-transform ${!unlocked
@@ -133,6 +134,49 @@ export default function CourseMap() {
                         </div>
                     );
                 })}
+
+                {/* Bonus Content Section */}
+                <div className="mt-16 pt-8 border-t border-slate-700">
+                    <h2 className="text-2xl font-bold mb-6 text-center">
+                        ✨ {language === 'fr' ? 'Contenu Bonus' : 'Bonus Content'}
+                    </h2>
+                    <div className="grid gap-6">
+                        {bonusModules.map((bonus) => (
+                            <div key={bonus.id} className="bg-slate-800/50 rounded-xl border border-slate-700 p-6">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <span className="text-3xl">{bonus.icon}</span>
+                                    <div>
+                                        <h3 className="text-xl font-bold">{bonus.title}</h3>
+                                        <p className="text-slate-400 text-sm">{bonus.desc}</p>
+                                    </div>
+                                </div>
+                                <div className="grid gap-3">
+                                    {bonus.lessons.map((lesson) => (
+                                        <Link
+                                            key={lesson.id}
+                                            to={`/bonus/${bonus.id === 'grammar' ? 'grammar' : bonus.id === 'dialogues' ? 'dialogues' : 'culture'}/${lesson.id}`}
+                                            className={`flex items-center justify-between p-3 rounded-lg border transition-all ${isComplete(lesson.id)
+                                                    ? 'border-green-500/50 bg-green-900/20'
+                                                    : 'border-slate-700 bg-slate-800/50 hover:border-purple-500'
+                                                }`}
+                                        >
+                                            <div className="flex items-center gap-2">
+                                                <span className="text-xl">
+                                                    {lesson.type === 'grammar' ? '📖' : lesson.type === 'dialogue' ? '🗣️' : '🌍'}
+                                                </span>
+                                                <span className="font-medium">{lesson.title}</span>
+                                                {isComplete(lesson.id) && (
+                                                    <span className="text-green-400">✓</span>
+                                                )}
+                                            </div>
+                                            <span className="text-slate-400">→</span>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );

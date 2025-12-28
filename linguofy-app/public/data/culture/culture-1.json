@@ -1,0 +1,190 @@
+{
+    "id": "culture-1",
+    "title": "Spanish-Speaking Countries",
+    "type": "culture",
+    "description": "Discover the 21 countries where Spanish is an official language",
+    "description_fr": "Découvrez les 21 pays où l'espagnol est une langue officielle",
+    "content": {
+        "intro": {
+            "en": "Spanish is the **4th most spoken language** in the world with over 500 million speakers! It's the official language of 21 countries across Europe, the Americas, and Africa.",
+            "fr": "L'espagnol est la **4e langue la plus parlée** au monde avec plus de 500 millions de locuteurs ! C'est la langue officielle de 21 pays en Europe, aux Amériques et en Afrique."
+        },
+        "sections": [
+            {
+                "title": {
+                    "en": "🇪🇸 Spain (España)",
+                    "fr": "🇪🇸 Espagne (España)"
+                },
+                "content": {
+                    "en": "The birthplace of Spanish! Spain is home to diverse regions like Catalonia, Andalusia, and the Basque Country, each with unique traditions.",
+                    "fr": "Le berceau de l'espagnol ! L'Espagne abrite des régions diverses comme la Catalogne, l'Andalousie et le Pays basque, chacune avec ses traditions uniques."
+                },
+                "facts": [
+                    {
+                        "en": "Capital: Madrid",
+                        "fr": "Capitale : Madrid"
+                    },
+                    {
+                        "en": "Famous for: Flamenco, tapas, and siestas",
+                        "fr": "Célèbre pour : Flamenco, tapas et siestes"
+                    },
+                    {
+                        "en": "Unique phrase: ¡Ole!",
+                        "fr": "Expression unique : ¡Ole!"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "🇲🇽 Mexico (México)",
+                    "fr": "🇲🇽 Mexique (México)"
+                },
+                "content": {
+                    "en": "The most populous Spanish-speaking country! Mexico blends ancient Aztec and Mayan culture with Spanish influence.",
+                    "fr": "Le pays hispanophone le plus peuplé ! Le Mexique mélange les cultures aztèque et maya anciennes avec l'influence espagnole."
+                },
+                "facts": [
+                    {
+                        "en": "Capital: Ciudad de México",
+                        "fr": "Capitale : Ciudad de México"
+                    },
+                    {
+                        "en": "Famous for: Tacos, Day of the Dead, Mariachi",
+                        "fr": "Célèbre pour : Tacos, Jour des Morts, Mariachi"
+                    },
+                    {
+                        "en": "Unique word: ¡Órale! (Wow!/Come on!)",
+                        "fr": "Mot unique : ¡Órale! (Wow!/Allez!)"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "🇦🇷 Argentina",
+                    "fr": "🇦🇷 Argentine"
+                },
+                "content": {
+                    "en": "Known for its distinct accent and use of 'vos' instead of 'tú'. Home of tango and incredible beef!",
+                    "fr": "Connue pour son accent distinct et l'utilisation de 'vos' au lieu de 'tú'. Patrie du tango et de l'incroyable viande de bœuf !"
+                },
+                "facts": [
+                    {
+                        "en": "Capital: Buenos Aires",
+                        "fr": "Capitale : Buenos Aires"
+                    },
+                    {
+                        "en": "Famous for: Tango, beef, Messi",
+                        "fr": "Célèbre pour : Tango, bœuf, Messi"
+                    },
+                    {
+                        "en": "Unique word: ¡Che! (Hey, buddy!)",
+                        "fr": "Mot unique : ¡Che! (Hé, mon pote !)"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "🇨🇴 Colombia",
+                    "fr": "🇨🇴 Colombie"
+                },
+                "content": {
+                    "en": "Often praised for having the 'clearest' Spanish. Beautiful landscapes from Caribbean beaches to the Andes.",
+                    "fr": "Souvent louée pour avoir l'espagnol le 'plus clair'. De beaux paysages des plages des Caraïbes aux Andes."
+                },
+                "facts": [
+                    {
+                        "en": "Capital: Bogotá",
+                        "fr": "Capitale : Bogotá"
+                    },
+                    {
+                        "en": "Famous for: Coffee, salsa, emeralds",
+                        "fr": "Célèbre pour : Café, salsa, émeraudes"
+                    },
+                    {
+                        "en": "Unique word: ¡Chevere! (Cool!)",
+                        "fr": "Mot unique : ¡Chevere! (Super !)"
+                    }
+                ]
+            }
+        ],
+        "allCountries": {
+            "en": "All 21 countries: Spain, Mexico, Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, Panama, Cuba, Dominican Republic, Puerto Rico, Venezuela, Colombia, Ecuador, Peru, Bolivia, Chile, Argentina, Uruguay, Paraguay, and Equatorial Guinea (Africa).",
+            "fr": "Les 21 pays : Espagne, Mexique, Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, Panama, Cuba, République Dominicaine, Porto Rico, Venezuela, Colombie, Équateur, Pérou, Bolivie, Chili, Argentine, Uruguay, Paraguay et Guinée Équatoriale (Afrique)."
+        }
+    },
+    "focusVocab": [
+        "España",
+        "México",
+        "Argentina",
+        "Colombia",
+        "capital",
+        "país",
+        "idioma",
+        "cultura"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "Which is the most populous Spanish-speaking country?",
+            "question_fr": "Quel est le pays hispanophone le plus peuplé ?",
+            "options": [
+                "España",
+                "México",
+                "Argentina",
+                "Colombia"
+            ],
+            "options_fr": [
+                "Espagne",
+                "Mexique",
+                "Argentine",
+                "Colombie"
+            ],
+            "correct": "México",
+            "hint": "💡 This country shares a border with the USA",
+            "hint_fr": "💡 Ce pays partage une frontière avec les États-Unis"
+        },
+        {
+            "id": "ex2",
+            "type": "multiple_choice",
+            "question": "In Argentina, instead of 'tú' they use...",
+            "question_fr": "En Argentine, au lieu de 'tú' ils utilisent...",
+            "options": [
+                "usted",
+                "vos",
+                "tí",
+                "yo"
+            ],
+            "options_fr": [
+                "usted",
+                "vos",
+                "tí",
+                "yo"
+            ],
+            "correct": "vos",
+            "hint": "💡 It's a 3-letter word starting with 'v'",
+            "hint_fr": "💡 C'est un mot de 3 lettres commençant par 'v'"
+        },
+        {
+            "id": "ex3",
+            "type": "multiple_choice",
+            "question": "How many countries have Spanish as an official language?",
+            "question_fr": "Combien de pays ont l'espagnol comme langue officielle ?",
+            "options": [
+                "15",
+                "18",
+                "21",
+                "25"
+            ],
+            "options_fr": [
+                "15",
+                "18",
+                "21",
+                "25"
+            ],
+            "correct": "21",
+            "hint": "💡 Think about it: it's more than 20",
+            "hint_fr": "💡 Réfléchissez : c'est plus de 20"
+        }
+    ]
+}

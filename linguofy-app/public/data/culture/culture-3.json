@@ -1,0 +1,208 @@
+{
+    "id": "culture-3",
+    "title": "Holidays & Celebrations",
+    "type": "culture",
+    "description": "Learn about vibrant Hispanic holidays and traditions",
+    "description_fr": "Découvrez les fêtes et traditions hispaniques colorées",
+    "content": {
+        "intro": {
+            "en": "Hispanic cultures are known for their colorful, lively celebrations! From Day of the Dead to La Tomatina, these festivals reflect deep traditions and community spirit.",
+            "fr": "Les cultures hispaniques sont connues pour leurs célébrations colorées et animées ! Du Jour des Morts à La Tomatina, ces festivals reflètent des traditions profondes et l'esprit communautaire."
+        },
+        "sections": [
+            {
+                "title": {
+                    "en": "💀 Día de los Muertos (Day of the Dead)",
+                    "fr": "💀 Día de los Muertos (Jour des Morts)"
+                },
+                "content": {
+                    "en": "Celebrated on November 1-2 in Mexico, this is NOT Halloween! It's a joyful celebration honoring deceased loved ones with altars, marigolds, and their favorite foods.",
+                    "fr": "Célébré les 1er et 2 novembre au Mexique, ce n'est PAS Halloween ! C'est une célébration joyeuse honorant les êtres chers décédés avec des autels, des soucis et leurs plats préférés."
+                },
+                "traditions": [
+                    {
+                        "en": "Building ofrendas (altars) with photos and offerings",
+                        "fr": "Construction d'ofrendas (autels) avec photos et offrandes"
+                    },
+                    {
+                        "en": "Eating pan de muerto (bread of the dead)",
+                        "fr": "Manger le pan de muerto (pain des morts)"
+                    },
+                    {
+                        "en": "Painting calaveras (decorative skulls)",
+                        "fr": "Peindre des calaveras (crânes décoratifs)"
+                    }
+                ],
+                "country": "🇲🇽 México"
+            },
+            {
+                "title": {
+                    "en": "🎉 Carnaval",
+                    "fr": "🎉 Carnaval"
+                },
+                "content": {
+                    "en": "Before Lent, many Hispanic countries celebrate with massive parades, costumes, and dancing. The most famous is in Barranquilla, Colombia!",
+                    "fr": "Avant le Carême, de nombreux pays hispaniques célèbrent avec d'immenses défilés, costumes et danses. Le plus célèbre est à Barranquilla, Colombie !"
+                },
+                "traditions": [
+                    {
+                        "en": "Elaborate costumes and masks",
+                        "fr": "Costumes et masques élaborés"
+                    },
+                    {
+                        "en": "Traditional music and dancing",
+                        "fr": "Musique et danses traditionnelles"
+                    },
+                    {
+                        "en": "Street parties lasting for days",
+                        "fr": "Fêtes de rue durant plusieurs jours"
+                    }
+                ],
+                "country": "🌎 All Latin America"
+            },
+            {
+                "title": {
+                    "en": "🐂 San Fermín (Running of the Bulls)",
+                    "fr": "🐂 San Fermín (Course des taureaux)"
+                },
+                "content": {
+                    "en": "Every July in Pamplona, Spain, brave (or crazy!) people run alongside bulls through narrow streets. It's been a tradition since the 14th century!",
+                    "fr": "Chaque juillet à Pampelune, Espagne, des gens courageux (ou fous !) courent aux côtés des taureaux dans les rues étroites. C'est une tradition depuis le 14e siècle !"
+                },
+                "traditions": [
+                    {
+                        "en": "Wearing white clothes with red sash and scarf",
+                        "fr": "Porter des vêtements blancs avec ceinture et foulard rouges"
+                    },
+                    {
+                        "en": "The run lasts about 3 minutes",
+                        "fr": "La course dure environ 3 minutes"
+                    },
+                    {
+                        "en": "Festivities last 9 days total",
+                        "fr": "Les festivités durent 9 jours au total"
+                    }
+                ],
+                "country": "🇪🇸 España"
+            },
+            {
+                "title": {
+                    "en": "🍅 La Tomatina",
+                    "fr": "🍅 La Tomatina"
+                },
+                "content": {
+                    "en": "The world's biggest food fight! Every August in Buñol, Spain, 20,000 people throw 150,000 tomatoes at each other for one hour.",
+                    "fr": "La plus grande bataille de nourriture au monde ! Chaque août à Buñol, Espagne, 20 000 personnes se lancent 150 000 tomates pendant une heure."
+                },
+                "traditions": [
+                    {
+                        "en": "Only squish tomatoes before throwing",
+                        "fr": "Écraser les tomates avant de les lancer"
+                    },
+                    {
+                        "en": "Wear old clothes and goggles",
+                        "fr": "Porter de vieux vêtements et des lunettes"
+                    },
+                    {
+                        "en": "After the fight, the streets are hosed down",
+                        "fr": "Après la bataille, les rues sont nettoyées au jet d'eau"
+                    }
+                ],
+                "country": "🇪🇸 España"
+            }
+        ],
+        "vocabulary": [
+            {
+                "spanish": "la fiesta",
+                "meaning": {
+                    "en": "the party/holiday",
+                    "fr": "la fête"
+                }
+            },
+            {
+                "spanish": "celebrar",
+                "meaning": {
+                    "en": "to celebrate",
+                    "fr": "célébrer"
+                }
+            },
+            {
+                "spanish": "la tradición",
+                "meaning": {
+                    "en": "the tradition",
+                    "fr": "la tradition"
+                }
+            },
+            {
+                "spanish": "¡Felicidades!",
+                "meaning": {
+                    "en": "Congratulations!",
+                    "fr": "Félicitations !"
+                }
+            }
+        ]
+    },
+    "focusVocab": [
+        "fiesta",
+        "celebrar",
+        "tradición",
+        "feliz",
+        "familia",
+        "música",
+        "baile",
+        "comida"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "When is Día de los Muertos celebrated?",
+            "question_fr": "Quand célèbre-t-on le Día de los Muertos ?",
+            "options": [
+                "October 31",
+                "November 1-2",
+                "December 25",
+                "January 1"
+            ],
+            "options_fr": [
+                "31 octobre",
+                "1-2 novembre",
+                "25 décembre",
+                "1er janvier"
+            ],
+            "correct": "November 1-2",
+            "hint": "💡 It's the first days of November",
+            "hint_fr": "💡 Ce sont les premiers jours de novembre"
+        },
+        {
+            "id": "ex2",
+            "type": "multiple_choice",
+            "question": "What do people throw at La Tomatina?",
+            "question_fr": "Que lance-t-on à La Tomatina ?",
+            "options": [
+                "Oranges",
+                "Tomatoes",
+                "Eggs",
+                "Water balloons"
+            ],
+            "options_fr": [
+                "Oranges",
+                "Tomates",
+                "Œufs",
+                "Ballons d'eau"
+            ],
+            "correct": "Tomatoes",
+            "hint": "💡 The name gives it away!",
+            "hint_fr": "💡 Le nom donne la réponse !"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'the party'",
+            "question_fr": "Traduisez : 'la fête'",
+            "correct": "la fiesta",
+            "hint": "💡 It's a 2-word answer starting with 'la'",
+            "hint_fr": "💡 C'est une réponse de 2 mots commençant par 'la'"
+        }
+    ]
+}

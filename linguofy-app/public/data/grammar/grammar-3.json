@@ -1,0 +1,202 @@
+{
+    "id": "grammar-3",
+    "title": "Verb Conjugation Basics",
+    "type": "grammar",
+    "description": "Spanish verbs change based on who is doing the action. Master the patterns!",
+    "description_fr": "Les verbes espagnols changent selon qui fait l'action. Maîtrisez les modèles !",
+    "content": {
+        "intro": {
+            "en": "Spanish verbs end in **-AR**, **-ER**, or **-IR**. Each type follows a pattern when conjugated!",
+            "fr": "Les verbes espagnols se terminent par **-AR**, **-ER**, ou **-IR**. Chaque type suit un modèle de conjugaison !"
+        },
+        "sections": [
+            {
+                "title": {
+                    "en": "-AR Verbs (Most Common)",
+                    "fr": "Verbes en -AR (Les plus courants)"
+                },
+                "example": "hablar (to speak / parler)",
+                "table": {
+                    "headers": [
+                        "Pronoun",
+                        "Ending",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "yo",
+                            "-o",
+                            "hablo (I speak)"
+                        ],
+                        [
+                            "tú",
+                            "-as",
+                            "hablas (you speak)"
+                        ],
+                        [
+                            "él/ella",
+                            "-a",
+                            "habla (he/she speaks)"
+                        ],
+                        [
+                            "nosotros",
+                            "-amos",
+                            "hablamos (we speak)"
+                        ],
+                        [
+                            "ellos",
+                            "-an",
+                            "hablan (they speak)"
+                        ]
+                    ]
+                }
+            },
+            {
+                "title": {
+                    "en": "-ER Verbs",
+                    "fr": "Verbes en -ER"
+                },
+                "example": "comer (to eat / manger)",
+                "table": {
+                    "headers": [
+                        "Pronoun",
+                        "Ending",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "yo",
+                            "-o",
+                            "como (I eat)"
+                        ],
+                        [
+                            "tú",
+                            "-es",
+                            "comes (you eat)"
+                        ],
+                        [
+                            "él/ella",
+                            "-e",
+                            "come (he/she eats)"
+                        ],
+                        [
+                            "nosotros",
+                            "-emos",
+                            "comemos (we eat)"
+                        ],
+                        [
+                            "ellos",
+                            "-en",
+                            "comen (they eat)"
+                        ]
+                    ]
+                }
+            },
+            {
+                "title": {
+                    "en": "-IR Verbs",
+                    "fr": "Verbes en -IR"
+                },
+                "example": "vivir (to live / vivre)",
+                "table": {
+                    "headers": [
+                        "Pronoun",
+                        "Ending",
+                        "Example"
+                    ],
+                    "rows": [
+                        [
+                            "yo",
+                            "-o",
+                            "vivo (I live)"
+                        ],
+                        [
+                            "tú",
+                            "-es",
+                            "vives (you live)"
+                        ],
+                        [
+                            "él/ella",
+                            "-e",
+                            "vive (he/she lives)"
+                        ],
+                        [
+                            "nosotros",
+                            "-imos",
+                            "vivimos (we live)"
+                        ],
+                        [
+                            "ellos",
+                            "-en",
+                            "viven (they live)"
+                        ]
+                    ]
+                }
+            }
+        ],
+        "tip": {
+            "en": "💡 Notice: -ER and -IR verbs have the same endings except for 'nosotros' (-emos vs -imos)!",
+            "fr": "💡 Remarquez : les verbes -ER et -IR ont les mêmes terminaisons sauf pour 'nosotros' (-emos vs -imos) !"
+        }
+    },
+    "focusVocab": [
+        "hablar",
+        "comer",
+        "vivir",
+        "hablo",
+        "hablas",
+        "como",
+        "comes",
+        "vivo",
+        "vives"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "fill_blank",
+            "question": "Yo _____ español. (I speak Spanish - hablar)",
+            "question_fr": "Yo _____ español. (Je parle espagnol - hablar)",
+            "options": [
+                "hablo",
+                "hablas",
+                "habla"
+            ],
+            "options_fr": [
+                "hablo",
+                "hablas",
+                "habla"
+            ],
+            "correct": "hablo",
+            "hint": "💡 yo + -AR verb = -o ending",
+            "hint_fr": "💡 yo + verbe -AR = terminaison -o"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Ellos _____ pizza. (They eat pizza - comer)",
+            "question_fr": "Ellos _____ pizza. (Ils mangent de la pizza - comer)",
+            "options": [
+                "como",
+                "come",
+                "comen"
+            ],
+            "options_fr": [
+                "como",
+                "come",
+                "comen"
+            ],
+            "correct": "comen",
+            "hint": "💡 ellos + -ER verb = -en ending",
+            "hint_fr": "💡 ellos + verbe -ER = terminaison -en"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'We live in Spain'",
+            "question_fr": "Traduisez : 'Nous vivons en Espagne'",
+            "correct": "Vivimos en España",
+            "hint": "💡 The answer has 3 words and starts with 'V...'",
+            "hint_fr": "💡 La réponse a 3 mots et commence par 'V...'"
+        }
+    ]
+}

@@ -1,0 +1,201 @@
+{
+    "id": "dialogue-1",
+    "title": "At the Café",
+    "type": "dialogue",
+    "description": "Practice ordering food and drinks at a Spanish café",
+    "description_fr": "Pratiquez commander de la nourriture et des boissons dans un café espagnol",
+    "setting": {
+        "en": "You're at a cozy café in Madrid. The waiter approaches your table.",
+        "fr": "Vous êtes dans un café confortable à Madrid. Le serveur s'approche de votre table."
+    },
+    "characters": [
+        {
+            "id": "waiter",
+            "name": "Camarero",
+            "role": {
+                "en": "Waiter",
+                "fr": "Serveur"
+            },
+            "avatar": "👨‍🍳"
+        },
+        {
+            "id": "you",
+            "name": "Tú",
+            "role": {
+                "en": "You (the customer)",
+                "fr": "Vous (le client)"
+            },
+            "avatar": "🧑"
+        }
+    ],
+    "dialogue": [
+        {
+            "speaker": "waiter",
+            "text": "¡Hola! ¿Qué desea tomar?",
+            "translation": {
+                "en": "Hi! What would you like to have?",
+                "fr": "Salut ! Que désirez-vous prendre ?"
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Hola, quiero un café con leche, por favor.",
+            "translation": {
+                "en": "Hi, I'd like a coffee with milk, please.",
+                "fr": "Salut, je voudrais un café au lait, s'il vous plaît."
+            }
+        },
+        {
+            "speaker": "waiter",
+            "text": "¿Grande o pequeño?",
+            "translation": {
+                "en": "Large or small?",
+                "fr": "Grand ou petit ?"
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Grande, por favor.",
+            "translation": {
+                "en": "Large, please.",
+                "fr": "Grand, s'il vous plaît."
+            }
+        },
+        {
+            "speaker": "waiter",
+            "text": "¿Algo más? ¿Un croissant?",
+            "translation": {
+                "en": "Anything else? A croissant?",
+                "fr": "Autre chose ? Un croissant ?"
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Sí, y también una tostada con tomate.",
+            "translation": {
+                "en": "Yes, and also toast with tomato.",
+                "fr": "Oui, et aussi une tartine à la tomate."
+            }
+        },
+        {
+            "speaker": "waiter",
+            "text": "Perfecto. Son cuatro euros con cincuenta.",
+            "translation": {
+                "en": "Perfect. That's four euros fifty.",
+                "fr": "Parfait. Ça fait quatre euros cinquante."
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Aquí tiene. Gracias.",
+            "translation": {
+                "en": "Here you go. Thanks.",
+                "fr": "Voici. Merci."
+            }
+        },
+        {
+            "speaker": "waiter",
+            "text": "¡Gracias a usted! Ahora le traigo todo.",
+            "translation": {
+                "en": "Thank you! I'll bring everything right away.",
+                "fr": "Merci à vous ! Je vous apporte tout de suite."
+            }
+        }
+    ],
+    "keyPhrases": [
+        {
+            "phrase": "¿Qué desea tomar?",
+            "meaning": {
+                "en": "What would you like to have?",
+                "fr": "Que désirez-vous prendre ?"
+            }
+        },
+        {
+            "phrase": "Quiero...",
+            "meaning": {
+                "en": "I want...",
+                "fr": "Je veux..."
+            }
+        },
+        {
+            "phrase": "Por favor",
+            "meaning": {
+                "en": "Please",
+                "fr": "S'il vous plaît"
+            }
+        },
+        {
+            "phrase": "¿Algo más?",
+            "meaning": {
+                "en": "Anything else?",
+                "fr": "Autre chose ?"
+            }
+        },
+        {
+            "phrase": "Aquí tiene",
+            "meaning": {
+                "en": "Here you go",
+                "fr": "Voici"
+            }
+        }
+    ],
+    "focusVocab": [
+        "café",
+        "con leche",
+        "grande",
+        "pequeño",
+        "tostada",
+        "por favor",
+        "gracias",
+        "euros"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "How do you say 'I want a coffee' in Spanish?",
+            "question_fr": "Comment dit-on 'Je veux un café' en espagnol ?",
+            "options": [
+                "Tengo un café",
+                "Quiero un café",
+                "Hay un café"
+            ],
+            "options_fr": [
+                "Tengo un café",
+                "Quiero un café",
+                "Hay un café"
+            ],
+            "correct": "Quiero un café",
+            "hint": "💡 quiero = I want",
+            "hint_fr": "💡 quiero = je veux"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Un café con _____, por favor. (A coffee with milk)",
+            "question_fr": "Un café con _____, por favor. (Un café au lait)",
+            "options": [
+                "agua",
+                "leche",
+                "azúcar"
+            ],
+            "options_fr": [
+                "agua (eau)",
+                "leche (lait)",
+                "azúcar (sucre)"
+            ],
+            "correct": "leche",
+            "hint": "💡 leche = milk",
+            "hint_fr": "💡 leche = lait"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'Anything else?'",
+            "question_fr": "Traduisez : 'Autre chose ?'",
+            "correct": "¿Algo más?",
+            "hint": "💡 The answer has 2 words and starts with 'A...'",
+            "hint_fr": "💡 La réponse a 2 mots et commence par 'A...'"
+        }
+    ]
+}

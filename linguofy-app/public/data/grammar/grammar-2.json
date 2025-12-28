@@ -1,0 +1,194 @@
+{
+    "id": "grammar-2",
+    "title": "Gender & Articles",
+    "type": "grammar",
+    "description": "All Spanish nouns have a gender - masculine or feminine. Learn the rules!",
+    "description_fr": "Tous les noms espagnols ont un genre - masculin ou féminin. Apprenez les règles !",
+    "content": {
+        "intro": {
+            "en": "Every Spanish noun is either **masculine** or **feminine**. This affects the articles (el/la) and adjectives you use!",
+            "fr": "Chaque nom espagnol est soit **masculin** soit **féminin**. Cela affecte les articles (el/la) et les adjectifs !"
+        },
+        "sections": [
+            {
+                "title": {
+                    "en": "Definite Articles (The)",
+                    "fr": "Articles définis (Le/La)"
+                },
+                "explanation": {
+                    "en": "Use **el** for masculine nouns and **la** for feminine nouns.",
+                    "fr": "Utilisez **el** pour les noms masculins et **la** pour les noms féminins."
+                },
+                "examples": [
+                    {
+                        "spanish": "el libro",
+                        "translation": {
+                            "en": "the book",
+                            "fr": "le livre"
+                        }
+                    },
+                    {
+                        "spanish": "la mesa",
+                        "translation": {
+                            "en": "the table",
+                            "fr": "la table"
+                        }
+                    },
+                    {
+                        "spanish": "los libros",
+                        "translation": {
+                            "en": "the books",
+                            "fr": "les livres"
+                        }
+                    },
+                    {
+                        "spanish": "las mesas",
+                        "translation": {
+                            "en": "the tables",
+                            "fr": "les tables"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "Indefinite Articles (A/An)",
+                    "fr": "Articles indéfinis (Un/Une)"
+                },
+                "examples": [
+                    {
+                        "spanish": "un gato",
+                        "translation": {
+                            "en": "a cat",
+                            "fr": "un chat"
+                        }
+                    },
+                    {
+                        "spanish": "una casa",
+                        "translation": {
+                            "en": "a house",
+                            "fr": "une maison"
+                        }
+                    },
+                    {
+                        "spanish": "unos gatos",
+                        "translation": {
+                            "en": "some cats",
+                            "fr": "des chats"
+                        }
+                    },
+                    {
+                        "spanish": "unas casas",
+                        "translation": {
+                            "en": "some houses",
+                            "fr": "des maisons"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "Gender Rules",
+                    "fr": "Règles de genre"
+                },
+                "rules": [
+                    {
+                        "rule": {
+                            "en": "Nouns ending in -o are usually masculine",
+                            "fr": "Les noms en -o sont généralement masculins"
+                        },
+                        "example": "el libro, el gato"
+                    },
+                    {
+                        "rule": {
+                            "en": "Nouns ending in -a are usually feminine",
+                            "fr": "Les noms en -a sont généralement féminins"
+                        },
+                        "example": "la casa, la mesa"
+                    },
+                    {
+                        "rule": {
+                            "en": "Nouns ending in -ción/-sión are feminine",
+                            "fr": "Les noms en -ción/-sión sont féminins"
+                        },
+                        "example": "la canción, la televisión"
+                    },
+                    {
+                        "rule": {
+                            "en": "Nouns ending in -dad/-tad are feminine",
+                            "fr": "Les noms en -dad/-tad sont féminins"
+                        },
+                        "example": "la ciudad, la libertad"
+                    }
+                ]
+            }
+        ],
+        "tip": {
+            "en": "⚠️ Exceptions exist! 'El día' (the day) is masculine, 'la mano' (the hand) is feminine. Learn these as you go!",
+            "fr": "⚠️ Des exceptions existent ! 'El día' (le jour) est masculin, 'la mano' (la main) est féminin. Apprenez-les au fur et à mesure !"
+        }
+    },
+    "focusVocab": [
+        "el",
+        "la",
+        "los",
+        "las",
+        "un",
+        "una",
+        "unos",
+        "unas"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "fill_blank",
+            "question": "_____ libro es interesante. (The book is interesting)",
+            "question_fr": "_____ libro es interesante. (Le livre est intéressant)",
+            "options": [
+                "El",
+                "La"
+            ],
+            "options_fr": [
+                "El",
+                "La"
+            ],
+            "correct": "El",
+            "hint": "💡 libro ends in -o = masculine",
+            "hint_fr": "💡 libro finit en -o = masculin"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Tengo _____ gata negra. (I have a black cat)",
+            "question_fr": "Tengo _____ gata negra. (J'ai une chatte noire)",
+            "options": [
+                "un",
+                "una"
+            ],
+            "options_fr": [
+                "un",
+                "una"
+            ],
+            "correct": "una",
+            "hint": "💡 gata ends in -a = feminine",
+            "hint_fr": "💡 gata finit en -a = féminin"
+        },
+        {
+            "id": "ex3",
+            "type": "multiple_choice",
+            "question": "Which is correct for 'the songs'?",
+            "question_fr": "Lequel est correct pour 'les chansons' ?",
+            "options": [
+                "los canciones",
+                "las canciones"
+            ],
+            "options_fr": [
+                "los canciones",
+                "las canciones"
+            ],
+            "correct": "las canciones",
+            "hint": "💡 canción ends in -ción = feminine",
+            "hint_fr": "💡 canción finit en -ción = féminin"
+        }
+    ]
+}

@@ -1,0 +1,187 @@
+{
+    "id": "culture-2",
+    "title": "Food & Traditions",
+    "type": "culture",
+    "description": "Explore traditional Spanish and Latin American cuisine",
+    "description_fr": "Explorez la cuisine traditionnelle espagnole et latino-américaine",
+    "content": {
+        "intro": {
+            "en": "Food is at the heart of Hispanic culture! From Spanish tapas to Mexican tacos, each country has iconic dishes that bring families together.",
+            "fr": "La nourriture est au cœur de la culture hispanique ! Des tapas espagnoles aux tacos mexicains, chaque pays a des plats emblématiques qui réunissent les familles."
+        },
+        "sections": [
+            {
+                "title": {
+                    "en": "🇪🇸 Spanish Cuisine",
+                    "fr": "🇪🇸 Cuisine espagnole"
+                },
+                "dishes": [
+                    {
+                        "name": "Paella",
+                        "description": {
+                            "en": "A rice dish from Valencia with saffron, seafood or chicken, and vegetables. The perfect Sunday family meal!",
+                            "fr": "Un plat de riz de Valence avec du safran, des fruits de mer ou du poulet, et des légumes. Le repas familial parfait du dimanche !"
+                        },
+                        "region": "Valencia"
+                    },
+                    {
+                        "name": "Tapas",
+                        "description": {
+                            "en": "Small dishes meant for sharing - olives, jamón, patatas bravas, and more. Going for tapas is a social event!",
+                            "fr": "Petits plats à partager - olives, jambon, patatas bravas, et plus. Aller manger des tapas est un événement social !"
+                        },
+                        "region": "All of Spain"
+                    },
+                    {
+                        "name": "Tortilla Española",
+                        "description": {
+                            "en": "A thick potato and egg omelette. Found in every Spanish bar!",
+                            "fr": "Une omelette épaisse aux pommes de terre. On en trouve dans tous les bars espagnols !"
+                        },
+                        "region": "All of Spain"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "🇲🇽 Mexican Cuisine",
+                    "fr": "🇲🇽 Cuisine mexicaine"
+                },
+                "dishes": [
+                    {
+                        "name": "Tacos",
+                        "description": {
+                            "en": "Corn or flour tortillas filled with meat, salsa, and toppings. Every region has its own style!",
+                            "fr": "Tortillas de maïs ou de blé garnies de viande, salsa et garnitures. Chaque région a son propre style !"
+                        },
+                        "region": "All of Mexico"
+                    },
+                    {
+                        "name": "Mole",
+                        "description": {
+                            "en": "A rich sauce made with chili peppers, chocolate, and spices. It takes hours to prepare!",
+                            "fr": "Une sauce riche à base de piments, chocolat et épices. La préparation prend des heures !"
+                        },
+                        "region": "Oaxaca & Puebla"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "description": {
+                            "en": "Fresh avocado dip with lime, cilantro, and tomatoes. Always made fresh!",
+                            "fr": "Sauce à l'avocat avec citron vert, coriandre et tomates. Toujours faite fraîche !"
+                        },
+                        "region": "All of Mexico"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "🍽️ Food Vocabulary",
+                    "fr": "🍽️ Vocabulaire culinaire"
+                },
+                "vocabulary": [
+                    {
+                        "spanish": "la comida",
+                        "meaning": {
+                            "en": "the food/meal",
+                            "fr": "la nourriture/le repas"
+                        }
+                    },
+                    {
+                        "spanish": "el desayuno",
+                        "meaning": {
+                            "en": "breakfast",
+                            "fr": "le petit-déjeuner"
+                        }
+                    },
+                    {
+                        "spanish": "el almuerzo",
+                        "meaning": {
+                            "en": "lunch",
+                            "fr": "le déjeuner"
+                        }
+                    },
+                    {
+                        "spanish": "la cena",
+                        "meaning": {
+                            "en": "dinner",
+                            "fr": "le dîner"
+                        }
+                    },
+                    {
+                        "spanish": "¡Buen provecho!",
+                        "meaning": {
+                            "en": "Enjoy your meal!",
+                            "fr": "Bon appétit !"
+                        }
+                    }
+                ]
+            }
+        ],
+        "tip": {
+            "en": "🍴 In Spain, lunch (la comida) is the main meal of the day, usually around 2-3 PM. Dinner is lighter and often after 9 PM!",
+            "fr": "🍴 En Espagne, le déjeuner (la comida) est le repas principal, généralement vers 14h-15h. Le dîner est plus léger et souvent après 21h !"
+        }
+    },
+    "focusVocab": [
+        "comida",
+        "desayuno",
+        "almuerzo",
+        "cena",
+        "delicioso",
+        "rico",
+        "hambre",
+        "plato"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "What is 'paella' made with?",
+            "question_fr": "Avec quoi est faite la 'paella' ?",
+            "options": [
+                "Pasta",
+                "Rice",
+                "Bread",
+                "Potatoes"
+            ],
+            "options_fr": [
+                "Pâtes",
+                "Riz",
+                "Pain",
+                "Pommes de terre"
+            ],
+            "correct": "Rice",
+            "hint": "💡 It's a grain dish from Valencia",
+            "hint_fr": "💡 C'est un plat de céréales de Valence"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "¡Buen _____! (Enjoy your meal!)",
+            "question_fr": "¡Buen _____! (Bon appétit !)",
+            "options": [
+                "día",
+                "provecho",
+                "viaje"
+            ],
+            "options_fr": [
+                "día (jour)",
+                "provecho (appétit)",
+                "viaje (voyage)"
+            ],
+            "correct": "provecho",
+            "hint": "💡 This is what you say before eating",
+            "hint_fr": "💡 C'est ce qu'on dit avant de manger"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I am hungry'",
+            "question_fr": "Traduisez : 'J'ai faim'",
+            "correct": "Tengo hambre",
+            "hint": "💡 In Spanish you 'have' hunger, not 'are' hungry",
+            "hint_fr": "💡 En espagnol on 'a' faim, on n'est pas affamé"
+        }
+    ]
+}

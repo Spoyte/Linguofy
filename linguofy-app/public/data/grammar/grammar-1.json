@@ -1,0 +1,212 @@
+{
+    "id": "grammar-1",
+    "title": "Ser vs Estar",
+    "type": "grammar",
+    "description": "Understanding when to use 'ser' and 'estar' - two verbs that both mean 'to be'",
+    "description_fr": "Comprendre quand utiliser 'ser' et 'estar' - deux verbes qui signifient 'être'",
+    "content": {
+        "intro": {
+            "en": "Spanish has TWO verbs for 'to be': **SER** and **ESTAR**. This confuses many learners, but there's a simple rule!",
+            "fr": "L'espagnol a DEUX verbes pour 'être' : **SER** et **ESTAR**. Cela déroute beaucoup d'apprenants, mais il y a une règle simple !"
+        },
+        "sections": [
+            {
+                "title": {
+                    "en": "SER - Permanent Characteristics",
+                    "fr": "SER - Caractéristiques permanentes"
+                },
+                "explanation": {
+                    "en": "Use **SER** for things that don't change easily: identity, nationality, profession, physical traits, time, and relationships.",
+                    "fr": "Utilisez **SER** pour les choses qui ne changent pas facilement : identité, nationalité, profession, traits physiques, heure et relations."
+                },
+                "examples": [
+                    {
+                        "spanish": "Yo soy María.",
+                        "translation": {
+                            "en": "I am María.",
+                            "fr": "Je suis María."
+                        }
+                    },
+                    {
+                        "spanish": "Él es doctor.",
+                        "translation": {
+                            "en": "He is a doctor.",
+                            "fr": "Il est médecin."
+                        }
+                    },
+                    {
+                        "spanish": "Somos de España.",
+                        "translation": {
+                            "en": "We are from Spain.",
+                            "fr": "Nous sommes d'Espagne."
+                        }
+                    },
+                    {
+                        "spanish": "Son las tres.",
+                        "translation": {
+                            "en": "It's three o'clock.",
+                            "fr": "Il est trois heures."
+                        }
+                    }
+                ],
+                "mnemonic": {
+                    "en": "🔒 SER = Stable/Permanent (DOCTOR = Description, Occupation, Characteristic, Time, Origin, Relationship)",
+                    "fr": "🔒 SER = Stable/Permanent (DOCTOR = Description, Occupation, Caractéristique, Temps, Origine, Relation)"
+                }
+            },
+            {
+                "title": {
+                    "en": "ESTAR - Temporary States & Locations",
+                    "fr": "ESTAR - États temporaires & Lieux"
+                },
+                "explanation": {
+                    "en": "Use **ESTAR** for things that can change: feelings, moods, locations, and temporary conditions.",
+                    "fr": "Utilisez **ESTAR** pour les choses qui peuvent changer : sentiments, humeurs, lieux et conditions temporaires."
+                },
+                "examples": [
+                    {
+                        "spanish": "Estoy cansado.",
+                        "translation": {
+                            "en": "I am tired.",
+                            "fr": "Je suis fatigué."
+                        }
+                    },
+                    {
+                        "spanish": "Ella está en casa.",
+                        "translation": {
+                            "en": "She is at home.",
+                            "fr": "Elle est à la maison."
+                        }
+                    },
+                    {
+                        "spanish": "Estamos contentos.",
+                        "translation": {
+                            "en": "We are happy.",
+                            "fr": "Nous sommes contents."
+                        }
+                    },
+                    {
+                        "spanish": "La puerta está abierta.",
+                        "translation": {
+                            "en": "The door is open.",
+                            "fr": "La porte est ouverte."
+                        }
+                    }
+                ],
+                "mnemonic": {
+                    "en": "📍 ESTAR = Emotions, States, Temporary conditions, Actions in progress, and Locations (ESTAL)",
+                    "fr": "📍 ESTAR = Émotions, États, Temporaire, Actions en cours, et Lieux (ESTAL)"
+                }
+            },
+            {
+                "title": {
+                    "en": "Conjugation Chart",
+                    "fr": "Tableau de conjugaison"
+                },
+                "table": {
+                    "headers": [
+                        "Pronoun",
+                        "SER",
+                        "ESTAR"
+                    ],
+                    "rows": [
+                        [
+                            "yo",
+                            "soy",
+                            "estoy"
+                        ],
+                        [
+                            "tú",
+                            "eres",
+                            "estás"
+                        ],
+                        [
+                            "él/ella/usted",
+                            "es",
+                            "está"
+                        ],
+                        [
+                            "nosotros",
+                            "somos",
+                            "estamos"
+                        ],
+                        [
+                            "ellos/ustedes",
+                            "son",
+                            "están"
+                        ]
+                    ]
+                }
+            }
+        ],
+        "tip": {
+            "en": "💡 Some adjectives change meaning! 'Ser aburrido' = to be boring (personality), but 'Estar aburrido' = to be bored (feeling).",
+            "fr": "💡 Certains adjectifs changent de sens ! 'Ser aburrido' = être ennuyeux (personnalité), mais 'Estar aburrido' = s'ennuyer (sentiment)."
+        }
+    },
+    "focusVocab": [
+        "soy",
+        "eres",
+        "es",
+        "somos",
+        "son",
+        "estoy",
+        "estás",
+        "está",
+        "estamos",
+        "están"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "fill_blank",
+            "question": "María _____ de México. (María is from Mexico)",
+            "question_fr": "María _____ de México. (María est du Mexique)",
+            "options": [
+                "es",
+                "está"
+            ],
+            "options_fr": [
+                "es",
+                "está"
+            ],
+            "correct": "es",
+            "hint": "💡 Origin = SER",
+            "hint_fr": "💡 Origine = SER"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Yo _____ cansado hoy. (I am tired today)",
+            "question_fr": "Yo _____ cansado hoy. (Je suis fatigué aujourd'hui)",
+            "options": [
+                "soy",
+                "estoy"
+            ],
+            "options_fr": [
+                "soy",
+                "estoy"
+            ],
+            "correct": "estoy",
+            "hint": "💡 Temporary feeling = ESTAR",
+            "hint_fr": "💡 Sentiment temporaire = ESTAR"
+        },
+        {
+            "id": "ex3",
+            "type": "multiple_choice",
+            "question": "Which sentence is correct?",
+            "question_fr": "Quelle phrase est correcte ?",
+            "options": [
+                "Ella es en la escuela.",
+                "Ella está en la escuela."
+            ],
+            "options_fr": [
+                "Ella es en la escuela.",
+                "Ella está en la escuela."
+            ],
+            "correct": "Ella está en la escuela.",
+            "hint": "💡 Location = ESTAR",
+            "hint_fr": "💡 Lieu = ESTAR"
+        }
+    ]
+}

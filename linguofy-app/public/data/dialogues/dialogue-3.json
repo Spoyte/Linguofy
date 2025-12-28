@@ -1,0 +1,201 @@
+{
+    "id": "dialogue-3",
+    "title": "At the Market",
+    "type": "dialogue",
+    "description": "Practice buying fruits and vegetables at a Spanish market",
+    "description_fr": "Pratiquez l'achat de fruits et légumes dans un marché espagnol",
+    "setting": {
+        "en": "You're at La Boquería market in Barcelona buying fresh produce.",
+        "fr": "Vous êtes au marché de La Boquería à Barcelone pour acheter des produits frais."
+    },
+    "characters": [
+        {
+            "id": "vendor",
+            "name": "Vendedor",
+            "role": {
+                "en": "Market vendor",
+                "fr": "Vendeur du marché"
+            },
+            "avatar": "👨‍🌾"
+        },
+        {
+            "id": "you",
+            "name": "Tú",
+            "role": {
+                "en": "You (the customer)",
+                "fr": "Vous (le client)"
+            },
+            "avatar": "🧑"
+        }
+    ],
+    "dialogue": [
+        {
+            "speaker": "vendor",
+            "text": "¡Buenos días! ¿Qué le pongo?",
+            "translation": {
+                "en": "Good morning! What can I get you?",
+                "fr": "Bonjour ! Qu'est-ce que je vous mets ?"
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Hola, quiero un kilo de manzanas.",
+            "translation": {
+                "en": "Hi, I'd like a kilo of apples.",
+                "fr": "Salut, je voudrais un kilo de pommes."
+            }
+        },
+        {
+            "speaker": "vendor",
+            "text": "¿Las rojas o las verdes?",
+            "translation": {
+                "en": "The red ones or the green ones?",
+                "fr": "Les rouges ou les vertes ?"
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Las rojas, por favor. ¿Cuánto cuestan?",
+            "translation": {
+                "en": "The red ones, please. How much do they cost?",
+                "fr": "Les rouges, s'il vous plaît. Combien coûtent-elles ?"
+            }
+        },
+        {
+            "speaker": "vendor",
+            "text": "Dos euros el kilo. ¿Necesita algo más?",
+            "translation": {
+                "en": "Two euros per kilo. Do you need anything else?",
+                "fr": "Deux euros le kilo. Avez-vous besoin d'autre chose ?"
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Sí, medio kilo de tomates y una lechuga.",
+            "translation": {
+                "en": "Yes, half a kilo of tomatoes and a head of lettuce.",
+                "fr": "Oui, un demi-kilo de tomates et une laitue."
+            }
+        },
+        {
+            "speaker": "vendor",
+            "text": "Muy bien. En total son cuatro euros con veinte.",
+            "translation": {
+                "en": "Very good. In total it's four euros twenty.",
+                "fr": "Très bien. Au total ça fait quatre euros vingt."
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Aquí tiene cinco euros.",
+            "translation": {
+                "en": "Here's five euros.",
+                "fr": "Voici cinq euros."
+            }
+        },
+        {
+            "speaker": "vendor",
+            "text": "Y aquí tiene su cambio. ¡Gracias!",
+            "translation": {
+                "en": "And here's your change. Thanks!",
+                "fr": "Et voici votre monnaie. Merci !"
+            }
+        }
+    ],
+    "keyPhrases": [
+        {
+            "phrase": "¿Qué le pongo?",
+            "meaning": {
+                "en": "What can I get you?",
+                "fr": "Qu'est-ce que je vous mets ?"
+            }
+        },
+        {
+            "phrase": "Un kilo de...",
+            "meaning": {
+                "en": "A kilo of...",
+                "fr": "Un kilo de..."
+            }
+        },
+        {
+            "phrase": "¿Cuánto cuesta?",
+            "meaning": {
+                "en": "How much does it cost?",
+                "fr": "Combien ça coûte ?"
+            }
+        },
+        {
+            "phrase": "Medio kilo",
+            "meaning": {
+                "en": "Half a kilo",
+                "fr": "Un demi-kilo"
+            }
+        },
+        {
+            "phrase": "El cambio",
+            "meaning": {
+                "en": "The change",
+                "fr": "La monnaie"
+            }
+        }
+    ],
+    "focusVocab": [
+        "manzanas",
+        "tomates",
+        "lechuga",
+        "kilo",
+        "medio",
+        "cuánto",
+        "cuesta",
+        "cambio"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "How do you ask 'How much does it cost?'",
+            "question_fr": "Comment demande-t-on 'Combien ça coûte ?'",
+            "options": [
+                "¿Qué es esto?",
+                "¿Cuánto cuesta?",
+                "¿Dónde está?"
+            ],
+            "options_fr": [
+                "¿Qué es esto?",
+                "¿Cuánto cuesta?",
+                "¿Dónde está?"
+            ],
+            "correct": "¿Cuánto cuesta?",
+            "hint": "💡 cuánto = how much",
+            "hint_fr": "💡 cuánto = combien"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Quiero _____ kilo de tomates. (half)",
+            "question_fr": "Quiero _____ kilo de tomates. (demi)",
+            "options": [
+                "un",
+                "medio",
+                "dos"
+            ],
+            "options_fr": [
+                "un",
+                "medio",
+                "dos"
+            ],
+            "correct": "medio",
+            "hint": "💡 medio = half",
+            "hint_fr": "💡 medio = demi"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I want a kilo of apples'",
+            "question_fr": "Traduisez : 'Je veux un kilo de pommes'",
+            "correct": "Quiero un kilo de manzanas",
+            "hint": "💡 manzanas = apples",
+            "hint_fr": "💡 manzanas = pommes"
+        }
+    ]
+}

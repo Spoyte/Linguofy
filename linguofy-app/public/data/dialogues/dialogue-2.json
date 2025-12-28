@@ -1,0 +1,201 @@
+{
+    "id": "dialogue-2",
+    "title": "Asking for Directions",
+    "type": "dialogue",
+    "description": "Learn to ask and understand directions in Spanish",
+    "description_fr": "Apprenez à demander et comprendre les directions en espagnol",
+    "setting": {
+        "en": "You're lost in Barcelona and need to find the museum.",
+        "fr": "Vous êtes perdu à Barcelone et devez trouver le musée."
+    },
+    "characters": [
+        {
+            "id": "local",
+            "name": "Persona local",
+            "role": {
+                "en": "A local person",
+                "fr": "Un habitant"
+            },
+            "avatar": "👩"
+        },
+        {
+            "id": "you",
+            "name": "Tú",
+            "role": {
+                "en": "You (the tourist)",
+                "fr": "Vous (le touriste)"
+            },
+            "avatar": "🧑"
+        }
+    ],
+    "dialogue": [
+        {
+            "speaker": "you",
+            "text": "Perdone, ¿dónde está el museo?",
+            "translation": {
+                "en": "Excuse me, where is the museum?",
+                "fr": "Excusez-moi, où est le musée ?"
+            }
+        },
+        {
+            "speaker": "local",
+            "text": "El museo está cerca de aquí.",
+            "translation": {
+                "en": "The museum is near here.",
+                "fr": "Le musée est près d'ici."
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "¿Cómo llego?",
+            "translation": {
+                "en": "How do I get there?",
+                "fr": "Comment j'y arrive ?"
+            }
+        },
+        {
+            "speaker": "local",
+            "text": "Siga todo recto por esta calle.",
+            "translation": {
+                "en": "Go straight along this street.",
+                "fr": "Continuez tout droit dans cette rue."
+            }
+        },
+        {
+            "speaker": "local",
+            "text": "Después, gire a la izquierda en el semáforo.",
+            "translation": {
+                "en": "Then, turn left at the traffic light.",
+                "fr": "Ensuite, tournez à gauche au feu."
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "¿A la izquierda?",
+            "translation": {
+                "en": "To the left?",
+                "fr": "À gauche ?"
+            }
+        },
+        {
+            "speaker": "local",
+            "text": "Sí, y el museo está a la derecha, al lado del parque.",
+            "translation": {
+                "en": "Yes, and the museum is on the right, next to the park.",
+                "fr": "Oui, et le musée est à droite, à côté du parc."
+            }
+        },
+        {
+            "speaker": "you",
+            "text": "Muchas gracias por su ayuda.",
+            "translation": {
+                "en": "Thank you very much for your help.",
+                "fr": "Merci beaucoup pour votre aide."
+            }
+        },
+        {
+            "speaker": "local",
+            "text": "¡De nada! ¡Buen paseo!",
+            "translation": {
+                "en": "You're welcome! Enjoy your walk!",
+                "fr": "De rien ! Bonne promenade !"
+            }
+        }
+    ],
+    "keyPhrases": [
+        {
+            "phrase": "¿Dónde está...?",
+            "meaning": {
+                "en": "Where is...?",
+                "fr": "Où est...?"
+            }
+        },
+        {
+            "phrase": "Siga todo recto",
+            "meaning": {
+                "en": "Go straight",
+                "fr": "Continuez tout droit"
+            }
+        },
+        {
+            "phrase": "Gire a la izquierda",
+            "meaning": {
+                "en": "Turn left",
+                "fr": "Tournez à gauche"
+            }
+        },
+        {
+            "phrase": "Gire a la derecha",
+            "meaning": {
+                "en": "Turn right",
+                "fr": "Tournez à droite"
+            }
+        },
+        {
+            "phrase": "Al lado de",
+            "meaning": {
+                "en": "Next to",
+                "fr": "À côté de"
+            }
+        }
+    ],
+    "focusVocab": [
+        "dónde",
+        "cerca",
+        "lejos",
+        "izquierda",
+        "derecha",
+        "recto",
+        "semáforo",
+        "calle"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "How do you say 'turn right' in Spanish?",
+            "question_fr": "Comment dit-on 'tournez à droite' en espagnol ?",
+            "options": [
+                "Siga recto",
+                "Gire a la derecha",
+                "Gire a la izquierda"
+            ],
+            "options_fr": [
+                "Siga recto",
+                "Gire a la derecha",
+                "Gire a la izquierda"
+            ],
+            "correct": "Gire a la derecha",
+            "hint": "💡 derecha = right",
+            "hint_fr": "💡 derecha = droite"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "El museo está _____ del parque. (next to)",
+            "question_fr": "El museo está _____ del parque. (à côté de)",
+            "options": [
+                "lejos",
+                "al lado",
+                "encima"
+            ],
+            "options_fr": [
+                "lejos (loin)",
+                "al lado (à côté)",
+                "encima (au-dessus)"
+            ],
+            "correct": "al lado",
+            "hint": "💡 al lado de = next to",
+            "hint_fr": "💡 al lado de = à côté de"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'Where is the museum?'",
+            "question_fr": "Traduisez : 'Où est le musée ?'",
+            "correct": "¿Dónde está el museo?",
+            "hint": "💡 The answer has 4 words starting with '¿Dónde...'",
+            "hint_fr": "💡 La réponse a 4 mots commençant par '¿Dónde...'"
+        }
+    ]
+}

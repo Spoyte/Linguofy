@@ -80,3 +80,40 @@ export const modules = [
         ]
     }
 ];
+
+// Bonus content modules - different content types
+export const bonusModules = [
+    {
+        id: "grammar",
+        title: "📖 Grammar Tips",
+        desc: "Quick grammar explanations",
+        icon: "📖",
+        lessons: [
+            { id: "grammar-1", title: "Ser vs Estar", type: "grammar", status: "published" },
+            { id: "grammar-2", title: "Gender & Articles", type: "grammar", status: "published" },
+            { id: "grammar-3", title: "Verb Conjugation Basics", type: "grammar", status: "published" },
+        ]
+    },
+    {
+        id: "dialogues",
+        title: "🗣️ Dialogues",
+        desc: "Real conversation practice",
+        icon: "🗣️",
+        lessons: [
+            { id: "dialogue-1", title: "At the Café", type: "dialogue", status: "published" },
+            { id: "dialogue-2", title: "Asking for Directions", type: "dialogue", status: "published" },
+            { id: "dialogue-3", title: "At the Market", type: "dialogue", status: "published" },
+        ]
+    },
+    {
+        id: "culture",
+        title: "🌍 Culture",
+        desc: "Spanish-speaking world",
+        icon: "🌍",
+        lessons: [
+            { id: "culture-1", title: "Spanish-Speaking Countries", type: "culture", status: "published" },
+            { id: "culture-2", title: "Food & Traditions", type: "culture", status: "published" },
+            { id: "culture-3", title: "Holidays & Celebrations", type: "culture", status: "published" },
+        ]
+    }
+];
