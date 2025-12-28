@@ -1,47 +1,47 @@
-# Task List
+## 1. Admin Dashboard (Feature: Content Management)
+**Goal**: Enable non-technical management of Linguofy content.
 
-## 1. Immediate Content Tasks (Audio Generation)
-The JSON content exists, but audio files currently missing. User needs to generate MP3s via Suno and link them.
-- [ ] **Module 2: Basic Needs**
-    - [ ] 2.1 Numbers (Generate & Integrate)
-    - [ ] 2.2 Is there...? (Generate & Integrate)
-    - [ ] 2.3 I want (Generate & Integrate)
-- [ ] **Module 3: Family**
-    - [ ] 3.1 Family (Generate & Integrate)
-    - [ ] 3.2 Description (Generate & Integrate)
-    - [ ] 3.3 House (Generate & Integrate)
-- [ ] **Module 4: Routine**
-    - [ ] 4.1 Time (Generate & Integrate)
-    - [ ] 4.2 Routine (Generate & Integrate)
-    - [ ] 4.3 Days (Generate & Integrate)
-- [ ] **Module 5: Hobbies**
-    - [ ] 5.1 Gustar (Generate & Integrate)
-    - [ ] 5.2 Sports (Generate & Integrate)
-    - [ ] 5.3 Clothes (Generate & Integrate)
-- [ ] **Module 6, 7, 8 (A2)**
-    - [ ] Generate Audio for all 9 A2 lessons.
+### Phase 1.1: Foundation & Auth
+- [x] **Route & Layout**:
+    - [x] Create `/admin` route.
+    - [x] Create `AdminLayout` (Sidebar with links: Songs, Prompts, Config).
+    - [x] Implement "Dummy Auth" (Login Screen -> `localStorage` check).
+    - [x] Protect `/admin` routes (Redirect to login if not authenticated).
 
-## 2. Feature Implementation (Code)
+### Phase 1.2: Resource Management
+- [x] **Song Manager**:
+    - [x] View list of all songs (ID, Title, Module, Status).
+    - [x] **Edit Song Form**:
+        - [x] Fields: Title, ID, Style Prompt, Lyrics (Mixed/Pure).
+        - [x] Audio Path selector (Text input for now).
+    - [ ] **Add New Song**: Create new JSON entry.
+- [x] **Prompt Manager** (New Request):
+    - [x] Create `prompts.json` (or similar store) to save generation templates.
+    - [x] **UI**: List/Add/Edit styles (e.g., "Reggaeton Style Prompt", "Lesson Structure Prompt").
+    - [x] Use these prompts to help user generate new content.
+
+### Phase 1.3: Configuration (Dynamic Types)
+- [x] **Language Manager**:
+    - [x] UI to add/remove supported languages (e.g., Target: Spanish, Native: French/English).
+- [x] **Exercise Type Manager**:
+    - [x] View/Edit available exercise types (`multiple_choice`, `fill_blank`).
+
+## 2. Feature Implementation (Core App)
 - [ ] **Persistence**:
     - [ ] create `useProgress` hook using `localStorage`.
-    - [ ] Update `CourseMap.jsx` to read from this hook instead of hardcoded `completed: false`.
-    - [ ] Update `LessonView.jsx` to call `markComplete()` upon finishing exercises.
-    - [ ] Add "Confetti" animation on lesson completion.
+    - [ ] Update `CourseMap` and `LessonView` to use it.
+- [ ] **UI Polish**:
+    - [ ] Add "Locked" state for future modules.
+    - [ ] Confetti animation.
 
-## 3. Admin Dashboard (New Major Feature)
-- [ ] **Phase 1: Local Admin (Mock/Client-Side)**
-    - [ ] Create `/admin` route with dummy login (User: `admin`, Pass: `admin`).
-    - [ ] **Dashboard Layout**: Sidebar navigation (Songs, Exercises, Prompts, Config).
-    - [ ] **Resource Management Views**:
-        - [ ] List all Songs (Data Grid).
-        - [ ] Add/Edit Song Metadata (Form).
-        - [ ] Add/Edit Exercises (Dynamic Form Builder).
-    - [ ] **Configuration Views**:
-        - [ ] Manage Prompts (Song Generation, Lesson Creation).
-        - [ ] Manage Languages (Add/Remove supported languages).
-- [ ] **Phase 2: Connected Admin (Supabase)**
-    - [ ] Connect Dashboard to real Database.
-    - [ ] Implement Row Level Security (RLS) so only Admins can write.
+## 3. Infrastructure & Deployment
+- [ ] **Deployment**: Connect to Vercel (User Action).
+- [ ] **Backend (Phase 2)**: Supabase integration for real persistence.
+
+## 4. Backlog / Asset Generation (Non-Blocking)
+*These tasks are paused while waiting for User/Agent to generate files.*
+- [ ] **Audio Generation (A1 & A2)**: Generate MP3s for Modules 2-8.
+- [ ] **Integration**: Link generated MP3s in JSON.
 
 ## 4. Infrastructure
 - [ ] **Deployment**:
