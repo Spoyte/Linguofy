@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS modules (
     title TEXT NOT NULL,
     description TEXT,
     level TEXT CHECK (level IN ('A1', 'A2', 'B1', 'B2')),
+    native_language_ratio DECIMAL(3,2), -- e.g., 0.80 for 80%
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
@@ -23,9 +24,10 @@ CREATE TABLE IF NOT EXISTS lessons (
     type TEXT DEFAULT 'song', -- song, dialogue, grammar
     status TEXT DEFAULT 'draft' CHECK (status IN ('draft', 'audio_missing', 'published')),
     style_prompt TEXT, -- AI generation prompt
-    content JSONB DEFAULT '{}', -- { lyrics_mixed: "...", lyrics_pure: "..." }
-    audio_url_mixed TEXT,
-    audio_url_pure TEXT,
+    content JSONB DEFAULT '{}', -- { lyrics_mixed_fr, lyrics_mixed_en, lyrics_pure_es }
+    audio_urls JSONB DEFAULT '{}', -- { mixed_fr, mixed_en, pure_es }
+    known_vocab TEXT[] DEFAULT '{}', -- vocabulary from previous lessons
+    focus_vocab TEXT[] DEFAULT '{}', -- new vocabulary this lesson
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
@@ -36,7 +38,14 @@ CREATE TABLE IF NOT EXISTS exercises (
     lesson_id TEXT REFERENCES lessons(id) ON DELETE CASCADE,
     order_index INTEGER DEFAULT 0,
     type TEXT NOT NULL CHECK (type IN ('multiple_choice', 'fill_blank', 'match_pair', 'translation', 'scramble')),
-    data JSONB NOT NULL, -- { question: "...", options: [...], answer: "..." }
+    -- Core exercise data
+    question TEXT NOT NULL,
+    question_fr TEXT, -- French translation
+    options JSONB, -- ["option1", "option2", ...]
+    options_fr JSONB, -- French translations of options
+    correct_answer TEXT NOT NULL,
+    hint TEXT,
+    hint_fr TEXT,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
@@ -51,6 +60,7 @@ CREATE TABLE IF NOT EXISTS profiles (
     xp INTEGER DEFAULT 0,
     streak INTEGER DEFAULT 0,
     native_language TEXT DEFAULT 'en',
+    ui_language TEXT DEFAULT 'en', -- for i18n preference
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
@@ -91,11 +101,8 @@ CREATE POLICY "Users can insert own progress" ON user_progress FOR INSERT WITH C
 CREATE POLICY "Users can update own progress" ON user_progress FOR UPDATE USING (auth.uid() = user_id);
 
 -- ADMIN: Full access (use service_role key or custom claim)
--- For now, we'll create a simple admin check function
 CREATE OR REPLACE FUNCTION is_admin() RETURNS BOOLEAN AS $$
 BEGIN
-    -- Check if the user's email ends with @linguofy.com or is in a whitelist
-    -- For development, you can add your email here
     RETURN (SELECT email FROM auth.users WHERE id = auth.uid()) IN (
         'admin@linguofy.com',
         'your-email@example.com' -- Replace with your actual email
