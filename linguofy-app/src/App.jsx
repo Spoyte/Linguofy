@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage';
 import CourseMap from './pages/CourseMap';
 import SongPlayer from './pages/SongPlayer';
 import LessonView from './pages/LessonView';
+import VocabularyReview from './pages/VocabularyReview';
 
 // Admin Pages
 import AdminLogin from './pages/admin/AdminLogin';
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/learn" element={<CourseMap />} />
                     <Route path="/play/:id" element={<SongPlayer />} />
                     <Route path="/lesson/:id" element={<LessonView />} />
+                    <Route path="/vocabulary" element={<VocabularyReview />} />
 
                     {/* Admin Routes */}
                     <Route path="/admin" element={<AdminLogin />} />

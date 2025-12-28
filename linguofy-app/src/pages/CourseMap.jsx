@@ -27,6 +27,14 @@ export default function CourseMap() {
                     <div className="text-sm font-medium text-slate-400">
                         {completedLessons.length} / {modules.flatMap(m => m.songs).length} {t('courseMap.lessonsComplete')}
                     </div>
+                    {completedLessons.length > 0 && (
+                        <Link
+                            to="/vocabulary"
+                            className="px-3 py-2 bg-purple-600/30 hover:bg-purple-600/50 border border-purple-500/30 rounded-lg text-sm font-medium text-purple-300 transition"
+                        >
+                            📚 {t('courseMap.vocabulary') || 'Vocabulary'}
+                        </Link>
+                    )}
                     <LanguageToggle />
                 </div>
             </header>

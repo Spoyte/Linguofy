@@ -40,7 +40,8 @@ export const translations = {
             unlockMessage: "Complete all lessons in the previous unit to unlock",
             start: "Start",
             review: "Review",
-            continue: "Continue"
+            continue: "Continue",
+            vocabulary: "Vocabulary"
         },
         // Lesson View
         lesson: {
@@ -121,7 +122,8 @@ export const translations = {
             unlockMessage: "Terminez toutes les leçons de l'unité précédente pour débloquer",
             start: "Commencer",
             review: "Réviser",
-            continue: "Continuer"
+            continue: "Continuer",
+            vocabulary: "Vocabulaire"
         },
         // Lesson View
         lesson: {
