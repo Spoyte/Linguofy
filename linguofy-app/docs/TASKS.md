@@ -25,15 +25,15 @@
 
 ## Phase 2: Core App Features 🔄 IN PROGRESS
 
-### 2.1 User Persistence
-- [ ] Create `useProgress` hook (localStorage)
-- [ ] Track completed lessons in `CourseMap`
-- [ ] Show progress in `LessonView`
+### 2.1 User Persistence ✅
+- [x] Create `useProgress` hook (localStorage)
+- [x] Track completed lessons in `CourseMap`
+- [x] Show progress in `LessonView`
 
-### 2.2 UI Polish
-- [ ] Add "Locked" state for future modules
-- [ ] Confetti animation on lesson complete
-- [ ] Loading states and error handling
+### 2.2 UI Polish ✅
+- [x] Add "Locked" state for future modules
+- [x] Confetti animation on lesson complete
+- [x] Loading states and error handling
 
 ---
 

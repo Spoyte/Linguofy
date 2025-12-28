@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import confetti from 'canvas-confetti';
 import ExerciseEngine from '../components/ExerciseEngine';
 import { useProgress } from '../hooks/useProgress';
 
@@ -93,6 +94,12 @@ export default function LessonView() {
                                     if (nextIdx >= exercises.length) {
                                         markComplete(id);
                                         setLessonFinished(true);
+                                        // 🎉 Fire confetti!
+                                        confetti({
+                                            particleCount: 150,
+                                            spread: 70,
+                                            origin: { y: 0.6 }
+                                        });
                                     }
                                 }}
                             />
