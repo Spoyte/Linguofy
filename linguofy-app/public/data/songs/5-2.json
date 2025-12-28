@@ -1,45 +1,66 @@
 {
     "id": "5-2",
-    "title": "Juego al Fútbol (Sports)",
-    "style": "Arena Rock Anthem, 130bpm. Heavy drums, electric guitars. Crowd chanting. Energetic and powerful.",
+    "title": "Juego al Fútbol (I Play Football)",
+    "style": "Create an anthemic Rock-Latin song at 125 BPM with a sports stadium celebration energy. Build around powerful electric guitars, driving drums, and chanting crowd sounds. Use a passionate male vocalist with a stadium-rock delivery. Add brass fanfares and clap-along sections. Include a build-up pre-chorus and an explosive final chorus with gang vocals. The mood should feel like scoring the winning goal. Keep it epic and energizing with arena-sized production.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nLe stade est plein, l'énergie monte\nJe prends le ballon, plus rien ne compte\nJe joue au foot, Juego al fútbol\nJe marque un but ! ¡Un gol!\n\n[Chorus]\n¡Juego ! ¡Juego ! I play !\n¡Toco ! ¡Toco ! I play (music) !\nJuego al tenis, Toco la guitarra\nC'est ma passion, c'est ma bagarre\n\n[Verse 2]\nJe fais du sport, Hago deporte\nPour être fort, ouvrir la porte\nJe joue aux jeux vidéo\nJuego a videojuegos, c'est beau\n\n[Chorus]\n¡Juego ! ¡Juego ! I play !\n¡Toco ! ¡Toco ! I play (music) !\nJuego al tenis, Toco la guitarra\nC'est ma passion, c'est ma bagarre\n\n[Bridge]\nOn est champions\nSomos campeones\n¡Campeones!\n\n[Outro]\n¡Gol!\n¡Gol!\n¡Ganamos!",
-        "mixed_en": "[Verse 1]\nThe stadium is full, feel the heat\nI take the ball, move my feet\nI play soccer, Juego al fútbol\nI score a goal! ¡Un gol!\n\n[Chorus]\n¡Juego ! ¡Juego ! I play !\n¡Toco ! ¡Toco ! I play (music) !\nJuego al tenis, Toco la guitarra\nIt's my passion, raising the bar\n\n[Verse 2]\nI do sports, Hago deporte\nStaying strong, holds the fort\nI play video games all night\nJuego a videojuegos, feels right\n\n[Chorus]\n¡Juego ! ¡Juego ! I play !\n¡Toco ! ¡Toco ! I play (music) !\nJuego al tenis, Toco la guitarra\nIt's my passion, raising the bar\n\n[Bridge]\nWe are champions\nSomos campeones\n¡Champions!\n\n[Outro]\n¡Gol!\n¡Gol!\n¡We win!",
-        "pure_es": "[Verse 1]\nEl estadio grita, qué emoción\nTengo el balón, soy el campeón\nJuego al fútbol con pasión\nMeto un gol, qué sensación\n\n[Chorus]\n¡Juego! ¡Juego! ¡Sí!\n¡Toco! ¡Toco! ¡Aquí!\nJuego al tenis, Toco la guitarra\nMi pasión nunca para\n\n[Verse 2]\nHago deporte cada día\nMe siento fuerte, qué alegría\nJuego a videojuegos también\nMe divierto muy bien\n\n[Chorus]\n¡Juego! ¡Juego! ¡Sí!\n¡Toco! ¡Toco! ¡Aquí!\nJuego al tenis, Toco la guitarra\nMi pasión nunca para\n\n[Bridge]\nSomos campeones\nSomos campeones\n¡Olé!\n\n[Outro]\n¡Gol!\n¡Gol!\n¡Ganamos!"
+        "mixed_fr": "[Verse 1]\n¿Qué deporte te gusta? Qu'est-ce que tu aimes?\nMe gusta el fútbol, juego bien\nJuego al fútbol cada semana\nEs mi pasión, ma vie, mi gana\n\n[Chorus]\nJuego al fútbol, je joue au foot\nNado en la piscina, je nage, c'est cute\nCorro en el parque, je cours aussi\nHago deporte, c'est ma vie\n\n[Verse 2]\nElla juega al tenis muy bien\nÉl monta en bicicleta también\nJugamos juntos, on joue ensemble\nEl deporte nos une, tous ensemble\n\n[Chorus]\nJuego al fútbol, ¡gol, gol!\nNado, corro, sin control\nEsquío en invierno, je skie\nHago deporte con energía\n\n[Outro]\n¿Qué deporte practicas tú?\nJuego, nado, corro, ¿y tú?\nEl deporte es vida, c'est la vie\nVamos a jugar, ven aquí",
+        "mixed_en": "[Verse 1]\n¿Qué deporte te gusta? What's your sport?\nMe gusta el fútbol, that's my forte\nJuego al fútbol cada semana\nEs mi pasión, my life, banana\n\n[Chorus]\nJuego al fútbol, I play ball\nNado en la piscina, having a ball\nCorro en el parque, I run so free\nHago deporte, that's the key\n\n[Verse 2]\nElla juega al tenis muy bien\nÉl monta en bicicleta también\nJugamos juntos, we play as one\nEl deporte nos une, so much fun\n\n[Chorus]\nJuego al fútbol, goal, goal!\nNado, corro, on a roll\nEsquío en invierno, I ski\nHago deporte con energía\n\n[Outro]\n¿Qué deporte practicas tú?\nJuego, nado, corro, and you?\nEl deporte es vida, it's life\nVamos a jugar, no more strife",
+        "pure_es": "[Verse 1]\n¿Qué deporte te gusta a ti?\nMe gusta el fútbol, sí, sí\nJuego al fútbol cada semana\nEs mi pasión, tengo gana\n\n[Chorus]\nJuego al fútbol, ¡gol, gol!\nNado en la piscina, qué sol\nCorro en el parque, sin parar\nHago deporte, a bailar\n\n[Verse 2]\nElla juega al tenis muy bien\nÉl monta en bicicleta también\nJugamos juntos, somos uno\nEl deporte nos une, oportuno\n\n[Chorus]\nJuego al fútbol, campeón\nNado, corro, con pasión\nEsquío en invierno, qué bien\nHago deporte también\n\n[Outro]\n¿Qué deporte practicas tú?\nJuego, nado, corro, ¿qué tal tú?\nEl deporte es vida, es salud\nVamos a jugar, con actitud"
     },
+    "knownVocab": [
+        "me gusta",
+        "no me gusta",
+        "días de la semana",
+        "rutina",
+        "hora",
+        "familia"
+    ],
+    "focusVocab": [
+        "jugar al fútbol",
+        "jugar al tenis",
+        "jugar al baloncesto",
+        "nadar",
+        "correr",
+        "esquiar",
+        "montar en bicicleta",
+        "hacer deporte",
+        "el equipo",
+        "ganar"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "Yo _____ (play) al fútbol.",
-            "options": [
-                "toco",
-                "juego",
-                "hago"
-            ],
-            "correct": "juego"
-        },
-        {
-            "id": "e2",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What verb is used for instruments (Guitarra)?",
+            "question": "How do you say 'I play football' in Spanish?",
             "options": [
-                "Jugar",
-                "Tocar",
-                "Hacer"
+                "Juego al tenis",
+                "Juego al fútbol",
+                "Nado",
+                "Corro"
             ],
-            "correct": "Tocar"
+            "correct": "Juego al fútbol"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'We are champions'",
-            "correct": "Somos campeones"
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Ella _____ en la piscina. (She swims in the pool)",
+            "options": [
+                "corre",
+                "juega",
+                "nada"
+            ],
+            "correct": "nada"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I run'",
+            "correct": "Corro"
         }
     ]
 }

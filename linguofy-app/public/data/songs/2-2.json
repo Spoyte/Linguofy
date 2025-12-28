@@ -1,45 +1,80 @@
 {
     "id": "2-2",
     "title": "¿Qué Hay? (What Is There?)",
-    "style": "Smooth Jazz Mystery, 85bpm. Double bass, finger snaps, saxophone noir style. Whispered vocals intro. Mysterious but playful atmosphere.",
+    "style": "Create a smooth Jazz-Pop fusion at 100 BPM with a curious exploration vibe. Use walking upright bass and brushed drums with muted trumpet accents. Feature a cool, laid-back male vocalist. Include subtle Rhodes piano chords and finger snaps. The mood should feel like discovering things around the house. Keep it sophisticated but accessible with a late-night lounge feel.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nDans le salon, je cherche un chat\nEst-ce qu'il est ici? Je ne sais pas\nJe regarde sous la table, doucement\nQu'est-ce qu'il y a? Dis-moi maintenant\n\n[Chorus]\n¿Qué hay? Qu'est-ce qu'il y a?\nHay un gato. Il y a un chat.\n¿Qué hay en la casa?\nHay una mesa. Il y a une table.\n\n[Verse 2]\nDans la cuisine, il y a du pain\nHay pan, et ça sent bien\nIl n'y a pas de lait, c'est dommage\nNo hay leche, pas de fromage\n\n[Chorus]\n¿Qué hay? Qu'est-ce qu'il y a?\nHay un gato. Il y a un chat.\n¿Qué hay en la casa?\nHay una mesa. Il y a une table.\n\n[Bridge]\nIl y a beaucoup de choses ici\nHay muchas cosas para ti\n\n[Outro]\n¿Hay un secreto?\nSí, hay un secreto.\nShh...",
-        "mixed_en": "[Verse 1]\nIn the living room, looking for a cat\nIs he hiding here? Where is he at?\nI look under the table, quietly\nWhat is there? Tell me what you see\n\n[Chorus]\n¿Qué hay? What is there?\nHay un gato. There is a cat.\n¿Qué hay en la casa?\nHay una mesa. There is a table.\n\n[Verse 2]\nIn the kitchen, there is some bread\nHay pan, is what I said\nThere isn't any milk, what a shame\nNo hay leche, it's not a game\n\n[Chorus]\n¿Qué hay? What is there?\nHay un gato. There is a cat.\n¿Qué hay en la casa?\nHay una mesa. There is a table.\n\n[Bridge]\nThere are many things to see\nHay muchas cosas for you and me\n\n[Outro]\n¿Hay un secreto?\nSí, hay un secreto.\nShh...",
-        "pure_es": "[Verse 1]\nEn la sala, busco un gato\n¿Dónde está? Paso el rato\nMiro bajo la mesa, despacito\n¿Qué hay ahí? Dímelo prontito\n\n[Chorus]\n¿Qué hay? ¿Qué hay aquí?\nHay un gato. Para ti.\n¿Qué hay en la casa?\nHay una mesa. Y una taza.\n\n[Verse 2]\nEn la cocina, hay buen pan\nHay pan, todos comerán\nNo hay leche, qué pena da\nNo hay leche, se acabó ya\n\n[Chorus]\n¿Qué hay? ¿Qué hay aquí?\nHay un gato. Para ti.\n¿Qué hay en la casa?\nHay una mesa. Y una taza.\n\n[Bridge]\nHay muchas cosas que ver\nHay mucho por hacer\n\n[Outro]\n¿Hay un secreto?\nSí, hay un secreto.\nShh..."
+        "mixed_fr": "[Verse 1]\nDans le salon, hay un gato\nIl y a un chat, under the table, là\nRegarde bien, hay una mesa\nUne table ici, quelle surprise\n\n[Chorus]\n¿Qué hay? Qu'est-ce qu'il y a?\nHay un gato, hay una mesa\n¿Qué hay aquí? Qu'y a-t-il ici?\nNo hay nada, il n'y a rien ici\n\n[Verse 2]\nDans la cuisine, hay pan\nIl y a du pain, comprends?\nNo hay leche, no hay café\nIl n'y a pas de lait, c'est la vérité\n\n[Chorus]\n¿Qué hay? Qu'est-ce qu'il y a?\nHay una silla, hay un sofá\n¿Qué hay debajo? Qu'y a-t-il dessous?\nNo hay nada, rien du tout\n\n[Outro]\nHay muchas cosas dans ma maison\nUna silla, un sillón, c'est bon\nMi casa es tu casa, fais comme chez toi",
+        "mixed_en": "[Verse 1]\nIn the living room, hay un gato\nThere's a cat, under the table, oh\nLook around, hay una mesa\nThere's a table, what a surprise\n\n[Chorus]\n¿Qué hay? What is there?\nHay un gato, hay una mesa\n¿Qué hay aquí? What is here?\nNo hay nada, there's nothing near\n\n[Verse 2]\nIn the kitchen, hay pan\nThere is bread, understand?\nNo hay leche, no hay café\nThere's no milk, that's the way\n\n[Chorus]\n¿Qué hay? What is there?\nHay una silla, hay un sofá\n¿Qué hay debajo? What's below?\nNo hay nada, nothing to show\n\n[Outro]\nHay muchas cosas in my home\nUna silla, un sillón, I roam\nMi casa es tu casa, make yourself at home",
+        "pure_es": "[Verse 1]\nEn la sala, hay un gato\nEstá debajo de la mesa, ¿lo ves?\nMira bien, hay una silla\nHay muchas cosas, ¡qué maravilla!\n\n[Chorus]\n¿Qué hay? ¿Qué hay aquí?\nHay un gato para ti\nHay una mesa, hay una silla\nNo hay nada, sin mancilla\n\n[Verse 2]\nEn la cocina, hay pan\nHay comida, lo verán\nNo hay leche, no hay café\nNo hay nada más que sé\n\n[Chorus]\n¿Qué hay? ¿Qué hay allí?\nHay un sofá aquí\nHay muchas cosas que ver\nNo hay problema, es un placer\n\n[Outro]\nHay muchas cosas en mi casa\nUna silla, un sillón, sin prisa\nMi casa es tu casa, ven aquí"
     },
+    "knownVocab": [
+        "Hola",
+        "Buenos días",
+        "Me llamo",
+        "Tengo años",
+        "Estoy bien",
+        "uno",
+        "dos",
+        "tres",
+        "cuatro",
+        "cinco",
+        "seis",
+        "siete",
+        "ocho",
+        "nueve",
+        "diez"
+    ],
+    "focusVocab": [
+        "Hay",
+        "No hay",
+        "Qué hay",
+        "aquí",
+        "allí",
+        "el gato",
+        "la mesa",
+        "la silla",
+        "el sofá",
+        "el pan",
+        "la leche",
+        "debajo de",
+        "en la casa",
+        "en la cocina"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "translate",
-            "question": "Translate: 'There is a cat'",
-            "correct": "Hay un gato"
-        },
-        {
-            "id": "e2",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Mesa'?",
+            "question": "What does 'Hay un gato' mean?",
             "options": [
-                "Chair",
-                "Table",
-                "House"
+                "I have a cat",
+                "There is a cat",
+                "The cat is here",
+                "I want a cat"
             ],
-            "correct": "Table"
+            "correct": "There is a cat"
         },
         {
-            "id": "e3",
-            "type": "fill_blank",
-            "question": "No _____ leche.",
+            "id": "ex2",
+            "type": "multiple_choice",
+            "question": "How do you say 'There is no milk' in Spanish?",
             "options": [
-                "soy",
-                "hay",
-                "es"
+                "Hay leche",
+                "No hay leche",
+                "Tengo leche",
+                "Quiero leche"
             ],
-            "correct": "hay"
+            "correct": "No hay leche"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'What is there?'",
+            "correct": "¿Qué hay?"
         }
     ]
 }

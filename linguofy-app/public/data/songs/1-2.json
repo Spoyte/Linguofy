@@ -1,45 +1,64 @@
 {
     "id": "1-2",
-    "title": "Quién Soy Yo (Who Am I)",
-    "style": "Acoustic Folk, 95bpm. Warm, intimate atmosphere. Fingerstyle guitar intro. Soft, storytelling male or female vocals. Gentle percussion building in the chorus. Organic textures.",
+    "title": "¿Quién Soy Yo? (Who Am I?)",
+    "style": "Create an upbeat Pop-Reggaeton fusion at 100 BPM with a confident party vibe. Use a catchy synth hook and punchy dembow rhythm. Feature a charismatic young male vocalist. Add tropical elements like steel drums and handclaps. Keep it fun and empowering.",
     "audio": {
         "mixed_fr": "/audio/1-2-mixed_fr.mp3",
         "mixed_en": "/audio/1-2-mixed_en.mp3",
         "pure_es": "/audio/1-2-pure_es.mp3"
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nDans le miroir, qui est là?\nJe me regarde, je ne sais pas\nJe suis un homme, je suis un roi?\nDis-moi la vérité, s'il te plaît\n\n[Chorus]\nYo soy... qui je suis vraiment\nTú eres... mon ami, mon amour\nYo soy un estudiante, c'est important\nTú eres interesante, pour toujours\n\n[Verse 2]\nJe suis médecin ou professeur?\nJe cherche ma route, je cherche mon cœur\nToi tu es belle, toi tu es forte\nOuvre-moi vite ta porte\n\n[Chorus]\nYo soy... qui je suis vraiment\nTú eres... mon ami, mon amour\nYo soy un estudiante, c'est important\nTú eres interesante, pour toujours\n\n[Bridge]\nÊtre ou ne pas être, c'est la question\nSer o no ser, c'est la leçon\nNous sommes ici, Nosotros somos\n\n[Outro]\nYo soy feliz.\nTú eres mi luz.\n¡Adiós!",
-        "mixed_en": "[Verse 1]\nIn the mirror, who do I see?\nLooking back, right at me\nAm I a man, am I a king?\nTell me the truth, tell me everything\n\n[Chorus]\nYo soy... who I truly am\nTú eres... my friend, my jam\nYo soy un estudiante, here I stand\nTú eres interesante, take my hand\n\n[Verse 2]\nAm I a doctor or teacher too?\nSearching for my heart, searching for you\nYou are beautiful, you are strong\nOpen the door, where I belong\n\n[Chorus]\nYo soy... who I truly am\nTú eres... my friend, my jam\nYo soy un estudiante, here I stand\nTú eres interesante, take my hand\n\n[Bridge]\nTo be or not to be, that is the way\nSer o no ser, is what we say\nWe are here, Nosotros somos\n\n[Outro]\nYo soy feliz.\nTú eres mi luz.\n¡Adiós!",
-        "pure_es": "[Verse 1]\nEn el espejo, ¿quién está?\nMe miro y busco la verdad\n¿Soy un hombre, soy un rey?\nDímelo tú, es la ley\n\n[Chorus]\nYo soy... quien soy en realidad\nTú eres... mi amigo de verdad\nYo soy un estudiante, y nada más\nTú eres interesante, y mucho más\n\n[Verse 2]\n¿Soy doctor o profesor?\nBusco mi rumbo, con amor\nTú eres bella, tú eres fuerte\nTengo mucha suerte\n\n[Chorus]\nYo soy... quien soy en realidad\nTú eres... mi amigo de verdad\nYo soy un estudiante, y nada más\nTú eres interesante, y mucho más\n\n[Bridge]\nSer o no ser, esa es la cuestión\nSer o no ser, la lección\nNosotros somos, aquí estamos\n\n[Outro]\nYo soy feliz.\nTú eres mi luz.\n¡Adiós!"
+        "mixed_fr": "[Verse 1]\nSalut, je m'appelle Marco\nMe llamo Marco, c'est mon pseudo\nJ'ai vingt ans, tengo veinte años\nEt toi, comment tu t'appelles, hermano?\n\n[Chorus]\n¿Quién soy yo? Qui suis-je?\nSoy Marco, je suis Marco\n¿Cómo te llamas? C'est quoi ton nom?\nDis-moi, réponds à ma question\n\n[Verse 2]\nElle s'appelle María\nSe llama María, quelle joie\nIl a quinze ans, tiene quince años\nOn est tous amis, no hay daño\n\n[Outro]\nMucho gusto, enchanté\nNice to meet you, encantado\nOn se revoit bientôt\nNos vemos pronto, amigo",
+        "mixed_en": "[Verse 1]\nHey there, my name is Marco\nMe llamo Marco, that's my name, bro\nI'm twenty years old, tengo veinte años\nAnd you, what's your name, hermano?\n\n[Chorus]\n¿Quién soy yo? Who am I?\nSoy Marco, I am Marco\n¿Cómo te llamas? What's your name?\nTell me now, join the game\n\n[Verse 2]\nHer name is María\nSe llama María, what a star\nHe is fifteen, tiene quince años\nWe're all friends here, no drama\n\n[Outro]\nMucho gusto, nice to meet you\nEncantado, glad to greet you\nSee you soon, nos vemos pronto\nWe'll be friends, that's the motto",
+        "pure_es": "[Verse 1]\nHola, me llamo Marco\nTengo veinte años, soy muy majo\n¿Y tú? ¿Cómo te llamas?\nDime tu nombre, sin dramas\n\n[Chorus]\n¿Quién soy yo? Soy Marco\n¿Cómo te llamas? Dime algo\nSoy tu amigo, soy tu hermano\nDame la mano\n\n[Verse 2]\nElla se llama María\nTiene veinte años, qué alegría\nÉl tiene quince, es muy joven\nTodos amigos, corazones\n\n[Outro]\nMucho gusto, encantado\nNos vemos pronto, mi aliado\nHasta luego, hasta mañana\nSomos amigos, de buena gana"
     },
+    "knownVocab": [
+        "Hola",
+        "Buenos días",
+        "Buenas tardes",
+        "Buenas noches",
+        "Adiós",
+        "Hasta mañana",
+        "Cómo estás"
+    ],
+    "focusVocab": [
+        "Me llamo",
+        "Se llama",
+        "Tengo años",
+        "Cómo te llamas",
+        "Mucho gusto",
+        "Encantado",
+        "Soy"
+    ],
     "exercises": [
         {
-            "id": "e1",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "Translate: 'Yo soy'",
+            "question": "How do you say 'My name is...' in Spanish?",
             "options": [
-                "You are",
-                "I am",
-                "He is"
+                "Tengo años",
+                "Me llamo...",
+                "Soy de...",
+                "Estoy bien"
             ],
-            "correct": "I am"
+            "correct": "Me llamo..."
         },
         {
-            "id": "e2",
+            "id": "ex2",
             "type": "fill_blank",
-            "question": "Tú _____ interesante.",
+            "question": "_____ María. (Her name is María)",
             "options": [
-                "soy",
-                "eres",
-                "es"
+                "Me llamo",
+                "Se llama",
+                "Te llamas"
             ],
-            "correct": "eres"
+            "correct": "Se llama"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'We are here' (Bridge)",
-            "correct": "Nosotros somos aquí"
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'Nice to meet you'",
+            "correct": "Mucho gusto"
         }
     ]
 }

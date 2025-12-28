@@ -1,45 +1,72 @@
 {
     "id": "6-2",
-    "title": "¿Dónde Está? (Directions)",
-    "style": "Urban Hip Hop / Lo-fi, 88bpm. Heavy kick drum. Chill vibe. Spoken word sections (GPS style). Modern city feel.",
+    "title": "¿Dónde Está? (Where Is It?)",
+    "style": "Create a mysterious Lo-Fi Hip-Hop track at 85 BPM with a treasure hunt exploration atmosphere. Use dusty vinyl crackle, mellow piano chords, and head-nodding beats. Feature a calm, curious male vocalist asking for directions. Add subtle city soundscapes and walking footsteps in the background. Include a build-up mid-section and a chill outro. The mood should feel like wandering through a new city with a map. Keep it atmospheric with warm, analog textures.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nJe suis perdu dans la ville\nEstoy perdido, c'est pas facile\nPardon, monsieur, s'il vous plaît\n¿Dónde está el museo? Je veux y aller\n\n[Chorus]\nA la izquierda, à gauche\nA la derecha, à droite\nTodo recto, tout droit\nEl banco está allí, tu vois\n\n[Verse 2]\nJe cherche la gare, le train\nBusco la estación, c'est loin ?\nTournez ici, c'est le chemin\nGira aquí, c'est le destin\n\n[Chorus]\nA la izquierda, à gauche\nA la derecha, à droite\nTodo recto, tout droit\nEl banco está allí, tu vois\n\n[Bridge]\nLe GPS dit : Recalculer\nEl mapa dice : Vamos a ver\nNous sommes arrivés\n\n[Outro]\nEstá aquí.\nMira.\nLlegamos.",
-        "mixed_en": "[Verse 1]\nI'm lost inside the city lights\nEstoy perdido, in the heights\nExcuse me sir, can you say\n¿Dónde está el museo? Which way?\n\n[Chorus]\nA la izquierda, to the left\nA la derecha, to the right\nTodo recto, straight ahead\nEl banco está allí, shining bright\n\n[Verse 2]\nI'm looking for the station now\nBusco la estación, tell me how\nTurn right here, down the street\nGira aquí, move your feet\n\n[Chorus]\nA la izquierda, to the left\nA la derecha, to the right\nTodo recto, straight ahead\nEl banco está allí, shining bright\n\n[Bridge]\nThe GPS says: Recalculating\nEl mapa dice: No more waiting\nWe have arrived\n\n[Outro]\nEstá aquí.\nLook.\nWe made it.",
-        "pure_es": "[Verse 1]\nEstoy perdido en la ciudad\nBusco una oportunidad\nPerdón, señora, por favor\n¿Dónde está el doctor?\n\n[Chorus]\nA la izquierda, luego vas\nA la derecha, y verás\nTodo recto, sigue así\nEl lugar está allí\n\n[Verse 2]\nBusco el hotel, busco el mar\n¿Dónde puedo descansar?\nGira aquí, en la esquina\nCerca de la oficina\n\n[Chorus]\nA la izquierda, luego vas\nA la derecha, y verás\nTodo recto, sigue así\nEl lugar está allí\n\n[Bridge]\nMira el mapa\nSigue el mapa\nYa llegamos\n\n[Outro]\nEstá aquí.\nAquí mismo.\nLlegamos."
+        "mixed_fr": "[Verse 1]\nPerdona, ¿dónde está la estación?\nEstá a la derecha, es mi canción\nSigue recto, luego a la izquierda\nYa llegaste, c'est la fête\n\n[Chorus]\n¿Dónde está? ¿Dónde está?\nA la derecha, a la izquierda, voilà\nSigue recto, tout droit\nAl lado de, enfrente de, c'est ça\n\n[Verse 2]\n¿Hay un banco cerca de aquí?\nEstá enfrente del parque, oui\nDetrás del museo, muy cerca\nDebajo del puente, qué cerca\n\n[Chorus]\n¿Dónde está? ¿Dónde está?\nEntre la calle y la plaza, allá\nEncima de la colina, en alto\nPrimera calle a la derecha, salto\n\n[Outro]\nGracias por tu ayuda hoy\nAhora sé dónde voy\nLa ciudad es como un mapa\n¿Dónde está? Ya la atrapo",
+        "mixed_en": "[Verse 1]\nPerdona, ¿dónde está la estación?\nEstá a la derecha, that's the mission\nSigue recto, luego a la izquierda\nYa llegaste, you're on the alert\n\n[Chorus]\n¿Dónde está? ¿Dónde está?\nA la derecha, a la izquierda, ta-da\nSigue recto, straight ahead\nAl lado de, enfrente de, as I said\n\n[Verse 2]\n¿Hay un banco cerca de aquí?\nEstá enfrente del parque, can you see?\nDetrás del museo, very near\nDebajo del puente, crystal clear\n\n[Chorus]\n¿Dónde está? ¿Dónde está?\nEntre la calle y la plaza, hurrah\nEncima de la colina, up high\nPrimera calle a la derecha, going by\n\n[Outro]\nGracias por tu ayuda hoy\nAhora sé dónde voy\nThe city is like a map\n¿Dónde está? I've got the knack",
+        "pure_es": "[Verse 1]\nPerdona, ¿dónde está la estación?\nEstá a la derecha, esa es la dirección\nSigue recto, luego a la izquierda\nYa llegaste, no te pierdas\n\n[Chorus]\n¿Dónde está? Dime por favor\nA la derecha, con amor\nA la izquierda, sigue recto\nAl lado de, todo correcto\n\n[Verse 2]\n¿Hay un banco cerca de aquí?\nEstá enfrente del parque, sí, sí\nDetrás del museo, por allá\nDebajo del puente, ya está\n\n[Chorus]\n¿Dónde está? Busco el lugar\nEntre la calle y la plaza, sin dudar\nEncima de la colina, arriba\nPrimera calle a la derecha, qué vida\n\n[Outro]\nGracias por tu ayuda hoy\nAhora sé dónde voy\nLa ciudad es como un mapa abierto\n¿Dónde está? Ya lo tengo cierto"
     },
+    "knownVocab": [
+        "voy a",
+        "ir",
+        "venir",
+        "viajar",
+        "me gusta",
+        "ropa",
+        "deportes",
+        "familia",
+        "casa"
+    ],
+    "focusVocab": [
+        "¿Dónde está?",
+        "a la derecha",
+        "a la izquierda",
+        "sigue recto",
+        "enfrente de",
+        "detrás de",
+        "al lado de",
+        "cerca de",
+        "lejos de",
+        "entre",
+        "debajo de",
+        "encima de"
+    ],
     "exercises": [
         {
-            "id": "e1",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Izquierda'?",
+            "question": "What does 'a la derecha' mean?",
             "options": [
-                "Right",
-                "Left",
-                "Straight"
+                "Straight ahead",
+                "On the left",
+                "On the right",
+                "Behind"
             ],
-            "correct": "Left"
+            "correct": "On the right"
         },
         {
-            "id": "e2",
-            "type": "translate",
-            "question": "Translate: 'Where is the museum?'",
-            "correct": "¿Dónde está el museo?"
+            "id": "ex2",
+            "type": "multiple_choice",
+            "question": "How do you say 'in front of' in Spanish?",
+            "options": [
+                "Detrás de",
+                "Enfrente de",
+                "Al lado de",
+                "Debajo de"
+            ],
+            "correct": "Enfrente de"
         },
         {
-            "id": "e3",
-            "type": "fill_blank",
-            "question": "Sigue todo _____ (straight).",
-            "options": [
-                "recto",
-                "curva",
-                "atrás"
-            ],
-            "correct": "recto"
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'Go straight'",
+            "correct": "Sigue recto"
         }
     ]
 }

@@ -1,45 +1,69 @@
 {
     "id": "5-3",
     "title": "La Moda (Fashion)",
-    "style": "Deep House Runway, 124bpm. Thumping bass. Cool, detached vocals. Vogue style. Fashion show atmosphere.",
+    "style": "Create a stylish House-Pop track at 122 BPM with a high fashion runway atmosphere. Use four-on-the-floor kicks, shuffling hi-hats, and pulsing synth bass. Feature a confident female vocalist strutting through verses about clothing. Add vocal chops, filter sweeps, and sparkly production elements. Include a stripped-down bridge before a big final drop. The mood should feel like getting dressed up for a night out. Keep it sleek, cool, and club-adjacent with European house influences.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nLumières, caméra, action\nRegarde ma collection\nJe porte une chemise rouge\nLlevo una camisa roja, ça bouge\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Verse 2]\nQu'est-ce que tu portes ce soir ?\n¿Qué llevas? Je veux savoir\nUne jupe blanche, Una falda blanca\nC'est parfait, c'est comme ça\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Bridge]\nRouge, Rojo.\nBleu, Azul.\nNoir, Negro.\nBlanc, Blanco.\n\n[Outro]\nTrès chic.\nMuy elegante.\nStrike a pose.",
-        "mixed_en": "[Verse 1]\nLights, camera, satisfy\nWatch me walk, watch me fly\nI wear a red shirt tonight\nLlevo una camisa roja, feels right\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Verse 2]\nWhat are you wearing for the show?\n¿Qué llevas? I need to know\nA white skirt, Una falda blanca\nPerfect looking, c'est la vie, yeah\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Bridge]\nRed, Rojo.\nBlue, Azul.\nBlack, Negro.\nWhite, Blanco.\n\n[Outro]\nSo chic.\nMuy elegante.\nStrike a pose.",
-        "pure_es": "[Verse 1]\nLuces, cámaras, atención\nMira mi nueva colección\nLlevo una camisa roja\nLa gente se vuelve loca\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Verse 2]\n¿Qué llevas puesto hoy?\nDímelo, a donde voy\nUna falda blanca, genial\nTe queda fenomenal\n\n[Chorus]\nRopa, Ropa, La Moda\nPantalones negros, Zapatos azules\nRopa, Ropa, La Moda\nVestido verde, Colores, Colores\n\n[Bridge]\nRojo, Azul.\nNegro, Blanco.\nVerde, Amarillo.\nTodo el color.\n\n[Outro]\nMuy elegante.\nQué guapo.\nFoto."
+        "mixed_fr": "[Verse 1]\n¿Qué llevas esta noche? Qu'est-ce que tu portes?\nLlevo una camisa, très forte\nLlevo pantalones nuevos\nEstoy listo, je suis prêt, fuegos\n\n[Chorus]\nLa ropa, les vêtements así\nUna camiseta para mí\nUnos zapatos de color\nUn vestido con amor\n\n[Verse 2]\nTengo frío, hace frío aquí\nLlevo un abrigo, c'est joli\nTengo calor, il fait chaud\nLlevo shorts, c'est le mot\n\n[Chorus]\nLa ropa, les vêtements así\nUna falda para ti\nUnos calcetines blancos\nUn sombrero, somos francos\n\n[Outro]\n¿Qué llevas hoy? Dime ya\nLlevo mi estilo, aquí está\nLa moda es arte y expresión\nVístete con pasión",
+        "mixed_en": "[Verse 1]\n¿Qué llevas esta noche? What do you wear?\nLlevo una camisa, with such flair\nLlevo pantalones nuevos, brand new\nEstoy listo, I'm ready, it's true\n\n[Chorus]\nLa ropa, the clothes right here\nUna camiseta, crystal clear\nUnos zapatos, looking fine\nUn vestido, so divine\n\n[Verse 2]\nTengo frío, it's cold tonight\nLlevo un abrigo, feeling right\nTengo calor, it's hot today\nLlevo shorts, that's the way\n\n[Chorus]\nLa ropa, the clothes I show\nUna falda, let it flow\nUnos calcetines blancos\nUn sombrero, we're not lacking\n\n[Outro]\n¿Qué llevas hoy? Tell me now\nLlevo mi estilo, and how\nLa moda es arte y expresión\nVístete con pasión",
+        "pure_es": "[Verse 1]\n¿Qué llevas esta noche tú?\nLlevo una camisa azul\nLlevo pantalones nuevos\nEstoy listo, somos buenos\n\n[Chorus]\nLa ropa, la ropa así\nUna camiseta para mí\nUnos zapatos elegantes\nUn vestido muy brillante\n\n[Verse 2]\nTengo frío, ¿qué me pongo?\nLlevo un abrigo, me prolongo\nTengo calor, hace mucho\nLlevo pantalones cortos, escucho\n\n[Chorus]\nLa ropa, la ropa así\nUna falda para ti\nUnos calcetines blancos\nUn sombrero, somos francos\n\n[Outro]\n¿Qué llevas hoy? Dime ya\nLlevo mi estilo, aquí está\nLa moda es arte, es expresión\nVístete bien, con pasión"
     },
+    "knownVocab": [
+        "me gusta",
+        "deportes",
+        "jugar",
+        "días",
+        "rutina",
+        "familia",
+        "casa"
+    ],
+    "focusVocab": [
+        "llevar",
+        "la camisa",
+        "los pantalones",
+        "el vestido",
+        "la falda",
+        "los zapatos",
+        "los calcetines",
+        "el abrigo",
+        "el sombrero",
+        "la camiseta",
+        "tengo frío",
+        "tengo calor"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "translate",
-            "question": "Translate: 'Red shirt'",
-            "correct": "Camisa roja"
-        },
-        {
-            "id": "e2",
-            "type": "fill_blank",
-            "question": "Zapatos _____ (blue).",
-            "options": [
-                "rojos",
-                "azules",
-                "negros"
-            ],
-            "correct": "azules"
-        },
-        {
-            "id": "e3",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Pantalones'?",
+            "question": "What does 'Llevo una camisa' mean?",
             "options": [
-                "Hat",
-                "Pants",
-                "Shoes"
+                "I want a shirt",
+                "I'm wearing a shirt",
+                "I like shirts",
+                "I have a shirt"
             ],
-            "correct": "Pants"
+            "correct": "I'm wearing a shirt"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Tengo frío, llevo un _____. (I'm cold, I wear a coat)",
+            "options": [
+                "vestido",
+                "sombrero",
+                "abrigo"
+            ],
+            "correct": "abrigo"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'shoes'",
+            "correct": "Zapatos"
         }
     ]
 }

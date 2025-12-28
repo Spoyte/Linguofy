@@ -1,45 +1,78 @@
 {
     "id": "2-1",
-    "title": "Uno, Dos, Tres (Count with Me)",
-    "style": "Catchy Old School Hip Hop, 90bpm. Funky beat, heavy bass. Rhythmic rapping. Clear counting sequences. Energetic and encouraging.",
+    "title": "Uno, Dos, Tres (Numbers)",
+    "style": "Create an energetic Hip-Hop track at 95 BPM with a playful counting-game vibe. Use punchy 808 bass hits and crisp hi-hats with a bouncy rhythm. Feature a confident young male rapper with clear diction. Add synth stabs and finger snaps. The chorus should be catchy and repetitive for memorization. Keep it modern, clean, and suitable for all ages.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nÉcoute le rythme, écoute ma voix\nOn va compter, toi et moi\nC'est facile, tu vas voir\nPus besoin d'avoir peur du noir\n\n[Chorus]\nUno, dos, tres\nCuatro, cinco, seis\nSiete, ocho, nueve\n¡Diez! ¡Diez! ¡Diez!\n\n[Verse 2]\nJ'ai un chien, j'ai deux chats\nTengo un perro, tengo dos gatos, voilà\nTrois amis dans la rue\nTres amigos, tu les as vus?\n\n[Chorus]\nUno, dos, tres\nCuatro, cinco, seis\nSiete, ocho, nueve\n¡Diez! ¡Diez! ¡Diez!\n\n[Bridge]\nCompte avec moi, Cuenta conmigo\nLes chiffres magiques, c'est ton amigo\n\n[Outro]\n¡Diez!\n¡Cero!\nTerminado.",
-        "mixed_en": "[Verse 1]\nListen to the beat, listen to the rhyme\nWe gonna count, one at a time\nIt's easy now, simple as can be\nCome along and count with me\n\n[Chorus]\nUno, dos, tres\nCuatro, cinco, seis\nSiete, ocho, nueve\n¡Diez! ¡Diez! ¡Diez!\n\n[Verse 2]\nI have one dog, I have two cats\nTengo un perro, tengo dos gatos, just like that\nThree friends walking down the street\nTres amigos, moving to the beat\n\n[Chorus]\nUno, dos, tres\nCuatro, cinco, seis\nSiete, ocho, nueve\n¡Diez! ¡Diez! ¡Diez!\n\n[Bridge]\nCount with me, Cuenta conmigo\nThe magic numbers, he is your amigo\n\n[Outro]\n¡Diez!\n¡Cero!\nFinished.",
-        "pure_es": "[Verse 1]\nEscucha el ritmo, sigue mis pies\nVamos a contar, una y otra vez\nEs fácil, ya lo verás\nNo necesitas nada más\n\n[Chorus]\nUno, dos, tres\nCuatro, cinco, seis\nSiete, ocho, nueve\n¡Diez! ¡Diez! ¡Diez!\n\n[Verse 2]\nTengo un perro, tengo dos gatos\nAquí están, pasando el rato\nTres amigos en la calle van\nTres amigos, aquí están\n\n[Chorus]\nUno, dos, tres\nCuatro, cinco, seis\nSiete, ocho, nueve\n¡Diez! ¡Diez! ¡Diez!\n\n[Bridge]\nCuenta conmigo, cuenta ya\nLos números mágicos, aquí están\n\n[Outro]\n¡Diez!\n¡Cero!\nTerminado."
+        "mixed_fr": "[Verse 1]\nOn compte ensemble, uno, dos, tres\nQuatre c'est cuatro, cinco c'est cinq, tu le sais\nSeis, siete, ocho, neuf et diez\nMaintenant tu sais, uno a diez\n\n[Chorus]\nUno, dos, tres, cuatro, cinco\nSeis, siete, ocho, nueve, diez\nOn compte ensemble, toi et moi\nLos números, c'est facile, tu vois\n\n[Verse 2]\nOnce c'est onze, doce c'est douze\nTrece, catorce, quince, on s'amuse\nDieciséis, diecisiete, dieciocho\nDiecinueve, veinte, c'est le show\n\n[Chorus]\nUno, dos, tres, cuatro, cinco\nSeis, siete, ocho, nueve, diez\nContinuons, on est des pros\nLos números sont beaux\n\n[Outro]\nDe uno à veinte, on sait compter\nVingt en español, c'est veinte, gagné",
+        "mixed_en": "[Verse 1]\nLet's count together, uno, dos, tres\nFour is cuatro, cinco is five, oh yes\nSeis, siete, ocho, nine and diez\nNow you know, uno to diez\n\n[Chorus]\nUno, dos, tres, cuatro, cinco\nSeis, siete, ocho, nueve, diez\nWe count together, you and me\nLos números, it's easy, can't you see\n\n[Verse 2]\nOnce is eleven, doce is twelve\nTrece, catorce, quince, let's delve\nDieciséis, diecisiete, dieciocho\nDiecinueve, veinte, what a show\n\n[Chorus]\nUno, dos, tres, cuatro, cinco\nSeis, siete, ocho, nueve, diez\nKeep on going, we're so fine\nLos números, they shine\n\n[Outro]\nFrom uno to veinte, we can count\nTwenty in español, veinte, that's the amount",
+        "pure_es": "[Verse 1]\nVamos a contar, uno, dos, tres\nCuatro, cinco, seis, ¿ya lo ves?\nSiete, ocho, nueve, diez\nAhora sabes contar, otra vez\n\n[Chorus]\nUno, dos, tres, cuatro, cinco\nSeis, siete, ocho, nueve, diez\nContamos juntos, tú y yo\nLos números aquí estoy\n\n[Verse 2]\nOnce, doce, trece van\nCatorce, quince lo verán\nDieciséis, diecisiete aquí\nDieciocho, diecinueve, sí\n\n[Chorus]\nUno, dos, tres, cuatro, cinco\nSeis, siete, ocho, nueve, diez\nContinuamos, muy bien\nVeinte es el fin, amén\n\n[Outro]\nDe uno a veinte, ya lo sé\nContar en español, lo logré"
     },
+    "knownVocab": [
+        "Hola",
+        "Buenos días",
+        "Adiós",
+        "Me llamo",
+        "Tengo años",
+        "Cómo estás",
+        "Estoy bien",
+        "Gracias"
+    ],
+    "focusVocab": [
+        "uno",
+        "dos",
+        "tres",
+        "cuatro",
+        "cinco",
+        "seis",
+        "siete",
+        "ocho",
+        "nueve",
+        "diez",
+        "once",
+        "doce",
+        "trece",
+        "catorce",
+        "quince",
+        "dieciséis",
+        "diecisiete",
+        "dieciocho",
+        "diecinueve",
+        "veinte"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "Uno, dos, _____",
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "What is 'cinco' in English?",
             "options": [
-                "cuatro",
+                "Four",
+                "Five",
+                "Six",
+                "Seven"
+            ],
+            "correct": "Five"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Uno, dos, _____, cuatro, cinco",
+            "options": [
                 "tres",
-                "cinco"
+                "seis",
+                "ocho"
             ],
             "correct": "tres"
         },
         {
-            "id": "e2",
-            "type": "multiple_choice",
-            "question": "What number is 'Siete'?",
-            "options": [
-                "6",
-                "7",
-                "8"
-            ],
-            "correct": "7"
-        },
-        {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'Diez'",
-            "correct": "Ten"
+            "id": "ex3",
+            "type": "translation",
+            "question": "How do you say 'ten' in Spanish?",
+            "correct": "Diez"
         }
     ]
 }

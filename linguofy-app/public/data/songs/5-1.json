@@ -1,45 +1,69 @@
 {
     "id": "5-1",
-    "title": "A Mí Me Gusta (I Like It)",
-    "style": "Smooth RnB, 90bpm. Finger snaps. Soulful vocals. Romantic but cool. Harmonious backing vocals.",
+    "title": "A Mí Me Gusta (I Like)",
+    "style": "Create a smooth R&B-Latin fusion at 92 BPM with a romantic, flirtatious vibe. Use silky keys, warm bass, and a crisp drum machine beat with Latin percussion accents. Feature a sultry female vocalist expressing likes and preferences with charm. Add subtle guitar licks and harmonized backing vocals. Include a pre-chorus build and a breakdown bridge section. The mood should feel like confessing favorite things on a first date. Keep it polished and sensual with modern production and radio-ready hooks.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nDis-moi ce que tu aimes, ma belle\nHablame, dis-moi la nouvelle\nTu aimes la musique ?\n¿Te gusta la música ? C'est magique\n\n[Chorus]\nA mí me gusta bailar\nJ'aime danser avec toi\nA tí te gusta cantar\nTu aimes chanter pour moi\nNos gusta vivir\nNous aimons vivre, c'est ça\n\n[Verse 2]\nJ'aime le chocolat, Me gusta el chocolate\nJ'aime les plages, Me gustan las playas\nTu n'aimes pas la pluie\nNo te gusta la lluvia, c'est la vie\n\n[Chorus]\nA mí me gusta bailar\nJ'aime danser avec toi\nA tí te gusta cantar\nTu aimes chanter pour moi\nNos gusta vivir\nNous aimons vivre, c'est ça\n\n[Bridge]\nJ'aime tout de toi\nMe gusta todo de ti\nTout.\n\n[Outro]\nMe gustas tú.\nMe gustas tú.\nYeah.",
-        "mixed_en": "[Verse 1]\nTell me what you like, my dear\nHablame, tell me loud and clear\nDo you like the music playing?\n¿Te gusta la música? What are you saying?\n\n[Chorus]\nA mí me gusta bailar\nI like to dance with you\nA tí te gusta cantar\nYou like to sing it true\nNos gusta vivir\nWe like to live, we do\n\n[Verse 2]\nI like chocolate, Me gusta el chocolate\nI like beaches, Me gustan las playas\nYou don't like the rain\nNo te gusta la lluvia, what a pain\n\n[Chorus]\nA mí me gusta bailar\nI like to dance with you\nA tí te gusta cantar\nYou like to sing it true\nNos gusta vivir\nWe like to live, we do\n\n[Bridge]\nI like everything about you\nMe gusta todo de ti\nEverything.\n\n[Outro]\nMe gustas tú.\nMe gustas tú.\nYeah.",
-        "pure_es": "[Verse 1]\nDime qué te gusta hoy\nHáblame, donde voy\n¿Te gusta la música así?\n¿Te gusta estar aquí?\n\n[Chorus]\nA mí me gusta bailar\nMe gusta el ritmo del mar\nA ti te gusta cantar\nTu voz me hace soñar\nNos gusta vivir\nNos gusta reír\n\n[Verse 2]\nMe gusta el chocolate, dulce sabor\nMe gustan las playas, y el sol\nNo te gusta la lluvia, lo sé\nNo te gusta el frío, ¿por qué?\n\n[Chorus]\nA mí me gusta bailar\nMe gusta el ritmo del mar\nA ti te gusta cantar\nTu voz me hace soñar\nNos gusta vivir\nNos gusta reír\n\n[Bridge]\nMe gusta todo de ti\nTodo de ti\nSí, sí\n\n[Outro]\nMe gustas tú.\nMe gustas tú.\nYeah."
+        "mixed_fr": "[Verse 1]\nMe gusta la música, tu sais\nMe gusta bailar también, c'est vrai\nNo me gusta el lunes, non\nPero me gusta el fin, ¡qué son!\n\n[Chorus]\nMe gusta, me gusta a mí\nTe gusta, te gusta a ti\nNos gusta, nos gusta así\nDime, ¿qué te gusta a ti?\n\n[Verse 2]\nLe gusta el chocolate, a ella\nLe gusta cantar, tan bella\nNo me gustan los exámenes\nPero me gustan los domingos\n\n[Chorus]\nMe gusta, me gusta a mí\nTe gusta, te gusta a ti\nNos gusta, nos gusta así\nA mí me gusta vivir\n\n[Outro]\n¿Qué te gusta? Tell me now\nMe gusta todo, ¡y cómo!\nMe gusta la vida así\nMe gustas tú, c'est fini",
+        "mixed_en": "[Verse 1]\nMe gusta la música, you know\nMe gusta bailar también, let's go\nNo me gusta el lunes, no\nPero me gusta el fin, what a show\n\n[Chorus]\nMe gusta, me gusta a mí\nTe gusta, te gusta a ti\nNos gusta, nos gusta así\nTell me, ¿qué te gusta a ti?\n\n[Verse 2]\nLe gusta el chocolate, to her\nLe gusta cantar, I concur\nNo me gustan los exámenes\nPero me gustan los domingos\n\n[Chorus]\nMe gusta, me gusta a mí\nTe gusta, te gusta a ti\nNos gusta, nos gusta así\nA mí me gusta vivir\n\n[Outro]\n¿Qué te gusta? Tell me now\nMe gusta todo, and how\nMe gusta la vida así\nMe gustas tú, you and me",
+        "pure_es": "[Verse 1]\nMe gusta la música, es verdad\nMe gusta bailar con libertad\nNo me gusta el lunes, no no\nPero me gusta el viernes, ¡yo!\n\n[Chorus]\nMe gusta, me gusta a mí\nTe gusta, te gusta a ti\nNos gusta, nos gusta así\nDime, ¿qué te gusta a ti?\n\n[Verse 2]\nA ella le gusta el chocolate\nA él le gusta cantar, qué remate\nNo me gustan los exámenes\nPero me gustan los domingos\n\n[Chorus]\nMe gusta, me gusta a mí\nTe gusta, te gusta a ti\nNos gusta, nos gusta así\nA mí me gusta vivir\n\n[Outro]\n¿Qué te gusta? Dime ya\nMe gusta todo, aquí está\nMe gusta la vida así\nMe gustas tú, sí, sí, sí"
     },
+    "knownVocab": [
+        "días de la semana",
+        "me levanto",
+        "me ducho",
+        "hora",
+        "familia",
+        "casa",
+        "adjetivos"
+    ],
+    "focusVocab": [
+        "me gusta",
+        "te gusta",
+        "le gusta",
+        "nos gusta",
+        "les gusta",
+        "no me gusta",
+        "me encanta",
+        "¿Qué te gusta?",
+        "gustar",
+        "la música",
+        "bailar",
+        "cantar"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "A mí me _____ (like) bailar.",
-            "options": [
-                "gustas",
-                "gusta",
-                "gustan"
-            ],
-            "correct": "gusta"
-        },
-        {
-            "id": "e2",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "Translate: 'No te gusta'",
+            "question": "What does 'Me gusta' mean?",
             "options": [
-                "I don't like",
-                "You don't like",
-                "We don't like"
+                "I have",
+                "I am",
+                "I like",
+                "I want"
             ],
-            "correct": "You don't like"
+            "correct": "I like"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'I like beaches' (Plural)",
-            "correct": "Me gustan las playas"
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "A ella _____ gusta la música. (She likes music)",
+            "options": [
+                "me",
+                "te",
+                "le"
+            ],
+            "correct": "le"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I don't like'",
+            "correct": "No me gusta"
         }
     ]
 }

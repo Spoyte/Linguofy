@@ -1,45 +1,72 @@
 {
     "id": "6-1",
-    "title": "Voy a Viajar (I'm going to travel)",
-    "style": "Upbeat Reggaeton, 95bpm. Summer vibes. Danceable beat. Party atmosphere. Catchy hook.",
+    "title": "Voy a Viajar (I'm Going to Travel)",
+    "style": "Create an adventurous Reggaeton-Pop song at 95 BPM with a wanderlust travel excitement vibe. Use the classic dembow rhythm with airy synth pads and tropical textures. Feature an energetic male vocalist dreaming about future travels. Add airplane takeoff sounds subtly mixed in and world music percussion accents. Include a pre-chorus build and an anthemic final chorus. The mood should feel like booking your dream vacation. Keep it modern, melodic, and radio-ready with big hooks and cinematic production.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nL'été arrive, je suis prêt\nEl verano viene, je le sais\nJe vais prendre ma valise\nVoy a tomar mi maleta, surprise\n\n[Chorus]\nVoy a viajar, je vais voyager\nVamos a la playa, pour nager\nVoy a comer, je vais manger\nTodo el día, toute la journée\n\n[Verse 2]\nNous allons danser ce soir\nVamos a bailar, il faut voir\nTu vas chanter avec moi ?\n¿Vas a cantar conmigo? Dis-moi\n\n[Chorus]\nVoy a viajar, je vais voyager\nVamos a la playa, pour nager\nVoy a comer, je vais manger\nTodo el día, toute la journée\n\n[Bridge]\nLe futur est beau\nEl futuro es bello\nVamos, vamos\n\n[Outro]\nVoy a vivir.\nVamos a reír.\n¡Vámonos!",
-        "mixed_en": "[Verse 1]\nSummer is coming, I am ready\nEl verano viene, keep it steady\nI'm gonna take my suitcase now\nVoy a tomar mi maleta, wow\n\n[Chorus]\nVoy a viajar, I'm gonna travel\nVamos a la playa, watch it unravel\nVoy a comer, I'm gonna eat\nTodo el día, to the beat\n\n[Verse 2]\nWe are gonna dance tonight\nVamos a bailar, feeling right\nAre you gonna sing with me?\n¿Vas a cantar conmigo? Let's see\n\n[Chorus]\nVoy a viajar, I'm gonna travel\nVamos a la playa, watch it unravel\nVoy a comer, I'm gonna eat\nTodo el día, to the beat\n\n[Bridge]\nThe future is bright\nEl futuro es bello\nLet's go, let's go\n\n[Outro]\nVoy a vivir.\nVamos a reír.\n¡Vámonos!",
-        "pure_es": "[Verse 1]\nEl verano llega ya\nTodo listo, aquí está\nVoy a tomar mi maleta hoy\nNo sé a dónde voy\n\n[Chorus]\nVoy a viajar, voy a soñar\nVamos a la playa, a disfrutar\nVoy a comer, voy a beber\nTodo el día, hasta el amanecer\n\n[Verse 2]\nVamos a bailar esta noche\nSin coche, sin reproche\n¿Vas a cantar conmigo así?\nDime que sí, dime que sí\n\n[Chorus]\nVoy a viajar, voy a soñar\nVamos a la playa, a disfrutar\nVoy a comer, voy a beber\nTodo el día, hasta el amanecer\n\n[Bridge]\nEl futuro es nuestro\nEl futuro es bello\nVamos ya\n\n[Outro]\nVoy a vivir.\nVamos a reír.\n¡Vámonos!"
+        "mixed_fr": "[Verse 1]\nTengo un plan para mañana\nVoy a viajar por la mañana\nVoy a ir a España primero\nVoy a conocer el mundo entero\n\n[Pre-Chorus]\n¿Adónde vas? Où vas-tu?\nVoy a ir a la playa, c'est vu\nVoy a visitar muchas ciudades\nVoy a descubrir nuevas verdades\n\n[Chorus]\nVoy a viajar, je vais voyager\nVoy a explorar, voy a soñar\nIr, venir, partir, volver\nEl mundo es mío, lo voy a ver\n\n[Verse 2]\n¿Qué vas a hacer en tu viaje?\nVoy a nadar sin equipaje\nVoy a comer comida rica\nVoy a bailar, música chica\n\n[Chorus]\nVoy a viajar, sin parar\nVoy a explorar, voy a disfrutar\nIr, venir, es mi plan\nEl mundo es mío, aquí están\n\n[Outro]\nEl futuro está esperando\nMis sueños voy realizando\nVoy a vivir cada momento\nVoy a viajar, con sentimiento",
+        "mixed_en": "[Verse 1]\nTengo un plan para mañana\nVoy a viajar, heading out, banana\nVoy a ir a España primero\nVoy a conocer el mundo entero\n\n[Pre-Chorus]\n¿Adónde vas? Where are you going?\nVoy a ir a la playa, ocean flowing\nVoy a visitar muchas ciudades\nVoy a descubrir nuevas verdades\n\n[Chorus]\nVoy a viajar, I'm going to travel\nVoy a explorar, mysteries unravel\nIr, venir, go and return\nEl mundo es mío, lessons to learn\n\n[Verse 2]\n¿Qué vas a hacer en tu viaje?\nVoy a nadar, on this voyage\nVoy a comer comida rica\nVoy a bailar, so magnifica\n\n[Chorus]\nVoy a viajar, can't wait\nVoy a explorar, it's great\nIr, venir, that's my plan\nEl mundo es mío, I'm the man\n\n[Outro]\nEl futuro está esperando\nMis sueños voy realizando\nVoy a vivir cada momento\nVoy a viajar, the adventure I'm implementing",
+        "pure_es": "[Verse 1]\nTengo un plan para mañana\nVoy a viajar con mucha gana\nVoy a ir a España primero\nVoy a conocer el mundo entero\n\n[Pre-Chorus]\n¿Adónde vas tú? Dime ya\nVoy a ir a la playa, allá\nVoy a visitar muchas ciudades\nVoy a descubrir nuevas verdades\n\n[Chorus]\nVoy a viajar, voy a ir\nVoy a explorar, voy a vivir\nIr, venir, partir, volver\nEl mundo es mío, lo voy a ver\n\n[Verse 2]\n¿Qué vas a hacer en tu viaje?\nVoy a nadar sin equipaje\nVoy a comer comida rica\nVoy a bailar, música chica\n\n[Chorus]\nVoy a viajar, sin parar\nVoy a explorar, voy a soñar\nIr, venir, es mi plan\nEl mundo es mío, aquí están\n\n[Outro]\nEl futuro está esperando\nMis sueños voy realizando\nVoy a vivir cada momento\nSin ningún lamento"
     },
+    "knownVocab": [
+        "me gusta",
+        "gustar",
+        "deportes",
+        "ropa",
+        "días",
+        "rutina",
+        "hora",
+        "familia",
+        "casa",
+        "números"
+    ],
+    "focusVocab": [
+        "voy a + infinitivo",
+        "vas a",
+        "va a",
+        "vamos a",
+        "ir",
+        "venir",
+        "viajar",
+        "visitar",
+        "conocer",
+        "explorar",
+        "¿Adónde vas?",
+        "el viaje"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "Yo _____ (going to) a viajar.",
-            "options": [
-                "voy",
-                "vas",
-                "va"
-            ],
-            "correct": "voy"
-        },
-        {
-            "id": "e2",
-            "type": "translate",
-            "question": "Translate: 'We are going to dance'",
-            "correct": "Vamos a bailar"
-        },
-        {
-            "id": "e3",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'La Playa'?",
+            "question": "What does 'Voy a viajar' mean?",
             "options": [
-                "The Mountain",
-                "The Beach",
-                "The City"
+                "I traveled",
+                "I'm going to travel",
+                "I travel",
+                "I want to travel"
             ],
-            "correct": "The Beach"
+            "correct": "I'm going to travel"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "¿_____ vas? (Where are you going?)",
+            "options": [
+                "Qué",
+                "Cómo",
+                "Adónde"
+            ],
+            "correct": "Adónde"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I'm going to eat'",
+            "correct": "Voy a comer"
         }
     ]
 }

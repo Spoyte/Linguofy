@@ -1,45 +1,73 @@
 {
     "id": "3-3",
-    "title": "En Mi Casa (My House)",
-    "style": "Relaxed Cumbia, 95bpm. Accordion, guiro scraper rhythm. Playful and homey. Male or female vocals.",
+    "title": "En Mi Casa (In My House)",
+    "style": "Create a cozy Cumbia-Pop song at 100 BPM with a housewarming party atmosphere. Use traditional cumbia accordion and güira patterns blended with modern pop production. Feature a warm female vocalist giving a friendly house tour. Add playful percussion fills and melodic bass runs. The mood should feel welcoming and inviting. Keep it bright and danceable with a steady Latin groove.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nBienvenue chez moi, entrez vite\nTelle est ma maison, je vous invite\nVoici ma maison, Esta es mi casa\nC'est ici que tout se passe\n\n[Chorus]\nDans ma maison, En mi casa\nJ'ai un chien, Tengo un perro\nDans ta maison, En tu casa\nTu as un chat, Tienes un gato\n\n[Verse 2]\nVoici ma chambre, mon petit lit\nMi dormitorio, c'est joli\nVoici la cuisine, pour manger\nLa cocina, pour partager\n\n[Chorus]\nDans ma maison, En mi casa\nJ'ai un chien, Tengo un perro\nDans ta maison, En tu casa\nTu as un chat, Tienes un gato\n\n[Bridge]\nMon jardin est vert, Mi jardín\nC'est la fin du chemin\nNous sommes bien ici\n\n[Outro]\nMi casa es tu casa.\nBienvenido.\n¡Adiós!",
-        "mixed_en": "[Verse 1]\nWelcome to my place, come inside\nThis is my home, open wide\nThis is my house, Esta es mi casa\nMake yourself at home, mi casa\n\n[Chorus]\nIn my house, En mi casa\nI have a dog, Tengo un perro\nIn your house, En tu casa\nYou have a cat, Tienes un gato\n\n[Verse 2]\nHere is my bedroom, where I sleep\nMi dormitorio, dreams I keep\nHere is the kitchen, cooking food\nLa cocina, smelling good\n\n[Chorus]\nIn my house, En mi casa\nI have a dog, Tengo un perro\nIn your house, En tu casa\nYou have a cat, Tienes un gato\n\n[Bridge]\nMy garden is green, Mi jardín\nWhere the flowers contain\nWe are happy here\n\n[Outro]\nMi casa es tu casa.\nWelcome friend.\n¡Adiós!",
-        "pure_es": "[Verse 1]\nBienvenidos todos, pasen ya\nEsta es mi casa, de verdad\nAquí vivo yo, con ilusión\nEsta es mi casa, mi corazón\n\n[Chorus]\nEn mi casa, aquí estoy\nTengo un perro, donde voy\nEn tu casa, allá estás\nTienes un gato, y mucho más\n\n[Verse 2]\nMi dormitorio, para dormir\nLa cocina, para reír\nLa sala grande, para estar\nTodo listo para disfrutar\n\n[Chorus]\nEn mi casa, aquí estoy\nTengo un perro, donde voy\nEn tu casa, allá estás\nTienes un gato, y mucho más\n\n[Bridge]\nMi jardín es verde y sol\nEs mi lugar, mi caracol\nEstamos bien\n\n[Outro]\nMi casa es tu casa.\nBienvenidos.\n¡Adiós!"
+        "mixed_fr": "[Verse 1]\nBienvenido a mi casa, passe la puerta\nEntra, bienvenue, la casa está abierta\nAquí está la sala, voici le salon\nHay un sofá grande, c'est bon\n\n[Chorus]\nEn mi casa, dans ma maison\nHay una cocina pour cuisiner\nEn mi casa, dans ma maison\nHay un baño, une salle de bain\n\n[Verse 2]\nSube las escaleras, monte les marches\nAquí está mi dormitorio, ma chambre\nHay una cama grande, très confortable\nUna ventana grande, c'est adorable\n\n[Chorus]\nEn mi casa, dans ma maison\nHay un jardín dehors, très joli\nEn mi casa, dans ma maison\nEstamos en casa, on est chez nous\n\n[Outro]\nMi casa es tu casa, fais comme chez toi\nLa puerta está abierta, bienvenue chez moi",
+        "mixed_en": "[Verse 1]\nBienvenido a mi casa, pass the door\nEntra, welcome, la casa is ready for more\nAquí está la sala, the living room here\nHay un sofá grande, have no fear\n\n[Chorus]\nEn mi casa, in my house\nHay una cocina for cooking about\nEn mi casa, in my house\nHay un baño, a bathroom throughout\n\n[Verse 2]\nSube las escaleras, climb the stairs\nAquí está mi dormitorio, my room up there\nHay una cama grande, very comfortable\nUna ventana grande, so adorable\n\n[Chorus]\nEn mi casa, in my house\nHay un jardín outside, so nice\nEn mi casa, in my house\nEstamos en casa, we're home, precise\n\n[Outro]\nMi casa es tu casa, make yourself at home\nLa puerta está abierta, you're welcome to roam",
+        "pure_es": "[Verse 1]\nBienvenido a mi casa, pasa ya\nEntra aquí, la casa está abierta ya\nAquí está la sala, mira bien\nHay un sofá grande, siéntate también\n\n[Chorus]\nEn mi casa, en mi hogar\nHay una cocina para cocinar\nEn mi casa, en mi hogar\nHay un baño cerca del lugar\n\n[Verse 2]\nSube las escaleras, ven aquí\nMi dormitorio está por ahí\nHay una cama grande y cómoda\nUna ventana hermosa, muy moda\n\n[Chorus]\nEn mi casa, en mi hogar\nHay un jardín para jugar\nEn mi casa, en mi hogar\nEstamos en casa, a disfrutar\n\n[Outro]\nMi casa es tu casa, bienvenido\nLa puerta está abierta, eres querido"
     },
+    "knownVocab": [
+        "Mi familia",
+        "hermano",
+        "alto/a",
+        "bajo/a",
+        "Hay",
+        "No hay",
+        "Tengo",
+        "números 1-20",
+        "Cómo estás"
+    ],
+    "focusVocab": [
+        "la casa",
+        "la cocina",
+        "el dormitorio",
+        "el baño",
+        "la sala",
+        "el jardín",
+        "la ventana",
+        "la puerta",
+        "la cama",
+        "el sofá",
+        "la mesa",
+        "subir",
+        "entrar"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "translate",
-            "question": "Translate: 'My house'",
-            "correct": "Mi casa"
-        },
-        {
-            "id": "e2",
-            "type": "fill_blank",
-            "question": "Tengo un _____ (dog).",
-            "options": [
-                "gato",
-                "perro",
-                "casa"
-            ],
-            "correct": "perro"
-        },
-        {
-            "id": "e3",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "Where do you cook?",
+            "question": "What does 'la cocina' mean?",
             "options": [
-                "El dormitorio",
-                "La cocina",
-                "El jardín"
+                "The bedroom",
+                "The kitchen",
+                "The bathroom",
+                "The living room"
             ],
-            "correct": "La cocina"
+            "correct": "The kitchen"
+        },
+        {
+            "id": "ex2",
+            "type": "multiple_choice",
+            "question": "How do you say 'bedroom' in Spanish?",
+            "options": [
+                "El baño",
+                "La sala",
+                "El dormitorio",
+                "La cocina"
+            ],
+            "correct": "El dormitorio"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'There is a bed'",
+            "correct": "Hay una cama"
         }
     ]
 }

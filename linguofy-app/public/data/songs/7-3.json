@@ -1,44 +1,64 @@
 {
     "id": "7-3",
-    "title": "El Mejor Día (Irregulars)",
-    "style": "Energetic Pop Anthem, 128bpm. Driving beat. Uplifting chorus. Triumphant mood. Guitar solo.",
+    "title": "El Mejor Día (The Best Day)",
+    "style": "Create an epic Pop-Rock anthem at 118 BPM with a 'best day ever' celebration atmosphere. Build from gentle piano to explosive full-band chorus with soaring guitars. Use an inspiring male vocalist telling the story of an amazing day. Add stadium claps and inspirational string swells. Include a key change in the final chorus and a triumphant outro. The mood should feel like the climax of a coming-of-age movie. Keep it anthemic and emotionally powerful with radio-ready production.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nHier j'ai fait la fête\nAyer hice una fiesta, c'est chouette\nJe suis allé à la mer\nFui al mar, quel air\n\n[Chorus]\nFui, Tuve, Hice\nJe suis allé, J'ai eu, J'ai fait\nFue un día genial\nC'était un jour spécial\n\n[Verse 2]\nJ'ai eu de la chance\nTuve suerte, quelle danse\nJ'ai été heureux\nEstuve feliz, c'est mieux\n\n[Chorus]\nFui, Tuve, Hice\nJe suis allé, J'ai eu, J'ai fait\nFue un día genial\nC'était un jour spécial\n\n[Bridge]\nTout était parfait\nTodo fue perfecto\nJe ne regrette rien\n\n[Outro]\nFui.\nTuve.\n¡Hice!",
-        "mixed_en": "[Verse 1]\nYesterday I made a plan\nAyer hice un plan, my man\nI went to the sea\nFui al mar, wild and free\n\n[Chorus]\nFui, Tuve, Hice\nI went, I had, I made\nFue un día genial\nIt was a special day\n\n[Verse 2]\nI had so much luck\nTuve suerte, never stuck\nI was happy there\nEstuve feliz, in the air\n\n[Chorus]\nFui, Tuve, Hice\nI went, I had, I made\nFue un día genial\nIt was a special day\n\n[Bridge]\nEverything was perfect\nTodo fue perfecto\nNo regrets\n\n[Outro]\nFui.\nTuve.\nHice!",
-        "pure_es": "[Verse 1]\nAyer hice algo nuevo\nFue como un juego\nFui a la montaña alta\nDonde nada falta\n\n[Chorus]\nFui, Tuve, Hice\nTodo lo que quise\nFue un día genial\nAlgo sobrenatural\n\n[Verse 2]\nTuve tiempo para pensar\nTuve ganas de cantar\nEstuve tranquilo allí\nFue lo que viví\n\n[Chorus]\nFui, Tuve, Hice\nTodo lo que quise\nFue un día genial\nAlgo sobrenatural\n\n[Bridge]\nQué gran día\nQué alegría\nVolveré\n\n[Outro]\nFui.\nTuve.\n¡Hice!"
+        "mixed_fr": "[Verse 1]\nEse día fui muy feliz\nTodo era perfecto para mí\nFui a la playa con mis amigos\nFue el mejor día, without fatigue\n\n[Pre-Chorus]\nTuve suerte, mucha suerte\nHice algo increíblemente fuerte\nSupe la verdad al final\nFue un día especial\n\n[Chorus]\nFue el mejor día de mi vida\nFui, fui feliz, sin medida\nTuve, hice, supe, vine\nVerbos irregulares, sublime\n\n[Verse 2]\nElla vino a mi fiesta ayer\nÉl pudo bailar, qué placer\nDijimos la verdad sin miedo\nVinieron todos, yo me quedo\n\n[Chorus]\nFue el mejor día, lo mejor\nFui, fui allá, con amor\nTuve, hice, supe, vine\nVerbos irregulares, destino\n\n[Outro]\nIr - fui, yo fui allí\nTener - tuve, tuve aquí\nHacer - hice, yo lo hice\nSaber - supe, lo predije",
+        "mixed_en": "[Verse 1]\nEse día fui muy feliz\nTodo era perfecto, what bliss\nFui a la playa con mis amigos\nFue el mejor día, amigos\n\n[Pre-Chorus]\nTuve suerte, so much luck\nHice algo fuerte, what pluck\nSupe la verdad al final\nFue un día especial\n\n[Chorus]\nFue el mejor día de mi vida\nFui, fui feliz, what a vida\nTuve, hice, supe, vine\nIrregular verbs, so fine\n\n[Verse 2]\nElla vino a mi fiesta ayer\nÉl pudo bailar, sincere\nDijimos la verdad sin miedo\nVinieron todos, I concedo\n\n[Chorus]\nFue el mejor día, the best\nFui, fui allá, above the rest\nTuve, hice, supe, vine\nIrregular verbs, divine\n\n[Outro]\nIr - fui, I went there\nTener - tuve, I had with care\nHacer - hice, I made or did\nSaber - supe, no lid",
+        "pure_es": "[Verse 1]\nEse día fui muy feliz\nTodo era perfecto, para mí\nFui a la playa con mis amigos\nFue el mejor día, sin enemigos\n\n[Pre-Chorus]\nTuve suerte, mucha suerte\nHice algo increíblemente fuerte\nSupe la verdad al final\nFue un día muy especial\n\n[Chorus]\nFue el mejor día de mi vida\nFui, fui feliz, sin medida\nTuve, hice, supe, vine\nVerbos irregulares, qué sublime\n\n[Verse 2]\nElla vino a mi fiesta ayer\nÉl pudo bailar, qué placer\nDijimos la verdad sin miedo\nVinieron todos, no me quedo\n\n[Chorus]\nFue el mejor día, lo mejor\nFui, fui allá, con amor\nTuve, hice, supe, vine\nVerbos irregulares, destino\n\n[Outro]\nIr - fui, yo fui allí\nTener - tuve, tuve aquí\nHacer - hice, yo lo hice\nSaber - supe, lo predije"
     },
+    "knownVocab": [
+        "pretérito -AR/-ER/-IR",
+        "hablé",
+        "bailé",
+        "comí",
+        "bebí",
+        "viví",
+        "ayer"
+    ],
+    "focusVocab": [
+        "fui (ir/ser)",
+        "tuve (tener)",
+        "hice (hacer)",
+        "supe (saber)",
+        "vine (venir)",
+        "pude (poder)",
+        "dije (decir)",
+        "verbos irregulares"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "Ayer _____ (I went) al cine.",
-            "options": [
-                "voy",
-                "fui",
-                "fue"
-            ],
-            "correct": "fui"
-        },
-        {
-            "id": "e2",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What does 'Tuve' mean?",
+            "question": "What is the irregular past tense of 'ir' (yo)?",
             "options": [
-                "I had",
-                "I have",
-                "I went"
+                "Voy",
+                "Fui",
+                "Iba",
+                "Fue"
             ],
-            "correct": "I had"
+            "correct": "Fui"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'I made'",
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Ayer yo _____ mucha suerte. (Yesterday I had a lot of luck)",
+            "options": [
+                "tengo",
+                "tuve",
+                "tuvo"
+            ],
+            "correct": "tuve"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I made/did' (past tense)",
             "correct": "Hice"
         }
     ]

@@ -1,45 +1,71 @@
 {
     "id": "7-2",
-    "title": "¿Qué Comiste? (Food Critic)",
-    "style": "Smooth Jazz Blues, 90bpm. Walking bass. Piano solo. Smoky atmosphere. Male vocals, deep and narrative.",
+    "title": "¿Qué Comiste? (What Did You Eat?)",
+    "style": "Create a groovy Jazz-Funk song at 100 BPM with a dinner party atmosphere. Use walking upright bass, jazzy drum patterns with brush snare, and muted trumpet. Feature a smooth, conversational male vocalist asking about yesterday's meals. Add kitchen sounds like sizzling pans subtly mixed in. Include a call-and-response section and a cool saxophone-led bridge. The mood should feel like chatting over a late-night meal. Keep it sophisticated and swinging with a retro lounge vibe.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nJe suis allé au restaurant\nEt qu'est-ce que j'ai mangé ?\nJ'ai mangé du poulet\nComí pollo, c'était parfait\n\n[Chorus]\nComí, Bebí, Viví\nJ'ai mangé, j'ai bu, j'ai vécu\nEscribí une lettre hier\nJ'ai écrit, tout est clair\n\n[Verse 2]\nJ'ai bu du vin rouge\nBebí vino tinto, ça bouge\nJ'ai vécu une belle soirée\nViví una noche, à jamais\n\n[Chorus]\nComí, Bebí, Viví\nJ'ai mangé, j'ai bu, j'ai vécu\nEscribí une lettre hier\nJ'ai écrit, tout est clair\n\n[Bridge]\nC'était délicieux\nFue delicioso\nUn festin\n\n[Outro]\nComí bien.\nBebí mucho.\nAdiós.",
-        "mixed_en": "[Verse 1]\nI went to a place downtown\nTo see what food I found\nI ate some chicken there\nComí pollo, with care\n\n[Chorus]\nComí, Bebí, Viví\nI ate, I drank, I lived\nEscribí a letter then\nI wrote it out again\n\n[Verse 2]\nI drank some red wine too\nBebí vino tinto, for you\nI lived a lovely night\nViví una noche, so bright\n\n[Chorus]\nComí, Bebí, Viví\nI ate, I drank, I lived\nEscribí a letter then\nI wrote it out again\n\n[Bridge]\nIt was delicious\nFue delicioso\nA feast\n\n[Outro]\nComí bien.\nI drank well.\nGoodbye.",
-        "pure_es": "[Verse 1]\nFui al restaurante ayer\nTenía ganas de comer\nComí pollo asado\nEstaba muy salado\n\n[Chorus]\nComí, Bebí, Viví\nTodo lo que sentí\nEscribí mi opinión\nCon mucha pasión\n\n[Verse 2]\nBebí agua con limón\nPara la digestión\nViví un momento especial\nNo estuvo nada mal\n\n[Chorus]\nComí, Bebí, Viví\nTodo lo que sentí\nEscribí mi opinión\nCon mucha pasión\n\n[Bridge]\nLa cuenta, por favor\nFue un placer, señor\nMe voy\n\n[Outro]\nComí bien.\nBebí bien.\nAdiós."
+        "mixed_fr": "[Verse 1]\n¿Qué comiste ayer, amigo?\nComí una pizza, te lo digo\n¿Qué bebiste por la noche?\nBebí un café, c'est sans reproche\n\n[Pre-Chorus]\nVerbos -ER y -IR en el pasado\nComí, bebí, viví, lo he pasado\nEscribí una carta ayer\nTodo lo que pude hacer\n\n[Chorus]\n¿Qué comiste? Dime ya\nComí arroz, aquí está\n¿Qué bebiste? Cuéntame\nBebí agua, ya lo sé\n\n[Verse 2]\nElla escribió una carta larga\nÉl vivió en España, qu'il charge\nAbrimos la puerta grande\nRecibimos un regalo grande\n\n[Chorus]\n¿Qué comiste? Dime tú\nComí pasta, ¿et tu?\n¿Qué bebiste? Sin dudar\nBebí vino para celebrar\n\n[Outro]\nComer, beber, vivir, escribir\nEn el pasado, sin mentir\nComí, bebí, viví, escribí\nTodo pasó, así, así",
+        "mixed_en": "[Verse 1]\n¿Qué comiste ayer, amigo?\nComí una pizza, I'll let you know\n¿Qué bebiste por la noche?\nBebí un café, no reproach\n\n[Pre-Chorus]\nVerbos -ER y -IR en el pasado\nComí, bebí, viví, I have stated\nEscribí una carta ayer\nTodo lo que pude hacer\n\n[Chorus]\n¿Qué comiste? Tell me now\nComí arroz, and how\n¿Qué bebiste? Share with me\nBebí agua, can't you see\n\n[Verse 2]\nElla escribió una carta larga\nÉl vivió en España, quite large\nAbrimos la puerta grande\nRecibimos un regalo grande\n\n[Chorus]\n¿Qué comiste? Tell me do\nComí pasta, how about you?\n¿Qué bebiste? No delay\nBebí vino, that's the way\n\n[Outro]\nComer, beber, vivir, escribir\nIn the past, sincere\nComí, bebí, viví, escribí\nTodo pasó, así, así",
+        "pure_es": "[Verse 1]\n¿Qué comiste ayer, amigo?\nComí una pizza, te lo digo\n¿Qué bebiste por la noche?\nBebí un café, sin reproche\n\n[Pre-Chorus]\nVerbos -ER y -IR en el pasado\nComí, bebí, viví, todo ha pasado\nEscribí una carta ayer\nTodo lo que pude hacer\n\n[Chorus]\n¿Qué comiste? Dime ya\nComí arroz, aquí está\n¿Qué bebiste? Cuéntame\nBebí agua, ya lo sé\n\n[Verse 2]\nElla escribió una carta larga\nÉl vivió en España, sin embargo\nAbrimos la puerta grande\nRecibimos un regalo grande\n\n[Chorus]\n¿Qué comiste? Dime tú\nComí pasta, ¿y tú?\n¿Qué bebiste? Sin dudar\nBebí vino, para celebrar\n\n[Outro]\nComer, beber, vivir, escribir\nEn el pasado, sin mentir\nComí, bebí, viví, escribí\nTodo pasó, así, así"
     },
+    "knownVocab": [
+        "pretérito -AR",
+        "hablé",
+        "bailé",
+        "canté",
+        "trabajé",
+        "ayer",
+        "transporte",
+        "direcciones",
+        "voy a"
+    ],
+    "focusVocab": [
+        "comí",
+        "bebí",
+        "viví",
+        "escribí",
+        "abrí",
+        "recibí",
+        "comer",
+        "beber",
+        "vivir",
+        "escribir",
+        "¿Qué comiste?",
+        "¿Qué bebiste?"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "Yo _____ (ate) una manzana.",
-            "options": [
-                "como",
-                "comí",
-                "comer"
-            ],
-            "correct": "comí"
-        },
-        {
-            "id": "e2",
-            "type": "translate",
-            "question": "Translate: 'I lived'",
-            "correct": "Viví"
-        },
-        {
-            "id": "e3",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Bebí'?",
+            "question": "What is the past tense of 'comer' (yo)?",
             "options": [
-                "I drank",
-                "I drink",
-                "He drinks"
+                "Como",
+                "Comí",
+                "Comió",
+                "Comimos"
             ],
-            "correct": "I drank"
+            "correct": "Comí"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Ayer ella _____ una carta. (Yesterday she wrote a letter)",
+            "options": [
+                "escribe",
+                "escribió",
+                "escribí"
+            ],
+            "correct": "escribió"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I drank'",
+            "correct": "Bebí"
         }
     ]
 }

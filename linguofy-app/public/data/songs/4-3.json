@@ -1,45 +1,67 @@
 {
     "id": "4-3",
     "title": "El Fin de Semana (The Weekend)",
-    "style": "Disco Funk, 115bpm. Groovy bassline. Party atmosphere. Synthesizers. Celebration feel.",
+    "style": "Create a carefree Disco-Funk song at 118 BPM with a Friday night celebration atmosphere. Use groovy slap bass, four-on-the-floor drums with open hi-hats, and funky rhythm guitar. Feature a joyful female vocalist ready to party. Add sparkly synth strings and disco stabs. Include a bridge section with a tempo breakdown. The mood should feel like school's out and the weekend is here. Keep it retro-fun with a modern club-ready production.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nLundi est long, Lunes es largo\nMardi aussi, Martes c'est dur\nMercredi je suis fatigué\nMiércoles, je veux arrêter\nJueves, Viernes, on y est presque !\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nJe danse le tango\nVoy a la fiesta, je vais à la fête\nTodo es perfecto, tout est chouette\n\n[Verse 2]\nJe travaille toute la semaine\nTrabajo toda la semana\nMais Sábado arrive\nC'est le nirvana\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nJe danse le tango\nVoy a la fiesta, je vais à la fête\nTodo es perfecto, tout est chouette\n\n[Bridge]\nLunes, Martes, Miércoles, Jueves, Viernes\n¡Stop!\nSábado... Domingo...\n¡Sí!\n\n[Outro]\nNos vemos el Lunes.\n¡Ciao!",
-        "mixed_en": "[Verse 1]\nMonday is long, Lunes is hard\nTuesday as well, Martes on guard\nWednesday I'm tired, Miércoles too\nJueves, Viernes, waiting for you\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nDoing the tango\nVoy a la fiesta, I go to the party\nEverything is perfect, feeling hearty\n\n[Verse 2]\nI work all week long\nTrabajo toda la semana, stay strong\nBut Sábado is coming\nHear the drums drumming\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nDoing the tango\nVoy a la fiesta, I go to the party\nEverything is perfect, feeling hearty\n\n[Bridge]\nLunes, Martes, Miércoles, Jueves, Viernes\n¡Stop!\nSábado... Domingo...\n¡Yeah!\n\n[Outro]\nSee you Lunes.\n¡Ciao!",
-        "pure_es": "[Verse 1]\nLunes es largo, quiero dormir\nMartes también, quiero salir\nMiércoles llega, mitad ya\nJueves, Viernes, ya casi está\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nBailando el mambo\nVoy a la fiesta, a disfrutar\nTodo es perfecto, a celebrar\n\n[Verse 2]\nTrabajo duro toda la semana\nPero el Sábado, por la mañana\nMe levanto feliz, me siento genial\nEl fin de semana es especial\n\n[Chorus]\n¡El fin de semana!\nSábado y Domingo\n¡El fin de semana!\nBailando el mambo\nVoy a la fiesta, a disfrutar\nTodo es perfecto, a celebrar\n\n[Bridge]\nLunes, Martes, Miércoles, Jueves, Viernes\n¡No!\nSábado... Domingo...\n¡Sí!\n\n[Outro]\nNos vemos el Lunes.\n¡Ciao!"
+        "mixed_fr": "[Verse 1]\nLunes, martes, miércoles, j'attends\nJueves, viernes, le weekend arrive\nSábado, domingo, c'est le fun\nEl fin de semana, everyone\n\n[Chorus]\nEl fin de semana está aquí\nSábado, domingo, c'est pour moi\nDe lunes a viernes trabajo\nMais el fin de semana, je bouge\n\n[Verse 2]\n¿Qué haces el sábado? Qu'est-ce que tu fais?\nVoy a bailar, je vais danser\nEl domingo descansamos\nNos divertimos, on s'amuse\n\n[Chorus]\nEl fin de semana llega ya\nSábado, domingo, voilà\nTrabajo de lunes a viernes\nPero los fines, je m'amuse\n\n[Outro]\nSiete días tiene la semana\nLunes, martes, miércoles, c'est clair\nJueves, viernes, sábado, domingo\nY vuelve a empezar, c'est sans fin",
+        "mixed_en": "[Verse 1]\nLunes, martes, miércoles, I wait\nJueves, viernes, weekend is great\nSábado, domingo, so much fun\nEl fin de semana, everyone\n\n[Chorus]\nEl fin de semana está aquí\nSábado, domingo, for me\nDe lunes a viernes I work\nPero el fin de semana, I won't shirk\n\n[Verse 2]\n¿Qué haces el sábado? What's your plan?\nVoy a bailar, I'm a dancing fan\nEl domingo descansamos, we rest\nNos divertimos, we're the best\n\n[Chorus]\nEl fin de semana llega ya\nSábado, domingo, hurray\nI work de lunes a viernes\nBut weekends are mine, that's the way\n\n[Outro]\nSiete días tiene la semana\nLunes, martes, miércoles, it's clear\nJueves, viernes, sábado, domingo\nY vuelve a empezar, year after year",
+        "pure_es": "[Verse 1]\nLunes, martes, miércoles aquí\nJueves, viernes, vamos a seguir\nSábado y domingo, ¡qué emoción!\nEs el fin de semana, corazón\n\n[Chorus]\nEl fin de semana está aquí\nSábado, domingo para mí\nDe lunes a viernes trabajo yo\nPero el fin de semana bailo yo\n\n[Verse 2]\n¿Qué haces el sábado, amigo?\nVoy a bailar, ven conmigo\nEl domingo descanso todo el día\nNos divertimos, qué alegría\n\n[Chorus]\nEl fin de semana llega ya\nSábado, domingo, aquí está\nTrabajar de lunes a viernes\nPero los fines son excelentes\n\n[Outro]\nSiete días tiene la semana\nLunes, martes, miércoles, sin gana\nJueves, viernes, sábado, domingo\nY vuelve a empezar, así te sigo"
     },
+    "knownVocab": [
+        "me levanto",
+        "me ducho",
+        "¿Qué hora es?",
+        "mañana/tarde/noche",
+        "familia",
+        "casa"
+    ],
+    "focusVocab": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo",
+        "el fin de semana",
+        "los días de la semana",
+        "trabajar",
+        "descansar"
+    ],
     "exercises": [
         {
-            "id": "e1",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What fits the gap: Lunes, Martes, _____?",
+            "question": "What day is 'miércoles'?",
             "options": [
-                "Jueves",
-                "Miércoles",
-                "Domingo"
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
             ],
-            "correct": "Miércoles"
+            "correct": "Wednesday"
         },
         {
-            "id": "e2",
-            "type": "translate",
-            "question": "Translate: 'I go to the party'",
-            "correct": "Voy a la fiesta"
-        },
-        {
-            "id": "e3",
+            "id": "ex2",
             "type": "fill_blank",
-            "question": "El _____ de semana (Weekend).",
+            "question": "El _____ es el primer día del fin de semana. (Saturday is the first day of the weekend)",
             "options": [
-                "fin",
-                "final",
-                "fondo"
+                "viernes",
+                "sábado",
+                "domingo"
             ],
-            "correct": "fin"
+            "correct": "sábado"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'the weekend'",
+            "correct": "El fin de semana"
         }
     ]
 }

@@ -1,45 +1,68 @@
 {
     "id": "6-3",
-    "title": "En el Tren (Transport)",
-    "style": "Kraftwerk-style Electronic / Synthpop, 120bpm. Robotic vocals. Driving rhythm like a train. Futuristic sounds.",
+    "title": "En el Tren (On the Train)",
+    "style": "Create a rhythmic Electro-Pop song at 110 BPM with a train journey atmosphere. Use chugging synth bass mimicking train rhythms, crisp electronic drums, and industrial textures. Feature a dreamy female vocalist looking out the window. Add train station announcements and wheel-on-track sounds creatively woven into the mix. Include a breakdown section before the final chorus. The mood should feel like a scenic train journey across countries. Keep it hypnotic and propulsive with modern European dance production.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nJe prends le bus, je prends le train\nEl autobús, el tren, c'est bien\nJe vais à l'aéroport\nVoy al aeropuerto, je suis fort\n\n[Chorus]\nAvión... voler haut\nCoche... rouler beau\nBarco... sur l'eau\nAveneu... nuevo\n\n[Verse 2]\nJ'achète un billet, Un billete\nPour aller loin, la planète\nLe taxi attend dans la rue\nEl taxi espera, tu l'as vu\n\n[Chorus]\nAvión... voler haut\nCoche... rouler beau\nBarco... sur l'eau\nAveneu... nuevo\n\n[Bridge]\nLe métro arrive\nEl metro llega\nVitesse lumière\n\n[Outro]\nBuen viaje.\nAu revoir.\nAdiós.",
-        "mixed_en": "[Verse 1]\nI take the bus, I take the train\nEl autobús, el tren, through the rain\nI go to the airport today\nVoy al aeropuerto, flew away\n\n[Chorus]\nAvión... flying high\nCoche... driving by\nBarco... on the sea\nMetro... ride with me\n\n[Verse 2]\nI buy a ticket for the ride\nUn billete, by my side\nThe taxi waits on the street\nEl taxi espera, feel the beat\n\n[Chorus]\nAvión... flying high\nCoche... driving by\nBarco... on the sea\nMetro... ride with me\n\n[Bridge]\nThe subway is here\nEl metro llega\nSpeed of light\n\n[Outro]\nBuen viaje.\nSafe travels.\nAdiós.",
-        "pure_es": "[Verse 1]\nTomo el autobús, tomo el tren\nViajo rápido, viajo bien\nVoy al aeropuerto, a volar\nLejos de aquí, a otro lugar\n\n[Chorus]\nAvión... en el cielo\nCoche... por el suelo\nBarco... en el mar\nBicicleta... a pedalear\n\n[Verse 2]\nCompro un billete, por favor\nPara viajar con mi amor\nEl taxi espera en la estación\nSiente la vibración\n\n[Chorus]\nAvión... en el cielo\nCoche... por el suelo\nBarco... en el mar\nBicicleta... a pedalear\n\n[Bridge]\nEl metro llega\nEl metro llega\nVelocidad\n\n[Outro]\nBuen viaje.\nHasta luego.\nAdiós."
+        "mixed_fr": "[Verse 1]\nVoy a la estación de trenes\nNecesito un billete, ¿lo tienes?\n¿A qué hora sale el tren?\nA las diez de la mañana, très bien\n\n[Pre-Chorus]\n¿De qué andén sale, por favor?\nAndén número tres, con amor\n¿Cuánto cuesta el billete?\nDiez euros, c'est parfait\n\n[Chorus]\nEn el tren, viajando voy\nPor las vías, feliz estoy\nEl autobús, el metro, el avión\nEl transporte es mi pasión\n\n[Verse 2]\n¿Hay un taxi por aquí cerca?\nVoy al aeropuerto, esa meta\nEl vuelo sale a las tres\nNecesito correr, you can guess\n\n[Chorus]\nEn el tren, mirando ir\nLos paisajes, sin dormir\nEl coche, la bicicleta\nNos movemos, vida completa\n\n[Outro]\nPróxima parada, llegamos ya\nBajamos aquí, aquí está\nEl viaje termina por ahora\nPero volveremos a cualquier hora",
+        "mixed_en": "[Verse 1]\nVoy a la estación de trenes\nNecesito un billete, have you seen this?\n¿A qué hora sale el tren?\nA las diez de la mañana, then\n\n[Pre-Chorus]\n¿De qué andén sale, por favor?\nAndén número tres, what's in store\n¿Cuánto cuesta el billete?\nDiez euros, that's the ticket\n\n[Chorus]\nEn el tren, viajando voy\nPor las vías, full of joy\nEl autobús, el metro, el avión\nEl transporte, move along\n\n[Verse 2]\n¿Hay un taxi por aquí cerca?\nVoy al aeropuerto, on alert\nEl vuelo sale a las tres\nNecesito correr, no less\n\n[Chorus]\nEn el tren, watching go\nLos paisajes, what a show\nEl coche, la bicicleta\nNos movemos, life's a fiesta\n\n[Outro]\nPróxima parada, we arrive\nBajamos aquí, we're alive\nEl viaje termina for now\nPero volveremos, and how",
+        "pure_es": "[Verse 1]\nVoy a la estación de trenes\nNecesito un billete, ¿lo tienes?\n¿A qué hora sale el tren?\nA las diez de la mañana, ya lo sé bien\n\n[Pre-Chorus]\n¿De qué andén sale, por favor?\nAndén número tres, sin error\n¿Cuánto cuesta el billete de ida?\nDiez euros, precio sin medida\n\n[Chorus]\nEn el tren, viajando voy\nPor las vías, feliz estoy\nEl autobús, el metro, el avión\nEl transporte es mi pasión\n\n[Verse 2]\n¿Hay un taxi por aquí cerca?\nVoy al aeropuerto, esa es mi meta\nEl vuelo sale a las tres en punto\nNecesito correr, todo junto\n\n[Chorus]\nEn el tren, mirando ir\nLos paisajes, sin dormir\nEl coche, la bicicleta\nNos movemos, vida completa\n\n[Outro]\nPróxima parada, llegamos ya\nBajamos aquí, aquí está\nEl viaje termina por ahora\nPero volveremos, a cualquier hora"
     },
+    "knownVocab": [
+        "voy a",
+        "¿Dónde está?",
+        "a la derecha/izquierda",
+        "me gusta",
+        "hora",
+        "números"
+    ],
+    "focusVocab": [
+        "el tren",
+        "el autobús",
+        "el avión",
+        "el metro",
+        "el taxi",
+        "la estación",
+        "el aeropuerto",
+        "el billete",
+        "el andén",
+        "salir",
+        "llegar",
+        "próxima parada"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "Voy al _____ (airport).",
-            "options": [
-                "estación",
-                "aeropuerto",
-                "coche"
-            ],
-            "correct": "aeropuerto"
-        },
-        {
-            "id": "e2",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Coche'?",
+            "question": "What does 'el billete' mean?",
             "options": [
-                "Boat",
-                "Plane",
-                "Car"
+                "The platform",
+                "The train",
+                "The ticket",
+                "The station"
             ],
-            "correct": "Car"
+            "correct": "The ticket"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'Good trip'",
-            "correct": "Buen viaje"
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "¿A qué hora _____ el tren? (What time does the train leave?)",
+            "options": [
+                "llega",
+                "sale",
+                "viene"
+            ],
+            "correct": "sale"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'Next stop'",
+            "correct": "Próxima parada"
         }
     ]
 }

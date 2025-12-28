@@ -1,45 +1,73 @@
 {
     "id": "2-3",
     "title": "Yo Quiero (I Want)",
-    "style": "Modern Latin Pop / Reggaeton, 100bpm. Danceable beat. Synthesizers. Catchy, repetitive chorus. High energy.",
+    "style": "Create a catchy Latin Pop song at 108 BPM with an infectious want-it-all energy. Build around a pulsing reggaeton-lite beat with snappy snares and deep bass. Use an enthusiastic young female vocalist full of excitement. Add shimmering synth pads and tropical marimba accents. The mood should feel like window shopping with big dreams. Keep it radio-ready with a hook that sticks.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nJ'entre dans le café, j'ai soif\nJe regarde le menu, le serveur arrive\nQu'est-ce que tu veux? Qu'est-ce que tu prends?\nJe sais ce que je veux maintenant\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Dis-moi tout\nYo quiero bailar avec vous\n\n[Verse 2]\nJe veux voyager, je veux partir\nYo quiero viajar, découvrir\nJe veux une glace, c'est délicieux\nYo quiero helado, je suis heureux\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Dis-moi tout\nYo quiero bailar avec vous\n\n[Bridge]\nJe ne veux pas dormir\nNo quiero dormir\nJe veux juste vivre ! ¡Vivir!\n\n[Outro]\nYo quiero...\nYo quiero...\n¡Gracias!",
-        "mixed_en": "[Verse 1]\nI walk in the cafe, thirsty as can be\nLook at the menu, waiter looks at me\nWhat do you want? What will it be?\nI know what I want, listen to me\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Tell me true\nYo quiero bailar with you\n\n[Verse 2]\nI want to travel, far away\nYo quiero viajar, start today\nI want ice cream, sweet and cold\nYo quiero helado, be bold\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Tell me true\nYo quiero bailar with you\n\n[Bridge]\nI don't want to sleep\nNo quiero dormir\nI just want to live! ¡Vivir!\n\n[Outro]\nYo quiero...\nYo quiero...\n¡Gracias!",
-        "pure_es": "[Verse 1]\nEntro al café, tengo sed\nMiro el menú, ya lo sé\n¿Qué quieres hoy? ¿Qué vas a tomar?\nSé lo que quiero, voy a empezar\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Dímelo\nYo quiero bailar, sí señor\n\n[Verse 2]\nQuiero viajar, quiero salir\nYo quiero vivir, descubrir\nQuiero helado, qué sabor\nYo quiero todo, por favor\n\n[Chorus]\nYo quiero agua, por favor\nYo quiero todo, mi amor\n¿Qué quieres tú? Dímelo\nYo quiero bailar, sí señor\n\n[Bridge]\nNo quiero dormir\nNo quiero dormir\n¡Solo quiero vivir!\n\n[Outro]\nYo quiero...\nYo quiero...\n¡Gracias!"
+        "mixed_fr": "[Verse 1]\nJe regarde, quiero un helado\nJe veux une glace, c'est mon souhait\nTengo sed, j'ai soif aussi\nQuiero agua, s'il te plaît, merci\n\n[Chorus]\nYo quiero, je veux\nQuiero comer, quiero beber\nYo quiero, je veux tout\nQuiero bailar avec toi, partout\n\n[Verse 2]\nTengo hambre, j'ai très faim\nQuiero pizza, c'est divin\nJe veux dormir, quiero dormir\nMais d'abord, quiero reír\n\n[Chorus]\nYo quiero, je veux\nQuiero cantar, être heureux\nYo quiero, je veux\nQuiero amor, c'est précieux\n\n[Outro]\n¿Qué quieres tú? Et toi, tu veux quoi?\nQuiero todo, je veux tout ça\nQuiero vivir ma vie ainsi",
+        "mixed_en": "[Verse 1]\nI'm looking, quiero un helado\nI want ice cream, that's my wish\nTengo sed, I'm thirsty too\nQuiero agua, please help me through\n\n[Chorus]\nYo quiero, I want\nQuiero comer, quiero beber\nYo quiero, I want it all\nQuiero bailar, let's have a ball\n\n[Verse 2]\nTengo hambre, I'm so hungry\nQuiero pizza, it's lovely\nI want to sleep, quiero dormir\nBut first, quiero reír\n\n[Chorus]\nYo quiero, I want\nQuiero cantar, be nonchalant\nYo quiero, I want\nQuiero amor, that's what I want\n\n[Outro]\n¿Qué quieres tú? What do you want?\nQuiero todo, my hunt\nQuiero vivir my life this way",
+        "pure_es": "[Verse 1]\nMiro aquí, quiero un helado\nTengo sed, estoy cansado\nQuiero agua, tengo sed\nQuiero todo, ya lo sé\n\n[Chorus]\nYo quiero, yo quiero\nQuiero comer, quiero beber\nYo quiero, yo quiero\nQuiero bailar, quiero correr\n\n[Verse 2]\nTengo hambre, quiero comer\nQuiero pizza, es mi placer\nQuiero dormir, estoy cansado\nQuiero reír, estar animado\n\n[Chorus]\nYo quiero, yo quiero\nQuiero cantar, sincero\nYo quiero, yo quiero\nQuiero amor verdadero\n\n[Outro]\n¿Qué quieres tú? Dime ya\nQuiero todo, es verdad\nQuiero vivir, quiero ser feliz"
     },
+    "knownVocab": [
+        "Hola",
+        "Me llamo",
+        "Estoy bien",
+        "Estoy cansado",
+        "uno a veinte",
+        "Hay",
+        "No hay",
+        "el gato",
+        "la mesa"
+    ],
+    "focusVocab": [
+        "Quiero",
+        "Quieres",
+        "Yo quiero",
+        "Tengo hambre",
+        "Tengo sed",
+        "comer",
+        "beber",
+        "dormir",
+        "bailar",
+        "cantar",
+        "reír",
+        "el helado",
+        "la pizza",
+        "el agua"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "translate",
-            "question": "Translate: 'I want water'",
-            "correct": "Yo quiero agua"
-        },
-        {
-            "id": "e2",
-            "type": "fill_blank",
-            "question": "Yo _____ viajar.",
-            "options": [
-                "quieres",
-                "quiero",
-                "quiere"
-            ],
-            "correct": "quiero"
-        },
-        {
-            "id": "e3",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Helado'?",
+            "question": "What does 'Yo quiero' mean?",
             "options": [
-                "Bread",
-                "Ice cream",
-                "Water"
+                "I have",
+                "I am",
+                "I want",
+                "I can"
             ],
-            "correct": "Ice cream"
+            "correct": "I want"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Tengo _____, quiero comer. (I'm hungry, I want to eat)",
+            "options": [
+                "sed",
+                "hambre",
+                "frío"
+            ],
+            "correct": "hambre"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I want water'",
+            "correct": "Quiero agua"
         }
     ]
 }

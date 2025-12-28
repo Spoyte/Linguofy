@@ -1,45 +1,67 @@
 {
     "id": "4-2",
     "title": "Mi Rutina (My Routine)",
-    "style": "Energetic Ska / Punk Pop, 140bpm. Brass section. Fast tempo. Chaos and energy. Morning sounds.",
+    "style": "Create a motivational Ska-Pop song at 115 BPM with an alarm clock morning energy. Feature bouncy offbeat guitar skanks, punchy brass stabs, and driving drums. Use an enthusiastic male vocalist singing about daily habits with infectious energy. Add handclaps and gang vocals in the chorus for singalong appeal. Include a breakdown section before the final chorus. The mood should feel like starting a productive day with optimism. Keep it upbeat and tight.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nLe réveil sonne, dring dring dring\nJe me réveille, Me despierto\nJe me lève vite, Me levanto\nPas de temps à perdre, c'est le tempo\n\n[Chorus]\nMe ducho, me visto\nJe me douche, je m'habille\nMe lavo los dientes\nEt je brille, je brille\nMi rutina, chaque matin\nC'est mon destin\n\n[Verse 2]\nJe prends le petit-déjeuner\nDesayuno café, allez\nJe vais au travail, Voy al trabajo\nJe cours, je cours, je suis pas un barjot\n\n[Chorus]\nMe ducho, me visto\nJe me douche, je m'habille\nMe lavo los dientes\nEt je brille, je brille\nMi rutina, chaque matin\nC'est mon destin\n\n[Bridge]\nEt le soir, Y por la noche\nMe acuesto, je me couche\nEnfin !\n\n[Outro]\nBuenas noches.\nMe duermo.\nZZZ...",
-        "mixed_en": "[Verse 1]\nThe alarm rings, ring ring ring\nI wake up, Me despierto\nI get up fast, Me levanto\nNo time to waste, let's go\n\n[Chorus]\nMe ducho, me visto\nI shower, I dress\nMe lavo los dientes\nLooking fresh, no less\nMi rutina, every day\nThis is the way\n\n[Verse 2]\nI eat my breakfast right away\nDesayuno café, start the day\nI go to work, Voy al trabajo\nRun run run, no time to slow\n\n[Chorus]\nMe ducho, me visto\nI shower, I dress\nMe lavo los dientes\nLooking fresh, no less\nMi rutina, every day\nThis is the way\n\n[Bridge]\nAnd at night, Y por la noche\nMe acuesto, I go to bed\nFinally!\n\n[Outro]\nBuenas noches.\nMe duermo.\nZZZ...",
-        "pure_es": "[Verse 1]\nSuena el reloj, ring ring ring\nMe despierto, ya estoy aquí\nMe levanto rápido, sí señor\nHoy va a ser un día mejor\n\n[Chorus]\nMe ducho, me visto\nRápido y listo\nMe lavo los dientes\nSonrisas valientes\nMi rutina, cada mañana\nSalgo por la ventana\n\n[Verse 2]\nDesayuno café y pan\nTodos a correr van\nVoy al trabajo, voy a estudiar\nNo puedo parar\n\n[Chorus]\nMe ducho, me visto\nRápido y listo\nMe lavo los dientes\nSonrisas valientes\nMi rutina, cada mañana\nSalgo por la ventana\n\n[Bridge]\nY por la noche, al final\nMe acuesto, nada mal\n¡Descansar!\n\n[Outro]\nBuenas noches.\nMe duermo.\nZZZ..."
+        "mixed_fr": "[Verse 1]\nPor la mañana me levanto\nJe me lève, qué encanto\nMe ducho rápido, je me douche\nMe visto bien, je m'habille, mouche\n\n[Chorus]\nMe levanto, me ducho, me visto\nC'est ma rutina, persistí\nMe cepillo los dientes bien\nMe peino también, ça va très bien\n\n[Verse 2]\nMe lavo la cara por la mañana\nC'est ma routine, ma semaine\nMe preparo para el día\nEstoy listo, quelle joie\n\n[Chorus]\nMe levanto, me ducho, me visto\nMi rutina tous les jours\nMe maquillo, me preparo\nEstoy listo para el amor\n\n[Outro]\nTodos los días, chaque jour\nLa misma rutina, the same, toujours\nPero me gusta, j'aime bien\nMi rutina me hace bien",
+        "mixed_en": "[Verse 1]\nPor la mañana me levanto\nI wake up, qué encanto\nMe ducho rápido, I shower\nMe visto bien, getting power\n\n[Chorus]\nMe levanto, me ducho, me visto\nThat's my rutina, I insist\nMe cepillo los dientes bien\nMe peino también, looking clean\n\n[Verse 2]\nMe lavo la cara por la mañana\nIt's my routine, banana\nMe preparo para el día\nEstoy listo, what a joy\n\n[Chorus]\nMe levanto, me ducho, me visto\nMi rutina every day\nMe maquillo, me preparo\nEstoy listo, on my way\n\n[Outro]\nTodos los días, every day\nLa misma rutina, the same way\nPero me gusta, I like it\nMi rutina is quite lit",
+        "pure_es": "[Verse 1]\nPor la mañana me levanto\nMe ducho rápido, qué encanto\nMe visto bien para el día\nMe preparo con alegría\n\n[Chorus]\nMe levanto, me ducho, me visto\nEsa es mi rutina, ¿lo has visto?\nMe cepillo los dientes bien\nMe peino también, muy bien\n\n[Verse 2]\nMe lavo la cara cada mañana\nMe preparo de buena gana\nEstoy listo para salir\nMi rutina me hace vivir\n\n[Chorus]\nMe levanto, me ducho, me visto\nMi rutina cada día, lo insisto\nMe maquillo, me preparo bien\nEstoy listo, eso es el tren\n\n[Outro]\nTodos los días hago lo mismo\nLa misma rutina, no es cataclismo\nPero me gusta, está muy bien\nMi rutina me sienta bien"
     },
+    "knownVocab": [
+        "¿Qué hora es?",
+        "Son las...",
+        "mañana/tarde/noche",
+        "familia",
+        "casa",
+        "Tengo",
+        "Quiero"
+    ],
+    "focusVocab": [
+        "me levanto",
+        "me ducho",
+        "me visto",
+        "me lavo",
+        "me cepillo",
+        "me peino",
+        "me maquillo",
+        "me acuesto",
+        "la rutina",
+        "todos los días"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "Yo me _____ (wake up) a las siete.",
-            "options": [
-                "levanto",
-                "despierto",
-                "ducho"
-            ],
-            "correct": "despierto"
-        },
-        {
-            "id": "e2",
-            "type": "translate",
-            "question": "Translate: 'I shower'",
-            "correct": "Me ducho"
-        },
-        {
-            "id": "e3",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Desayuno'?",
+            "question": "What does 'Me levanto' mean?",
             "options": [
-                "Dinner",
-                "Breakfast",
-                "Lunch"
+                "I go to bed",
+                "I wake up/get up",
+                "I take a shower",
+                "I get dressed"
             ],
-            "correct": "Breakfast"
+            "correct": "I wake up/get up"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "_____ los dientes. (I brush my teeth)",
+            "options": [
+                "Me lavo",
+                "Me cepillo",
+                "Me visto"
+            ],
+            "correct": "Me cepillo"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I take a shower'",
+            "correct": "Me ducho"
         }
     ]
 }

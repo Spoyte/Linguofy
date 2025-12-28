@@ -1,46 +1,57 @@
 {
     "id": "1-1",
-    "title": "Un Nouveau Jour (Hola!)",
-    "style": "Upbeat Latin Pop, 110bpm. Bright, sunny atmosphere. Acoustic guitar strumming intro, adding light tropical percussion. Male vocals, friendly and clear. Uplifting chorus with group backing vocals.",
+    "title": "¡Hola! (Hello!)",
+    "style": "Create a bright, uplifting Latin Pop song at 110 BPM with a warm, welcoming atmosphere. Start with soft acoustic guitar strumming and light maracas. Use a friendly male vocalist with clear enunciation. Add subtle group backing vocals in the chorus. Keep it summery and optimistic.",
     "audio": {
         "mixed_fr": "/audio/1-1-mixed_fr.mp3",
         "mixed_en": "/audio/1-1-mixed_en.mp3",
         "pure_es": "/audio/1-1-pure_es.mp3"
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nLe soleil brille à ma fenêtre\nUne nouvelle journée va naître\nJe me lève et je me sens bien\nJe croise mon voisin dans le jardin\n\n[Chorus]\nJe lui dis: ¡Hola! ¡Buenos días!\nQue la vie est belle, quelle joie\n¡Hola! ¡Buenos días!\nChante avec moi, c'est comme ça\n\n[Verse 2]\nL'après-midi, le soleil est haut\nTout le monde est là, c'est le moment\nDe saluer les amis, c'est beau\nOn se sourit tout simplement\n\n[Chorus]\nOn se dit: ¡Buenas tardes! ¡Hola!\nLa fête commence, on est là\n¡Buenas tardes! ¡Hola!\nDanse avec moi, c'est comme ça\n\n[Bridge]\nLe soir arrive, la lune est là\nIl est temps de rentrer chez soi\nOn se quitte mais on reviendra\n\n[Outro]\n¡Buenas noches! ¡Adiós!\nFais de beaux rêves, à bientôt\n¡Buenas noches! ¡Adiós!\n¡Hasta mañana! ¡Adiós!",
-        "mixed_en": "[Verse 1]\nThe sun is shining through my window pane\nA brand new day begins again\nI wake up feeling good and bright\nI see my neighbor in the light\n\n[Chorus]\nI say to him: ¡Hola! ¡Buenos días!\nLife is beautiful, what a joy\n¡Hola! ¡Buenos días!\nSing with me, oh boy\n\n[Verse 2]\nIn the afternoon, the sun is high\nEveryone is here, beneath the sky\nTo greet our friends, it's plain to see\nWe smile together, you and me\n\n[Chorus]\nWe say: ¡Buenas tardes! ¡Hola!\nThe party starts, we are here\n¡Buenas tardes! ¡Hola!\nDance with me, have no fear\n\n[Bridge]\nThe evening comes, the moon is bright\nIt's time to go home for the night\nWe say goodbye but we'll return\n\n[Outro]\n¡Buenas noches! ¡Adiós!\nSweet dreams to you, see you soon\n¡Buenas noches! ¡Adiós!\n¡Hasta mañana! ¡Adiós!",
-        "pure_es": "[Verse 1]\nEl sol brilla en mi ventana\nEmpieza ya, una mañana\nMe levanto y me siento bien\nVeo a mi vecino también\n\n[Chorus]\nLe digo: ¡Hola! ¡Buenos días!\nQué bella es la vida, qué alegría\n¡Hola! ¡Buenos días!\nCanta conmigo, hoy es el día\n\n[Verse 2]\nPor la tarde, el sol está alto\nTodos aquí, en este asfalto\nSaludo a amigos, qué emoción\nSonreímos con el corazón\n\n[Chorus]\nDecimos: ¡Buenas tardes! ¡Hola!\nLa fiesta empieza, no estás sola\n¡Buenas tardes! ¡Hola!\nBaila conmigo, en esta ola\n\n[Bridge]\nLa noche llega, la luna está\nEs hora de irse, a descansar\nNos despedimos, hasta luego\n\n[Outro]\n¡Buenas noches! ¡Adiós!\nDulces sueños, hoy me voy\n¡Buenas noches! ¡Adiós!\n¡Hasta mañana! ¡Adiós!"
+        "mixed_fr": "[Verse 1]\nLe soleil brille ce matin\nJe vois mon ami sur le chemin\nJe lui fais signe, il me sourit\nEt je lui dis avec envie:\n\n[Chorus]\n¡Hola! ¡Buenos días!\nComment ça va aujourd'hui?\n¡Hola! ¡Buenos días!\nViens chanter avec moi ici\n\n[Verse 2]\nL'après-midi le temps passe vite\nJe croise Marie, elle est si jolie\nJe la salue avec plaisir:\n¡Buenas tardes! Sans mentir\n\n[Chorus]\n¡Hola! ¡Buenas tardes!\nÇa va bien? Tout le monde\n¡Hola! ¡Buenas tardes!\nOn danse à la ronde\n\n[Outro]\nLa nuit tombe, il faut partir\n¡Buenas noches! À bientôt\n¡Adiós! Fais de beaux rêves\n¡Hasta mañana! C'est le mot",
+        "mixed_en": "[Verse 1]\nThe sun is shining bright today\nI see my friend along the way\nI wave hello, he smiles at me\nAnd I say to him happily:\n\n[Chorus]\n¡Hola! ¡Buenos días!\nHow are you doing today?\n¡Hola! ¡Buenos días!\nCome and sing with me, hooray\n\n[Verse 2]\nThe afternoon goes by so fast\nI see Mary walking past\nI greet her with a happy smile:\n¡Buenas tardes! In my style\n\n[Chorus]\n¡Hola! ¡Buenas tardes!\nHow's it going, everyone?\n¡Hola! ¡Buenas tardes!\nLet's dance and have some fun\n\n[Outro]\nNight is falling, time to go\n¡Buenas noches! See you soon\n¡Adiós! Sweet dreams to you\n¡Hasta mañana! Very soon",
+        "pure_es": "[Verse 1]\nEl sol brilla hoy aquí\nVeo a mi amigo por ahí\nLe hago señas, me sonríe\nY le digo con alegría:\n\n[Chorus]\n¡Hola! ¡Buenos días!\n¿Cómo estás hoy, amigo?\n¡Hola! ¡Buenos días!\nCanta conmigo\n\n[Verse 2]\nPor la tarde todo es bien\nVeo a María también\nLa saludo con cariño:\n¡Buenas tardes! Qué niño\n\n[Chorus]\n¡Hola! ¡Buenas tardes!\n¿Qué tal? ¿Todo bien?\n¡Hola! ¡Buenas tardes!\nBailamos también\n\n[Outro]\nLa noche llega ya\n¡Buenas noches! Adiós\n¡Hasta mañana!\nNos vemos los dos"
     },
+    "knownVocab": [],
+    "focusVocab": [
+        "Hola",
+        "Buenos días",
+        "Buenas tardes",
+        "Buenas noches",
+        "Adiós",
+        "Hasta mañana",
+        "Cómo estás"
+    ],
     "exercises": [
         {
             "id": "ex1",
             "type": "multiple_choice",
-            "question": "What does 'Buenos Días' mean?",
+            "question": "What does '¡Buenos días!' mean?",
             "options": [
                 "Good night",
                 "Good morning",
                 "Goodbye",
-                "Hello"
+                "See you later"
             ],
             "correct": "Good morning"
         },
         {
             "id": "ex2",
-            "type": "fill_blank",
-            "question": "Le soleil _____ (briller) à ma fenêtre.",
+            "type": "multiple_choice",
+            "question": "When would you say '¡Buenas noches!'?",
             "options": [
-                "dort",
-                "brille",
-                "mange"
+                "In the morning",
+                "At lunch time",
+                "In the evening/night",
+                "In the afternoon"
             ],
-            "correct": "brille"
+            "correct": "In the evening/night"
         },
         {
             "id": "ex3",
-            "type": "translate",
-            "question": "Translate: 'Good night'",
-            "correct": "Buenas noches"
+            "type": "translation",
+            "question": "Translate: 'See you tomorrow'",
+            "correct": "Hasta mañana"
         }
     ]
 }

@@ -1,45 +1,67 @@
 {
     "id": "1-3",
     "title": "¿Cómo Estás? (How Are You?)",
-    "style": "Relaxed Reggae, 80bpm. Chill island vibe. Deep bassline, offbeat guitar skank. Smooth, soulful vocals. Laid back atmosphere.",
+    "style": "Create a mellow Acoustic Pop song at 95 BPM with a caring coffeehouse vibe. Use fingerpicked nylon guitar and soft percussion. Feature a warm female vocalist with a soothing tone. Add gentle piano fills. Keep it intimate and relaxed.",
     "audio": {
         "mixed_fr": "/audio/1-3-mixed_fr.mp3",
         "mixed_en": "/audio/1-3-mixed_en.mp3",
         "pure_es": "/audio/1-3-pure_es.mp3"
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nJe marche doucement sur le sable chaud\nLa vie est simple, il fait beau\nJe te vois venir avec ton sourire\nEt j'ai envie de te dire\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nJe suis bien, ¡Estoy bien!\nTu es triste? ¿Estás mal?\nNon, tout va bien, ¡Todo bien!\n\n[Verse 2]\nParfois je suis fatigué, c'est vrai\nMais aujourd'hui je suis prêt\nÀ chanter et à danser\nLaisse tes soucis de côté\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nJe suis bien, ¡Estoy bien!\nTu es triste? ¿Estás mal?\nNon, tout va bien, ¡Todo bien!\n\n[Bridge]\nNous sommes heureux, Estamos felices\nIls sont contents, Están contentos\nLa vie est une fête\n\n[Outro]\n¡Estoy muy bien!\n¿Y tú?\n¡Hasta luego!",
-        "mixed_en": "[Verse 1]\nWalking slowly on the sand today\nLife is simple in every way\nI see you coming with a smile so wide\nChecking the vibe, turning the tide\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nI am good, ¡Estoy bien!\nAre you sad? ¿Estás mal?\nNo, all is good, ¡Todo bien!\n\n[Verse 2]\nSometimes I'm tired, yes it's true\nBut today I'm ready, me and you\nTo sing and dance the night away\nForget your worries, it's okay\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nI am good, ¡Estoy bien!\nAre you sad? ¿Estás mal?\nNo, all is good, ¡Todo bien!\n\n[Bridge]\nWe are happy, Estamos felices\nThey are happy, Están contentos\nLife is a party\n\n[Outro]\n¡Estoy muy bien!\n¿Y tú?\n¡Hasta luego!",
-        "pure_es": "[Verse 1]\nCamino lento en la arena hoy\nLa vida es simple, donde voy\nTe veo venir, sonríes así\nY quiero decirte a ti\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nYo estoy bien, ¡Estoy bien!\n¿Estás triste? ¿Estás mal?\nNo, todo bien, ¡Todo bien!\n\n[Verse 2]\nA veces cansado, es la verdad\nPero hoy hay felicidad\nPara cantar y bailar\nDeja las penas pasar\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nYo estoy bien, ¡Estoy bien!\n¿Estás triste? ¿Estás mal?\nNo, todo bien, ¡Todo bien!\n\n[Verse 2]\nA veces cansado, es la verdad\nPero hoy hay felicidad\nPara cantar y bailar\nDeja las penas pasar\n\n[Chorus]\nHola amigo, ¿Cómo estás?\nYo estoy bien, ¡Estoy bien!\n¿Estás triste? ¿Estás mal?\nNo, todo bien, ¡Todo bien!\n\n[Bridge]\nEstamos felices, así es\nEstán contentos, ya lo ves\nLa vida es buena\n\n[Outro]\n¡Estoy muy bien!\n¿Y tú?\n¡Hasta luego!"
+        "mixed_fr": "[Verse 1]\nSalut mon ami, ça va bien?\n¿Cómo estás? Comment tu te sens?\nJe vais bien, estoy muy bien\nEt toi, dis-moi, comment ça vient?\n\n[Chorus]\n¿Cómo estás? Comment vas-tu?\nEstoy bien, je vais bien, et tu?\n¿Qué tal? Ça va comme ci comme ça\nMuy bien, très bien, voilà\n\n[Verse 2]\nJe suis fatigué, estoy cansado\nJe suis content, estoy alegre\nJe suis triste, estoy triste\nMais ça va aller, tu sais, j'insiste\n\n[Outro]\nGracias por preguntar, merci\n¿Y tú? Et toi, ça va aussi?\nEstamos bien, on va bien\nTodos juntos, c'est le lien",
+        "mixed_en": "[Verse 1]\nHey my friend, how's it going?\n¿Cómo estás? How are you feeling?\nI'm doing fine, estoy muy bien\nAnd you, tell me, what's the scene?\n\n[Chorus]\n¿Cómo estás? How are you?\nEstoy bien, I'm fine, how about you?\n¿Qué tal? So-so, you know\nMuy bien, very well, let's go\n\n[Verse 2]\nI am tired, estoy cansado\nI am happy, estoy alegre\nI am sad, estoy triste\nBut it's okay, I insist\n\n[Outro]\nGracias por preguntar, thanks for asking\n¿Y tú? And you, still basking?\nEstamos bien, we are fine\nTodos juntos, feeling divine",
+        "pure_es": "[Verse 1]\nHola amigo, ¿cómo estás?\n¿Cómo te va? ¿Qué tal?\nEstoy muy bien, gracias\n¿Y tú? Dime, sin dudar\n\n[Chorus]\n¿Cómo estás? ¿Qué tal?\nEstoy bien, todo genial\n¿Qué tal? Así así\nMuy bien, estoy aquí\n\n[Verse 2]\nEstoy cansado, necesito dormir\nEstoy contento, quiero sonreír\nEstoy triste, pero va a pasar\nTodo está bien, no hay que llorar\n\n[Outro]\nGracias por preguntar, amigo\n¿Y tú? ¿Cómo estás conmigo?\nEstamos bien, todos aquí\nJuntos siempre, así, así"
     },
+    "knownVocab": [
+        "Hola",
+        "Buenos días",
+        "Adiós",
+        "Hasta mañana",
+        "Me llamo",
+        "Se llama",
+        "Tengo años",
+        "Mucho gusto"
+    ],
+    "focusVocab": [
+        "Cómo estás",
+        "Estoy bien",
+        "Muy bien",
+        "Qué tal",
+        "Estoy cansado",
+        "Estoy contento",
+        "Estoy triste",
+        "Gracias"
+    ],
     "exercises": [
         {
-            "id": "e1",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "How do you say 'How are you?'",
+            "question": "What does '¿Cómo estás?' mean?",
             "options": [
-                "¿Quién eres?",
-                "¿Cómo estás?",
-                "¿Dónde estás?"
+                "What is your name?",
+                "How old are you?",
+                "How are you?",
+                "Where are you from?"
             ],
-            "correct": "¿Cómo estás?"
+            "correct": "How are you?"
         },
         {
-            "id": "e2",
-            "type": "fill_blank",
-            "question": "No, todo va bien, ¡_____ bien!",
+            "id": "ex2",
+            "type": "multiple_choice",
+            "question": "How do you say 'I am tired' in Spanish?",
             "options": [
-                "Nada",
-                "Todo",
-                "Algo"
+                "Estoy contento",
+                "Estoy cansado",
+                "Estoy triste",
+                "Estoy bien"
             ],
-            "correct": "Todo"
+            "correct": "Estoy cansado"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'I am good' (Estar)",
-            "correct": "Estoy bien"
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I am fine, thank you'",
+            "correct": "Estoy bien, gracias"
         }
     ]
 }

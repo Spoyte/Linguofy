@@ -1,45 +1,73 @@
 {
     "id": "3-1",
     "title": "Mi Familia (My Family)",
-    "style": "Sentimental Acoustic Ballad, 70bpm. Warm guitar, soft piano. Emotional male vocals. Nostalgic atmosphere.",
+    "style": "Create a warm Latin Ballad at 85 BPM with a family gathering atmosphere. Start with gentle acoustic guitar arpeggios and soft strings. Use a tender female vocalist with an emotional, loving tone. Add subtle trumpet flourishes and light percussion. Build to an uplifting chorus with layered harmonies. The mood should feel like looking through a family photo album with nostalgia and love. Keep it heartfelt and sincere with a classic Latin ballad production.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nJe regarde la photo sur le mur\nJe vois des visages, un futur\nVoici ma mère, voici mon père\nAqui está mi madre, mi padre aussi\n\n[Chorus]\nYo tengo una familia\nUne famille pour la vie\nTú tienes una familia\nC'est le plus beau des abris\n\n[Verse 2]\nJ'ai un frère, il est grand\nTengo un hermano, c'est important\nJ'ai une sœur, elle est petite\nTengo una hermana, elle va vite\n\n[Chorus]\nYo tengo una familia\nUne famille pour la vie\nTú tienes una familia\nC'est le plus beau des abris\n\n[Bridge]\nNous avons de l'amour\nTenemos amor, toujours\nPour toujours, para siempre\n\n[Outro]\nMi familia.\nTu familia.\nAmor.",
-        "mixed_en": "[Verse 1]\nLooking at the photo on the wall\nFaces I love, I recall them all\nHere is my mother, here is my dad\nAqui está mi madre, mi padre, I'm glad\n\n[Chorus]\nYo tengo una familia\nA family for life\nTú tienes una familia\nThrough joy and through strife\n\n[Verse 2]\nI have a brother, he is tall\nTengo un hermano, best of all\nI have a sister, she is small\nTengo una hermana, catching the ball\n\n[Chorus]\nYo tengo una familia\nA family for life\nTú tienes una familia\nThrough joy and through strife\n\n[Bridge]\nWe have love to share\nTenemos amor, everywhere\nForever, para siempre\n\n[Outro]\nMi familia.\nTu familia.\nAmor.",
-        "pure_es": "[Verse 1]\nMiro la foto en la pared\nCaras que amo, ya lo sé\nAquí está mi madre, mi papá\nAquí está mi padre, y nadie más\n\n[Chorus]\nYo tengo una familia\nFamilia de verdad\nTú tienes una familia\nFelicidad y paz\n\n[Verse 2]\nTengo un hermano, es mayor\nTengo un hermano, es el mejor\nTengo una hermana, es menor\nTengo una hermana, es un amor\n\n[Chorus]\nYo tengo una familia\nFamilia de verdad\nTú tienes una familia\nFelicidad y paz\n\n[Bridge]\nTenemos mucho amor\nTenemos amor, sí señor\nPara siempre\n\n[Outro]\nMi familia.\nTu familia.\nAmor."
+        "mixed_fr": "[Verse 1]\nJe vous présente mi familia\nTengo una hermana, j'ai une sœur\nMi hermano se llama Miguel\nMis padres están aquí, c'est réel\n\n[Chorus]\nMi familia, ma famille\nTengo una madre, tengo un padre\nMi familia es mi vida\nTodos juntos, c'est ma vie\n\n[Verse 2]\nMi abuela est très gentille\nMi abuelo raconte des histoires\nTengo un tío y una tía\nMis primos sont comme moi\n\n[Chorus]\nMi familia, ma famille\nTengo amor aquí\nMi familia es todo\nEstamos juntos siempre\n\n[Outro]\nLa familia est importante\nMi familia es mi corazón\nTodos juntos, para siempre\nEso es mi familia",
+        "mixed_en": "[Verse 1]\nLet me introduce mi familia\nTengo una hermana, I have a sister\nMi hermano se llama Miguel\nMis padres están aquí, so real\n\n[Chorus]\nMi familia, my family\nTengo una madre, tengo un padre\nMi familia es mi vida\nTodos juntos, that's my life\n\n[Verse 2]\nMi abuela is very kind\nMi abuelo tells stories, unwind\nTengo un tío y una tía\nMis primos are like me\n\n[Chorus]\nMi familia, my family\nTengo amor right here\nMi familia es todo\nEstamos juntos, no fear\n\n[Outro]\nFamily is so important\nMi familia es mi corazón\nTodos juntos, para siempre\nEso es mi familia, forever strong",
+        "pure_es": "[Verse 1]\nLes presento a mi familia\nTengo una hermana, es muy bella\nMi hermano se llama Miguel\nMis padres están aquí con él\n\n[Chorus]\nMi familia, mi familia\nTengo una madre, qué maravilla\nTengo un padre, tan querido\nMi familia es todo para mí\n\n[Verse 2]\nMi abuela es muy amable\nMi abuelo cuenta cuentos, adorable\nTengo un tío y una tía\nMis primos son mi alegría\n\n[Chorus]\nMi familia, mi familia\nTengo amor, tengo alegría\nMi familia es mi vida entera\nEstamos juntos, de primera\n\n[Outro]\nLa familia es importante\nMi familia es mi corazón\nTodos juntos, para siempre\nEso es mi familia, con pasión"
     },
+    "knownVocab": [
+        "Hola",
+        "Me llamo",
+        "Tengo años",
+        "Estoy bien",
+        "números 1-20",
+        "Hay",
+        "No hay",
+        "Quiero",
+        "Tengo hambre",
+        "Tengo sed"
+    ],
+    "focusVocab": [
+        "la madre",
+        "el padre",
+        "la hermana",
+        "el hermano",
+        "la abuela",
+        "el abuelo",
+        "la tía",
+        "el tío",
+        "los primos",
+        "la familia",
+        "mis padres",
+        "mi corazón"
+    ],
     "exercises": [
         {
-            "id": "e1",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Madre'?",
+            "question": "What does 'hermana' mean?",
             "options": [
-                "Father",
+                "Brother",
+                "Sister",
                 "Mother",
-                "Sister"
+                "Father"
             ],
-            "correct": "Mother"
+            "correct": "Sister"
         },
         {
-            "id": "e2",
-            "type": "fill_blank",
-            "question": "Yo _____ (Tener) un hermano.",
+            "id": "ex2",
+            "type": "multiple_choice",
+            "question": "How do you say 'grandmother' in Spanish?",
             "options": [
-                "tienes",
-                "tengo",
-                "tiene"
+                "Madre",
+                "Tía",
+                "Abuela",
+                "Prima"
             ],
-            "correct": "tengo"
+            "correct": "Abuela"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'I have a family'",
-            "correct": "Yo tengo una familia"
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I have a brother'",
+            "correct": "Tengo un hermano"
         }
     ]
 }

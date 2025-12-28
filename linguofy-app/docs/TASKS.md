@@ -54,22 +54,20 @@
 
 ---
 
-## Phase 4: Backend Migration 📋 PLANNED
+## Phase 4: Backend Migration 🔄 IN PROGRESS
 
-### 4.1 Supabase Setup
-- [ ] Create Supabase project
-- [ ] Run SQL schema (modules, lessons, exercises, profiles, user_progress)
-- [ ] Configure RLS policies
+### 4.1 Supabase Setup ✅
+- [x] Create Supabase Project & Tables (SQL provided)
+- [x] schema.sql with RLS policies
 
-### 4.2 Data Migration
-- [ ] Write `seed_db.js` script
-- [ ] Migrate 24 lesson JSONs to database
-- [ ] Verify data integrity
+### 4.2 Data Migration ✅
+- [x] Write `seed_db.mjs` script
+- [ ] Run script to migrate 24 lessons (requires Supabase project)
 
-### 4.3 App Integration
-- [ ] Install `@supabase/supabase-js`
-- [ ] Create `useSongs()` hook
-- [ ] Create `useExercises(lessonId)` hook
+### 4.3 App Integration ✅
+- [x] Install `@supabase/supabase-js`
+- [x] Create `useCourseData()` hook
+- [x] Create `useExercises(lessonId)` hook
 - [ ] Update Admin Dashboard to write to DB
 
 ### 4.4 Authentication

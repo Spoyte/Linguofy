@@ -1,45 +1,71 @@
 {
     "id": "3-2",
-    "title": "Ella es Alta (Descriptions)",
-    "style": "Upbeat Salsa, 100bpm. Horn section, latin percussion (congas). Energetic vocals. Danceable and rhythmic.",
+    "title": "Ella Es Alta (She Is Tall)",
+    "style": "Create a fun Funk-Pop track at 105 BPM with a fashion runway vibe. Use groovy slap bass, crisp drums with ghost notes, and funky rhythm guitar. Feature a playful male-female vocal duo trading lines about descriptions. Add wah-wah guitar licks and brass stabs in the chorus. The mood should feel like describing friends at a party. Keep it bouncy, colorful, and retro-modern with tight funk production.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nRegarde la fille là-bas qui danse\nElle est grande, quelle élégance\nElla es alta, elle est grande\nElla es guapa, elle est belle\n\n[Chorus]\nIl est petit, Él es bajo\nElle est grande, Ella es alta\nNous sommes forts, Somos fuertes\nC'est la fête, c'est la chance\n\n[Verse 2]\nMon ami est blond, il est marrant\nMi amigo es rubio, c'est épatant\nMa copine est brune, elle est sympa\nMi amiga es morena, elle est là\n\n[Chorus]\nIl est petit, Él es bajo\nElle est grande, Ella es alta\nNous sommes forts, Somos fuertes\nC'est la fête, c'est la chance\n\n[Bridge]\nComment tu es? ¿Cómo eres?\nJe suis intelligent ! Soy inteligente.\n\n[Outro]\nGuapo, Guapa.\nAlto, Bajo.\n¡Así somos!",
-        "mixed_en": "[Verse 1]\nLook at the girl dancing there\nShe is tall, with long hair\nElla es alta, she is tall\nElla es guapa, belle of the ball\n\n[Chorus]\nHe is short, Él es bajo\nShe is tall, Ella es alta\nWe are strong, Somos fuertes\nDancing all night long\n\n[Verse 2]\nMy friend is blonde, he's cool you know\nMi amigo es rubio, watch him go\nMy friend is dark-haired, looking fine\nMi amiga es morena, friend of mine\n\n[Chorus]\nHe is short, Él es bajo\nShe is tall, Ella es alta\nWe are strong, Somos fuertes\nDancing all night long\n\n[Bridge]\nWhat are you like? ¿Cómo eres?\nI am smart! Soy inteligente.\n\n[Outro]\nGuapo, Guapa.\nAlto, Bajo.\n¡That's us!",
-        "pure_es": "[Verse 1]\nMira la chica que baila allí\nEs muy alta, la vi\nElla es alta, mírala\nElla es guapa, que linda\n\n[Chorus]\nÉl es bajo, no es alto\nElla es alta, da un salto\nSomos fuertes, de verdad\nFelicidad y amistad\n\n[Verse 2]\nMi amigo es rubio, genio es\nMi amigo es rubio, ya lo ves\nMi amiga es morena, aquí está\nMi amiga es morena, bailará\n\n[Chorus]\nÉl es bajo, no es alto\nElla es alta, da un salto\nSomos fuertes, de verdad\nFelicidad y amistad\n\n[Bridge]\n¿Cómo eres tú? \nSoy inteligente.\n¿Cómo eres tú?\n\n[Outro]\nGuapo, Guapa.\nAlto, Bajo.\n¡Así somos!"
+        "mixed_fr": "[Verse 1]\nMira esta chica, ella es alta\nElle est grande, tiene pelo largo\nSus ojos son marrones, très beaux\nElla es guapa, c'est magnifique\n\n[Chorus]\nAlto, alta - grand, grande\nBajo, baja - petit, petite\nGuapo, guapa - beau, belle\n¿Cómo es? Comment est-il?\n\n[Verse 2]\nMi amigo es bajo y simpático\nÉl tiene ojos verdes, c'est sympa\nTiene pelo corto, il est brun\nÉl es muy guapo, c'est quelqu'un\n\n[Chorus]\nAlto, alta - grand, grande\nGordo, flaco - gros, mince\nRubio, moreno - blond, brun\n¿Cómo es ella? Comment est-elle?\n\n[Outro]\nCada persona es diferente\nAlgunas son altas, sont grandes\nOtras son bajas, sont petites\nTodos somos especiales",
+        "mixed_en": "[Verse 1]\nLook at this girl, ella es alta\nShe is tall, tiene pelo largo\nSus ojos son marrones, so nice\nElla es guapa, that's precise\n\n[Chorus]\nAlto, alta - tall\nBajo, baja - short, that's all\nGuapo, guapa - handsome, pretty\n¿Cómo es? Let's hear this ditty\n\n[Verse 2]\nMy friend es bajo y simpático\nÉl tiene ojos verdes, so magic\nTiene pelo corto, he's brunette\nÉl es muy guapo, you bet\n\n[Chorus]\nAlto, alta - tall\nGordo, flaco - big and small\nRubio, moreno - blonde, brunette\n¿Cómo es ella? Don't forget\n\n[Outro]\nEvery person es diferente\nAlgunas son altas, very tall\nOtras son bajas, very small\nTodos somos especiales after all",
+        "pure_es": "[Verse 1]\nMira a esta chica, ella es alta\nTiene el pelo largo y bonito\nSus ojos son marrones, muy lindos\nElla es guapa, muy guapita\n\n[Chorus]\nAlto, alta, así es\nBajo, baja, ¿ya lo ves?\nGuapo, guapa, muy bien\nDime cómo es, dime quién\n\n[Verse 2]\nMi amigo es bajo y simpático\nÉl tiene los ojos verdes, mágico\nTiene el pelo corto, es moreno\nÉl es muy guapo, es muy bueno\n\n[Chorus]\nAlto, alta, eso es\nGordo, flaco, otra vez\nRubio, moreno, los dos\nDime cómo es, por favor\n\n[Outro]\nCada persona es diferente\nAlgunas son altas, muy grandes\nOtras son bajas, pequeñas\nTodos somos muy especiales"
     },
+    "knownVocab": [
+        "Mi familia",
+        "hermana",
+        "hermano",
+        "madre",
+        "padre",
+        "Hay",
+        "Tengo",
+        "Quiero",
+        "números 1-20"
+    ],
+    "focusVocab": [
+        "alto/a",
+        "bajo/a",
+        "gordo/a",
+        "flaco/a",
+        "guapo/a",
+        "feo/a",
+        "rubio/a",
+        "moreno/a",
+        "el pelo largo",
+        "el pelo corto",
+        "los ojos",
+        "¿Cómo es?"
+    ],
     "exercises": [
         {
-            "id": "e1",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What does 'Alta' mean (feminine)?",
+            "question": "What does 'alta' mean?",
             "options": [
                 "Short",
                 "Tall",
-                "Blonde"
+                "Fat",
+                "Thin"
             ],
             "correct": "Tall"
         },
         {
-            "id": "e2",
+            "id": "ex2",
             "type": "fill_blank",
-            "question": "Él _____ (Ser) bajo.",
+            "question": "Él tiene el pelo _____. (He has short hair)",
             "options": [
-                "eres",
-                "es",
-                "soy"
+                "largo",
+                "corto",
+                "rubio"
             ],
-            "correct": "es"
+            "correct": "corto"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'We are strong'",
-            "correct": "Somos fuertes"
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'She is beautiful'",
+            "correct": "Ella es guapa"
         }
     ]
 }

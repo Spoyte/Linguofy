@@ -1,45 +1,70 @@
 {
     "id": "8-3",
-    "title": "Estoy Nervioso (Feelings)",
-    "style": "Emo / Pop Punk, 150bpm. Distorted guitars. Angst-filled vocals. Fast drumming. Emotional release.",
+    "title": "Estoy Nervioso (I'm Nervous)",
+    "style": "Create an emotionally-charged Punk-Pop song at 145 BPM with anxious energy that releases into catharsis. Use driving power chords, fast drums, and raw distorted bass. Feature an honest young male vocalist expressing feelings openly with punk rock rawness. Add gang vocal shouts in the chorus and dynamic quiet-loud sections. Include a breakdown bridge where the anxiety releases into acceptance. The mood should go from nervous anxiety to liberating release. Keep it authentic and emotionally raw with modern pop-punk production and arena-ready energy.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nDemain c'est l'examen\nMañana es el examen\nJe ne me sens pas bien\nNo me siento bien\nJe suis stressé, Estoy estresado\nJe suis fatigué, Estoy cansado\n\n[Chorus]\nEstoy nervioso, oui c'est ça\nEstoy triste, parfois\nMais je veux être heureux\nQuiero ser feliz, je le veu\n\n[Verse 2]\nPourquoi tout est si dur ?\n¿Por qué es difícil?\nJe suis malade, Estoy enfermo\nJe suis en colère, Estoy enojado\n\n[Chorus]\nEstoy nervioso, oui c'est ça\nEstoy triste, parfois\nMais je veux être heureux\nQuiero ser feliz, je le veu\n\n[Bridge]\nMais quand je te vois\nCuando te veo\nEstoy tranquilo\nCalme.\n\n[Outro]\nYa no estoy triste.\nEstoy bien.\nGracias.",
-        "mixed_en": "[Verse 1]\nTomorrow is the test\nMañana es el examen, no rest\nI don't feel good inside\nNo me siento bien, want to hide\nI'm stressed out, Estoy estresado\nI'm tired, Estoy cansado\n\n[Chorus]\nEstoy nervioso, yes it's true\nEstoy triste, feeling blue\nBut I want to be happy\nQuiero ser feliz, make it snappy\n\n[Verse 2]\nWhy is life so hard?\n¿Por qué es difícil? Scarred\nI am sick, Estoy enfermo\nI am angry, Estoy enojado\n\n[Chorus]\nEstoy nervioso, yes it's true\nEstoy triste, feeling blue\nBut I want to be happy\nQuiero ser feliz, make it snappy\n\n[Bridge]\nBut when I see you\nCuando te veo\nEstoy tranquilo\nCalm.\n\n[Outro]\nI'm not sad anymore.\nEstoy bien.\nThanks.",
-        "pure_es": "[Verse 1]\nMañana tengo que ir\nNo sé qué decir\nSiento un peso aquí\nNo es bueno para mí\nEstoy preocupado, lo sé\nNo sé qué haré\n\n[Chorus]\nEstoy nervioso, la verdad\nEstoy triste, soledad\nPero busco la felicidad\nQuiero tranquilidad\n\n[Verse 2]\nA veces estoy mal\nEs algo normal\nEstoy enfermo de amor\nSiento el dolor\n\n[Chorus]\nEstoy nervioso, la verdad\nEstoy triste, soledad\nPero busco la felicidad\nQuiero tranquilidad\n\n[Bridge]\nRespiro hondo\nHasta el fondo\nYa pasó\n\n[Outro]\nEstoy mejor.\nEstoy feliz.\nAdiós."
+        "mixed_fr": "[Verse 1]\nHoy me siento muy nervioso\nEstoy preocupado, estoy ansioso\nMi corazón late muy fuerte\n¿Por qué me siento así? C'est ma sort\n\n[Pre-Chorus]\nPero también estoy feliz\nEstoy contento, soy feliz\nEstoy emocionado también\nLas emociones vienen y van\n\n[Chorus]\nEstoy nervioso, sí lo estoy\nEstoy triste, así me voy\nPero estoy bien, todo pasará\nLas emociones van y vendrán\n\n[Verse 2]\nEstoy aburrido esta noche\nEstoy cansado, sans reproche\nEstoy enfadado, muy molesto\nPero mañana será mejor, je promets\n\n[Chorus]\nEstoy nervioso, un poco ansioso\nEstoy alegre, soy dichoso\nEstoy confundido, perdido aquí\nPero sigo adelante, sí, sí, sí\n\n[Outro]\nTodas las emociones son válidas\nNo hay emociones malas\nEstoy bien, estoy aquí\nY tú también estás aquí",
+        "mixed_en": "[Verse 1]\nHoy me siento muy nervioso\nEstoy preocupado, estoy ansioso\nMi corazón late muy fuerte\n¿Por qué me siento así? It's my quote\n\n[Pre-Chorus]\nPero también estoy feliz\nEstoy contento, happy is\nEstoy emocionado también\nLas emociones come and go then\n\n[Chorus]\nEstoy nervioso, yes I am\nEstoy triste, that's my jam\nPero estoy bien, it will pass\nLas emociones, first and last\n\n[Verse 2]\nEstoy aburrido esta noche\nEstoy cansado, no reproach\nEstoy enfadado, muy molesto\nPero mañana será better, I attest\n\n[Chorus]\nEstoy nervioso, anxious too\nEstoy alegre, happy true\nEstoy confundido, lost inside\nPero sigo adelante, I won't hide\n\n[Outro]\nTodas las emociones son válidas\nNo hay emociones malas\nEstoy bien, I'm okay\nY tú también, you're here today",
+        "pure_es": "[Verse 1]\nHoy me siento muy nervioso\nEstoy preocupado, estoy ansioso\nMi corazón late muy fuerte\n¿Por qué me siento así? Es mi suerte\n\n[Pre-Chorus]\nPero también estoy feliz\nEstoy contento, soy feliz\nEstoy emocionado también\nLas emociones vienen y van\n\n[Chorus]\nEstoy nervioso, sí lo estoy\nEstoy triste, así me voy\nPero estoy bien, todo pasará\nLas emociones van y vendrán\n\n[Verse 2]\nEstoy aburrido esta noche\nEstoy cansado, sin reproche\nEstoy enfadado, muy molesto\nPero mañana será mejor, lo prometo\n\n[Chorus]\nEstoy nervioso, un poco ansioso\nEstoy alegre, soy dichoso\nEstoy confundido, perdido aquí\nPero sigo adelante, sí, sí, sí\n\n[Outro]\nTodas las emociones son válidas\nNo hay emociones malas ni cálidas\nEstoy bien, estoy aquí\nY tú también estás aquí"
     },
+    "knownVocab": [
+        "me duele",
+        "cuerpo",
+        "pretérito",
+        "transporte",
+        "direcciones",
+        "voy a",
+        "me gusta",
+        "rutina",
+        "familia"
+    ],
+    "focusVocab": [
+        "estoy nervioso",
+        "estoy preocupado",
+        "estoy feliz",
+        "estoy contento",
+        "estoy triste",
+        "estoy cansado",
+        "estoy aburrido",
+        "estoy enfadado",
+        "estoy confundido",
+        "me siento",
+        "las emociones"
+    ],
     "exercises": [
         {
-            "id": "e1",
-            "type": "fill_blank",
-            "question": "Estoy _____ (nervous).",
-            "options": [
-                "feliz",
-                "nervioso",
-                "bien"
-            ],
-            "correct": "nervioso"
-        },
-        {
-            "id": "e2",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "What is 'Enojado'?",
+            "question": "How do you say 'I am happy' in Spanish?",
             "options": [
-                "Happy",
-                "Angry",
-                "Sad"
+                "Estoy triste",
+                "Estoy nervioso",
+                "Estoy feliz",
+                "Estoy cansado"
             ],
-            "correct": "Angry"
+            "correct": "Estoy feliz"
         },
         {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'I am happy'",
-            "correct": "Estoy feliz"
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Estoy muy _____. (I am very tired)",
+            "options": [
+                "alegre",
+                "nervioso",
+                "cansado"
+            ],
+            "correct": "cansado"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'I am sad'",
+            "correct": "Estoy triste"
         }
     ]
 }

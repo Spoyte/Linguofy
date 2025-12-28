@@ -1,45 +1,68 @@
 {
     "id": "4-1",
-    "title": "¿Qué Hora Es? (Time)",
-    "style": "Tick-tock Rhythmic Pop, 120bpm. Clock sound effects. Urgent but fun. Fast-paced verses.",
+    "title": "¿Qué Hora Es? (What Time Is It?)",
+    "style": "Create an urgent Synth-Pop track at 120 BPM with a ticking clock atmosphere. Start with a metronome-like tick beat, adding pulsing synth bass and arpeggiated leads. Use an energetic male vocalist with a sense of rushing but clear pronunciation. Include alarm bell sounds and clock chimes as musical elements. The mood should feel like running late but having fun. Add dynamic builds to each chorus and a breakdown before the final section. Keep the production sleek with 80s-inspired synths and modern punch.",
     "audio": {
         "mixed_fr": "",
         "mixed_en": "",
         "pure_es": ""
     },
     "lyrics": {
-        "mixed_fr": "[Verse 1]\nLe train partira bientôt\nEl tren parte pronto, il faut y aller\nQuelle heure est-il, dis-le-moi?\n¿Qué hora es? Je ne sais pas\n\n[Chorus]\nEs la una... tic tac\nSon las dos... tic tac\nSon las tres y media\nEl tiempo vuela\n\n[Verse 2]\nIl est quatre heures dix\nSon las cuatro y diez, tu m'as promis\nIl est cinq heures moins le quart\nSon las cinco menos cuarto, c'est tard\n\n[Chorus]\nEs la una... tic tac\nSon las dos... tic tac\nSon las tres y media\nEl tiempo vuela\n\n[Bridge]\nLe temps passe vite\nEl tiempo pasa\nTic tac, tic tac\n\n[Outro]\n¿Qué hora es?\nEs tarde.\n¡Corre!",
-        "mixed_en": "[Verse 1]\nThe train is leaving soon, you know\nEl tren parte pronto, we gotta go\nWhat time is it, tell me please?\n¿Qué hora es? I'm on my knees\n\n[Chorus]\nEs la una... tick tock\nSon las dos... tick tock\nSon las tres y media\nTime is flying\n\n[Verse 2]\nIt's four ten, look at the clock\nSon las cuatro y diez, tick tock\nIt's quarter to five, don't be late\nSon las cinco menos cuarto, it's fate\n\n[Chorus]\nEs la una... tick tock\nSon las dos... tick tock\nSon las tres y media\nTime is flying\n\n[Bridge]\nTime goes fast\nEl tiempo pasa\nTick tock, tick tock\n\n[Outro]\n¿Qué hora es?\nIt's late.\n¡Run!",
-        "pure_es": "[Verse 1]\nEl tren se va, se va ya\nEl tren parte pronto, llegará\n¿Qué hora es? Dímelo\n¿Qué hora es? No lo sé\n\n[Chorus]\nEs la una... tic tac\nSon las dos... tic tac\nSon las tres y media\nEl tiempo vuela\n\n[Verse 2]\nSon las cuatro y diez, ya lo ves\nSon las cinco menos cuarto, otra vez\nEl reloj no para de andar\nTenemos que llegar\n\n[Chorus]\nEs la una... tic tac\nSon las dos... tic tac\nSon las tres y media\nEl tiempo vuela\n\n[Bridge]\nEl tiempo pasa\nEl tiempo pasa\nTic tac, tic tac\n\n[Outro]\n¿Qué hora es?\nEs tarde.\n¡Corre!"
+        "mixed_fr": "[Verse 1]\n¿Qué hora es? Quelle heure est-il?\nSon las ocho de la mañana, réveil\nEstoy tarde, suis en retard\nNecesito correr, c'est le départ\n\n[Chorus]\n¿Qué hora es? ¿Qué hora es?\nEs la una, son las dos, son las tres\nCuatro, cinco, seis, sept, huit\nSiete, ocho, nueve, jour et nuit\n\n[Verse 2]\nPor la mañana je me lève\nPor la tarde je travaille, sans trêve\nPor la noche je me couche\nMedianoche c'est minuit, je touche\n\n[Chorus]\n¿Qué hora es? ¿Qué hora es?\nSon las diez, once, doce, alors\nY media c'est et demie\nY cuarto c'est et quart aussi\n\n[Outro]\nEl tiempo pasa, le temps passe\nLas horas vuelan, ça se passe\nAhora sabes, maintenant tu sais\nDecir la hora, tell the time, c'est fait",
+        "mixed_en": "[Verse 1]\n¿Qué hora es? What time is it?\nSon las ocho de la mañana, a perfect fit\nEstoy tarde, I'm running late\nNecesito correr, I can't wait\n\n[Chorus]\n¿Qué hora es? ¿Qué hora es?\nEs la una, son las dos, son las tres\nCuatro, cinco, seis, seven, eight\nSiete, ocho, nueve, don't be late\n\n[Verse 2]\nPor la mañana I wake up\nPor la tarde I work, won't stop\nPor la noche I go to bed\nMedianoche is midnight, as I said\n\n[Chorus]\n¿Qué hora es? ¿Qué hora es?\nSon las diez, once, doce, impress\nY media means half past\nY cuarto means quarter, so fast\n\n[Outro]\nEl tiempo pasa, time flies by\nLas horas vuelan, under the sky\nAhora sabes, now you know\nDecir la hora, tell the time, let's go",
+        "pure_es": "[Verse 1]\n¿Qué hora es? Dime ya\nSon las ocho de la mañana, aquí está\nEstoy tarde, necesito correr\nNo hay tiempo que perder\n\n[Chorus]\n¿Qué hora es? Dime tú\nEs la una, son las dos\nSon las tres, cuatro, cinco, seis\nSiete, ocho, nueve, diez\n\n[Verse 2]\nPor la mañana me levanto\nPor la tarde trabajo, qué encanto\nPor la noche descanso aquí\nMedianoche ya está así\n\n[Chorus]\n¿Qué hora es? Ya lo sé\nSon las diez, once, doce, ¿qué?\nY media, son y media\nY cuarto, sin tragedia\n\n[Outro]\nEl tiempo pasa muy veloz\nLas horas vuelan, oye mi voz\nAhora sabes decir la hora\nEs el momento, sin demora"
     },
+    "knownVocab": [
+        "familia",
+        "casa",
+        "alto/a",
+        "Hay",
+        "Quiero",
+        "Tengo",
+        "números 1-20",
+        "adjetivos descriptivos"
+    ],
+    "focusVocab": [
+        "¿Qué hora es?",
+        "Es la una",
+        "Son las dos/tres...",
+        "y media",
+        "y cuarto",
+        "de la mañana",
+        "de la tarde",
+        "de la noche",
+        "medianoche",
+        "mediodía"
+    ],
     "exercises": [
         {
-            "id": "e1",
+            "id": "ex1",
             "type": "multiple_choice",
-            "question": "Translate: 'Es la una'",
+            "question": "How do you say 'What time is it?' in Spanish?",
             "options": [
-                "It is two o'clock",
-                "It is one o'clock",
-                "It is noon"
+                "¿Cómo estás?",
+                "¿Qué hora es?",
+                "¿Dónde está?",
+                "¿Cuántos años tienes?"
             ],
-            "correct": "It is one o'clock"
-        },
-        {
-            "id": "e2",
-            "type": "fill_blank",
-            "question": "Son las tres y _____ (half).",
-            "options": [
-                "cuarto",
-                "media",
-                "menos"
-            ],
-            "correct": "media"
-        },
-        {
-            "id": "e3",
-            "type": "translate",
-            "question": "Translate: 'What time is it?'",
             "correct": "¿Qué hora es?"
+        },
+        {
+            "id": "ex2",
+            "type": "fill_blank",
+            "question": "Son las _____ de la tarde. (It's 3 in the afternoon)",
+            "options": [
+                "dos",
+                "tres",
+                "cuatro"
+            ],
+            "correct": "tres"
+        },
+        {
+            "id": "ex3",
+            "type": "translation",
+            "question": "Translate: 'It's eight o'clock'",
+            "correct": "Son las ocho"
         }
     ]
 }
