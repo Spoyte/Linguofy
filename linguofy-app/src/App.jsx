@@ -10,6 +10,9 @@ import AdminLayout from './pages/admin/AdminLayout';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import SongManager from './pages/admin/SongManager';
 import SongEditor from './pages/admin/SongEditor';
+import ExerciseList from './pages/admin/ExerciseList';
+import ExerciseEditor from './pages/admin/ExerciseEditor';
+import ExerciseManager from './pages/admin/ExerciseManager';
 import PromptManager from './pages/admin/PromptManager';
 import ConfigManager from './pages/admin/ConfigManager';
 
@@ -29,7 +32,9 @@ function App() {
                         <Route path="dashboard" element={<AdminDashboard />} />
                         <Route path="songs" element={<SongManager />} />
                         <Route path="songs/:id" element={<SongEditor />} />
-                        <Route path="exercises" element={<div className="text-white p-8">Exercise Manager (Coming Soon)</div>} />
+                        <Route path="songs/:id/exercises" element={<ExerciseList />} />
+                        <Route path="songs/:id/exercises/:exId" element={<ExerciseEditor />} />
+                        <Route path="exercises" element={<ExerciseManager />} />
                         <Route path="prompts" element={<PromptManager />} />
                         <Route path="config" element={<ConfigManager />} />
                     </Route>

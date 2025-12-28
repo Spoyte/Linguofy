@@ -159,6 +159,19 @@ const SongEditor = () => {
                     />
                 </div>
 
+                <div className="border-t border-gray-700 pt-6">
+                    <div className="flex justify-between items-center mb-4">
+                        <h3 className="text-xl font-bold text-white">Interactive Exercises</h3>
+                        <button
+                            type="button"
+                            onClick={() => navigate(`/admin/songs/${id}/exercises`)}
+                            className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-medium transition text-sm flex items-center gap-2"
+                        >
+                            <span>⚡</span> Manage Exercises
+                        </button>
+                    </div>
+                </div>
+
                 <div className="flex justify-end gap-4 pt-4">
                     <button
                         type="button"
