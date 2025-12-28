@@ -23,7 +23,7 @@
 
 ---
 
-## Phase 2: Core App Features 🔄 IN PROGRESS
+## Phase 2: Core App Features ✅ COMPLETE
 
 ### 2.1 User Persistence ✅
 - [x] Create `useProgress` hook (localStorage)
@@ -35,45 +35,61 @@
 - [x] Confetti animation on lesson complete
 - [x] Loading states and error handling
 
----
+### 2.3 Internationalization (i18n) ✅
+- [x] Create `LanguageContext` with EN/FR translations
+- [x] Add language toggle (🇬🇧/🇫🇷) to all pages
+- [x] Translate all exercise questions/options
+- [x] LocalStorage persistence for language preference
 
-## Phase 3: Audio Content ⏸️ BLOCKED
-
-> **Requires**: Suno AI or similar tool to generate MP3s
-
-### 3.1 Unit 2 (A1 - Basic Needs)
-- [ ] 2-1: Uno, Dos, Tres (3 versions)
-- [ ] 2-2: ¿Qué Hay? (3 versions)
-- [ ] 2-3: Yo Quiero (3 versions)
-
-### 3.2 Units 3-5 (A1)
-- [ ] 9 lessons × 3 versions = 27 MP3s
-
-### 3.3 Units 6-8 (A2)
-- [ ] 9 lessons × 3 versions = 27 MP3s
+### 2.4 Exercise Improvements ✅
+- [x] **Hints System**: Shows after 2 failed attempts
+- [x] **Fuzzy Matching**: Accents ignored (mañana = manana)
+- [x] **Typo Tolerance**: 1-2 character errors allowed
+- [x] **"Almost Perfect"**: Shows correction when close
 
 ---
 
-## Phase 4: Backend Migration 🔄 IN PROGRESS
+## Phase 3: Content Generation ✅ COMPLETE
+
+### 3.1 Song Generation System ✅
+- [x] Create `song_generation_system.md` framework
+- [x] Define progressive ratios (80%→17% native language)
+- [x] Style prompts scale +20% per level
+
+### 3.2 All 24 Songs Regenerated ✅
+- [x] Units 1-8 with proper progression
+- [x] `knownVocab` and `focusVocab` arrays added
+- [x] French exercise translations added
+- [x] Contextual hints added to all exercises
+
+### 3.3 Audio Files ⏸️ BLOCKED
+> **Requires**: Suno AI or similar to generate MP3s
+
+- [x] Unit 1 complete (9 MP3s)
+- [ ] Units 2-8 pending (63 MP3s needed)
+
+---
+
+## Phase 4: Backend Infrastructure ✅ READY
 
 ### 4.1 Supabase Setup ✅
-- [x] Create Supabase Project & Tables (SQL provided)
-- [x] schema.sql with RLS policies
+- [x] Create `schema.sql` with RLS policies
+- [x] Tables: modules, lessons, exercises, profiles, user_progress
 
-### 4.2 Data Migration ✅
-- [x] Write `seed_db.mjs` script
-- [ ] Run script to migrate 24 lessons (requires Supabase project)
-
-### 4.3 App Integration ✅
-- [x] Install `@supabase/supabase-js`
+### 4.2 Integration Hooks ✅
 - [x] Create `useCourseData()` hook
 - [x] Create `useExercises(lessonId)` hook
-- [ ] Update Admin Dashboard to write to DB
+- [x] Fallback to static JSON when Supabase not configured
 
-### 4.4 Authentication
-- [ ] Enable Google OAuth in Supabase
-- [ ] Replace dummy auth with Supabase Auth
-- [ ] Implement user profile creation
+### 4.3 Data Migration ✅
+- [x] Write `seed_db.mjs` script
+- [ ] Run script (requires user to create Supabase project)
+
+### 4.4 User Setup Required
+- [ ] Create Supabase project
+- [ ] Run schema.sql in SQL Editor
+- [ ] Set `.env.local` with credentials
+- [ ] Run seed script
 
 ---
 
@@ -82,16 +98,16 @@
 - [ ] Connect GitHub repo to Vercel
 - [ ] Configure environment variables
 - [ ] Verify production build
-- [ ] Set up custom domain (optional)
+- [ ] Enable Google OAuth in Supabase
 
 ---
 
 ## Summary Stats
 
-| Phase | Status | Items |
-|-------|--------|-------|
-| Phase 1 | ✅ Complete | 12/12 |
-| Phase 2 | 🔄 In Progress | 0/5 |
-| Phase 3 | ⏸️ Blocked | 0/63 MP3s |
-| Phase 4 | 📋 Planned | 0/10 |
-| Phase 5 | 📋 Planned | 0/4 |
+| Phase | Status | Progress |
+|-------|--------|----------|
+| Phase 1 - Admin Dashboard | ✅ Complete | 12/12 |
+| Phase 2 - Core Features | ✅ Complete | 10/10 |
+| Phase 3 - Content | ⏸️ Blocked on Audio | 24/24 songs, 9/72 audio |
+| Phase 4 - Backend | ✅ Ready | 4/4 (setup needed) |
+| Phase 5 - Deployment | 📋 Planned | 0/4 |

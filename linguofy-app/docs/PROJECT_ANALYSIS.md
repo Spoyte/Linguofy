@@ -8,7 +8,8 @@
 - **Frontend**: React 19.2 + Vite 6.4
 - **Styling**: Tailwind CSS 3.4
 - **Routing**: React Router DOM 6.30
-- **Backend**: Currently static JSON files (Supabase planned)
+- **i18n**: Custom React Context with EN/FR support
+- **Backend**: Static JSON (Supabase ready)
 
 ## 2. Architecture
 
@@ -16,93 +17,124 @@
 linguofy-app/
 ├── src/
 │   ├── App.jsx              # Main routing (12 routes)
+│   ├── i18n/                # Internationalization
+│   │   ├── LanguageContext.jsx
+│   │   └── translations.js  # EN/FR strings
+│   ├── hooks/
+│   │   ├── useProgress.js   # LocalStorage progress
+│   │   ├── useCourseData.js # Supabase-ready data hook
+│   │   └── useExercises.js
 │   ├── data/                # Static data stores
-│   │   ├── courseData.js    # Module/Lesson metadata
-│   │   ├── config.js        # Languages & Exercise types
-│   │   └── prompts.js       # AI generation templates
 │   ├── pages/
-│   │   ├── LandingPage.jsx  # Entry point
-│   │   ├── CourseMap.jsx    # Learning tree view
-│   │   ├── LessonView.jsx   # Song + Exercises
-│   │   ├── SongPlayer.jsx   # Audio player
+│   │   ├── LandingPage.jsx  # Entry + language toggle
+│   │   ├── CourseMap.jsx    # Learning tree + locked modules
+│   │   ├── LessonView.jsx   # Song + Exercises + confetti
 │   │   └── admin/           # 10 admin components
-│   └── components/          # Reusable UI
-├── public/
-│   ├── audio/               # 9 MP3 files (Unit 1 only)
-│   └── data/songs/          # 25 lesson JSON files
-└── docs/                    # Strategy & Tasks
+│   └── components/
+│       ├── ExerciseEngine.jsx  # Hints + fuzzy matching
+│       └── LanguageToggle.jsx  # 🇬🇧/🇫🇷 switcher
+├── public/data/songs/       # 24 lesson JSON files
+├── supabase/schema.sql      # Database schema
+└── scripts/
+    ├── seed_db.mjs          # Supabase data migration
+    ├── add_french_exercises.mjs
+    └── add_exercise_hints.mjs
 ```
 
 ## 3. Content Structure
 
 ### Curriculum (8 Units, 24 Lessons)
 
-| Unit | Level | Status | Topic |
-|------|-------|--------|-------|
-| 1 | A1 | ✅ Published | Introductions |
-| 2 | A1 | ⚠️ Audio Missing | Basic Needs |
-| 3 | A1 | ⚠️ Audio Missing | Family & Description |
-| 4 | A1 | ⚠️ Audio Missing | Routine & Time |
-| 5 | A1 | ⚠️ Audio Missing | Likes & Hobbies |
-| 6 | A2 | ⚠️ Audio Missing | Travel & Future |
-| 7 | A2 | ⚠️ Audio Missing | The Past |
-| 8 | A2 | ⚠️ Audio Missing | Health & Feelings |
+| Unit | Level | Audio | Topic | Native Language % |
+|------|-------|-------|-------|-------------------|
+| 1 | A1 | ✅ Ready | Introductions | 80% |
+| 2 | A1 | ⚠️ Pending | Basic Needs | 64% |
+| 3 | A1 | ⚠️ Pending | Family & Description | 51% |
+| 4 | A1 | ⚠️ Pending | Routine & Time | 41% |
+| 5 | A1 | ⚠️ Pending | Likes & Hobbies | 33% |
+| 6 | A2 | ⚠️ Pending | Travel & Future | 26% |
+| 7 | A2 | ⚠️ Pending | The Past | 21% |
+| 8 | A2 | ⚠️ Pending | Health & Feelings | 17% |
 
 ### Lesson JSON Structure
-Each lesson (`public/data/songs/*.json`) contains:
-- `id`, `title`, `style` (AI generation prompt)
-- `audio`: 3 versions (mixed_fr, mixed_en, pure_es)
-- `lyrics`: 3 versions matching audio
-- `exercises`: Array of quiz objects
+```json
+{
+  "id": "1-1",
+  "title": "¡Hola!",
+  "style": "Suno v4.5 generation prompt (~400-1000 chars)",
+  "audio": { "mixed_fr", "mixed_en", "pure_es" },
+  "lyrics": { "mixed_fr", "mixed_en", "pure_es" },
+  "knownVocab": ["previously learned words"],
+  "focusVocab": ["new words this lesson"],
+  "exercises": [
+    {
+      "type": "multiple_choice|fill_blank|translation",
+      "question": "English question",
+      "question_fr": "French question",
+      "options": ["EN options"],
+      "options_fr": ["FR options"],
+      "hint": "English hint",
+      "hint_fr": "French hint",
+      "correct": "answer"
+    }
+  ]
+}
+```
 
-## 4. Admin Dashboard
+## 4. Key Features
 
-**Access**: `/admin` (Credentials: admin/admin)
+### User-Facing
+| Feature | Description |
+|---------|-------------|
+| 🇫🇷🇬🇧 Language Toggle | Switch UI between French/English |
+| 🔒 Progressive Unlock | Complete module to unlock next |
+| 💡 Smart Hints | Appear after 2 wrong attempts |
+| ✍️ Fuzzy Matching | Accents ignored, 1-2 typos allowed |
+| 🎉 Confetti | Celebration on lesson completion |
+| 📊 Progress Tracking | LocalStorage persistence |
 
+### Admin Dashboard (`/admin`)
 | Component | Purpose |
 |-----------|---------|
-| `AdminDashboard` | Overview stats |
-| `SongManager` | List all songs with status badges |
-| `SongEditor` | Edit metadata, lyrics, audio paths |
-| `ExerciseManager` | Global exercise overview |
-| `ExerciseList` | Per-lesson exercise list |
-| `ExerciseEditor` | Polymorphic form (Quiz/Match/Fill) |
-| `PromptManager` | AI generation templates |
-| `ConfigManager` | Languages & Exercise types |
+| `AdminDashboard` | Stats overview + pending tasks |
+| `SongManager` | List/edit all 24 songs |
+| `ExerciseManager` | Edit exercises with hints |
+| `ConfigManager` | Languages & exercise types |
 
-## 5. Current State Summary
+## 5. Current State
 
 ### ✅ Completed
 - Full React/Vite/Tailwind setup
-- Core navigation (4 public routes)
-- Admin dashboard (8 routes, 10 components)
-- Curriculum structure (8 modules defined)
-- Content generation (24 lesson JSONs)
-- Unit 1 fully playable (3 lessons, 9 audio files)
-- Exercise Manager with polymorphic editor
+- i18n system with French/English
+- 24 songs with progressive difficulty
+- 72 exercises with hints + translations
+- Fuzzy answer matching
+- User progress tracking
+- Admin dashboard
+- Supabase schema ready
 
-### ⚠️ In Progress / Blocked
-- Audio files for Units 2-8 (21 lessons × 3 versions = 63 MP3s needed)
-- User progress persistence (localStorage implementation pending)
+### ⏳ Pending
+- Audio files for Units 2-8 (63 MP3s)
+- Vercel deployment
+- Supabase project setup
+- Google OAuth integration
 
-### 📋 Planned (Phase 2)
-- Supabase backend migration
-- Real authentication (Google/Email)
-- User progress tracking across devices
-- Production deployment to Vercel
+## 6. Quick Start
 
-## 6. Key Files Reference
+```bash
+# Development
+npm run dev -- --host
+
+# Admin access
+# URL: /admin
+# Credentials: admin / admin
+```
+
+## 7. File References
 
 | File | Purpose |
 |------|---------|
-| [App.jsx](file:///home/zodia-ubuntu/github/hackathon/Linguofy/linguofy-app/src/App.jsx) | Main routing |
-| [courseData.js](file:///home/zodia-ubuntu/github/hackathon/Linguofy/linguofy-app/src/data/courseData.js) | Module/Lesson metadata |
-| [BACKEND_STRATEGY.md](file:///home/zodia-ubuntu/github/hackathon/Linguofy/linguofy-app/docs/BACKEND_STRATEGY.md) | Database schema plan |
-| [TASKS.md](file:///home/zodia-ubuntu/github/hackathon/Linguofy/linguofy-app/docs/TASKS.md) | Current task checklist |
-
-## 7. Next Steps (Prioritized)
-
-1. **Audio Generation**: Generate MP3s for Units 2-8 using Suno AI
-2. **User Persistence**: Implement `useProgress` hook with localStorage
-3. **UI Polish**: Add locked states and confetti animations
-4. **Backend Migration**: Initialize Supabase and run seed script
+| [ExerciseEngine.jsx](file:///home/zodia-ubuntu/github/hackathon/Linguofy/linguofy-app/src/components/ExerciseEngine.jsx) | Hints + fuzzy matching |
+| [LanguageContext.jsx](file:///home/zodia-ubuntu/github/hackathon/Linguofy/linguofy-app/src/i18n/LanguageContext.jsx) | i18n provider |
+| [useProgress.js](file:///home/zodia-ubuntu/github/hackathon/Linguofy/linguofy-app/src/hooks/useProgress.js) | LocalStorage tracking |
+| [schema.sql](file:///home/zodia-ubuntu/github/hackathon/Linguofy/linguofy-app/supabase/schema.sql) | Supabase database |
