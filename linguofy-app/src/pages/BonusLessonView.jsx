@@ -95,7 +95,7 @@ export default function BonusLessonView() {
             <div className="max-w-2xl mx-auto p-4">
                 {/* Title */}
                 <h1 className="text-3xl font-bold mb-2">{data.title}</h1>
-                <p className="text-slate-400 mb-6">{getText(data.description) || data.description_fr}</p>
+                <p className="text-slate-400 mb-6">{language === 'fr' && data.description_fr ? data.description_fr : data.description}</p>
 
                 {/* Tabs */}
                 <div className="flex bg-slate-800 p-1 rounded-xl mb-8">
