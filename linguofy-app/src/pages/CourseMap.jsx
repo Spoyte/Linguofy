@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
-
+import { useProgress } from '../hooks/useProgress';
 import { modules } from '../data/courseData';
 
 export default function CourseMap() {
+    const { isComplete } = useProgress();
+
     return (
         <div className="min-h-screen p-8 text-white">
             <header className="flex justify-between items-center mb-12">
@@ -28,21 +30,36 @@ export default function CourseMap() {
                             {mod.songs.map((song) => (
                                 <div
                                     key={song.id}
-                                    className="block p-4 rounded-xl border border-slate-800 transition-all hover:border-purple-500 bg-slate-800/50 backdrop-blur-sm group"
+                                    className={`block p-4 rounded-xl border transition-all backdrop-blur-sm group ${isComplete(song.id)
+                                            ? 'border-green-500/50 bg-green-900/20'
+                                            : 'border-slate-800 hover:border-purple-500 bg-slate-800/50'
+                                        }`}
                                 >
                                     <div className="flex items-center justify-between mb-3">
                                         <div>
-                                            <h3 className="font-semibold text-lg group-hover:text-purple-400 transition-colors">
-                                                {song.title}
-                                            </h3>
+                                            <div className="flex items-center gap-2">
+                                                <h3 className="font-semibold text-lg group-hover:text-purple-400 transition-colors">
+                                                    {song.title}
+                                                </h3>
+                                                {isComplete(song.id) && (
+                                                    <span className="text-green-400 text-lg">✓</span>
+                                                )}
+                                            </div>
                                             <span className="text-xs uppercase tracking-wider text-slate-500 bg-slate-900/50 px-2 py-1 rounded">
                                                 {song.type}
                                             </span>
                                         </div>
-                                        <div className="w-10 h-10 rounded-full flex items-center justify-center bg-purple-600 shadow-lg shadow-purple-600/20 group-hover:scale-110 transition-transform">
-                                            <svg className="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
+                                        <div className={`w-10 h-10 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform ${isComplete(song.id)
+                                                ? 'bg-green-600 shadow-green-600/20'
+                                                : 'bg-purple-600 shadow-purple-600/20'
+                                            }`}>
+                                            {isComplete(song.id) ? (
+                                                <span className="text-white text-lg">✓</span>
+                                            ) : (
+                                                <svg className="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z" />
+                                                </svg>
+                                            )}
                                         </div>
                                     </div>
 

@@ -1,15 +1,15 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import SongPlayer from './SongPlayer'; // We reuse the player logic? Or embed small player?
-// Actually simpler to reimplement a mini-player or just iframe the SongPlayer component if possible, 
-// but for cleaner state separation let's just create a "Lesson Layout" that toggles checks.
 import ExerciseEngine from '../components/ExerciseEngine';
+import { useProgress } from '../hooks/useProgress';
 
 export default function LessonView() {
     const { id } = useParams();
+    const { markComplete, isComplete } = useProgress();
     const [songData, setSongData] = useState(null);
     const [activeTab, setActiveTab] = useState('listen'); // listen, practice
     const [currentExerciseIdx, setCurrentExerciseIdx] = useState(0);
+    const [lessonFinished, setLessonFinished] = useState(false);
 
     useEffect(() => {
         fetch(`/data/songs/${id}.json`)
@@ -86,13 +86,27 @@ export default function LessonView() {
                         {currentExercise ? (
                             <ExerciseEngine
                                 exercise={currentExercise}
-                                onComplete={() => setCurrentExerciseIdx(prev => prev + 1)}
+                                onComplete={() => {
+                                    const nextIdx = currentExerciseIdx + 1;
+                                    setCurrentExerciseIdx(nextIdx);
+                                    // Check if this was the last exercise
+                                    if (nextIdx >= exercises.length) {
+                                        markComplete(id);
+                                        setLessonFinished(true);
+                                    }
+                                }}
                             />
                         ) : (
                             <div className="text-center py-20">
                                 <div className="text-6xl mb-4">🎉</div>
-                                <h2 className="text-3xl font-bold mb-4">Lesson Complete!</h2>
-                                <p className="text-slate-400 mb-8">You've mastered the basics of this song.</p>
+                                <h2 className="text-3xl font-bold mb-4">
+                                    {isComplete(id) ? 'Lesson Complete!' : 'Well Done!'}
+                                </h2>
+                                <p className="text-slate-400 mb-8">
+                                    {lessonFinished
+                                        ? "Progress saved! You've mastered this song."
+                                        : "You've reviewed this lesson."}
+                                </p>
                                 <Link to="/learn" className="px-8 py-4 bg-green-500 text-slate-900 font-bold rounded-xl text-lg hover:bg-green-400">
                                     Continue
                                 </Link>
