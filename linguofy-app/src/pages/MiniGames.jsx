@@ -91,6 +91,17 @@ const GAMES = [
         color: 'from-sky-400 to-blue-600',
         ages: ['kids', 'all'],
         status: 'playable'
+    },
+    {
+        id: 'bubble-sentence',
+        title: 'Bubble Sentence',
+        title_fr: 'Phrases Bulles',
+        desc: 'Tap the floating bubbles in the right order to build the sentence!',
+        desc_fr: 'Touche les bulles flottantes dans le bon ordre pour construire la phrase !',
+        icon: '🫧',
+        color: 'from-cyan-400 to-teal-500',
+        ages: ['teens', 'adults', 'all'],
+        status: 'playable'
     }
 ];
 
