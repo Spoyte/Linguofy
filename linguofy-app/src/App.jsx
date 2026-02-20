@@ -10,6 +10,7 @@ import ConversationView from './pages/ConversationView';
 import Profile from './pages/Profile';
 import MiniGames from './pages/MiniGames';
 import WordMatch from './games/WordMatch';
+import LyricScramble from './games/LyricScramble';
 import AuthGuard from './components/AuthGuard';
 import MainLayout from './components/MainLayout';
 
@@ -40,6 +41,7 @@ function App() {
                             <Route path="/profile" element={<Profile />} />
                             <Route path="/games" element={<MiniGames />} />
                             <Route path="/games/word-match" element={<WordMatch />} />
+                            <Route path="/games/lyric-scramble" element={<LyricScramble />} />
                             <Route path="/lesson/:id" element={<LessonView />} />
                             <Route path="/play/:id" element={<SongPlayer />} />
                             <Route path="/bonus/:type/:id" element={<BonusLessonView />} />

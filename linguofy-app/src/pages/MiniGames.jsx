@@ -35,7 +35,7 @@ const GAMES = [
         icon: '🧩',
         color: 'from-emerald-400 to-teal-500',
         ages: ['teens', 'adults', 'all'],
-        status: 'coming_soon'
+        status: 'playable'
     }
 ];
 
