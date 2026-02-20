@@ -1,68 +1,121 @@
-# Pedagogical Prompts (Content Intelligence)
+# Pedagogical Prompts (Content Intelligence Pipeline)
 
-## 1. Pedagogical Ratios
-Defines the mix of Native vs Target language based on proficiency.
+This document defines the core prompts, rules, and expected JSON structures for the Linguofy AI Content Generation Engine. The goal is to automate the creation of high-quality, linguistically accurate, and structurally consistent language learning content (songs, grammar lessons, cultural deep-dives, and exercises).
 
-**Level A1 (Beginner)**
-*   **Ratio**: 60% Native / 40% Target
-*   **Goal**: Confidence & Context.
-*   **Structure**:
-    *   Verses: Mostly Native (Storytelling, setting the scene).
-    *   Chorus: 100% Target (Repetitive, catchy hooks).
-    *   Bridge: Mixed (Target key phrases embedded in Native sentences).
+## 1. Core System Prompt
+**System Role:**
+"You are 'Linguofy', an expert bilingual language instructor and creative writer. Your goal is to teach Spanish to English speakers using music, culture, and interactive linguistics. You specialize in 'Code-Switching'—seamlessly blending English and Spanish to provide context-rich learning. Generate content strictly in valid JSON format according to the provided schemas. Do not wrap the JSON in markdown blocks unless explicitly requested."
 
-**Level A2 (Elementary)**
-*   **Ratio**: 30% Native / 70% Target
-*   **Goal**: Immersion.
-*   **Structure**:
-    *   Verses: Simple Target sentences. Native used only for complex abstract concepts.
-    *   Chorus: 100% Target.
-    *   Drills: 100% Target.
+## 2. Language Mixing Ratios (Code-Switching)
+The AI must adhere to specific mixing ratios based on the target difficulty level.
 
-## 2. Lesson Diversity Templates
+### Level A1 (Beginner)
+*   **Ratio**: 60% Native (English) / 40% Target (Spanish)
+*   **Goal**: Provide heavy context. Avoid overwhelming the user.
+*   **Structure Rule**:
+    *   **Verses**: Mostly English to establish the story/setting, with key nouns or simple verbs in Spanish.
+    *   **Chorus**: Highly repetitive, simple 100% Spanish hooks.
 
-### A. Song-Based Lesson (The "Linguofy Classic")
-*   **Input**: Topic (e.g., "Ordering Food"), Genre ("Smooth Jazz").
-*   **Output JSON**:
-    *   `type`: "song"
-    *   `lyrics_mixed`: (Follows Ratio A1/A2)
-    *   `focus_vocab`: ["la cuenta", "quisiera", "rico"]
+### Level A2 (Elementary)
+*   **Ratio**: 30% Native (English) / 70% Target (Spanish)
+*   **Goal**: Immersion with safety nets.
+*   **Structure Rule**:
+    *   **Verses**: Mostly simple Spanish sentences. English used only for transitional phrases or complex abstract concepts.
+    *   **Chorus**: 100% Spanish.
 
-### B. Dialogue-Based Lesson (Conversational)
-*   **Input**: Scenario ("Buying a Train Ticket"), Roles ("Tourist", "Clerk").
-*   **Prompt**: "Create a realistic dialogue. A1 Level. Tourist makes mistakes, Clerk corrects gently."
-*   **Output JSON**:
-    *   `type`: "dialogue"
-    *   `script`: [ { "speaker": "A", "text": "..." }, { "speaker": "B", "text": "..." } ]
+## 3. Content Generation Templates & JSON Schemas
 
-### C. Grammar-Focused Lesson (Visual/Rules)
-*   **Input**: Rule ("Ser vs Estar").
-*   **Prompt**: "Explain 'Ser vs Estar' using a sports metaphor. Provide 3 clear examples."
-*   **Output JSON**:
-    *   `type`: "grammar"
-    *   `explanation`: "Markdown text..."
-    *   `visual_prompt`: "Image of a permanent stadium (Ser) vs a temporary match (Estar)."
+### A. Music-Based Lesson Pipeline
+**Context**: Replaces standard textbook dialogues with catchy songs.
+**Prompt**: "Generate a Spanish learning song about [TOPIC], in the musical style of [GENRE]. Target level is [LEVEL]. Follow the language mixing ratio for this level. Output the result in the exact JSON schema provided."
 
-### D. Picture-Based Lesson (Vocab)
-*   **Input**: Theme ("The Kitchen").
-*   **Prompt**: "List 10 items found in a kitchen. Provide Spanish term, gender, and a visual description for an AI image generator."
-*   **Output JSON**:
-    *   `type`: "picture_vocab"
-    *   `items`: [ { "term": "El refrigerador", "image_prompt": "A retro red fridge..." } ]
+**Expected JSON Schema:**
+```json
+{
+  "id": "unique-slug",
+  "title": "Song Title",
+  "artist": "Linguofy AI",
+  "style": "Genre Type",
+  "duration": 0,
+  "coverUrl": "image-generation-prompt-or-url",
+  "lyrics": {
+    "mixed_en": "String with newlines. Use [Verse 1], [Chorus] headers.",
+    "pure_es": "String with newlines. 100% Spanish literal translation."
+  },
+  "audio": {
+    "mixed_en": "audio_url_placeholder",
+    "pure_es": "audio_url_placeholder"
+  }
+}
+```
 
-## 3. Exercise Diversity Templates
+### B. Grammar Bonus Lesson Pipeline
+**Context**: Explains a grammatical concept found in a recently generated song.
+**Prompt**: "Create a comprehensive, visually appealing grammar lesson explaining [CONCEPT]. Use clear sections, highlight key rules, and provide bilingual examples. Output the result in the exact JSON schema provided."
 
-### A. Matching Pairs
-*   **Prompt**: "Generate 5 pairs of [adjective] -> [opposite] in Spanish."
-*   **Data**: `{"pairs": [["Alto", "Bajo"], ["Bueno", "Malo"]]}`
+**Expected JSON Schema:**
+```json
+{
+  "id": "grammar_concept",
+  "title": "Clear Title (e.g., Ser vs Estar)",
+  "description": "Short subtitle/summary",
+  "associatedSongId": "id-of-related-song",
+  "content": {
+    "intro": "Markdown string explaining the concept simply.",
+    "sections": [
+      {
+        "title": "Section Title",
+        "explanation": "Detailed explanation.",
+        "examples": [
+          { "spanish": "El cielo es azul.", "translation": "The sky is blue (permanent)." }
+        ],
+        "mnemonic": "Memory trick (optional)."
+      }
+    ]
+  },
+  "focusVocab": ["ser", "estar", "soy", "estoy"]
+}
+```
 
-### B. Sorting / Ordering
-*   **Prompt**: "Take the sentence 'Yo voy a la playa mañana'. Scramble it. Provide correct index order."
-*   **Type**: `scramble_sentence`
+### C. Culture Bonus Lesson Pipeline
+**Context**: Dives into the cultural context of a vocabulary set or region.
+**Prompt**: "Generate a cultural deep-dive about [TOPIC/REGION] in the Spanish-speaking world. Include interesting facts and relevant traditions or dishes. Output the result in the exact JSON schema provided."
 
-### C. Listening / Dictation
-*   **Prompt**: "Select a short phrase from the song. Generate a partial transcript with the key verb missing."
-*   **Type**: `fill_blank_listening`
+**Expected JSON Schema:**
+```json
+{
+  "id": "culture_topic",
+  "title": "Cultural Topic Name",
+  "description": "Short engaging subtitle",
+  "associatedSongId": "id-of-related-song",
+  "content": {
+    "intro": "Markdown string setting the scene.",
+    "sections": [
+      {
+        "title": "Fascinating Facts",
+        "facts": ["Fact 1", "Fact 2"]
+      },
+      {
+        "title": "Culinary Delights",
+        "dishes": [
+          { "name": "Dish Name", "region": "Region Name", "description": "What is it?" }
+        ]
+      }
+    ]
+  },
+  "keyPhrases": [
+    { "phrase": "¡Qué rico!", "meaning": "How delicious!" }
+  ]
+}
+```
 
-## 4. Implementation Plan
-These templates will be converted into JSON objects in `src/data/prompts.js` so the Admin Dashboard can load them dynamically.
+## 4. Exercise Generation Rules (Post-Processing)
+Once base content (Song/Grammar/Culture) is generated, a secondary prompt generates interactive exercises based on that specific content object.
+
+**Supported Exercise Types in UI Engine:**
+1.  `multiple_choice`: Standard 4-option questions.
+2.  `fill_in_the_blank`: Cloze deletion tests (often using lyrics).
+3.  `matching`: Match Spanish words to English definitions.
+4.  `translation`: Translate a full sentence (evaluated by AI locally or via LLM).
+
+*Note: The Exercise Engine expects exercises to be appended to the base content JSON under an `exercises` array.*
