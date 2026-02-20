@@ -50,6 +50,85 @@ export default function VocabularyReview() {
 
     const currentWord = vocabulary[currentIndex];
 
+    // Comprehensive Mock Dictionary for current curriculum
+    const mockDictionary = {
+        // Unit 1
+        "Hola": "Hello",
+        "Buenos días": "Good morning",
+        "Buenas tardes": "Good afternoon",
+        "Buenas noches": "Good evening",
+        "Adiós": "Goodbye",
+        "Hasta mañana": "See you tomorrow",
+        "Cómo estás": "How are you",
+        "Me llamo": "My name is",
+        "Se llama": "His/Her name is",
+        "Tengo años": "I am ... years old",
+        "Cómo te llamas": "What's your name",
+        "Mucho gusto": "Nice to meet you",
+        "Encantado": "Charmed / Delighted",
+        "Soy": "I am",
+        // Unit 9
+        "restaurante": "restaurant",
+        "mesa": "table",
+        "mesero": "waiter",
+        "menú": "menu",
+        "pedir": "to order",
+        "hambre": "hunger",
+        "sed": "thirst",
+        "quisiera": "I would like",
+        "sopa": "soup",
+        "plato principal": "main course",
+        "pollo": "chicken",
+        "arroz": "rice",
+        "beber": "to drink",
+        "buen provecho": "enjoy your meal",
+        "la cuenta": "the bill",
+        "aceptar": "to accept",
+        "tarjetas": "cards",
+        "propina": "tip",
+        "postre": "dessert",
+        "cuánto es": "how much is it",
+        // Other common ones
+        "pasaporte": "passport",
+        "equipaje": "luggage",
+        "maleta": "suitcase",
+        "puerta de embarque": "boarding gate",
+        "vuelo": "flight",
+        "por": "for (cause/motion)",
+        "para": "for (destination)",
+        "destino": "destination",
+        "causa": "cause",
+        "música": "music",
+        "instrumento": "instrument",
+        "montañas": "mountains",
+        "flauta": "flute",
+        "gracias": "thank you",
+        "por favor": "please",
+        "agua": "water",
+        "familia": "family",
+        "hermano": "brother",
+        "hermana": "sister",
+        "padre": "father",
+        "madre": "mother",
+        "abuelo": "grandfather",
+        "abuela": "grandmother",
+        "casa": "house"
+    };
+
+    const getTranslation = (word) => {
+        if (!word) return 'Translation hidden';
+        // Try exact match
+        if (mockDictionary[word]) return mockDictionary[word];
+        // Try case-insensitive
+        const lowerList = Object.keys(mockDictionary).reduce((acc, key) => {
+            acc[key.toLowerCase()] = mockDictionary[key];
+            return acc;
+        }, {});
+        if (lowerList[word.toLowerCase()]) return lowerList[word.toLowerCase()];
+
+        return 'Translation hidden';
+    };
+
     const handleNext = () => {
         setShowTranslation(false);
         setTimeout(() => {
@@ -230,18 +309,7 @@ export default function VocabularyReview() {
 
                             <div className="text-center w-full max-w-[80%]">
                                 <div className="text-4xl md:text-5xl font-black mb-4 text-purple-400 tracking-tight break-words max-w-full drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
-                                    {/* Simplistic mock translation for demo purposes */}
-                                    {currentWord.word === 'Hola' ? 'Hello' :
-                                        currentWord.word === 'Buenos días' ? 'Good morning' :
-                                            currentWord.word === 'Adiós' ? 'Goodbye' :
-                                                currentWord.word === 'restaurante' ? 'restaurant' :
-                                                    currentWord.word === 'mesa' ? 'table' :
-                                                        currentWord.word === 'agua' ? 'water' :
-                                                            currentWord.word === 'por favor' ? 'please' :
-                                                                currentWord.word === 'gracias' ? 'thank you' :
-                                                                    currentWord.word === 'la cuenta' ? 'the bill' :
-                                                                        currentWord.word === 'pasaporte' ? 'passport' :
-                                                                            'Translation hidden'}
+                                    {getTranslation(currentWord.word)}
                                 </div>
 
                                 <div className="w-12 h-12 mx-auto bg-white/5 rounded-full flex items-center justify-center mb-4 mt-6">
