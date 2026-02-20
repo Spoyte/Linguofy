@@ -24,7 +24,7 @@ const GAMES = [
         icon: '🎴',
         color: 'from-orange-400 to-red-500',
         ages: ['kids', 'teens', 'adults', 'all'],
-        status: 'coming_soon'
+        status: 'playable'
     },
     {
         id: 'lyric-scramble',
