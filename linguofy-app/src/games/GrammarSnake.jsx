@@ -169,92 +169,87 @@ export default function GrammarSnake() {
         if (!isPlaying || gameOver || gameWon || !currentSentence) return;
 
         const moveSnake = () => {
-            setSnake(prevSnake => {
-                const head = prevSnake[0];
-                const newHead = {
-                    x: head.x + directionRef.current.x,
-                    y: head.y + directionRef.current.y
-                };
+            const head = snake[0];
+            let newX = head.x + directionRef.current.x;
+            let newY = head.y + directionRef.current.y;
 
-                // Check Wall Collision
-                if (newHead.x < 0 || newHead.x >= GRID_SIZE || newHead.y < 0 || newHead.y >= GRID_SIZE) {
-                    setGameOver(true);
-                    setIsPlaying(false);
-                    return prevSnake;
-                }
+            // Wall Wrap
+            if (newX < 0) newX = GRID_SIZE - 1;
+            else if (newX >= GRID_SIZE) newX = 0;
+            if (newY < 0) newY = GRID_SIZE - 1;
+            else if (newY >= GRID_SIZE) newY = 0;
 
-                // Check Self Collision
-                if (prevSnake.some(segment => segment.x === newHead.x && segment.y === newHead.y)) {
-                    setGameOver(true);
-                    setIsPlaying(false);
-                    return prevSnake;
-                }
+            const newHead = { x: newX, y: newY };
 
-                const newSnake = [newHead, ...prevSnake];
+            // Check Self Collision
+            if (snake.some(segment => segment.x === newHead.x && segment.y === newHead.y)) {
+                setGameOver(true);
+                setIsPlaying(false);
+                return;
+            }
 
-                // Check Word Collision
-                let ateWord = false;
-                const nextRequiredWord = currentSentence.words[currentSentence.currentWordIndex];
+            const newSnake = [newHead, ...snake];
+            let ateWord = false;
 
-                const hitWordIdx = targetWords.findIndex(tw => tw.x === newHead.x && tw.y === newHead.y);
+            const nextRequiredWord = currentSentence.words[currentSentence.currentWordIndex];
+            const hitWordIdx = targetWords.findIndex(tw => tw.x === newHead.x && tw.y === newHead.y);
 
-                if (hitWordIdx !== -1) {
-                    const hitWord = targetWords[hitWordIdx];
+            if (hitWordIdx !== -1) {
+                const hitWord = targetWords[hitWordIdx];
 
-                    if (hitWord.word === nextRequiredWord) {
-                        // Correct Word!
-                        ateWord = true;
-                        setScore(s => s + 50);
+                if (hitWord.word === nextRequiredWord) {
+                    // Correct Word!
+                    ateWord = true;
+                    setScore(s => s + 50);
 
-                        // Remove eaten word
-                        const newTargets = [...targetWords];
-                        newTargets.splice(hitWordIdx, 1);
-                        setTargetWords(newTargets);
+                    // Remove eaten word
+                    const newTargets = [...targetWords];
+                    newTargets.splice(hitWordIdx, 1);
+                    setTargetWords(newTargets);
 
-                        // Advance sentence state
-                        setCurrentSentence(prev => {
-                            const nextState = { ...prev, currentWordIndex: prev.currentWordIndex + 1 };
+                    // Advance sentence state
+                    setCurrentSentence(prev => {
+                        const nextState = { ...prev, currentWordIndex: prev.currentWordIndex + 1 };
 
-                            // Check if sentence complete
-                            if (nextState.currentWordIndex >= nextState.words.length) {
-                                setScore(s => s + 200);
+                        // Check if sentence complete
+                        if (nextState.currentWordIndex >= nextState.words.length) {
+                            setScore(s => s + 200);
+                            setTimeout(() => {
+                                // Setup next sentence
+                                setGameWon(true);
+                                setIsPlaying(false);
                                 setTimeout(() => {
-                                    // Setup next sentence
-                                    setGameWon(true);
-                                    setIsPlaying(false);
-                                    setTimeout(() => {
-                                        const nextSent = sentences[Math.floor(Math.random() * sentences.length)];
-                                        setupSentence(nextSent);
-                                        setGameWon(false);
-                                        setIsPlaying(true);
-                                    }, 1500); // Brief pause showing "Sentence Complete!"
-                                }, 100);
-                            }
-                            return nextState;
-                        });
+                                    const nextSent = sentences[Math.floor(Math.random() * sentences.length)];
+                                    setupSentence(nextSent);
+                                    setGameWon(false);
+                                    setIsPlaying(true);
+                                }, 1500); // Brief pause showing "Sentence Complete!"
+                            }, 100);
+                        }
+                        return nextState;
+                    });
 
-                    } else {
-                        // Wrong Word! (Grammar mistake)
-                        setGameOver(true);
-                        setIsPlaying(false);
-                        return prevSnake;
-                    }
+                } else {
+                    // Wrong Word! (Grammar mistake)
+                    setGameOver(true);
+                    setIsPlaying(false);
+                    return;
                 }
+            }
 
-                if (!ateWord) {
-                    newSnake.pop(); // Remove tail if we didn't eat
-                }
+            if (!ateWord) {
+                newSnake.pop(); // Remove tail if we didn't eat
+            }
 
-                return newSnake;
-            });
+            setSnake(newSnake);
         };
 
         // Increase speed slightly based on score
         const currentSpeed = Math.max(80, INITIAL_SPEED - (Math.floor(score / 200) * 15));
-        gameLoopRef.current = setInterval(moveSnake, currentSpeed);
+        const timer = setTimeout(moveSnake, currentSpeed);
 
-        return () => clearInterval(gameLoopRef.current);
-    }, [isPlaying, gameOver, gameWon, targetWords, currentSentence, score, sentences, setupSentence]);
+        return () => clearTimeout(timer);
+    }, [isPlaying, gameOver, gameWon, targetWords, currentSentence, score, sentences, setupSentence, snake]);
 
     // Render Grid
     const renderGrid = () => {
