@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
 import { useAudio } from '../contexts/AudioContext';
@@ -10,7 +10,8 @@ export default function CourseMap() {
     const { isComplete, completedLessons } = useProgress();
     const { t, language } = useLanguage();
     const { user, signOut } = useAuth();
-    const { playTrack, currentTrack, isPlaying, togglePlayPause } = useAudio();
+    const { playTrack, currentTrack, isPlaying, togglePlayPause, setQueue } = useAudio();
+    const navigate = useNavigate();
 
     // A module is unlocked if:
     // 1. It's the first module (always unlocked)
@@ -23,6 +24,67 @@ export default function CourseMap() {
 
     const totalLessons = modules.flatMap(m => m.songs).length;
     const progressPercentage = Math.round((completedLessons.length / totalLessons) * 100) || 0;
+
+    const handlePlayAll = async () => {
+        // Collect all unlocked songs
+        const unlockedSongs = [];
+        modules.forEach((mod, idx) => {
+            if (isModuleUnlocked(idx)) {
+                unlockedSongs.push(...mod.songs);
+            }
+        });
+
+        if (unlockedSongs.length === 0) return;
+
+        try {
+            // Load audio data for all unlocked songs
+            const queueData = await Promise.all(
+                unlockedSongs.map(async (song) => {
+                    const res = await fetch(`/data/songs/${song.id}.json`);
+                    if (!res.ok) return null;
+                    const data = await res.json();
+                    const audioKey = language === 'fr' ? 'mixed_fr' : 'mixed_en';
+                    return {
+                        id: song.id,
+                        title: data.title,
+                        audioUrl: data.audio?.[audioKey],
+                        coverUrl: data.coverUrl || 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=2070&auto=format&fit=crop'
+                    };
+                })
+            );
+
+            const validQueue = queueData.filter(t => t && t.audioUrl);
+            if (validQueue.length > 0) {
+                setQueue(validQueue);
+                playTrack(validQueue[0]); // Start playing the first one
+            } else {
+                alert("No audio tracks available to play.");
+            }
+        } catch (e) {
+            console.error("Failed to load radio queue", e);
+        }
+    };
+
+    const handleQuickStart = () => {
+        // Collect all unlocked songs
+        const unlockedSongs = [];
+        modules.forEach((mod, idx) => {
+            if (isModuleUnlocked(idx)) {
+                unlockedSongs.push(...mod.songs);
+            }
+        });
+
+        // Find first incomplete song 
+        const nextSong = unlockedSongs.find(song => !isComplete(song.id));
+
+        if (nextSong) {
+            navigate(`/lesson/${nextSong.id}`);
+        } else if (unlockedSongs.length > 0) {
+            // All unlocked songs completed, pick a random one to review
+            const randomSong = unlockedSongs[Math.floor(Math.random() * unlockedSongs.length)];
+            navigate(`/lesson/${randomSong.id}`);
+        }
+    };
 
     const handlePlayClick = async (e, song) => {
         e.preventDefault();
@@ -111,7 +173,25 @@ export default function CourseMap() {
                     <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
                         Your Learning <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Journey</span>
                     </h1>
-                    <p className="text-slate-400 text-lg max-w-2xl mx-auto">Master Spanish step-by-step through our curated musical curriculum.</p>
+                    <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-8">Master Spanish step-by-step through our curated musical curriculum.</p>
+
+                    {/* Global Actions */}
+                    <div className="flex flex-col sm:flex-row justify-center gap-4 bg-white/5 p-6 rounded-3xl border border-white/10 backdrop-blur-sm max-w-xl mx-auto mb-16 shadow-xl">
+                        <button
+                            onClick={handleQuickStart}
+                            className="flex-1 inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-white text-black font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+                        >
+                            <span className="text-xl">🚀</span>
+                            {completedLessons.length === 0 ? 'Start First Lesson' : 'Quick Start'}
+                        </button>
+                        <button
+                            onClick={handlePlayAll}
+                            className="flex-1 inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-white/10 border border-white/20 font-bold text-white hover:bg-white/20 active:scale-[0.98] transition-all"
+                        >
+                            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                            Radio Mode
+                        </button>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">

@@ -8,6 +8,7 @@ export function AudioProvider({ children }) {
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
     const [duration, setDuration] = useState(0);
+    const [queue, setQueue] = useState([]);
 
     // Provide a dummy track for initialized UI state
     // { title: 'Song Name', coverUrl: '...', audioUrl: '...', id: '...' }
@@ -27,6 +28,16 @@ export function AudioProvider({ children }) {
         const handleEnded = () => {
             setIsPlaying(false);
             setProgress(0);
+
+            // Check if there is a queue and a next track
+            if (queue.length > 0 && currentTrack) {
+                const currentIndex = queue.findIndex(t => t.id === currentTrack.id);
+                if (currentIndex >= 0 && currentIndex < queue.length - 1) {
+                    const nextTrack = queue[currentIndex + 1];
+                    playTrack(nextTrack);
+                    return;
+                }
+            }
         };
 
         audio.addEventListener('timeupdate', updateProgress);
@@ -38,12 +49,12 @@ export function AudioProvider({ children }) {
             audio.removeEventListener('loadedmetadata', updateProgress);
             audio.removeEventListener('ended', handleEnded);
         };
-    }, []);
+    }, [queue, currentTrack]);
 
     const playTrack = (trackData) => {
         const audio = audioRef.current;
 
-        if (currentTrack?.id === trackData.id) {
+        if (currentTrack?.id === trackData.id && audio.src) {
             // If same track, just toggle play
             togglePlayPause();
             return;
@@ -83,9 +94,11 @@ export function AudioProvider({ children }) {
         isPlaying,
         progress,
         duration,
+        queue,
         playTrack,
         togglePlayPause,
-        seek
+        seek,
+        setQueue
     };
 
     return (
