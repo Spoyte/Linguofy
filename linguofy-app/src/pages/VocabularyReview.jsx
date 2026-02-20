@@ -229,22 +229,37 @@ export default function VocabularyReview() {
                         <div className="absolute inset-0 backface-hidden rotate-y-180 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-[2rem] p-8 border border-purple-500/30 shadow-[0_0_50px_rgba(168,85,247,0.15)] flex flex-col items-center justify-center group">
 
                             <div className="text-center w-full max-w-[80%]">
-                                <div className="w-12 h-12 mx-auto bg-purple-500/20 rounded-full flex items-center justify-center mb-6">
-                                    <span className="text-2xl">🎵</span>
+                                <div className="text-4xl md:text-5xl font-black mb-4 text-purple-400 tracking-tight break-words max-w-full drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+                                    {/* Simplistic mock translation for demo purposes */}
+                                    {currentWord.word === 'Hola' ? 'Hello' :
+                                        currentWord.word === 'Buenos días' ? 'Good morning' :
+                                            currentWord.word === 'Adiós' ? 'Goodbye' :
+                                                currentWord.word === 'restaurante' ? 'restaurant' :
+                                                    currentWord.word === 'mesa' ? 'table' :
+                                                        currentWord.word === 'agua' ? 'water' :
+                                                            currentWord.word === 'por favor' ? 'please' :
+                                                                currentWord.word === 'gracias' ? 'thank you' :
+                                                                    currentWord.word === 'la cuenta' ? 'the bill' :
+                                                                        currentWord.word === 'pasaporte' ? 'passport' :
+                                                                            'Translation hidden'}
                                 </div>
 
-                                <h3 className="text-slate-400 font-medium text-sm mb-2 uppercase tracking-widest">
+                                <div className="w-12 h-12 mx-auto bg-white/5 rounded-full flex items-center justify-center mb-4 mt-6">
+                                    <span className="text-xl">🎵</span>
+                                </div>
+
+                                <h3 className="text-slate-400 font-medium text-xs mb-1 uppercase tracking-widest">
                                     {language === 'fr' ? 'Apparaît dans' : 'Featured in'}
                                 </h3>
 
-                                <p className="text-2xl font-bold text-white mb-2 leading-snug">
+                                <p className="text-lg font-bold text-white mb-2 leading-snug">
                                     "{currentWord.lessonTitle}"
                                 </p>
 
                                 <Link
                                     to={`/lesson/${currentWord.lessonId}`}
                                     onClick={(e) => e.stopPropagation()}
-                                    className="inline-block mt-4 text-purple-400 hover:text-purple-300 font-bold transition-colors text-sm border-b border-transparent hover:border-purple-300"
+                                    className="inline-block mt-2 text-purple-400 hover:text-purple-300 font-bold transition-colors text-sm border-b border-transparent hover:border-purple-300"
                                 >
                                     {language === 'fr' ? 'Revoir la Leçon' : 'Review Lesson'} →
                                 </Link>
