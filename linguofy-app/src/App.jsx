@@ -12,6 +12,7 @@ import MiniGames from './pages/MiniGames';
 import WordMatch from './games/WordMatch';
 import LyricScramble from './games/LyricScramble';
 import ColorPop from './games/ColorPop';
+import VocabRacer from './games/VocabRacer';
 import AuthGuard from './components/AuthGuard';
 import MainLayout from './components/MainLayout';
 
@@ -44,6 +45,7 @@ function App() {
                             <Route path="/games/word-match" element={<WordMatch />} />
                             <Route path="/games/lyric-scramble" element={<LyricScramble />} />
                             <Route path="/games/color-pop" element={<ColorPop />} />
+                            <Route path="/games/vocab-racer" element={<VocabRacer />} />
                             <Route path="/lesson/:id" element={<LessonView />} />
                             <Route path="/play/:id" element={<SongPlayer />} />
                             <Route path="/bonus/:type/:id" element={<BonusLessonView />} />

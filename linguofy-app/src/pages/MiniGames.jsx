@@ -36,6 +36,17 @@ const GAMES = [
         color: 'from-emerald-400 to-teal-500',
         ages: ['teens', 'adults', 'all'],
         status: 'playable'
+    },
+    {
+        id: 'vocab-racer',
+        title: 'Vocab Racer',
+        title_fr: 'Course de Mots',
+        desc: 'Type the Spanish translation before the word hits the ground!',
+        desc_fr: 'Tape la traduction espagnole avant que le mot ne touche le sol !',
+        icon: '⌨️',
+        color: 'from-yellow-400 to-amber-500',
+        ages: ['teens', 'adults', 'all'],
+        status: 'playable'
     }
 ];
 
