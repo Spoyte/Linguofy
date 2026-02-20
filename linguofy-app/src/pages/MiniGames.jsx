@@ -69,6 +69,17 @@ const GAMES = [
         color: 'from-green-400 to-emerald-600',
         ages: ['kids', 'teens', 'all'],
         status: 'playable'
+    },
+    {
+        id: 'swipe-sort',
+        title: 'Swipe Sort',
+        title_fr: 'Balayage de Mots',
+        desc: 'Swipe Right for correct translations, Left for wrong ones!',
+        desc_fr: 'Balaye vers la Droite pour les bonnes traductions, vers la Gauche pour les mauvaises !',
+        icon: '📱',
+        color: 'from-pink-500 to-rose-600',
+        ages: ['kids', 'teens', 'adults', 'all'],
+        status: 'playable'
     }
 ];
 
