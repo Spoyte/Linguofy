@@ -1,26 +1,16 @@
 import { useState, useEffect } from 'react';
-import { supabase, isSupabaseConfigured } from '../lib/supabase';
-
-// Fallback to static data if Supabase is not configured
-import { modules as staticModules } from '../data/courseData';
+import { supabase } from '../lib/supabase';
 
 /**
- * Hook to fetch modules and lessons from Supabase (or fallback to static data)
+ * Hook to fetch modules and lessons from Supabase
  */
 export function useCourseData() {
-    const [modules, setModules] = useState(staticModules);
+    const [modules, setModules] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         async function fetchData() {
-            // If Supabase isn't configured, use static data
-            if (!isSupabaseConfigured()) {
-                setModules(staticModules);
-                setLoading(false);
-                return;
-            }
-
             try {
                 // Fetch modules with their lessons
                 const { data: dbModules, error: modError } = await supabase
@@ -61,8 +51,6 @@ export function useCourseData() {
             } catch (err) {
                 console.error('Error fetching course data:', err);
                 setError(err);
-                // Fallback to static data on error
-                setModules(staticModules);
             } finally {
                 setLoading(false);
             }
@@ -84,19 +72,6 @@ export function useExercises(lessonId) {
 
     useEffect(() => {
         async function fetchExercises() {
-            // If Supabase isn't configured, fetch from JSON
-            if (!isSupabaseConfigured()) {
-                try {
-                    const res = await fetch(`/data/songs/${lessonId}.json`);
-                    const data = await res.json();
-                    setExercises(data.exercises || []);
-                } catch (err) {
-                    setError(err);
-                }
-                setLoading(false);
-                return;
-            }
-
             try {
                 const { data, error: exError } = await supabase
                     .from('exercises')

@@ -5,6 +5,7 @@ import SongPlayer from './pages/SongPlayer';
 import LessonView from './pages/LessonView';
 import VocabularyReview from './pages/VocabularyReview';
 import BonusLessonView from './pages/BonusLessonView';
+import AuthGuard from './components/AuthGuard';
 
 // Admin Pages
 import AdminLogin from './pages/admin/AdminLogin';
@@ -24,11 +25,13 @@ function App() {
             <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
-                    <Route path="/learn" element={<CourseMap />} />
-                    <Route path="/play/:id" element={<SongPlayer />} />
-                    <Route path="/lesson/:id" element={<LessonView />} />
-                    <Route path="/vocabulary" element={<VocabularyReview />} />
-                    <Route path="/bonus/:type/:id" element={<BonusLessonView />} />
+
+                    {/* Protected User Routes */}
+                    <Route path="/learn" element={<AuthGuard><CourseMap /></AuthGuard>} />
+                    <Route path="/play/:id" element={<AuthGuard><SongPlayer /></AuthGuard>} />
+                    <Route path="/lesson/:id" element={<AuthGuard><LessonView /></AuthGuard>} />
+                    <Route path="/vocabulary" element={<AuthGuard><VocabularyReview /></AuthGuard>} />
+                    <Route path="/bonus/:type/:id" element={<AuthGuard><BonusLessonView /></AuthGuard>} />
 
                     {/* Admin Routes */}
                     <Route path="/admin" element={<AdminLogin />} />

@@ -6,14 +6,14 @@ export default function LanguageToggle() {
     return (
         <button
             onClick={toggleLanguage}
-            className="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700 transition-all text-sm font-medium"
+            className="group flex items-center gap-2 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all text-sm font-medium backdrop-blur-md shadow-lg"
             title={language === 'en' ? 'Switch to French' : 'Passer en Anglais'}
         >
-            <span className={`transition-opacity ${language === 'en' ? 'opacity-100' : 'opacity-50'}`}>
+            <span className={`transition-all duration-300 transform ${language === 'en' ? 'opacity-100 scale-110 drop-shadow-md' : 'opacity-40 scale-95 grayscale'}`}>
                 🇬🇧
             </span>
-            <span className="text-slate-400">/</span>
-            <span className={`transition-opacity ${language === 'fr' ? 'opacity-100' : 'opacity-50'}`}>
+            <span className="text-white/20 font-light">/</span>
+            <span className={`transition-all duration-300 transform ${language === 'fr' ? 'opacity-100 scale-110 drop-shadow-md' : 'opacity-40 scale-95 grayscale'}`}>
                 🇫🇷
             </span>
         </button>
