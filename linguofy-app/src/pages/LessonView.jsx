@@ -1,7 +1,8 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import ExerciseEngine from '../components/ExerciseEngine';
+import { useAuth } from '../contexts/AuthContext';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
 import LanguageToggle from '../components/LanguageToggle';
@@ -9,6 +10,7 @@ import { useAudio } from '../contexts/AudioContext';
 
 export default function LessonView() {
     const { id } = useParams();
+    const navigate = useNavigate();
     const { markComplete, isComplete } = useProgress();
     const { language, t } = useLanguage();
     const { currentTrack, isPlaying, playTrack, togglePlayPause } = useAudio();
@@ -16,8 +18,26 @@ export default function LessonView() {
     const [songData, setSongData] = useState(null);
     const [activeTab, setActiveTab] = useState('listen'); // listen, practice
     const [currentExerciseIdx, setCurrentExerciseIdx] = useState(0);
-    const [lessonFinished, setLessonFinished] = useState(false);
+    const [isCompleted, setIsCompleted] = useState(false);
     const [loading, setLoading] = useState(true);
+    const [lessonData, setLessonData] = useState(null); // Added from snippet
+
+    // Auto-advance helper
+    const getNextLessonId = (currentId) => {
+        if (!currentId) return null;
+        const [unitStr, lessonStr] = currentId.split('-');
+        let unit = parseInt(unitStr);
+        let lesson = parseInt(lessonStr);
+
+        lesson++;
+        if (lesson > 3) { // Assuming 3 lessons per unit for now
+            lesson = 1;
+            unit++;
+        }
+        // Check if the next unit/lesson exists in your data structure
+        // For now, just return the ID. A more robust solution would check if this ID is valid.
+        return `${unit}-${lesson}`;
+    };
 
     useEffect(() => {
         setLoading(true);
@@ -160,8 +180,8 @@ export default function LessonView() {
                             <button
                                 onClick={handlePlayClick}
                                 className={`absolute -top-8 right-8 md:right-12 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 z-20 ${isCurrentTrack && isPlaying
-                                        ? 'bg-purple-600 text-white shadow-purple-500/50'
-                                        : 'bg-white text-purple-900 shadow-white/20'
+                                    ? 'bg-purple-600 text-white shadow-purple-500/50'
+                                    : 'bg-white text-purple-900 shadow-white/20'
                                     }`}
                             >
                                 {isCurrentTrack && isPlaying ? (

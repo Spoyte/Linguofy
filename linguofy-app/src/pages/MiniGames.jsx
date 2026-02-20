@@ -58,6 +58,17 @@ const GAMES = [
         color: 'from-violet-400 to-fuchsia-500',
         ages: ['kids', 'teens', 'adults', 'all'],
         status: 'playable'
+    },
+    {
+        id: 'grammar-snake',
+        title: 'Grammar Snake',
+        title_fr: 'Serpent Grammatical',
+        desc: 'Navigate the snake to eat words in the correct sentence order.',
+        desc_fr: 'Dirige le serpent pour manger les mots dans le bon ordre de phrase.',
+        icon: '🐍',
+        color: 'from-green-400 to-emerald-600',
+        ages: ['kids', 'teens', 'all'],
+        status: 'playable'
     }
 ];
 
