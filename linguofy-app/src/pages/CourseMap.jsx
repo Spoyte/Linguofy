@@ -155,12 +155,20 @@ export default function CourseMap() {
                         <div className="flex items-center gap-3 ml-auto md:ml-4 border-l border-white/10 pl-4">
                             <LanguageToggle />
                             {user && (
-                                <button
-                                    onClick={() => signOut()}
-                                    className="text-sm font-bold text-slate-400 hover:text-pink-400 transition-colors hidden sm:block"
-                                >
-                                    Log Out
-                                </button>
+                                <div className="flex items-center gap-3 hidden sm:flex">
+                                    <Link
+                                        to="/profile"
+                                        className="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors"
+                                    >
+                                        Profile
+                                    </Link>
+                                    <button
+                                        onClick={() => signOut()}
+                                        className="text-sm font-bold text-slate-400 hover:text-pink-400 transition-colors"
+                                    >
+                                        Log Out
+                                    </button>
+                                </div>
                             )}
                         </div>
                     </div>

@@ -7,6 +7,7 @@ import LessonView from './pages/LessonView';
 import VocabularyReview from './pages/VocabularyReview';
 import BonusLessonView from './pages/BonusLessonView';
 import ConversationView from './pages/ConversationView';
+import Profile from './pages/Profile';
 import AuthGuard from './components/AuthGuard';
 import MainLayout from './components/MainLayout';
 
@@ -33,9 +34,10 @@ function App() {
                         {/* Protected User Routes wrapped in MainLayout (with MiniPlayer) */}
                         <Route element={<AuthGuard><MainLayout /></AuthGuard>}>
                             <Route path="/learn" element={<CourseMap />} />
-                            <Route path="/play/:id" element={<SongPlayer />} />
-                            <Route path="/lesson/:id" element={<LessonView />} />
                             <Route path="/vocabulary" element={<VocabularyReview />} />
+                            <Route path="/profile" element={<Profile />} />
+                            <Route path="/lesson/:id" element={<LessonView />} />
+                            <Route path="/play/:id" element={<SongPlayer />} />
                             <Route path="/bonus/:type/:id" element={<BonusLessonView />} />
                         </Route>
 
@@ -59,7 +61,7 @@ function App() {
                     </Routes>
                 </div>
             </AudioProvider>
-        </Router>
+        </Router >
     );
 }
 
