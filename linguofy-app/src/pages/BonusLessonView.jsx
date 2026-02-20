@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../i18n';
+import { useAudio } from '../contexts/AudioContext';
 import ExerciseEngine from '../components/ExerciseEngine';
 import { useProgress } from '../hooks/useProgress';
 import confetti from 'canvas-confetti';
@@ -10,6 +11,8 @@ export default function BonusLessonView() {
     const { type, id } = useParams(); // type: grammar, dialogue, culture
     const { language, t } = useLanguage();
     const { markComplete, isComplete } = useProgress();
+    const { playTrack, currentTrack, isPlaying, togglePlayPause } = useAudio();
+
     const [data, setData] = useState(null);
     const [activeTab, setActiveTab] = useState('learn'); // learn, practice
     const [currentExerciseIdx, setCurrentExerciseIdx] = useState(0);
@@ -31,7 +34,7 @@ export default function BonusLessonView() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-[#0A0F1C] flex items-center justify-center text-slate-200">
+            <div className="flex-1 bg-[#0A0F1C] flex items-center justify-center text-slate-200">
                 <div className="flex flex-col items-center gap-4">
                     <div className="w-12 h-12 border-4 border-purple-500/30 border-t-purple-500 rounded-full animate-spin"></div>
                     <p className="text-slate-400 font-medium">Loading Content...</p>
@@ -42,7 +45,7 @@ export default function BonusLessonView() {
 
     if (!data) {
         return (
-            <div className="min-h-screen bg-[#0A0F1C] flex items-center justify-center text-slate-200">
+            <div className="flex-1 bg-[#0A0F1C] flex items-center justify-center text-slate-200">
                 <div className="text-center p-8 bg-white/5 border border-white/10 rounded-[2rem] backdrop-blur-xl">
                     <div className="text-6xl mb-6">😢</div>
                     <p className="text-xl font-bold mb-4">Content not found</p>
@@ -100,8 +103,37 @@ export default function BonusLessonView() {
 
     const themeColors = getThemeColor();
 
+    // Check if there is an associated song to play
+    const associatedSongId = data.associatedSongId || id.replace('grammar_', '').replace('culture_', '').replace('dialogue_', '');
+    const isPlayingAssociatedSong = currentTrack?.id === associatedSongId && isPlaying;
+
+    const handlePlayAssociatedSong = async () => {
+        if (currentTrack?.id === associatedSongId) {
+            togglePlayPause();
+            return;
+        }
+
+        // We need to fetch the song data first
+        try {
+            const res = await fetch(`/data/songs/${associatedSongId}.json`);
+            if (!res.ok) throw new Error("Song not found");
+            const songData = await res.json();
+
+            const audioKey = language === 'fr' ? 'mixed_fr' : 'mixed_en';
+            playTrack({
+                id: associatedSongId,
+                title: songData.title,
+                audioUrl: songData.audio?.[audioKey],
+                coverUrl: songData.coverUrl || 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=2070&auto=format&fit=crop'
+            });
+        } catch (e) {
+            console.error("Could not load associated song", e);
+            alert("Associated audio track not found.");
+        }
+    };
+
     return (
-        <div className="min-h-screen bg-[#0A0F1C] text-slate-200 font-sans selection:bg-purple-500/30 overflow-x-hidden pb-20 relative">
+        <div className="flex-1 flex flex-col bg-[#0A0F1C] text-slate-200 font-sans selection:bg-purple-500/30 overflow-x-hidden relative">
 
             {/* Animated Background Orbs */}
             <div className="fixed inset-0 pointer-events-none block z-0">
@@ -133,17 +165,32 @@ export default function BonusLessonView() {
             </header>
 
             {/* Content Area */}
-            <div className="max-w-4xl mx-auto px-6 relative z-10 animate-fade-in-up">
+            <div className="max-w-4xl mx-auto px-6 relative z-10 animate-fade-in-up w-full">
 
                 {/* Title Section */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-12 relative flex flex-col items-center">
                     <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${themeColors.split(' ')[0]} ${themeColors.split(' ')[1]} mb-6 shadow-lg shadow-black/20 transform -rotate-3`}>
                         <span className="text-4xl filter drop-shadow-md">{getTypeIcon()}</span>
                     </div>
+
                     <h1 className="text-4xl md:text-5xl font-black mb-4 text-white tracking-tight">{data.title}</h1>
-                    <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
                         {language === 'fr' && data.description_fr ? data.description_fr : data.description}
                     </p>
+
+                    {/* Play Associated Song Button */}
+                    <button
+                        onClick={handlePlayAssociatedSong}
+                        className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 border border-white/10 rounded-full backdrop-blur-sm transition-all text-white font-medium text-sm group"
+                    >
+                        {isPlayingAssociatedSong ? (
+                            <svg className="w-5 h-5 text-purple-400" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>
+                        ) : (
+                            <svg className="w-5 h-5 text-purple-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                        )}
+                        <span>{isPlayingAssociatedSong ? 'Pause Track' : 'Play Lesson Track'}</span>
+                    </button>
+
                 </div>
 
                 {/* Main Content Container */}

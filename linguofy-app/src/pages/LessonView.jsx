@@ -5,11 +5,14 @@ import ExerciseEngine from '../components/ExerciseEngine';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
 import LanguageToggle from '../components/LanguageToggle';
+import { useAudio } from '../contexts/AudioContext';
 
 export default function LessonView() {
     const { id } = useParams();
     const { markComplete, isComplete } = useProgress();
     const { language, t } = useLanguage();
+    const { currentTrack, isPlaying, playTrack, togglePlayPause } = useAudio();
+
     const [songData, setSongData] = useState(null);
     const [activeTab, setActiveTab] = useState('listen'); // listen, practice
     const [currentExerciseIdx, setCurrentExerciseIdx] = useState(0);
@@ -32,7 +35,7 @@ export default function LessonView() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-[#0A0F1C] flex items-center justify-center text-slate-200">
+            <div className="flex-1 bg-[#0A0F1C] flex items-center justify-center text-slate-200">
                 <div className="flex flex-col items-center gap-4">
                     <div className="w-12 h-12 border-4 border-purple-500/30 border-t-purple-500 rounded-full animate-spin"></div>
                     <p className="text-slate-400 font-medium">{t('common.loading')}</p>
@@ -43,7 +46,7 @@ export default function LessonView() {
 
     if (!songData) {
         return (
-            <div className="min-h-screen bg-[#0A0F1C] flex items-center justify-center text-slate-200">
+            <div className="flex-1 bg-[#0A0F1C] flex items-center justify-center text-slate-200">
                 <div className="text-center p-8 bg-white/5 border border-white/10 rounded-[2rem] backdrop-blur-xl">
                     <div className="text-6xl mb-6">😢</div>
                     <p className="text-xl font-bold mb-4">Content not found</p>
@@ -63,8 +66,23 @@ export default function LessonView() {
     const lyricsKey = language === 'fr' ? 'mixed_fr' : 'mixed_en';
     const audioKey = language === 'fr' ? 'mixed_fr' : 'mixed_en';
 
+    const isCurrentTrack = currentTrack?.id === id;
+
+    const handlePlayClick = () => {
+        if (isCurrentTrack) {
+            togglePlayPause();
+        } else {
+            playTrack({
+                id: id,
+                title: songData.title,
+                audioUrl: songData.audio?.[audioKey],
+                coverUrl: songData.coverUrl || 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=2070&auto=format&fit=crop'
+            });
+        }
+    };
+
     return (
-        <div className="flex flex-col min-h-screen bg-[#0A0F1C] text-slate-200 font-sans selection:bg-purple-500/30 overflow-x-hidden relative">
+        <div className="flex flex-col flex-1 bg-[#0A0F1C] text-slate-200 font-sans selection:bg-purple-500/30 overflow-x-hidden relative">
 
             {/* Animated Background Orbs */}
             <div className="fixed inset-0 pointer-events-none block z-0">
@@ -136,24 +154,29 @@ export default function LessonView() {
                             <p className="text-slate-400 text-lg">{t('lesson.mixedLyrics')}</p>
                         </div>
 
-                        <div className="bg-white/[0.02] rounded-[2.5rem] p-6 md:p-10 border border-white/10 backdrop-blur-xl shadow-2xl">
+                        <div className="bg-white/[0.02] rounded-[2.5rem] p-6 md:p-10 border border-white/10 backdrop-blur-xl shadow-2xl relative">
 
-                            {/* Custom Styling for the native audio player to make it look a bit better, though tricky to fully style across browsers */}
-                            <div className="mb-8 p-4 bg-black/40 rounded-2xl border border-white/5 shadow-inner">
-                                <audio
-                                    controls
-                                    className="w-full rounded-lg"
-                                    src={songData.audio?.[audioKey]}
-                                    style={{ colorScheme: 'dark' }} // Attempt to force dark mode controls on some browsers
-                                />
-                            </div>
+                            {/* Floating Play Button */}
+                            <button
+                                onClick={handlePlayClick}
+                                className={`absolute -top-8 right-8 md:right-12 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 z-20 ${isCurrentTrack && isPlaying
+                                        ? 'bg-purple-600 text-white shadow-purple-500/50'
+                                        : 'bg-white text-purple-900 shadow-white/20'
+                                    }`}
+                            >
+                                {isCurrentTrack && isPlaying ? (
+                                    <svg className="w-8 h-8 pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" /></svg>
+                                ) : (
+                                    <svg className="w-8 h-8 ml-1 pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                                )}
+                            </button>
 
-                            <div className="relative">
+                            <div className="relative pt-6">
                                 {/* Decorator quotes */}
-                                <span className="absolute -top-6 -left-4 text-6xl text-purple-500/20 font-serif rotate-180 select-none">"</span>
+                                <span className="absolute -top-4 -left-4 text-6xl text-purple-500/20 font-serif rotate-180 select-none">"</span>
                                 <span className="absolute -bottom-10 -right-4 text-6xl text-pink-500/20 font-serif select-none">"</span>
 
-                                <div className="text-left text-lg md:text-xl max-h-[60vh] overflow-y-auto whitespace-pre-wrap text-slate-300 font-medium leading-[1.8] md:leading-[2] p-6 bg-black/20 rounded-2xl border border-white/5 relative z-10 custom-scrollbar">
+                                <div className="text-left text-lg md:text-xl max-h-[50vh] overflow-y-auto whitespace-pre-wrap text-slate-300 font-medium leading-[1.8] md:leading-[2] p-6 bg-black/20 rounded-2xl border border-white/5 relative z-10 custom-scrollbar">
                                     {songData.lyrics?.[lyricsKey] || "Lyrics not available for this language."}
                                 </div>
                             </div>
