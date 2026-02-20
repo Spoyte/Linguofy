@@ -13,7 +13,7 @@ const GAMES = [
         icon: '🎈',
         color: 'from-blue-400 to-indigo-500',
         ages: ['kids', 'all'],
-        status: 'coming_soon' // 'playable', 'coming_soon'
+        status: 'playable' // 'playable', 'coming_soon'
     },
     {
         id: 'word-match',
