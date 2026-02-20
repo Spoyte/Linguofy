@@ -22,6 +22,38 @@ export default function Profile() {
 
     const progressPercentage = Math.round((completedMain / totalMainSongs) * 100) || 0;
 
+    // Badge Logic
+    const badges = [
+        {
+            id: 'first_song',
+            title: 'First Step',
+            desc: 'Complete your first lesson',
+            icon: '🎵',
+            unlocked: completedLessons.length > 0
+        },
+        {
+            id: 'unit_1',
+            title: 'Unit 1 Master',
+            desc: 'Finish all Unit 1 songs',
+            icon: '🏆',
+            unlocked: modules[0].songs.every(s => completedLessons.includes(s.id))
+        },
+        {
+            id: 'bonus_explorer',
+            title: 'Explorer',
+            desc: 'Complete 3 bonus lessons',
+            icon: '🌍',
+            unlocked: completedBonusAmount >= 3
+        },
+        {
+            id: 'polyglot',
+            title: 'Polyglot in Training',
+            desc: 'Learn 50+ vocab words',
+            icon: '🧠',
+            unlocked: totalVocab >= 50
+        }
+    ];
+
     useEffect(() => {
         async function calculateVocab() {
             let count = 0;
@@ -183,6 +215,33 @@ export default function Profile() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                {/* Achievements & Badges */}
+                <div className="mb-12">
+                    <h2 className="text-2xl font-black text-white mb-6">Achievements</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {badges.map(badge => (
+                            <div
+                                key={badge.id}
+                                className={`relative p-6 rounded-3xl border transition-all text-center
+                                    ${badge.unlocked
+                                        ? 'bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/30 shadow-[0_0_20px_rgba(168,85,247,0.15)] hover:-translate-y-1'
+                                        : 'bg-white/[0.02] border-white/5 opacity-60 grayscale'
+                                    }`}
+                            >
+                                <div className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center text-3xl mb-4 shadow-inner border
+                                    ${badge.unlocked ? 'bg-gradient-to-br from-purple-600 to-pink-600 border-white/20' : 'bg-slate-800 border-white/5'}
+                                `}>
+                                    {badge.icon}
+                                </div>
+                                <h3 className={`font-bold block mb-1 ${badge.unlocked ? 'text-white text-md' : 'text-slate-400 text-sm'}`}>
+                                    {badge.title}
+                                </h3>
+                                <p className="text-xs text-slate-500">{badge.desc}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
