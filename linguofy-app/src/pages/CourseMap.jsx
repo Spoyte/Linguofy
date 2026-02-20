@@ -157,14 +157,20 @@ export default function CourseMap() {
                             {user && (
                                 <div className="flex items-center gap-3 hidden sm:flex">
                                     <Link
+                                        to="/games"
+                                        className="text-sm font-bold text-slate-400 hover:text-cyan-400 transition-colors"
+                                    >
+                                        Games
+                                    </Link>
+                                    <Link
                                         to="/profile"
-                                        className="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors"
+                                        className="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors border-l border-white/10 pl-3"
                                     >
                                         Profile
                                     </Link>
                                     <button
                                         onClick={() => signOut()}
-                                        className="text-sm font-bold text-slate-400 hover:text-pink-400 transition-colors"
+                                        className="text-sm font-bold text-slate-400 hover:text-pink-400 transition-colors border-l border-white/10 pl-3"
                                     >
                                         Log Out
                                     </button>
