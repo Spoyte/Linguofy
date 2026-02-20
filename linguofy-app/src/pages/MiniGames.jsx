@@ -47,6 +47,17 @@ const GAMES = [
         color: 'from-yellow-400 to-amber-500',
         ages: ['teens', 'adults', 'all'],
         status: 'playable'
+    },
+    {
+        id: 'audio-explorer',
+        title: 'Audio Explorer',
+        title_fr: 'Explorateur Audio',
+        desc: 'Listen closely and identify what you hear from your songs.',
+        desc_fr: 'Écoute attentivement et identifie ce que tu entends de tes chansons.',
+        icon: '🎧',
+        color: 'from-violet-400 to-fuchsia-500',
+        ages: ['kids', 'teens', 'adults', 'all'],
+        status: 'playable'
     }
 ];
 

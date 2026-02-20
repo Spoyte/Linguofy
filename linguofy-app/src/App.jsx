@@ -13,6 +13,7 @@ import WordMatch from './games/WordMatch';
 import LyricScramble from './games/LyricScramble';
 import ColorPop from './games/ColorPop';
 import VocabRacer from './games/VocabRacer';
+import AudioExplorer from './games/AudioExplorer';
 import AuthGuard from './components/AuthGuard';
 import MainLayout from './components/MainLayout';
 
@@ -46,6 +47,7 @@ function App() {
                             <Route path="/games/lyric-scramble" element={<LyricScramble />} />
                             <Route path="/games/color-pop" element={<ColorPop />} />
                             <Route path="/games/vocab-racer" element={<VocabRacer />} />
+                            <Route path="/games/audio-explorer" element={<AudioExplorer />} />
                             <Route path="/lesson/:id" element={<LessonView />} />
                             <Route path="/play/:id" element={<SongPlayer />} />
                             <Route path="/bonus/:type/:id" element={<BonusLessonView />} />
