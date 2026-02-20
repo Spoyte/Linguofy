@@ -1,0 +1,66 @@
+{
+    "id": "culture-4",
+    "type": "culture",
+    "title": "Music of the Andes",
+    "description": "Discovering Andean folklore and instruments",
+    "associatedSongId": "2-1",
+    "content": {
+        "intro": "The Andes mountains span across South America, and their music is a profound reflection of indigenous traditions mixed with Spanish influences.",
+        "sections": [
+            {
+                "title": "Fascinating Facts",
+                "facts": [
+                    "Andean music heavily features wind instruments, reflecting the sound of the high-altitude wind.",
+                    "The genre gained worldwide fame in the 1970s with songs like 'El Cóndor Pasa'."
+                ]
+            },
+            {
+                "title": "Iconic Instruments",
+                "traditions": [
+                    "**Zampoña** (Pan Flute): Made of bamboo tubes of different lengths.",
+                    "**Quena**: A traditional flute made of wood or cane.",
+                    "**Charango**: A small guitar-like instrument, traditionally made from an armadillo shell."
+                ]
+            }
+        ]
+    },
+    "keyPhrases": [
+        {
+            "phrase": "¿Tocas algún instrumento?",
+            "meaning": "Do you play any instrument?"
+        },
+        {
+            "phrase": "Me encanta la música folclórica",
+            "meaning": "I love folk music"
+        }
+    ],
+    "focusVocab": [
+        "música",
+        "instrumento",
+        "montañas",
+        "flauta"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "Which of these is a traditional Andean wind instrument?",
+            "question_fr": "Lequel de ces instruments est un instrument à vent andin traditionnel ?",
+            "options": [
+                "Guitarra",
+                "Piano",
+                "Zampoña",
+                "Violín"
+            ],
+            "options_fr": [
+                "Guitarra",
+                "Piano",
+                "Zampoña",
+                "Violín"
+            ],
+            "correct": "Zampoña",
+            "hint": "💡 It's a type of pan flute",
+            "hint_fr": "💡 Il s'agit d'une sorte de flûte de pan"
+        }
+    ]
+}

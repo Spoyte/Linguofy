@@ -1,0 +1,82 @@
+{
+    "id": "dialogue-4",
+    "type": "dialogue",
+    "title": "At the Airport",
+    "description": "Checking in and going through security",
+    "associatedSongId": "6-1",
+    "setting": "You are at the check-in counter for your flight to Barcelona.",
+    "characters": [
+        {
+            "id": "agent",
+            "name": "Agent",
+            "avatar": "👩‍💼"
+        },
+        {
+            "id": "you",
+            "name": "You",
+            "avatar": "😎"
+        }
+    ],
+    "dialogue": [
+        {
+            "speaker": "agent",
+            "text": "Buenos días. Su pasaporte, por favor.",
+            "translation": "Good morning. Your passport, please."
+        },
+        {
+            "speaker": "you",
+            "text": "Buenos días. Aquí tiene.",
+            "translation": "Good morning. Here it is."
+        },
+        {
+            "speaker": "agent",
+            "text": "¿Tiene equipaje para facturar?",
+            "translation": "Do you have luggage to check in?"
+        },
+        {
+            "speaker": "you",
+            "text": "Solo una maleta. Llevo esto en la cabina.",
+            "translation": "Just one suitcase. I'm taking this in the cabin."
+        },
+        {
+            "speaker": "agent",
+            "text": "Perfecto. Su puerta de embarque es la B12. ¡Buen vuelo!",
+            "translation": "Perfect. Your boarding gate is B12. Have a good flight!"
+        },
+        {
+            "speaker": "you",
+            "text": "Muchas gracias. Adiós.",
+            "translation": "Thank you very much. Goodbye."
+        }
+    ],
+    "focusVocab": [
+        "pasaporte",
+        "equipaje",
+        "maleta",
+        "puerta de embarque",
+        "vuelo"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "What is 'boarding gate' in Spanish?",
+            "question_fr": "Comment dit-on 'porte d'embarquement' en espagnol ?",
+            "options": [
+                "puerta de embarque",
+                "el asiento",
+                "el avión",
+                "la maleta"
+            ],
+            "options_fr": [
+                "puerta de embarque",
+                "el asiento",
+                "el avión",
+                "la maleta"
+            ],
+            "correct": "puerta de embarque",
+            "hint": "💡 Puerta means gate/door",
+            "hint_fr": "💡 Puerta signifie porte"
+        }
+    ]
+}

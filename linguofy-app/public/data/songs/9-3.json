@@ -1,0 +1,60 @@
+{
+    "id": "9-3",
+    "title": "La Cuenta (The Bill)",
+    "style": "Latin Acoustic Pop, rhythmic strumming, slight melancholic but resolved chord progression, 100 BPM",
+    "audio": {
+        "mixed_fr": null,
+        "mixed_en": null,
+        "pure_es": null
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nLe dîner est fini, c'était très bon\nLa cuenta, por favor, on appelle le garçon\n¿Aceptan tarjetas? C'est la question\nUna propina, pour son action\n\n[Chorus]\nLa cuenta, la cuenta, il faut payer\nEl postre était doux, sucré\n¿Cuánto es? Combien on va donner?\n¡Gracias por todo! C'est réglé!",
+        "mixed_en": "[Verse 1]\nThe dinner is done, it was a treat\nLa cuenta, por favor, we need the receipt\n¿Aceptan tarjetas? To pay for the meat\nUna propina, for service so sweet\n\n[Chorus]\nLa cuenta, la cuenta, it's time to pay\nEl postre was great in every way\n¿Cuánto es? How much did we play?\n¡Gracias por todo! Have a good day!",
+        "pure_es": "[Verse 1]\nLa cena termina, qué rico fue\nLa cuenta, por favor, tráigala usted\n¿Aceptan tarjetas? Pagaré\nUna propina, siempre dejaré\n\n[Chorus]\nLa cuenta, la cuenta, hay que pagar\nEl postre estuvo genial, sin dudar\n¿Cuánto es? Cuánto voy a gastar\n¡Gracias por todo! Nos vemos en el bar"
+    },
+    "knownVocab": [
+        "gracias",
+        "por favor",
+        "cuánto"
+    ],
+    "focusVocab": [
+        "la cuenta",
+        "aceptar",
+        "tarjetas",
+        "propina",
+        "postre",
+        "cuánto es"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "How do you ask 'Do you accept cards?'",
+            "question_fr": "Comment demandez-vous 'Acceptez-vous les cartes ?'",
+            "options": [
+                "¿Tienen tarjetas?",
+                "¿Buscan tarjetas?",
+                "¿Aceptan tarjetas?",
+                "¿Venden tarjetas?"
+            ],
+            "options_fr": [
+                "¿Tienen tarjetas?",
+                "¿Buscan tarjetas?",
+                "¿Aceptan tarjetas?",
+                "¿Venden tarjetas?"
+            ],
+            "correct": "¿Aceptan tarjetas?",
+            "hint": "💡 Aceptar = To accept",
+            "hint_fr": "💡 Aceptar = Accepter"
+        },
+        {
+            "id": "ex2",
+            "type": "translation",
+            "question": "Translate: 'The tip'",
+            "question_fr": "Traduisez : 'Le pourboire'",
+            "correct": "La propina",
+            "hint": "💡 The answer has 2 word(s) and starts with \"L...\"",
+            "hint_fr": "💡 La réponse a 2 mot(s) et commence par \"L...\""
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "id": "9-2",
+    "title": "Quisiera Pedir (I Would Like to Order)",
+    "style": "Upbeat Salsa, brass section, lively tempo, 120 BPM",
+    "audio": {
+        "mixed_fr": null,
+        "mixed_en": null,
+        "pure_es": null
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nLe serveur vient prendre la commande\nYo quisiera una sopa, s'il vous plaît\nUn plato principal, c'est ce qu'on demande\nPollo con arroz, c'est parfait\n\n[Chorus]\nQuisiera pedir, j'ai très faim\nPara beber, de l'eau ou du vin\nAgua sin gas, c'est très sain\n¡Buen provecho! C'est le festin!",
+        "mixed_en": "[Verse 1]\nThe waiter comes to take the order\nYo quisiera una sopa, if you please\nUn plato principal, crossing the border\nPollo con arroz, made with ease\n\n[Chorus]\nQuisiera pedir, I'm starving now\nPara beber, a drink somehow\nAgua sin gas, taking a bow\n¡Buen provecho! Holy cow!",
+        "pure_es": "[Verse 1]\nEl mesero viene a escuchar\nYo quisiera una sopa, por favor\nUn plato principal para cenar\nPollo con arroz, qué sabor\n\n[Chorus]\nQuisiera pedir, tengo hambre ya\nPara beber, agua o quizá\nAgua sin gas, aquí está\n¡Buen provecho! Vamos allá"
+    },
+    "knownVocab": [
+        "agua",
+        "por favor",
+        "gracias"
+    ],
+    "focusVocab": [
+        "quisiera",
+        "sopa",
+        "plato principal",
+        "pollo",
+        "arroz",
+        "beber",
+        "buen provecho"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "What does 'Quisiera' mean in this context?",
+            "question_fr": "Que signifie 'Quisiera' dans ce contexte ?",
+            "options": [
+                "I hate",
+                "I would like",
+                "I know",
+                "I run"
+            ],
+            "options_fr": [
+                "Je déteste",
+                "Je voudrais",
+                "Je sais",
+                "Je cours"
+            ],
+            "correct": "I would like",
+            "hint": "💡 It's a polite way to order",
+            "hint_fr": "💡 C'est une façon polie de commander"
+        },
+        {
+            "id": "ex2",
+            "type": "multiple_choice",
+            "question": "What phrase is used to say 'Enjoy your meal'?",
+            "question_fr": "Quelle expression utilise-t-on pour dire 'Bon appétit' ?",
+            "options": [
+                "¡Buen viaje!",
+                "¡Buenas noches!",
+                "¡Buen provecho!",
+                "¡Buena suerte!"
+            ],
+            "options_fr": [
+                "¡Buen viaje!",
+                "¡Buenas noches!",
+                "¡Buen provecho!",
+                "¡Buena suerte!"
+            ],
+            "correct": "¡Buen provecho!",
+            "hint": "💡 Think of 'provecho' as benefit/enjoyment of the food",
+            "hint_fr": "💡 Pensez au mot 'profit' ou 'bénéfice'"
+        }
+    ]
+}

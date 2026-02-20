@@ -78,6 +78,16 @@ export const modules = [
             { id: "8-2", title: "Mueve el Cuerpo (Body)", type: "edm", status: "audio_missing" },
             { id: "8-3", title: "Estoy Nervioso (Feelings)", type: "punk", status: "audio_missing" },
         ]
+    },
+    {
+        id: 9,
+        title: "Unit 9: Food & Restaurant (A2)",
+        desc: "Ordering, Dining Out, Paying",
+        songs: [
+            { id: "9-1", title: "En el Restaurante (At the Restaurant)", type: "bossa", status: "audio_missing" },
+            { id: "9-2", title: "Quisiera Pedir (Ordering Food)", type: "salsa", status: "audio_missing" },
+            { id: "9-3", title: "La Cuenta (The Bill)", type: "acoustic", status: "audio_missing" },
+        ]
     }
 ];
 
@@ -92,6 +102,7 @@ export const bonusModules = [
             { id: "grammar-1", title: "Ser vs Estar", type: "grammar", status: "published" },
             { id: "grammar-2", title: "Gender & Articles", type: "grammar", status: "published" },
             { id: "grammar-3", title: "Verb Conjugation Basics", type: "grammar", status: "published" },
+            { id: "grammar-4", title: "Por vs Para", type: "grammar", status: "published" },
         ]
     },
     {
@@ -103,6 +114,7 @@ export const bonusModules = [
             { id: "dialogue-1", title: "At the Café", type: "dialogue", status: "published" },
             { id: "dialogue-2", title: "Asking for Directions", type: "dialogue", status: "published" },
             { id: "dialogue-3", title: "At the Market", type: "dialogue", status: "published" },
+            { id: "dialogue-4", title: "At the Airport", type: "dialogue", status: "published" },
         ]
     },
     {
@@ -114,6 +126,7 @@ export const bonusModules = [
             { id: "culture-1", title: "Spanish-Speaking Countries", type: "culture", status: "published" },
             { id: "culture-2", title: "Food & Traditions", type: "culture", status: "published" },
             { id: "culture-3", title: "Holidays & Celebrations", type: "culture", status: "published" },
+            { id: "culture-4", title: "Music of the Andes", type: "culture", status: "published" },
         ]
     }
 ];

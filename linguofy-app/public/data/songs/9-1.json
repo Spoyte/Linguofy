@@ -1,0 +1,61 @@
+{
+    "id": "9-1",
+    "title": "En el Restaurante (At the Restaurant)",
+    "style": "Bossa Nova, acoustic guitar, soft percussion, relaxed cafe vibe, 90 BPM",
+    "audio": {
+        "mixed_fr": null,
+        "mixed_en": null,
+        "pure_es": null
+    },
+    "lyrics": {
+        "mixed_fr": "[Verse 1]\nNous entrons dans le lieu\nUna mesa para dos, s'il vous plaît\nLe serveur a l'air joyeux\nY nos trae el menú sans délai\n\n[Chorus]\nEn el restaurante, on mange bien\n¿Qué vas a pedir? C'est divin\nCon hambre y sed, tout va bien\nUna copa de vino, pour la fin!",
+        "mixed_en": "[Verse 1]\nWe walk into the place\nUna mesa para dos, please\nThe waiter has a smiling face\nY nos trae el menú with ease\n\n[Chorus]\nEn el restaurante, we eat so well\n¿Qué vas a pedir? It's hard to tell\nCon hambre y sed, feeling swell\nUna copa de vino, rings a bell!",
+        "pure_es": "[Verse 1]\nEntramos al lugar\nUna mesa para dos, por favor\nEl mesero va a llegar\nY nos trae el menú con sabor\n\n[Chorus]\nEn el restaurante, comemos bien\n¿Qué vas a pedir? Dímelo también\nCon hambre y sed, al cien\n¡Una copa de vino para quien!"
+    },
+    "knownVocab": [
+        "por favor",
+        "hola",
+        "gracias"
+    ],
+    "focusVocab": [
+        "restaurante",
+        "mesa",
+        "mesero",
+        "menú",
+        "pedir",
+        "hambre",
+        "sed"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "How do you ask for 'A table for two'?",
+            "question_fr": "Comment demandez-vous 'Une table pour deux' ?",
+            "options": [
+                "Una silla para tres",
+                "Una mesa para dos",
+                "Un menú para dos",
+                "Una casa para dos"
+            ],
+            "options_fr": [
+                "Una silla para tres",
+                "Una mesa para dos",
+                "Un menú para dos",
+                "Una casa para dos"
+            ],
+            "correct": "Una mesa para dos",
+            "hint": "💡 Table = Mesa, Two = Dos",
+            "hint_fr": "💡 Table = Mesa, Deux = Dos"
+        },
+        {
+            "id": "ex2",
+            "type": "translation",
+            "question": "Translate: 'The menu'",
+            "question_fr": "Traduisez : 'Le menu'",
+            "correct": "El menú",
+            "hint": "💡 The answer has 2 word(s) and starts with \"E...\"",
+            "hint_fr": "💡 La réponse a 2 mot(s) et commence par \"E...\""
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "id": "grammar-4",
+    "type": "grammar",
+    "title": "Por vs Para",
+    "description": "Mastering the two translations of 'for'",
+    "associatedSongId": "6-1",
+    "content": {
+        "intro": "In Spanish, the English word 'for' can be translated as either **por** or **para**. They are not interchangeable and each has specific rules.",
+        "sections": [
+            {
+                "title": "Para: Destination and Purpose",
+                "explanation": "Use **para** when talking about a destination (physical or metaphoric), a deadline, or the purpose of an action ('in order to').",
+                "examples": [
+                    {
+                        "spanish": "Salimos para Madrid.",
+                        "translation": "We leave for Madrid. (Destination)"
+                    },
+                    {
+                        "spanish": "El regalo es para ti.",
+                        "translation": "The gift is for you. (Recipient)"
+                    },
+                    {
+                        "spanish": "Estudio para aprender.",
+                        "translation": "I study in order to learn. (Purpose)"
+                    }
+                ],
+                "mnemonic": "Think of PERFECT: Purpose, Effect, Recipient, Future, Employment, Comparison, Toward."
+            },
+            {
+                "title": "Por: Cause and Motion",
+                "explanation": "Use **por** to express the cause or reason for something, motion through a place, duration of time, or exchange.",
+                "examples": [
+                    {
+                        "spanish": "Gracias por la ayuda.",
+                        "translation": "Thanks for the help. (Exchange/Gratitude)"
+                    },
+                    {
+                        "spanish": "Caminamos por el parque.",
+                        "translation": "We walk through the park. (Motion through)"
+                    },
+                    {
+                        "spanish": "Estudié por tres horas.",
+                        "translation": "I studied for three hours. (Duration)"
+                    }
+                ]
+            }
+        ]
+    },
+    "focusVocab": [
+        "por",
+        "para",
+        "destino",
+        "causa"
+    ],
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "multiple_choice",
+            "question": "Which word do you use for 'Thanks for everything'? 'Gracias ___ todo.'",
+            "question_fr": "Quel mot utilisez-vous pour 'Merci pour tout' ? 'Gracias ___ todo.'",
+            "options": [
+                "por",
+                "para"
+            ],
+            "options_fr": [
+                "por",
+                "para"
+            ],
+            "correct": "por",
+            "hint": "💡 You are exchanging gratitude",
+            "hint_fr": "💡 Il s'agit d'un échange (de gratitude)"
+        }
+    ]
+}
