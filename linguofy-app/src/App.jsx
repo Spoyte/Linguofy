@@ -16,6 +16,7 @@ import VocabRacer from './games/VocabRacer';
 import AudioExplorer from './games/AudioExplorer';
 import GrammarSnake from './games/GrammarSnake';
 import SwipeSort from './games/SwipeSort';
+import WordCatcher from './games/WordCatcher';
 import AuthGuard from './components/AuthGuard';
 import MainLayout from './components/MainLayout';
 
@@ -52,6 +53,7 @@ function App() {
                             <Route path="/games/audio-explorer" element={<AudioExplorer />} />
                             <Route path="/games/grammar-snake" element={<GrammarSnake />} />
                             <Route path="/games/swipe-sort" element={<SwipeSort />} />
+                            <Route path="/games/word-catcher" element={<WordCatcher />} />
                             <Route path="/lesson/:id" element={<LessonView />} />
                             <Route path="/play/:id" element={<SongPlayer />} />
                             <Route path="/bonus/:type/:id" element={<BonusLessonView />} />

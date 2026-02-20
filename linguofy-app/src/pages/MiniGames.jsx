@@ -80,6 +80,17 @@ const GAMES = [
         color: 'from-pink-500 to-rose-600',
         ages: ['kids', 'teens', 'adults', 'all'],
         status: 'playable'
+    },
+    {
+        id: 'word-catcher',
+        title: 'Word Catcher',
+        title_fr: 'Attrape-Mots',
+        desc: 'Drag the basket to catch the falling translations!',
+        desc_fr: 'Fais glisser le panier pour attraper les traductions qui tombent !',
+        icon: '🧺',
+        color: 'from-sky-400 to-blue-600',
+        ages: ['kids', 'all'],
+        status: 'playable'
     }
 ];
 
