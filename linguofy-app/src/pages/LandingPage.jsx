@@ -147,12 +147,15 @@ export default function LandingPage() {
                         <h3 className="text-2xl font-bold mb-3 text-white">Smart Evaluation</h3>
                         <p className="text-slate-400 leading-relaxed">Move beyond rigid tests. Our AI engine understands intent and provides contextual, semantic corrections.</p>
                     </div>
-                    <div className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.05] hover:bg-white/[0.04] transition-all duration-500 backdrop-blur-sm relative overflow-hidden">
+                    <Link to="/practice/conversation" className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.05] hover:bg-white/[0.08] transition-all duration-500 backdrop-blur-sm relative overflow-hidden cursor-pointer block transform hover:-translate-y-1">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                         <div className="text-4xl mb-6">🗣️</div>
                         <h3 className="text-2xl font-bold mb-3 text-white">Real-Time Chat</h3>
-                        <p className="text-slate-400 leading-relaxed">Practice speaking instantly with ultra-low latency AI voice models tailored to your exact proficiency level.</p>
-                    </div>
+                        <p className="text-slate-400 leading-relaxed mb-4">Practice speaking instantly with ultra-low latency AI voice models tailored to your exact proficiency level.</p>
+                        <div className="text-blue-400 font-bold text-sm flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity transition-transform transform translate-y-2 group-hover:translate-y-0">
+                            Try Beta <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                        </div>
+                    </Link>
                 </div>
             </main>
 

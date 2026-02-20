@@ -6,6 +6,7 @@ import SongPlayer from './pages/SongPlayer';
 import LessonView from './pages/LessonView';
 import VocabularyReview from './pages/VocabularyReview';
 import BonusLessonView from './pages/BonusLessonView';
+import ConversationView from './pages/ConversationView';
 import AuthGuard from './components/AuthGuard';
 import MainLayout from './components/MainLayout';
 
@@ -36,6 +37,11 @@ function App() {
                             <Route path="/lesson/:id" element={<LessonView />} />
                             <Route path="/vocabulary" element={<VocabularyReview />} />
                             <Route path="/bonus/:type/:id" element={<BonusLessonView />} />
+                        </Route>
+
+                        {/* Standalone Protected Routes (No MiniPlayer) */}
+                        <Route element={<AuthGuard />}>
+                            <Route path="/practice/conversation" element={<ConversationView />} />
                         </Route>
 
                         {/* Admin Routes */}
