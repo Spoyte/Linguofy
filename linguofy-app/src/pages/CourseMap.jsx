@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
+import { useAudio } from '../contexts/AudioContext';
 import { modules, bonusModules } from '../data/courseData';
 import LanguageToggle from '../components/LanguageToggle';
 import { useAuth } from '../contexts/AuthContext';
@@ -9,6 +10,7 @@ export default function CourseMap() {
     const { isComplete, completedLessons } = useProgress();
     const { t, language } = useLanguage();
     const { user, signOut } = useAuth();
+    const { playTrack, currentTrack, isPlaying, togglePlayPause } = useAudio();
 
     // A module is unlocked if:
     // 1. It's the first module (always unlocked)
@@ -21,6 +23,31 @@ export default function CourseMap() {
 
     const totalLessons = modules.flatMap(m => m.songs).length;
     const progressPercentage = Math.round((completedLessons.length / totalLessons) * 100) || 0;
+
+    const handlePlayClick = async (e, song) => {
+        e.preventDefault();
+        if (currentTrack?.id === song.id) {
+            togglePlayPause();
+            return;
+        }
+
+        try {
+            const res = await fetch(`/data/songs/${song.id}.json`);
+            if (!res.ok) throw new Error("Song not found");
+            const songData = await res.json();
+
+            const audioKey = language === 'fr' ? 'mixed_fr' : 'mixed_en';
+            playTrack({
+                id: song.id,
+                title: songData.title,
+                audioUrl: songData.audio?.[audioKey],
+                coverUrl: songData.coverUrl || 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=2070&auto=format&fit=crop'
+            });
+        } catch (error) {
+            console.error("Could not load song", error);
+            alert("Audio track not found.");
+        }
+    };
 
     return (
         <div className="min-h-screen bg-[#0A0F1C] text-slate-200 font-sans selection:bg-purple-500/30 overflow-x-hidden pb-20">
@@ -147,20 +174,27 @@ export default function CourseMap() {
                                                                     {song.title}
                                                                 </h3>
                                                             </div>
-                                                            <div className={`w-12 h-12 rounded-full flex shrink-0 items-center justify-center shadow-lg transition-transform duration-300 ${!unlocked
-                                                                ? 'bg-slate-800 shadow-none'
-                                                                : completed
-                                                                    ? 'bg-gradient-to-br from-green-500 to-emerald-600 shadow-green-500/20 group-hover:scale-110'
-                                                                    : 'bg-gradient-to-br from-purple-600 to-pink-600 shadow-purple-500/20 group-hover:scale-110'
-                                                                }`}>
+                                                            <button
+                                                                onClick={(e) => unlocked && handlePlayClick(e, song)}
+                                                                disabled={!unlocked}
+                                                                className={`w-12 h-12 rounded-full flex shrink-0 items-center justify-center shadow-lg transition-transform duration-300 ${!unlocked
+                                                                    ? 'bg-slate-800 shadow-none cursor-not-allowed'
+                                                                    : currentTrack?.id === song.id && isPlaying
+                                                                        ? 'bg-gradient-to-br from-pink-500 to-purple-600 shadow-pink-500/20 group-hover:scale-110 animate-pulse'
+                                                                        : completed
+                                                                            ? 'bg-gradient-to-br from-green-500 to-emerald-600 shadow-green-500/20 group-hover:scale-110'
+                                                                            : 'bg-gradient-to-br from-purple-600 to-pink-600 shadow-purple-500/20 group-hover:scale-110'
+                                                                    }`}>
                                                                 {!unlocked ? (
                                                                     <span className="text-slate-500 font-bold">🔒</span>
+                                                                ) : currentTrack?.id === song.id && isPlaying ? (
+                                                                    <svg className="w-5 h-5 text-white fill-current" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>
                                                                 ) : completed ? (
                                                                     <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                                                                 ) : (
                                                                     <svg className="w-5 h-5 text-white fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
                                                                 )}
-                                                            </div>
+                                                            </button>
                                                         </div>
 
                                                         <div className="flex gap-3 mt-6">
