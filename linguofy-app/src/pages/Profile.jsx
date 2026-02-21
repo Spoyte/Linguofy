@@ -129,13 +129,16 @@ export default function Profile() {
                                 {user?.email || 'Logged in via demo'}
                             </p>
 
-                            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+                            <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
                                 <button onClick={signOut} className="px-5 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-sm font-bold text-slate-300 transition-colors">
                                     Sign Out
                                 </button>
                                 <button className="px-5 py-2 rounded-xl bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 text-sm font-bold text-purple-400 transition-colors">
                                     Edit Profile
                                 </button>
+                                <Link to="/stats" className="px-5 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-400 hover:to-sky-400 border border-sky-400/50 text-sm font-bold text-white shadow-lg shadow-sky-500/20 transition-all transform hover:scale-105">
+                                    {language === 'fr' ? 'Statistiques' : 'Statistics'}
+                                </Link>
                             </div>
                         </div>
                     </div>

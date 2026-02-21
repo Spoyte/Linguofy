@@ -8,6 +8,7 @@ import VocabularyReview from './pages/VocabularyReview';
 import BonusLessonView from './pages/BonusLessonView';
 import ConversationView from './pages/ConversationView';
 import Profile from './pages/Profile';
+import Statistics from './pages/Statistics';
 import MiniGames from './pages/MiniGames';
 import WordMatch from './games/WordMatch';
 import LyricScramble from './games/LyricScramble';
@@ -46,6 +47,7 @@ function App() {
                             <Route path="/learn" element={<CourseMap />} />
                             <Route path="/vocabulary" element={<VocabularyReview />} />
                             <Route path="/profile" element={<Profile />} />
+                            <Route path="/stats" element={<Statistics />} />
                             <Route path="/games" element={<MiniGames />} />
                             <Route path="/games/word-match" element={<WordMatch />} />
                             <Route path="/games/lyric-scramble" element={<LyricScramble />} />
