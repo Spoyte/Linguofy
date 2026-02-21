@@ -80,20 +80,22 @@ export default function ColorPop() {
         setTargetWordEs(targetEs);
         setTargetWordEn(vocabDict[targetEs]);
 
-        // Pick 2 or 3 other random words
-        let others = words.filter(w => w !== targetEs).sort(() => Math.random() - 0.5).slice(0, 3);
-
         // Combine and shuffle for balloons
+        // For mobile, 4 balloons is the max that comfortably fits without clutter.
+        const numBalloons = Math.min(4, words.length);
+        let others = words.filter(w => w !== targetEs).sort(() => Math.random() - 0.5).slice(0, numBalloons - 1);
         const roundWords = [targetEs, ...others].sort(() => Math.random() - 0.5);
 
-        // Spawn balloons with better horizontal spacing to prevent overlap
-        // Divide the screen into equal width segments
-        const segmentWidth = 90 / roundWords.length; // 90% of screen to leave 5% margin on each side
+        // Divide the 100% width into equal segments.
+        // E.g., 4 balloons = 25% segments.
+        // The balloon will be ~22vw wide, so it fits nicely inside a 25% segment.
+        const segmentWidth = 100 / roundWords.length;
 
         const newBalloons = roundWords.map((word, idx) => {
-            // Position each balloon randomly within its dedicated segment
-            const minLeft = 5 + (idx * segmentWidth);
-            const maxLeft = minLeft + segmentWidth - 10; // -10 to give some breathing room
+            // Position strictly within its segment to avoid any overlap
+            // Leaving 1-2% wiggle room so they aren't perfectly aligned grids, but don't cross boundaries
+            const minLeft = (idx * segmentWidth) + 1;
+            const maxLeft = (idx * segmentWidth) + (segmentWidth * 0.1);
             const leftPos = Math.random() * (maxLeft - minLeft) + minLeft;
 
             const color = BALLOON_COLORS[Math.floor(Math.random() * BALLOON_COLORS.length)];
@@ -201,19 +203,19 @@ export default function ColorPop() {
                             }
                         }}
                     >
-                        {/* Balloon body - Responsive sizing */}
-                        <div className={`w-20 h-24 md:w-24 md:h-28 lg:w-28 lg:h-32 ${b.color} rounded-[50%] shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.2)] flex items-center justify-center p-3 sm:p-4 relative`}>
+                        {/* Balloon body - Responsive sizing based on viewport percentages */}
+                        <div className={`w-[22vw] min-w-[65px] max-w-[110px] aspect-[7/8] ${b.color} rounded-[50%] shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.2)] flex items-center justify-center p-2 sm:p-4 relative`}>
                             {/* Reflection */}
-                            <div className="absolute top-2 left-3 lg:left-4 w-4 h-6 lg:w-6 lg:h-8 bg-white/30 rounded-[50%] rotate-[-45deg]"></div>
+                            <div className="absolute top-[10%] left-[15%] w-[20%] h-[25%] bg-white/30 rounded-[50%] rotate-[-45deg]"></div>
                             {/* Word */}
-                            <span className="text-white font-black text-sm sm:text-lg lg:text-xl tracking-tight text-center drop-shadow-md z-10 w-full break-words leading-tight">
+                            <span className="text-white font-black text-xs sm:text-base lg:text-xl tracking-tight text-center drop-shadow-md z-10 w-full break-words leading-tight px-1">
                                 {b.word}
                             </span>
                         </div>
                         {/* Balloon knot */}
-                        <div className={`w-4 h-4 ${b.color} absolute -bottom-2 left-1/2 -translate-x-1/2 rotate-45`}></div>
+                        <div className={`w-3 h-3 sm:w-4 sm:h-4 ${b.color} absolute -bottom-1 sm:-bottom-2 left-1/2 -translate-x-1/2 rotate-45`}></div>
                         {/* Balloon string */}
-                        <div className="w-0.5 h-16 bg-white/50 absolute -bottom-16 left-1/2 -translate-x-1/2"></div>
+                        <div className="w-0.5 h-12 sm:h-16 bg-white/50 absolute -bottom-12 sm:-bottom-16 left-1/2 -translate-x-1/2"></div>
                     </div>
                 ))}
             </div>
