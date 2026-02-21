@@ -128,7 +128,7 @@ export default function BubbleSentence() {
     const setupSentence = useCallback((sentence) => {
         if (!sentence) return; // Ensure a sentence is provided
 
-        const words = sentence.original.split(' '); // Use original for word splitting
+        const words = sentence.words; // Use pre-computed words array (punctuation stripped)
 
         // Add 1-2 distractor words based on score/difficulty
         let pool = [...words];
@@ -137,7 +137,7 @@ export default function BubbleSentence() {
             const otherSentences = sentences.filter(s => s.id !== sentence.id);
             if (otherSentences.length > 0) {
                 const randomDistractorSent = otherSentences[Math.floor(Math.random() * otherSentences.length)];
-                const distractorWords = randomDistractorSent.original.split(' ');
+                const distractorWords = randomDistractorSent.words;
                 if (distractorWords.length > 0) {
                     pool.push(distractorWords[Math.floor(Math.random() * distractorWords.length)]);
                 }
