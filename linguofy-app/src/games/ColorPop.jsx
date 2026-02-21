@@ -86,9 +86,16 @@ export default function ColorPop() {
         // Combine and shuffle for balloons
         const roundWords = [targetEs, ...others].sort(() => Math.random() - 0.5);
 
-        // Spawn balloons
+        // Spawn balloons with better horizontal spacing to prevent overlap
+        // Divide the screen into equal width segments
+        const segmentWidth = 90 / roundWords.length; // 90% of screen to leave 5% margin on each side
+
         const newBalloons = roundWords.map((word, idx) => {
-            const leftPos = 10 + Math.random() * 70; // 10% to 80% left
+            // Position each balloon randomly within its dedicated segment
+            const minLeft = 5 + (idx * segmentWidth);
+            const maxLeft = minLeft + segmentWidth - 10; // -10 to give some breathing room
+            const leftPos = Math.random() * (maxLeft - minLeft) + minLeft;
+
             const color = BALLOON_COLORS[Math.floor(Math.random() * BALLOON_COLORS.length)];
             return {
                 id: Date.now() + idx,
@@ -96,7 +103,7 @@ export default function ColorPop() {
                 left: leftPos,
                 color: color,
                 speed: gameSpeed + (Math.random() * 2 - 1), // slightly vary speed
-                delay: Math.random() * 1 // stagger spawn slightly
+                delay: Math.random() * 1.5 // stagger spawn slightly more to avoid horizontal lines
             };
         });
 
@@ -194,12 +201,12 @@ export default function ColorPop() {
                             }
                         }}
                     >
-                        {/* Balloon body */}
-                        <div className={`w-28 h-32 ${b.color} rounded-[50%] shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.2)] flex items-center justify-center p-4 relative`}>
+                        {/* Balloon body - Responsive sizing */}
+                        <div className={`w-20 h-24 md:w-24 md:h-28 lg:w-28 lg:h-32 ${b.color} rounded-[50%] shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.2)] flex items-center justify-center p-3 sm:p-4 relative`}>
                             {/* Reflection */}
-                            <div className="absolute top-2 left-4 w-6 h-8 bg-white/30 rounded-[50%] rotate-[-45deg]"></div>
+                            <div className="absolute top-2 left-3 lg:left-4 w-4 h-6 lg:w-6 lg:h-8 bg-white/30 rounded-[50%] rotate-[-45deg]"></div>
                             {/* Word */}
-                            <span className="text-white font-black text-xl tracking-tight text-center drop-shadow-md z-10 w-full break-words">
+                            <span className="text-white font-black text-sm sm:text-lg lg:text-xl tracking-tight text-center drop-shadow-md z-10 w-full break-words leading-tight">
                                 {b.word}
                             </span>
                         </div>

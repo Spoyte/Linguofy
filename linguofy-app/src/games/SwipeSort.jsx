@@ -2,6 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
+import { useAuth } from '../contexts/AuthContext';
+import { srsApi } from '../services/api/srsApi';
+import { calculateSM2 } from '../services/srsAlgorithm';
 
 // Fallback vocab
 const FALLBACK_VOCAB = [
@@ -18,6 +21,7 @@ const FALLBACK_VOCAB = [
 export default function SwipeSort() {
     const { completedLessons } = useProgress();
     const { language } = useLanguage();
+    const { user } = useAuth();
 
     const [vocabulary, setVocabulary] = useState([]);
     const [cards, setCards] = useState([]);
@@ -38,34 +42,53 @@ export default function SwipeSort() {
             setLoading(true);
             let userVocab = [];
 
-            for (const lessonId of completedLessons) {
-                try {
-                    const res = await fetch(`/data/songs/${lessonId}.json`);
-                    if (res.ok) {
-                        const data = await res.json();
-                        if (data.vocabulary && Array.isArray(data.vocabulary)) {
-                            data.vocabulary.forEach(item => {
-                                if (item.es && item.en) {
-                                    userVocab.push({ es: item.es, en: item.en });
-                                }
-                            });
-                        }
-                    }
-                } catch (e) {
-                    // Ignore
+            // 1. Try fetching Due SRS items first
+            if (user) {
+                const dueItems = await srsApi.getDueItems(user.id);
+                if (dueItems && dueItems.length >= 5) {
+                    // We only want the subset that is due
+                    userVocab = dueItems.map(item => ({
+                        es: item.word_es,
+                        en: item.word_en,
+                        srs: item
+                    }));
                 }
             }
 
+            // 2. Fallback to extracting from completed lessons if no SRS data
             if (userVocab.length < 5) {
-                userVocab = FALLBACK_VOCAB;
+                for (const lessonId of completedLessons) {
+                    try {
+                        const res = await fetch(`/data/songs/${lessonId}.json`);
+                        if (res.ok) {
+                            const data = await res.json();
+                            if (data.vocabulary && Array.isArray(data.vocabulary)) {
+                                data.vocabulary.forEach(item => {
+                                    if (item.es && item.en && !userVocab.find(v => v.es === item.es)) {
+                                        userVocab.push({ es: item.es, en: item.en, srs: null });
+                                    }
+                                });
+                            }
+                        }
+                        // eslint-disable-next-line no-unused-vars
+                    } catch (e) {
+                        // Ignore
+                    }
+                }
             }
 
-            setVocabulary(userVocab);
+            // 3. Absolute minimum fallback
+            if (userVocab.length < 5) {
+                userVocab = FALLBACK_VOCAB.map(v => ({ ...v, srs: null }));
+            }
+
+            // Randomize the order of the pool before generating the deck
+            setVocabulary(userVocab.sort(() => Math.random() - 0.5));
             setLoading(false);
         }
 
         loadContent();
-    }, [completedLessons]);
+    }, [completedLessons, user]);
 
     // Generate initial deck
     useEffect(() => {
@@ -133,7 +156,10 @@ export default function SwipeSort() {
         if (!isDragging) return;
         setIsDragging(false);
 
-        const SWIPE_THRESHOLD = 100;
+        // Thresholds are symmetric but user feels drag left is harder.
+        // It's likely due to mobile edge swipe back gestures interfering.
+        // Let's make the requirement smaller (from 100 to 75)
+        const SWIPE_THRESHOLD = 75;
 
         if (dragOffset.x > SWIPE_THRESHOLD) {
             handleSwipe('right');
@@ -145,7 +171,7 @@ export default function SwipeSort() {
         }
     };
 
-    const handleSwipe = (direction) => {
+    const handleSwipe = async (direction) => {
         if (cards.length === 0) return;
 
         const currentCard = cards[0];
@@ -162,6 +188,25 @@ export default function SwipeSort() {
             setStreak(s => s + 1);
         } else {
             setStreak(0);
+            navigator.vibrate?.(200); // Small haptic bump on mistake
+        }
+
+        // If the user is logged in and we know where this card came from in the pool
+        const sourceItem = vocabulary.find(v => v.es === currentCard.es);
+        if (user && sourceItem) {
+            // They reviewed a card. 
+            // - If user got it right and it WAS a match, perfect recall (5)
+            // - If user got it right by rejecting a bad pair, good recall (4)
+            // - If user was wrong, blackout (0)
+            let rating = 0;
+            if (isCorrect && currentCard.isMatch) rating = 5;
+            else if (isCorrect && !currentCard.isMatch) rating = 4;
+
+            const prevSrs = sourceItem.srs || { repetition: 0, interval: 0, ease_factor: 2.5 };
+            const newStats = calculateSM2(rating, prevSrs.repetition, prevSrs.interval, prevSrs.ease_factor);
+
+            // Fire and forget update
+            srsApi.updateItem(user.id, currentCard.es, currentCard.en, newStats);
         }
 
         // Wait for animation, then remove card

@@ -2,6 +2,9 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
+import { useAuth } from '../contexts/AuthContext';
+import { srsApi } from '../services/api/srsApi';
+import { calculateSM2 } from '../services/srsAlgorithm';
 
 // Fallback vocab
 const FALLBACK_VOCAB = [
@@ -18,6 +21,7 @@ const FALLBACK_VOCAB = [
 export default function WordCatcher() {
     const { completedLessons } = useProgress();
     const { language } = useLanguage();
+    const { user } = useAuth();
 
     const [vocabulary, setVocabulary] = useState([]);
     const [targetWordEn, setTargetWordEn] = useState(null);
@@ -42,26 +46,43 @@ export default function WordCatcher() {
             setLoading(true);
             let userVocab = [];
 
-            for (const lessonId of completedLessons) {
-                try {
-                    const res = await fetch(`/data/songs/${lessonId}.json`);
-                    if (res.ok) {
-                        const data = await res.json();
-                        if (data.vocabulary && Array.isArray(data.vocabulary)) {
-                            data.vocabulary.forEach(item => {
-                                if (item.es && item.en) {
-                                    userVocab.push({ es: item.es, en: item.en });
-                                }
-                            });
-                        }
-                    }
-                } catch (e) {
-                    // Ignore
+            // 1. Try fetching Due SRS items first
+            if (user) {
+                const dueItems = await srsApi.getDueItems(user.id);
+                if (dueItems && dueItems.length >= 5) {
+                    userVocab = dueItems.map(item => ({
+                        es: item.word_es,
+                        en: item.word_en,
+                        srs: item
+                    }));
                 }
             }
 
+            // 2. Fallback to extracting from completed lessons
             if (userVocab.length < 5) {
-                userVocab = FALLBACK_VOCAB;
+                for (const lessonId of completedLessons) {
+                    try {
+                        const res = await fetch(`/data/songs/${lessonId}.json`);
+                        if (res.ok) {
+                            const data = await res.json();
+                            if (data.vocabulary && Array.isArray(data.vocabulary)) {
+                                data.vocabulary.forEach(item => {
+                                    if (item.es && item.en && !userVocab.find(v => v.es === item.es)) {
+                                        userVocab.push({ es: item.es, en: item.en, srs: null });
+                                    }
+                                });
+                            }
+                        }
+                        // eslint-disable-next-line no-unused-vars
+                    } catch (e) {
+                        // Ignore
+                    }
+                }
+            }
+
+            // 3. Absolute minimum fallback
+            if (userVocab.length < 5) {
+                userVocab = FALLBACK_VOCAB.map(v => ({ ...v, srs: null }));
             }
 
             setVocabulary(userVocab);
@@ -69,7 +90,7 @@ export default function WordCatcher() {
         }
 
         loadContent();
-    }, [completedLessons]);
+    }, [completedLessons, user]);
 
     // Handle dragging the basket
     const handleMove = useCallback((clientX) => {
@@ -196,10 +217,23 @@ export default function WordCatcher() {
                             // CAUGHT!
                             if (word.isMatch) {
                                 localScoreStr += 10;
+
+                                // SRS Update
+                                if (user) {
+                                    const sourceItem = vocabulary.find(v => v.es === word.es);
+                                    if (sourceItem) {
+                                        const prevSrs = sourceItem.srs || { repetition: 0, interval: 0, ease_factor: 2.5 };
+                                        // Good rating for catching the falling word (4)
+                                        const newStats = calculateSM2(4, prevSrs.repetition, prevSrs.interval, prevSrs.ease_factor);
+                                        srsApi.updateItem(user.id, word.es, sourceItem.en, newStats);
+                                    }
+                                }
+
                                 // Need a new target occasionally
                                 if (Math.random() > 0.7) pickNewTarget(vocabulary);
                             } else {
                                 livesLost += 1; // Caught a bomb/wrong word
+                                navigator.vibrate?.(100);
                             }
                             continue; // Remove word by not adding to nextWords
                         }
@@ -210,6 +244,18 @@ export default function WordCatcher() {
                         if (word.isMatch) {
                             // Missed the correct translation!
                             livesLost += 1;
+                            navigator.vibrate?.(100);
+
+                            // SRS Penalty
+                            if (user) {
+                                const sourceItem = vocabulary.find(v => v.es === word.es);
+                                if (sourceItem) {
+                                    const prevSrs = sourceItem.srs || { repetition: 0, interval: 0, ease_factor: 2.5 };
+                                    // Total blackout/miss (0)
+                                    const newStats = calculateSM2(0, prevSrs.repetition, prevSrs.interval, prevSrs.ease_factor);
+                                    srsApi.updateItem(user.id, word.es, sourceItem.en, newStats);
+                                }
+                            }
                         }
                         continue; // Remove word
                     }

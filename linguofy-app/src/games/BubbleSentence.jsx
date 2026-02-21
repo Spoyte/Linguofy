@@ -2,6 +2,9 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
+import { useAuth } from '../contexts/AuthContext';
+import { srsApi } from '../services/api/srsApi';
+import { calculateSM2 } from '../services/srsAlgorithm';
 
 // Fallback sentences if user has no completed lessons
 const FALLBACK_SENTENCES = [
@@ -14,32 +17,42 @@ const FALLBACK_SENTENCES = [
 export default function BubbleSentence() {
     const { completedLessons } = useProgress();
     const { language } = useLanguage();
+    const { user } = useAuth();
+
+    // We store the full vocab objects to update their SRS stats later
+    const [vocabularyPool, setVocabularyPool] = useState([]);
 
     const [sentences, setSentences] = useState([]);
-    const [currentSentence, setCurrentSentence] = useState(null);
+    const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
     const [bubbles, setBubbles] = useState([]);
     const [builtWords, setBuiltWords] = useState([]);
+    const [isSuccess, setIsSuccess] = useState(false); // Added for success animation/state
+    const [mistakeBubbleId, setMistakeBubbleId] = useState(null); // Added for error state
 
     const [score, setScore] = useState(0);
     const [gameOver, setGameOver] = useState(false);
-    const [gameWon, setGameWon] = useState(false);
+    const [gameWon, setGameWon] = useState(false); // This will now be used for overall game won, not per sentence
     const [isPlaying, setIsPlaying] = useState(false);
     const [loading, setLoading] = useState(true);
 
     const animationRef = useRef();
 
-    // Load sentences
+    // 1. Gather sentences and vocabulary pool
     useEffect(() => {
         async function loadContent() {
             setLoading(true);
-            let userSentences = [];
+            let pool = [];
+            let allVocabPool = [];
 
+            // Fetch from lessons
             for (const lessonId of completedLessons) {
                 try {
                     const res = await fetch(`/data/songs/${lessonId}.json`);
                     if (res.ok) {
                         const data = await res.json();
-                        if (data.lyrics && data.lyrics.pure_es && data.lyrics.en) {
+                        // Get sentences from lyrics
+                        if (data.lyrics && data.lyrics.pure_es && data.lyrics.pure_es.length > 0) {
+                            // Filter for sentences of reasonable length (e.g., 3-7 words)
                             const linesEs = data.lyrics.pure_es.split('\n').filter(l => l.trim() && !l.startsWith('['));
                             const linesEn = data.lyrics.en.split('\n').filter(l => l.trim() && !l.startsWith('['));
 
@@ -47,36 +60,88 @@ export default function BubbleSentence() {
                                 const cleanEs = linesEs[i].replace(/[¿?¡!,.]/g, '').trim();
                                 const wordCount = cleanEs.split(' ').length;
                                 if (wordCount >= 3 && wordCount <= 7) {
-                                    userSentences.push({ es: cleanEs, en: linesEn[i].trim() });
+                                    pool.push({ es: cleanEs, en: linesEn[i].trim() });
                                 }
                             }
                         }
+                        // Get vocabulary for SRS tracking
+                        if (data.vocabulary) {
+                            allVocabPool = [...allVocabPool, ...data.vocabulary];
+                        }
                     }
+                    // eslint-disable-next-line no-unused-vars
                 } catch (e) {
                     // Ignore
                 }
             }
 
-            if (userSentences.length < 3) {
-                userSentences = FALLBACK_SENTENCES;
+            // Fallbacks
+            if (pool.length < 3) {
+                pool = FALLBACK_SENTENCES;
+            }
+            if (allVocabPool.length === 0) {
+                allVocabPool = [{ es: "El gato", en: "The cat" }]; // Dummy fallback
             }
 
-            setSentences(userSentences);
+            // Shuffle sentences and take a subset (e.g., 10 for a game session)
+            pool = pool.sort(() => Math.random() - 0.5).slice(0, 10);
+
+            // Map plain string sentences to objects (if they weren't already objects from lyrics)
+            const formattedSentences = pool.map(item => {
+                const words = item.es.replace(/[.,!?¡¿]/g, '').trim().split(/\s+/);
+                return {
+                    id: Math.random().toString(36).substr(2, 9),
+                    original: item.es,
+                    words: words,
+                    en: item.en || 'Assemble the sentence correctly!' // Use existing EN or placeholder
+                };
+            });
+
+            // Fetch Due SRS items to attach standard SRS stats
+            if (user) {
+                try {
+                    const dueItems = await srsApi.getDueItems(user.id);
+                    if (dueItems && dueItems.length > 0) {
+                        // Replace the basic vocab pool with the DB items so we have their IDs
+                        allVocabPool = dueItems.map(item => ({
+                            es: item.word_es,
+                            en: item.word_en,
+                            srs: item
+                        }));
+                    }
+                } catch (error) {
+                    console.error("Failed to fetch due SRS items:", error);
+                    // Continue with basic vocab pool if API fails
+                }
+            }
+
+            setVocabularyPool(allVocabPool);
+            setSentences(formattedSentences);
             setLoading(false);
         }
 
         loadContent();
-    }, [completedLessons]);
+    }, [completedLessons, user]);
+
+    const currentSentence = sentences[currentSentenceIndex];
 
     const setupSentence = useCallback((sentence) => {
-        const words = sentence.es.split(' ');
+        if (!sentence) return; // Ensure a sentence is provided
+
+        const words = sentence.original.split(' '); // Use original for word splitting
 
         // Add 1-2 distractor words based on score/difficulty
         let pool = [...words];
         if (sentences.length > 0) {
-            const randomDistractorSent = sentences[Math.floor(Math.random() * sentences.length)];
-            const distractorWords = randomDistractorSent.es.split(' ');
-            pool.push(distractorWords[Math.floor(Math.random() * distractorWords.length)]);
+            // Pick a random sentence from the full pool (excluding current)
+            const otherSentences = sentences.filter(s => s.id !== sentence.id);
+            if (otherSentences.length > 0) {
+                const randomDistractorSent = otherSentences[Math.floor(Math.random() * otherSentences.length)];
+                const distractorWords = randomDistractorSent.original.split(' ');
+                if (distractorWords.length > 0) {
+                    pool.push(distractorWords[Math.floor(Math.random() * distractorWords.length)]);
+                }
+            }
         }
 
         // Shuffle pool
@@ -93,12 +158,10 @@ export default function BubbleSentence() {
             error: false
         }));
 
-        setCurrentSentence({
-            ...sentence,
-            words: words
-        });
         setBubbles(initialBubbles);
         setBuiltWords([]);
+        setIsSuccess(false);
+        setMistakeBubbleId(null);
     }, [sentences]);
 
     const startGame = () => {
@@ -106,13 +169,26 @@ export default function BubbleSentence() {
         setGameOver(false);
         setGameWon(false);
         setIsPlaying(true);
-        const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
-        setupSentence(randomSentence);
+        setCurrentSentenceIndex(0); // Start from the first sentence
+        if (sentences.length > 0) {
+            setupSentence(sentences[0]);
+        }
     };
+
+    // Effect to setup new sentence when currentSentenceIndex changes
+    useEffect(() => {
+        if (isPlaying && sentences.length > 0 && currentSentenceIndex < sentences.length) {
+            setupSentence(sentences[currentSentenceIndex]);
+        } else if (isPlaying && currentSentenceIndex >= sentences.length) {
+            // All sentences completed
+            setGameWon(true);
+            setIsPlaying(false);
+        }
+    }, [currentSentenceIndex, isPlaying, sentences, setupSentence]);
 
     // Physics Engine for Bubbles
     const updatePhysics = useCallback(() => {
-        if (!isPlaying || gameOver || gameWon) return;
+        if (!isPlaying || gameOver || gameWon || isSuccess) return; // Pause physics on success
 
         setBubbles(prevBubbles => {
             return prevBubbles.map(b => {
@@ -140,7 +216,7 @@ export default function BubbleSentence() {
         });
 
         animationRef.current = requestAnimationFrame(updatePhysics);
-    }, [isPlaying, gameOver, gameWon]);
+    }, [isPlaying, gameOver, gameWon, isSuccess]);
 
     useEffect(() => {
         animationRef.current = requestAnimationFrame(updatePhysics);
@@ -149,7 +225,7 @@ export default function BubbleSentence() {
 
     // Handle Tapping a Bubble
     const handleBubbleTap = (bubble) => {
-        if (!isPlaying || gameOver || gameWon) return;
+        if (!isPlaying || gameOver || gameWon || isSuccess || !currentSentence) return;
 
         const nextExpectedIndex = builtWords.length;
         const expectedWord = currentSentence.words[nextExpectedIndex];
@@ -157,24 +233,47 @@ export default function BubbleSentence() {
         if (bubble.word === expectedWord) {
             // Correct! Pop the bubble!
             setScore(s => s + 50);
-            setBuiltWords(prev => [...prev, bubble.word]);
+            const newBuiltWords = [...builtWords, bubble.word];
+            setBuiltWords(newBuiltWords);
 
             // Remove from bubbles array
             setBubbles(prev => prev.filter(b => b.id !== bubble.id));
 
             // Check if sentence complete
-            if (nextExpectedIndex + 1 === currentSentence.words.length) {
+            if (newBuiltWords.length === currentSentence.words.length) {
+                setIsSuccess(true); // Indicate sentence success
                 setScore(s => s + 200);
+
+                // SRS Logic: We consider identifying the sentence structure as a "Good" (4) rating
+                // for the words in this sentence that happen to be in our Due Pool.
+                if (user && vocabularyPool.length > 0) {
+                    currentSentence.words.forEach(word => {
+                        // Clean word for matching
+                        const cleanWord = word.toLowerCase().trim();
+                        // Find if this word is in our due pool tracking
+                        const trackingItem = vocabularyPool.find(v => v.es.toLowerCase().trim() === cleanWord);
+
+                        if (trackingItem && trackingItem.srs) { // Only update if it's an SRS tracked item
+                            const prevSrs = trackingItem.srs;
+                            // Rating 4 for successful assembly
+                            const newStats = calculateSM2(4, prevSrs.repetition, prevSrs.interval, prevSrs.ease_factor);
+                            // Fire and forget
+                            srsApi.updateItem(user.id, trackingItem.es, trackingItem.en, newStats);
+                        }
+                    });
+                }
+
                 setTimeout(() => {
-                    setGameWon(true);
-                    setIsPlaying(false);
-                    setTimeout(() => {
-                        const nextSent = sentences[Math.floor(Math.random() * sentences.length)];
-                        setupSentence(nextSent);
-                        setGameWon(false);
-                        setIsPlaying(true);
-                    }, 1500);
-                }, 100);
+                    if (currentSentenceIndex < sentences.length - 1) {
+                        setCurrentSentenceIndex(prev => prev + 1);
+                        setBuiltWords([]); // Reset for next sentence
+                        setIsSuccess(false);
+                        setMistakeBubbleId(null);
+                    } else {
+                        setGameWon(true); // All sentences completed
+                        setIsPlaying(false);
+                    }
+                }, 1500);
             }
         } else {
             // Wrong word! Flash error on that bubble
@@ -244,89 +343,89 @@ export default function BubbleSentence() {
                                 transition-colors active:scale-90
                             `}
                             style={{
-                                left: \`\${bubble.x}%\`,
-                    top: \`\${bubble.y}%\`,
-                    width: \`\${bubble.size}px\`,
-                    height: \`\${bubble.size}px\`
+                                left: `${bubble.x}%`,
+                                top: `${bubble.y}%`,
+                                width: `${bubble.size}px`,
+                                height: `${bubble.size}px`
                             }}
                         >
-                    {/* Inner bubble reflection */}
-                    <div className="absolute top-[10%] left-[20%] w-[30%] h-[30%] bg-white/40 rounded-full blur-[2px]"></div>
+                            {/* Inner bubble reflection */}
+                            <div className="absolute top-[10%] left-[20%] w-[30%] h-[30%] bg-white/40 rounded-full blur-[2px]"></div>
 
-                    <span className="text-white font-black drop-shadow-md" style={{ fontSize: \`\${bubble.size * 0.25}px\` }}>
-                    {bubble.word}
-                </span>
-            </button>
+                            <span className="text-white font-black drop-shadow-md" style={{ fontSize: `${bubble.size * 0.25}px` }}>
+                                {bubble.word}
+                            </span>
+                        </button>
                     ))}
 
-            {/* Start Screen Overlay */}
-            {!isPlaying && !gameOver && !gameWon && (
-                <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm flex flex-col items-center justify-center z-50 p-6 text-center">
-                    <div className="text-7xl mb-6 drop-shadow-lg animate-bounce">🫧</div>
-                    <h2 className="text-3xl font-black text-cyan-400 mb-4 uppercase tracking-widest drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]">
-                        {language === 'fr' ? 'Phrases Bulles' : 'Bubble Sentence'}
-                    </h2>
-                    <p className="text-teal-100/80 mb-8 text-base max-w-sm leading-relaxed">
-                        {language === 'fr'
-                            ? 'Éclate les bulles dans le bon ordre grammatical pour construire la traduction espagnole !'
-                            : 'Pop the bubbles in the exact grammatical order to build the Spanish translation!'}
-                    </p>
-                    <button
-                        onClick={startGame}
-                        className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-black text-xl py-4 px-12 rounded-2xl shadow-[0_0_30px_rgba(34,211,238,0.5)] transition-all transform hover:scale-105 uppercase tracking-widest"
-                    >
-                        {language === 'fr' ? 'Jouer' : 'Play'}
-                    </button>
-                </div>
-            )}
+                    {/* Start Screen Overlay */}
+                    {!isPlaying && !gameOver && !gameWon && (
+                        <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm flex flex-col items-center justify-center z-50 p-6 text-center">
+                            <div className="text-7xl mb-6 drop-shadow-lg animate-bounce">🫧</div>
+                            <h2 className="text-3xl font-black text-cyan-400 mb-4 uppercase tracking-widest drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]">
+                                {language === 'fr' ? 'Phrases Bulles' : 'Bubble Sentence'}
+                            </h2>
+                            <p className="text-teal-100/80 mb-8 text-base max-w-sm leading-relaxed">
+                                {language === 'fr'
+                                    ? 'Éclate les bulles dans le bon ordre grammatical pour construire la traduction espagnole !'
+                                    : 'Pop the bubbles in the exact grammatical order to build the Spanish translation!'}
+                            </p>
+                            <button
+                                onClick={startGame}
+                                className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-black text-xl py-4 px-12 rounded-2xl shadow-[0_0_30px_rgba(34,211,238,0.5)] transition-all transform hover:scale-105 uppercase tracking-widest"
+                            >
+                                {language === 'fr' ? 'Jouer' : 'Play'}
+                            </button>
+                        </div>
+                    )}
 
-            {/* Win Animation Overlay */}
-            {gameWon && (
-                <div className="absolute inset-0 z-50 flex items-center justify-center">
-                    <div className="bg-emerald-500/90 backdrop-blur-md px-8 py-6 rounded-3xl shadow-[0_0_50px_rgba(16,185,129,0.5)] text-center animate-pop-in border-4 border-emerald-300">
-                        <span className="text-5xl block mb-2">🎉</span>
-                        <h3 className="text-white font-black text-2xl uppercase tracking-widest drop-shadow-md">
-                            {language === 'fr' ? 'Parfait !' : 'Perfect!'}
-                        </h3>
+                    {/* Win Animation Overlay */}
+                    {gameWon && (
+                        <div className="absolute inset-0 z-50 flex items-center justify-center">
+                            <div className="bg-emerald-500/90 backdrop-blur-md px-8 py-6 rounded-3xl shadow-[0_0_50px_rgba(16,185,129,0.5)] text-center animate-pop-in border-4 border-emerald-300">
+                                <span className="text-5xl block mb-2">🎉</span>
+                                <h3 className="text-white font-black text-2xl uppercase tracking-widest drop-shadow-md">
+                                    {language === 'fr' ? 'Parfait !' : 'Perfect!'}
+                                </h3>
+                            </div>
+                        </div>
+                    )}
+                </div>
+
+                {/* 3. Bottom UI: Sentence Constructor */}
+                <div className="w-full bg-slate-900/90 backdrop-blur-lg border-t-2 border-cyan-900/50 p-6 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] z-40 rounded-t-3xl min-h-[140px]">
+                    <div className="flex flex-wrap gap-2 justify-center items-center h-full">
+                        {currentSentence && currentSentence.words.map((targetWord, idx) => {
+                            const isBuilt = idx < builtWords.length;
+                            const isNext = idx === builtWords.length;
+
+                            if (isBuilt) {
+                                return (
+                                    <div key={idx} className="bg-cyan-500 text-slate-900 font-black px-4 py-2 rounded-xl shadow-md border-b-4 border-cyan-700 animate-pop-in">
+                                        {builtWords[idx]}
+                                    </div>
+                                );
+                            } else if (isNext) {
+                                return (
+                                    <div key={idx} className="bg-slate-800 text-slate-500 font-bold px-4 py-2 rounded-xl shadow-inner border-2 border-dashed border-slate-600">
+                                        ...
+                                    </div>
+                                );
+                            } else {
+                                return (
+                                    <div key={idx} className="bg-slate-800/50 text-slate-700 px-4 py-2 rounded-xl">
+                                        _
+                                    </div>
+                                );
+                            }
+                        })}
                     </div>
                 </div>
-            )}
-        </div>
-
-                {/* 3. Bottom UI: Sentence Constructor */ }
-    <div className="w-full bg-slate-900/90 backdrop-blur-lg border-t-2 border-cyan-900/50 p-6 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] z-40 rounded-t-3xl min-h-[140px]">
-        <div className="flex flex-wrap gap-2 justify-center items-center h-full">
-            {currentSentence && currentSentence.words.map((targetWord, idx) => {
-                const isBuilt = idx < builtWords.length;
-                const isNext = idx === builtWords.length;
-
-                if (isBuilt) {
-                    return (
-                        <div key={idx} className="bg-cyan-500 text-slate-900 font-black px-4 py-2 rounded-xl shadow-md border-b-4 border-cyan-700 animate-pop-in">
-                            {builtWords[idx]}
-                        </div>
-                    );
-                } else if (isNext) {
-                    return (
-                        <div key={idx} className="bg-slate-800 text-slate-500 font-bold px-4 py-2 rounded-xl shadow-inner border-2 border-dashed border-slate-600">
-                            ...
-                        </div>
-                    );
-                } else {
-                    return (
-                        <div key={idx} className="bg-slate-800/50 text-slate-700 px-4 py-2 rounded-xl">
-                            _
-                        </div>
-                    );
-                }
-            })}
-        </div>
-    </div>
 
             </div >
 
-        <style dangerouslySetInnerHTML={{
-            __html: \`
+            <style dangerouslySetInnerHTML={{
+                __html: `
                 @keyframes pop-in {
                     0% { transform: scale(0.5); opacity: 0; }
                     80% { transform: scale(1.1); opacity: 1; }
@@ -341,7 +440,7 @@ export default function BubbleSentence() {
                     75% { transform: translate(-55%, -50%) rotate(-5deg); }
                 }
                 .animate-shake { animation: shake 0.4s ease-in-out; }
-                \`
+                `
             }} />
         </div>
     );

@@ -2,7 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
 import { useLanguage } from '../i18n';
+import { useAuth } from '../contexts/AuthContext';
 import LanguageToggle from '../components/LanguageToggle';
+import { srsApi } from '../services/api/srsApi';
+import { calculateSM2 } from '../services/srsAlgorithm';
 
 export default function VocabularyReview() {
     const { completedLessons } = useProgress();
@@ -10,14 +13,15 @@ export default function VocabularyReview() {
     const [vocabulary, setVocabulary] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [showTranslation, setShowTranslation] = useState(false);
-    const [stats, setStats] = useState({ known: 0, learning: 0 });
-    const [loading, setLoading] = useState(true);
+    const { user } = useAuth();
+    const [stats, setStats] = useState({ new: 0, due: 0, total_known: 0 });
 
-    // Load vocabulary from completed lessons
+    // Load vocabulary from completed lessons and SRS Database
     useEffect(() => {
         async function loadVocabulary() {
             const allVocab = [];
 
+            // 1. Load curriculum vocab
             for (const lessonId of completedLessons) {
                 try {
                     const res = await fetch(`/data/songs/${lessonId}.json`);
@@ -28,9 +32,9 @@ export default function VocabularyReview() {
                             if (!allVocab.find(v => v.word === word)) {
                                 allVocab.push({
                                     word,
+                                    en: getTranslation(word), // We pre-fetch translation for DB
                                     lessonId,
-                                    lessonTitle: data.title,
-                                    status: 'new' // new, learning, known
+                                    lessonTitle: data.title
                                 });
                             }
                         });
@@ -40,13 +44,51 @@ export default function VocabularyReview() {
                 }
             }
 
-            // Shuffle the vocabulary
-            setVocabulary(allVocab.sort(() => Math.random() - 0.5));
+            // 2. Fetch SRS data from Supabase
+            let dbItems = [];
+            if (user) {
+                dbItems = await srsApi.getAllItems(user.id);
+            }
+
+            const dbItemsMap = {};
+            dbItems.forEach(item => {
+                dbItemsMap[item.word_es] = item;
+            });
+
+            // 3. Build the deck
+            const now = new Date();
+            const reviewDeck = [];
+            let knownCount = 0;
+
+            allVocab.forEach(v => {
+                const dbEntry = dbItemsMap[v.word];
+                if (!dbEntry) {
+                    // New word not yet reviewed
+                    reviewDeck.push({ ...v, status: 'new', srs: null });
+                } else {
+                    knownCount++;
+                    // Already reviewed - check if due
+                    const nextReview = new Date(dbEntry.next_review_date);
+                    if (nextReview <= now || isNaN(nextReview.getTime())) {
+                        reviewDeck.push({ ...v, status: 'due', srs: dbEntry });
+                    }
+                }
+            });
+
+            // Update stats
+            setStats({
+                new: reviewDeck.filter(v => v.status === 'new').length,
+                due: reviewDeck.filter(v => v.status === 'due').length,
+                total_known: knownCount
+            });
+
+            // Shuffle the active review deck
+            setVocabulary(reviewDeck.sort(() => Math.random() - 0.5));
             setLoading(false);
         }
 
         loadVocabulary();
-    }, [completedLessons]);
+    }, [completedLessons, user]);
 
     const currentWord = vocabulary[currentIndex];
 
@@ -143,19 +185,38 @@ export default function VocabularyReview() {
         }, 150);
     };
 
-    const markWord = (status, e) => {
-        e.stopPropagation(); // Prevent card from flipping when clicking buttons
-        const updated = [...vocabulary];
-        updated[currentIndex].status = status;
-        setVocabulary(updated);
+    const handleRateWord = async (rating, e) => {
+        e.stopPropagation(); // Prevent card flip
 
-        // Update stats
-        setStats({
-            known: updated.filter(v => v.status === 'known').length,
-            learning: updated.filter(v => v.status === 'learning').length
-        });
+        // 1. Calculate new SM-2 stats
+        const prevSrs = currentWord.srs || { repetition: 0, interval: 0, ease_factor: 2.5 };
+        const newStats = calculateSM2(rating, prevSrs.repetition, prevSrs.interval, prevSrs.ease_factor);
 
-        handleNext();
+        // 2. Persist to DB if logged in
+        if (user) {
+            await srsApi.updateItem(user.id, currentWord.word, currentWord.en, newStats);
+        }
+
+        // 3. Remove from local active deck (it's been reviewed)
+        const updatedDeck = [...vocabulary];
+        updatedDeck.splice(currentIndex, 1);
+        setVocabulary(updatedDeck);
+
+        // Update stats breakdown
+        setStats(prev => ({
+            ...prev,
+            new: updatedDeck.filter(v => v.status === 'new').length,
+            due: updatedDeck.filter(v => v.status === 'due').length,
+            // visually increment total known immediately if it was new
+            total_known: currentWord.status === 'new' ? prev.total_known + 1 : prev.total_known
+        }));
+
+        // Reset index if we overflowed the deck
+        if (currentIndex >= updatedDeck.length && updatedDeck.length > 0) {
+            setCurrentIndex(0);
+        }
+
+        setShowTranslation(false);
     };
 
     const shuffleVocabulary = () => {
@@ -248,17 +309,17 @@ export default function VocabularyReview() {
                     </h1>
 
                     <div className="flex flex-wrap justify-center gap-3 text-sm font-medium mb-4">
-                        <div className="px-4 py-1.5 bg-green-500/10 border border-green-500/20 text-green-400 rounded-full flex items-center gap-2">
-                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                            <span>{stats.known} {language === 'fr' ? 'Connu' : 'Known'}</span>
+                        <div className="px-4 py-1.5 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-full flex items-center gap-2">
+                            <span className="text-lg leading-none">🆕</span>
+                            <span>{stats.new} {language === 'fr' ? 'Nouveau(x)' : 'New Words'}</span>
                         </div>
-                        <div className="px-4 py-1.5 bg-amber-500/10 border border-amber-500/20 text-amber-400 rounded-full flex items-center gap-2">
-                            <span className="text-lg leading-none">📖</span>
-                            <span>{stats.learning} {language === 'fr' ? 'En cours' : 'Learning'}</span>
+                        <div className="px-4 py-1.5 bg-rose-500/10 border border-rose-500/20 text-rose-400 rounded-full flex items-center gap-2">
+                            <span className="text-lg leading-none">⏰</span>
+                            <span>{stats.due} {language === 'fr' ? 'À réviser' : 'Due for Review'}</span>
                         </div>
-                        <div className="px-4 py-1.5 bg-white/5 border border-white/10 text-slate-300 rounded-full flex items-center gap-2">
-                            <span className="text-lg leading-none">📝</span>
-                            <span>{vocabulary.length - stats.known - stats.learning} {language === 'fr' ? 'Nouveau' : 'New'}</span>
+                        <div className="px-4 py-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full flex items-center gap-2">
+                            <span className="text-lg leading-none">🧠</span>
+                            <span>{stats.total_known} {language === 'fr' ? 'Connus' : 'Total Known'}</span>
                         </div>
                     </div>
 
@@ -286,12 +347,11 @@ export default function VocabularyReview() {
                         <div className="absolute inset-0 backface-hidden bg-white/[0.02] rounded-[2rem] p-8 border border-white/10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] flex flex-col items-center justify-center backdrop-blur-xl group hover:bg-white/[0.04] transition-colors">
 
                             <div className={`absolute top-6 left-1/2 -translate-x-1/2 text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest border transition-colors
-                                ${currentWord.status === 'known' ? 'bg-green-500/10 border-green-500/20 text-green-400' :
-                                    currentWord.status === 'learning' ? 'bg-amber-500/10 border-amber-500/20 text-amber-400' :
-                                        'bg-white/5 border-white/10 text-slate-400'
+                                ${currentWord.status === 'new' ? 'bg-blue-500/10 border-blue-500/30 text-blue-400' :
+                                    'bg-rose-500/10 border-rose-500/30 text-rose-400'
                                 }`}>
-                                {currentWord.status === 'known' ? 'Known' :
-                                    currentWord.status === 'learning' ? 'Learning' : 'New Word'}
+                                {currentWord.status === 'new' ? (language === 'fr' ? 'Nouveau Mot' : 'New Word') :
+                                    (language === 'fr' ? 'À Réviser' : 'Due Review')}
                             </div>
 
                             <div className="text-4xl md:text-5xl font-black mb-8 text-center text-white tracking-tight break-words max-w-full">
@@ -333,20 +393,37 @@ export default function VocabularyReview() {
                                 </Link>
                             </div>
 
-                            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-4 w-full px-8">
-                                <button
-                                    onClick={(e) => markWord('learning', e)}
-                                    className="flex-1 py-3 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-400 font-bold rounded-xl transition-colors text-sm"
-                                >
-                                    {language === 'fr' ? '📖 En cours' : 'Still Learning'}
-                                </button>
-                                <button
-                                    onClick={(e) => markWord('known', e)}
-                                    className="flex-1 py-3 bg-green-500/10 hover:bg-green-500/20 border border-green-500/30 text-green-400 font-bold rounded-xl transition-colors text-sm flex items-center justify-center gap-2"
-                                >
-                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                                    {language === 'fr' ? 'Je sais' : 'I Know It'}
-                                </button>
+                            <div className="absolute bottom-6 left-0 right-0 w-full px-6 flex flex-col gap-2">
+                                <p className="text-center text-xs text-slate-400 font-medium mb-1 uppercase tracking-widest">
+                                    {language === 'fr' ? 'Comment vous en êtes-vous sorti ?' : 'How did you do?'}
+                                </p>
+                                <div className="flex gap-2 w-full">
+                                    <button
+                                        onClick={(e) => handleRateWord(0, e)}
+                                        className="flex-1 py-2 lg:py-3 bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-400 font-bold rounded-xl transition-colors text-xs lg:text-sm"
+                                        title={language === 'fr' ? 'Trou de mémoire complet' : 'Total Blackout'}
+                                    >
+                                        {language === 'fr' ? 'Oubli' : 'Forgot'}
+                                    </button>
+                                    <button
+                                        onClick={(e) => handleRateWord(2, e)}
+                                        className="flex-1 py-2 lg:py-3 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-400 font-bold rounded-xl transition-colors text-xs lg:text-sm"
+                                    >
+                                        {language === 'fr' ? 'Difficile' : 'Hard'}
+                                    </button>
+                                    <button
+                                        onClick={(e) => handleRateWord(4, e)}
+                                        className="flex-1 py-2 lg:py-3 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 font-bold rounded-xl transition-colors text-xs lg:text-sm"
+                                    >
+                                        {language === 'fr' ? 'Bien' : 'Good'}
+                                    </button>
+                                    <button
+                                        onClick={(e) => handleRateWord(5, e)}
+                                        className="flex-1 py-2 lg:py-3 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-400 font-bold rounded-xl transition-colors text-xs lg:text-sm"
+                                    >
+                                        {language === 'fr' ? 'Facile' : 'Easy'}
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

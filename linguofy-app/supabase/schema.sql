@@ -138,3 +138,30 @@ CREATE TRIGGER update_lessons_updated_at
     BEFORE UPDATE ON lessons
     FOR EACH ROW
     EXECUTE FUNCTION update_updated_at_column();
+
+-- ==========================================
+-- 6. SRS (SPACED REPETITION SYSTEM)
+-- ==========================================
+
+CREATE TABLE IF NOT EXISTS srs_items (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
+    word_es TEXT NOT NULL,
+    word_en TEXT NOT NULL,
+    interval INTEGER DEFAULT 0, -- Days until next review
+    repetition INTEGER DEFAULT 0, -- Times reviewed
+    ease_factor DECIMAL(5,2) DEFAULT 2.50, -- SM-2 ease factor
+    next_review_date TIMESTAMPTZ DEFAULT NOW(),
+    last_reviewed_at TIMESTAMPTZ DEFAULT NOW(),
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    UNIQUE(user_id, word_es)
+);
+
+ALTER TABLE srs_items ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can read own srs items" ON srs_items FOR SELECT USING (auth.uid() = user_id);
+CREATE POLICY "Users can insert own srs items" ON srs_items FOR INSERT WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own srs items" ON srs_items FOR UPDATE USING (auth.uid() = user_id);
+
+CREATE INDEX IF NOT EXISTS idx_srs_items_user ON srs_items(user_id);
+CREATE INDEX IF NOT EXISTS idx_srs_items_next_review ON srs_items(next_review_date);

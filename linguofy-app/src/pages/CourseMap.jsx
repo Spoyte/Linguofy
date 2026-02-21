@@ -5,6 +5,8 @@ import { useAudio } from '../contexts/AudioContext';
 import { modules, bonusModules } from '../data/courseData';
 import LanguageToggle from '../components/LanguageToggle';
 import { useAuth } from '../contexts/AuthContext';
+import { srsApi } from '../services/api/srsApi';
+import { useEffect, useState } from 'react';
 
 export default function CourseMap() {
     const { isComplete, completedLessons } = useProgress();
@@ -12,6 +14,22 @@ export default function CourseMap() {
     const { user, signOut } = useAuth();
     const { playTrack, currentTrack, isPlaying, togglePlayPause, setQueue } = useAudio();
     const navigate = useNavigate();
+
+    // SRS Notification State
+    const [dueReviewCount, setDueReviewCount] = useState(0);
+    const [showNotification, setShowNotification] = useState(false);
+
+    useEffect(() => {
+        if (user) {
+            srsApi.getDueItems(user.id).then(items => {
+                if (items && items.length > 0) {
+                    setDueReviewCount(items.length);
+                    // Delay the notification slightly for effect
+                    setTimeout(() => setShowNotification(true), 1500);
+                }
+            });
+        }
+    }, [user]);
 
     // A module is unlocked if:
     // 1. It's the first module (always unlocked)
@@ -119,6 +137,43 @@ export default function CourseMap() {
                 <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[120px] mix-blend-screen"></div>
             </div>
 
+            {/* Simulated Push Notification Toast */}
+            {showNotification && (
+                <div className="fixed top-24 right-4 md:right-8 z-50 animate-fade-in-up">
+                    <div className="bg-[#1A1F35]/95 backdrop-blur-xl border border-purple-500/30 p-4 rounded-2xl shadow-[0_10px_40px_rgba(168,85,247,0.2)] max-w-sm w-full flex gap-4 relative overflow-hidden group">
+                        {/* Glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+                        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-2xl shrink-0 shadow-inner">
+                            🔔
+                        </div>
+                        <div className="flex-1 pt-1">
+                            <h4 className="text-white font-bold text-sm mb-1">{language === 'fr' ? 'Rappels Quotidiens' : 'Daily Mix Ready!'}</h4>
+                            <p className="text-slate-300 text-xs mb-3">
+                                {language === 'fr'
+                                    ? `Tu as ${dueReviewCount} mots prêts à être révisés pour renforcer ta mémoire.`
+                                    : `You have ${dueReviewCount} words ready for review to strengthen your memory.`}
+                            </p>
+                            <div className="flex gap-2">
+                                <Link
+                                    to="/vocabulary"
+                                    onClick={() => setShowNotification(false)}
+                                    className="bg-purple-500 hover:bg-purple-400 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors flex-1 text-center"
+                                >
+                                    {language === 'fr' ? 'Réviser' : 'Review Now'}
+                                </Link>
+                                <button
+                                    onClick={() => setShowNotification(false)}
+                                    className="bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-bold px-4 py-2 rounded-lg transition-colors"
+                                >
+                                    {language === 'fr' ? 'Plus tard' : 'Later'}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             {/* Header / Navbar */}
             <header className="sticky top-0 z-40 bg-[#0A0F1C]/80 backdrop-blur-md border-b border-white/5 py-4 px-6 md:px-12 mb-12">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
@@ -155,7 +210,7 @@ export default function CourseMap() {
                         <div className="flex items-center gap-3 ml-auto md:ml-4 border-l border-white/10 pl-4">
                             <LanguageToggle />
                             {user && (
-                                <div className="flex items-center gap-3 hidden sm:flex">
+                                <div className="flex items-center gap-3">
                                     <Link
                                         to="/games"
                                         className="text-sm font-bold text-slate-400 hover:text-cyan-400 transition-colors"
