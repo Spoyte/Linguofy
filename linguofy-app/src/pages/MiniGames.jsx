@@ -102,6 +102,28 @@ const GAMES = [
         color: 'from-cyan-400 to-teal-500',
         ages: ['teens', 'adults', 'all'],
         status: 'playable'
+    },
+    {
+        id: 'missing-lyric',
+        title: 'Missing Lyric',
+        title_fr: 'Mot Manquant',
+        desc: 'Read the sentence and choose the missing vocabulary word!',
+        desc_fr: 'Lis la phrase et choisis le mot de vocabulaire manquant !',
+        icon: '🧩',
+        color: 'from-amber-400 to-orange-500',
+        ages: ['teens', 'adults', 'all'],
+        status: 'playable'
+    },
+    {
+        id: 'word-rescue',
+        title: 'Word Rescue',
+        title_fr: 'Sauvetage de Mots',
+        desc: 'Spell the translation letter by letter to rescue the character.',
+        desc_fr: 'Épelle la traduction lettre par lettre pour sauver le personnage.',
+        icon: '🛟',
+        color: 'from-sky-400 to-blue-500',
+        ages: ['kids', 'all'],
+        status: 'playable'
     }
 ];
 
